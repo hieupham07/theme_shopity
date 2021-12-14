@@ -1,0 +1,41 @@
+{% assign on_sale = false %}
+{% if product.available and product.variants.first.compare_at_price > product.variants.first.price %}
+{% assign on_sale = true %}
+{% endif %}
+
+{% comment %}Tính giá khuyến mãi{% endcomment %}
+{% if product.variants.first.compare_at_price > product.variants.first.price %}
+{% assign price_sale = 0 %}
+{% assign price_sale = product.variants.first.compare_at_price | minus: product.variants.first.price | divided_by:product.variants.first.compare_at_price | times : 100 | round : 0 %}
+{% endif %}
+
+{% assign sold_out = true %}
+{% if product.available  %}
+{% assign sold_out = false %}
+{% endif %} 
+
+<div class="product-block" data-anmation="{{forloop.index}}">
+	<div class="product-img">
+		{% if on_sale %}<div class="product-sale"><span>-{{price_sale}}%</span></div>{% endif %}		
+		{% if sold_out %}<div class="sold-out"><span>Liên hệ</span></div>{% endif %}	
+		<a href="{{product.url}}?view=amp" title="{{product.title}}">
+			<amp-img width="480" height="600" layout="responsive" class="first-image" alt="{% if product.featured_image.alt.size >0 %}{{ product.featured_image.alt | escape }}{% else%} {{product.title}} {% endif %}" src="{%if product.images.size > 0%}{{ product.featured_image.src | product_img_url: 'large' }}{%else%}{{'no_image.jpg' | asset_url}}{%endif%}"></amp-img>
+		</a>			
+		<div class="pro-price-mb">	
+			<span class="pro-price">{{ product.variants.first.price | money }}</span>
+			{% if on_sale %}<span class="pro-price-del"><del class="compare-price">{{ product.variants.first.compare_at_price | money }}</del></span>{% endif %}
+		</div>
+	</div>
+	<div class="product-detail clearfix">
+		<div class="box-pro-detail">
+			<span class="pro-vendor"><a title="Xem bộ sưu tập: {{ product.vendor }}" href="/collections/{{ product.vendor  | handleize }}">{{ product.vendor }}</a></span>
+			<h3 class="pro-name">
+				<a href="{{product.url}}?view=amp" title="{{product.title}}">
+					{{ product.title }}
+				</a>
+			</h3>
+		</div>
+	</div>
+
+</div>	
+

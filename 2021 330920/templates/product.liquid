@@ -1,0 +1,660 @@
+<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+<style>
+	.zoomWindowContainer div {
+		//transform: scale(0.7) translate(-21.5%, -21.5%);
+	}
+</style>
+<script>
+	$(document).ready(function(){
+		if($('#productSlick-thumb .product-thumb').length > 1 ){ 
+				var zoomFunc = function(){
+					$('.zoomContainer').remove();
+					$("#productSlick-slider .slick-current .zoom_01").ezPlus({
+						zoomType: "inner",
+						cursor: "crosshair",
+						zoomWindowFadeIn: 150,
+						zoomWindowFadeOut: 300,
+						borderColour:'#d29f13', 
+						gallery: 'productSlick-thumb',
+					});  
+				}
+				$('#productSlick-slider').on('mouseover', 'touchstart', function(event, slick, currentSlide, nextSlide){
+					zoomFunc();
+				});
+				$('#productSlick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+					zoomFunc();
+				});
+			}else{
+				$(".zoom_01").ezPlus({
+					zoomType: "inner",
+					cursor: "crosshair",
+					zoomWindowFadeIn: 500,
+					zoomWindowFadeOut: 750,
+					borderColour:'#d29f13',  
+					gallery: 'productSlick-thumb',
+				});  
+
+			}
+	})
+</script>
+{%- include 'breadcrumb' -%}
+<div class="layout-productDetail mt-2 mt-lg-4 mb-3">
+	<div class="productDetail-information productDetail_style_03">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-6 product-content-image">
+					{%- if product.variants.first.compare_at_price > product.variants.first.price -%}
+					<div class="product-label">
+						<span class="onsale">
+							<span class="sale-bg"></span>
+							<span class="sale-text">Sale</span>
+						</span>
+					</div>
+					{%- endif -%}	
+					<div class="product-container-gallery">
+						{%- if product.images.size > 0 -%}
+						{%- if product.images.size >= 2 -%}
+						<div class="wrapbox-image d-flex">
+							<div class="productGallery_thumb">
+								<div class="productList-thumb product-list-lazy" id="productSlick-thumb">
+									{% for thumb in product.images %}
+									<div class="product-thumb">
+										<a class="product-thumb-item aspect-ratio" href="javascript:void(0);">					
+											<img src="{{ thumb.src | product_img_url : 'compact' }}" alt="{% if product.images.alt.size >0 %}{{ product.images.alt  | strip_html | escape }} {% else%} {{product.title | strip_html | escape }} {% endif %}">
+										</a>					
+									</div>	
+									{% endfor %}
+								</div>
+							</div>
+							<div class="productGallery_slider">
+								<div class="productList-slider product-list-lazy" id="productSlick-slider">
+									{% for images in product.images %} 
+									<div class="product-gallery d-flex align-items-center justify-content-center" data-image="{{ images.src | product_img_url : 'master' }}">
+										<a href="javascript:void(0)" class="product-gallery-item">	
+											<picture>
+												<source media="(max-width: 480px)" srcset="{{ images.src | product_img_url : 'large' }}">
+												<source media="(min-width: 481px)" srcset="{{ images.src | product_img_url : 'master' }}">
+												<img id="zo-{{forloop.index}}" data-zoom-image="{{ images.src | product_img_url : 'master' }}" class="zoom_01 product-image-feature" src="{{ images.src | product_img_url : 'master' }}" alt="{% if product.images.alt.size >0 %}{{ product.images.alt  | strip_html | escape }} {% else%} {{product.title | strip_html | escape }} {% endif %}">
+											</picture>
+										</a>					
+									</div>
+									{% endfor %}
+								</div>
+								{%- if settings.show_product_sharing -%}
+								<div class="product-sharing">
+									<span class="sharing_icon_circle">
+										<span class="sharing_primary_state"> 
+											<svg class="icon--share" viewBox="0 0 24 24">
+												<g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-width="1.5">
+													<path d="M8.6,10.2 L15.4,6.8"></path>
+													<path d="M8.6,13.7 L15.4,17.1"></path>
+													<circle stroke-linecap="square" cx="5" cy="12" r="4"></circle>
+													<circle stroke-linecap="square" cx="19" cy="5" r="4"></circle>
+													<circle stroke-linecap="square" cx="19" cy="19" r="4"></circle>
+												</g>
+											</svg>
+										</span>
+										<span class="sharing_secondary_state"> 
+											<svg class="icon--close" viewBox="0 0 16 14">
+												<path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+											</svg>
+										</span>
+									</span>
+									<a href="//www.facebook.com/sharer/sharer.php?u={{ shop.url }}{{ product.url }}" target="_blank" rel="noreferrer noopener">
+										<span class="facebook" aria-hidden="true">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+												<g>
+													<path d="M16.4,1l-3.1,0C9.8,1,9.6,3.3,9.6,6.8v1.7H6.5C6.2,8.5,6,8.8,6,9v1.9c0,0.3,0.2,0.5,0.5,0.5h3.1v9.9c0,0.3,0.2,0.5,0.5,0.5h2c0.3,0,0.5-0.2,0.5-0.5v-9.9h3.6c0.3,0,0.5-0.2,0.5-0.5l0-1.9c0-0.1-0.1-0.3-0.1-0.3c-0.1-0.1-0.2-0.1-0.3-0.1h-3.6V5.3c0-1.1,0.3-1.7,1.7-1.7l2.1,0c0.3,0,0.5-0.2,0.5-0.5V1.5C16.8,1.2,16.6,1,16.4,1z" />
+												</g>
+											</svg>
+										</span>	
+										<span class="toollip-txt">Chia sẻ facebook</span>
+									</a> 
+								</div>
+								{%- endif -%}
+							</div>
+						</div>
+						{%- else -%}
+						<div class="wrapbox-image">
+							<div class="product-gallery text-center">
+								<img id="zo-{{forloop.index}}" data-zoom-image="{{ product.featured_image | product_img_url : 'master' }}" class="zoom_01 product-image-feature" src="{{ product.featured_image | product_img_url : 'master' }}" alt="{% if product.images.alt.size >0 %}{{ product.images.alt  | strip_html | escape }} {% else%} {{product.title | strip_html | escape }} {% endif %}">
+							</div>			
+						</div>
+						{%- endif -%}
+						{%- else -%} 
+						<div class="wrapbox-image no_gallery">
+							<div class="product-gallery">
+								<img id="zo-{{forloop.index}}"  data-zoom-image="{{ product.featured_image | product_img_url : 'master' }}" src="{{'no_image.jpg' | asset_url}}" width="100%" alt="{% if product.images.alt.size >0 %}{{ product.images.alt  | strip_html | escape }} {% else%} {{product.title | strip_html | escape }} {% endif %}" class="img-fluid zoom_01"/>
+							</div>			
+						</div>
+						{%- endif -%}
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 product-content-summary" id="detail-product">
+					<div class="product-container-detail stickyProduct-detail">
+						<div class="product-content-summary">
+							<div class="product-heading mb-3" style="margin-top: 0.5rem">
+								<span class="pro-vendor">
+									<a title="Xem bộ sưu tập: {{ product.vendor }}" href="/collections/{{ product.vendor  | handleize }}">{{ product.vendor  }}</a>
+								</span>
+								<h1>{{ product.title }}</h1>
+								{% if product.variants[0].sku %}
+								<span id="pro_sku"><strong>Mã SP:</strong> {{product.variants[0].sku}}</span>
+								{% endif %}
+								<span class="pro-soldold"></span>	
+							</div>
+							<div id="price-preview" class="product-price d-flex align-items-center py-3 mb-3">
+
+								<span class="pro-price">{{ product.variants.first.price | money }}</span>
+								{%- if product.variants.first.compare_at_price > product.variants.first.price -%}
+								<del>{{ product.variants.first.compare_at_price | money }}</del>
+								{%- endif -%}
+							</div>
+							<div class="product-variants mb-md-3">
+								{% assign hide_default_title = false %}
+								{% if product.variants.size == 1 and product.variants.first.title contains 'Default' and product.options.size == 1 %}
+								{% assign hide_default_title = true %}
+								{% endif %}	
+								<form id="add-item-form" action="/cart/add" method="post" class="variants clearfix">	
+									<div class="select clearfix d-none"{% if hide_default_title %} style="display:none"{% endif %}>
+										<select id="product-select" name="id" style="display:none;">
+											{% for variant in product.variants %}
+											<option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+											{% endfor %}
+										</select>
+									</div>
+									<div class="select-swatch clearfix" {% if hide_default_title %}style="display:none"{% endif %}>
+										{% if product.available and product.variants.size > 1 %}
+										{% for option in product.options %}
+										{% include 'swatch' with option, option_index: forloop.index0  %}
+										{% endfor %}
+										{% endif %}
+									</div>
+									<div class="selector-actions selector-actions_bottom-mb">
+										<div class="quantity-area">
+											<input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
+											<input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector-input" aria-label="Quantity input">
+											<input type="button" value="+" onclick="plusQuantity()" class="qty-btn">	
+										</div>
+										<div class="wrap-addcart">
+											{%- if product.variants.first.price == 0 -%}
+											<button type="button" class="add-to-contactProduct add-to-cartProduct btn-box btnred btn-contactPr"> 
+												Liên hệ
+											</button>
+											{%- else -%}
+											<button type="button" {% if product.available %}id="add-to-cart"{% endif %} class="{% unless product.available %}add-to-contactProduct{% endunless %} add-to-cartProduct btn-box btnred add-toCart" name="add"> 
+												{%- if product.available -%}Thêm vào giỏ{%- else -%}Liên hệ{%- endif -%}
+											</button>
+											{%- endif -%}
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="product-available mb-3">
+								<p class="txt-inventory">
+									{%- if product.variants.first.inventory_management -%}
+									{%- assign inventoryQuan = product.variants.first.inventory_quantity -%}
+									{%- if inventoryQuan == 0 -%} Liên hệ
+									{%- else -%}
+									{%- if inventoryQuan > 10  -%}{%- else -%} Đã bán gần hết {%- endif -%}
+									{%- endif -%}
+									{%- endif -%}
+								</p>
+							</div>
+							<div class="mb-3">
+								{% include 'hrvproducttabs' %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p class="d-none"><a id="link-to-contact" href="tel:{{settings.hotline_contact_product | replace: '.'}}">{{settings.hotline_contact_product}}</a></p>
+	{%- include 'product-description' -%}
+	{% if settings.productspg_related_productsx %}
+	{% include 'prd-col' %}
+	{% endif %}
+	{%- if settings.productspg_related_products -%}
+	{%- include 'product-related'-%}
+	{%-	endif -%}
+</div>
+<script>
+	var template_style = "{{settings.use_product_style}}";
+	$(document).ready(function(){
+		$(document).on('click','#add-to-cart', function(e){	
+			e.preventDefault();
+			var quantity = $("#quantity").val();
+			add_item_show_modalCart($('#product-select').val(),quantity);
+		});
+		$('#quan-input').keyup(function(){
+			$('[name="quantity"]').val($(this).val());
+		});
+		$('[name="quantity"]').on('keyup change', function(){
+			$('#quan-input').val($(this).val());
+		});
+		$(document).on('click','.add-to-contactProduct', function(e){
+			e.preventDefault();
+			window.location.href = $('#link-to-contact').attr('href');
+		});
+		if(template_style == 'style-01'){
+			$('body').scrollspy({ target: '#scrollspyProducts' });
+			$('#scrollspyProducts a[href*="#"]').click(function(e){
+				e.preventDefault();
+				$('#scrollspyProducts .product-thumb').removeClass('active');
+				$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top + 20
+				}, 500);		
+			});
+			if ($(window).width() < 992){
+				$("#sliderProduct").owlCarousel({
+					items:1,
+					nav: true,
+					dots: true,
+					lazyLoad:false,		
+					loop: false,	
+					smartSpeed:1000
+				});	
+			}
+		}
+		if(template_style == 'style-02'){
+			if ($(window).width() < 992){
+				$("#sliderProduct").owlCarousel({
+					items:1,
+					nav: true,
+					dots: true,
+					lazyLoad:false,		
+					loop: false,	
+					smartSpeed:1000
+				});	
+			}
+		}
+		if(template_style == 'style-03'){
+			$('#productSlick-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				fade: false,
+				infinite: false,
+				speed: 600,
+				asNavFor: '#productSlick-thumb',
+				dots: false,
+				arrows: true,
+				prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"></button>',
+				nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"></button>',
+				lazyLoad: 'ondemand'
+			});
+			$('#productSlick-thumb').slick({
+				slidesToShow: 6,
+				slidesToScroll: 6,
+				asNavFor: '#productSlick-slider',
+				dots: false,
+				arrows: false,
+				vertical:true,
+				verticalSwiping:true,
+				infinite: false,
+				focusOnSelect: true
+			});
+			$("#productSlick-slider").on('setPosition', function () {
+				$(this).find('.slick-slide').height('auto');
+				var slickTrackHeight = $(this).find('.slick-track').height();
+				$(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
+			});
+			$(document).on('click','#productSlick-thumb .product-thumb-item', function(e){
+				e.preventDefault();
+				$('#productSlick-thumb .product-thumb').removeClass('slick-current');
+				$(this).parent().addClass('slick-current');
+			});
+		}
+		/*
+		if($(window).width() > 991){
+			$('.product-gallery [data-fancybox="gallery"]').fancybox({
+				hash : false,
+				infobar : false,
+			});
+		}
+		else{
+			var ttALt = $('.product-gallery [data-fancybox="gallery"]').find('img').attr('alt')
+			$('.product-gallery [data-fancybox="gallery"]').removeAttr("data-fancybox").removeAttr("href").attr('title',ttALt );
+		}
+		*/
+	});
+	$(document).on("click", ".product-sharing", function(){
+		$(this).toggleClass('sharing-active');
+	});	
+</script>
+<script>
+	var check_variant = true;
+	var fIndex = false;
+	var checkScroll = ''
+	var selectCallback = function(variant, selector) {
+		if (variant) {
+			if(variant.inventory_management == null){
+				jQuery('.product-available').find(".txt-inventory").html('');
+			}
+			else{
+				var inventoryQty = variant.inventory_quantity;
+				if(inventoryQty == 0){
+					jQuery('.product-available').find(".txt-inventory").html('Đã bán hết');
+				}else{
+					if (inventoryQty > 10){
+						jQuery('.product-available').find(".txt-inventory").html('');
+					}
+					else{
+						jQuery('.product-available').find(".txt-inventory").html('Đã bán gần hết');
+					}
+				}
+			}
+			if(variant.featured_image != null) {
+				if(template_style == 'style-01'){
+					checkScroll = Haravan.resizeImage(variant.featured_image.src,'master').replace('https:','');
+					if($(window).width() < 992){
+						var indeximg_mb = $(".sliderOwl-product div.product-gallery[data-image='"+Haravan.resizeImage(variant.featured_image.src,'master').replace('https:','')+"']").parent().index();
+						$('.sliderOwl-product').trigger('to.owl.carousel', [indeximg_mb, 500]);
+					}
+				}
+				if(template_style == 'style-02'){
+					if($(window).width() < 992){
+						var indeximg_mb = $(".sliderOwl-product div.product-gallery[data-image='"+Haravan.resizeImage(variant.featured_image.src,'master').replace('https:','')+"']").parent().index();
+						$('.sliderOwl-product').trigger('to.owl.carousel', [indeximg_mb, 500]);
+					}
+					else{
+						var temp = $(".sliderOwl-product a.product-gallery-item:eq(0) img").attr("src");
+						var tempHref = $(".sliderOwl-product a.product-gallery-item:eq(0)").attr("href");
+						var imgVariant = Haravan.resizeImage(variant.featured_image.src,'grande').replace('https:','');
+						var indexVariant = $(".product-gallery-item img[src='"+Haravan.resizeImage(variant.featured_image.src,'grande').replace('https:','')+"']").parents('.product-gallery').index();
+						$("a.product-gallery-item:eq(0) img").attr("src",imgVariant);//Thế vị trí hình đầu tiên sau khi change
+						$("a.product-gallery-item:eq("+indexVariant+") img").attr("src",temp);
+						$("a.product-gallery-item:eq(0)").attr("href",imgVariant);
+						$("a.product-gallery-item:eq("+indexVariant+")").attr("href",tempHref);
+					}
+				}
+				if(template_style == 'style-03'){
+					setTimeout(function(){//debugger;
+						var indeximg = $("div.product-gallery[data-image='"+ Haravan.resizeImage(variant.featured_image.src,'master').replace('https:','')+"']").index();
+						$("#productSlick-slider").slick('slickGoTo',indeximg);
+						$('#slidePrductThumb').find('.slick-slide').removeClass('slick-current');
+						$('#slidePrductThumb').find('.slick-slide:nth-child('+ (indeximg + 1) +')').addClass('slick-current');
+					},100);
+				}
+			}
+			if (variant.sku != null ){
+				jQuery('#pro_sku').html('<strong>Mã SP: </strong>' +variant.sku);
+			}
+			if(variant.price < variant.compare_at_price){
+				var pro_sold = variant.price ;
+				var pro_comp = variant.compare_at_price / 100;
+				var sale = 100 - (pro_sold / pro_comp) ;
+				var kq_sale = Math.round(sale);
+				var html = '<span class="pro-sale">-' + kq_sale + '%</span>';									
+				html += '<span class="pro-price">' + Haravan.formatMoney(pro_sold, "{{ shop.money_format }}") + '</span>';
+				html += '<del>' + Haravan.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + '</del>';
+				jQuery('#detail-product #price-preview').html(html);
+			} 
+			else {
+				jQuery('#detail-product #price-preview').html("<span class='pro-price'>" + Haravan.formatMoney(variant.price, "{{ shop.money_format }}" + "</span>"));
+			}
+			if(variant.available){
+				if(variant.price == 0){
+					jQuery('#detail-product .add-to-cartProduct').removeAttr('disabled').removeClass('disabled');
+					jQuery('#detail-product .add-to-cartProduct').removeAttr('id').addClass('add-to-contactProduct').html("Liên hệ");
+				}
+				else{
+					jQuery('#detail-product .add-to-cartProduct').attr("id","add-to-cart").removeClass('add-to-contactProduct');
+					jQuery('#detail-product .add-to-cartProduct').removeAttr('disabled').removeClass('disabled').html("Thêm vào giỏ");
+				}
+				jQuery('#detail-product .pro-soldold').addClass('d-none');
+				check_variant = true;
+			}
+			else{
+				jQuery('#detail-product .add-to-cartProduct').removeAttr('id').addClass('add-to-contactProduct').html("Liên hệ");
+				var message = variant ? "Hết hàng" : "Không có hàng";
+				jQuery('#detail-product .pro-soldold').removeClass('d-none');
+				jQuery('#detail-product .pro-soldold').text(message);
+				check_variant = false;
+			}
+		}
+		else {
+			jQuery('#detail-product .add-to-cartProduct').removeAttr('id').addClass('add-to-contactProduct').html("Liên hệ");
+			var message = variant ? "Hết hàng" : "Không có hàng";
+			jQuery('#detail-product .pro-soldold').removeClass('d-none');
+			jQuery('#detail-product .pro-soldold').text(message);
+			check_variant = false;
+		}
+		return check_variant;
+	};
+	jQuery(document).ready(function($){
+		{%if product.variants.size == 1 and product.variants.first.title contains 'Default'%}
+		{%else%}
+		new Haravan.OptionSelectors("product-select", { product: {{ product | json }}, onVariantSelected: selectCallback });
+		 // Add label if only one product option and it isn't 'Title'.
+		 {% if product.options.size == 1 and product.options.first != 'Tiêu đề' %}
+		 $('#detail-product .selector-wrapper:eq(0)').prepend('<label>{{ product.options.first }}</label>');
+			{% endif %} 
+			// Auto-select first available variant on page load.
+			{% assign found_one_in_stock = false %}
+			{% for variant in product.variants %}
+			{% if variant.available and found_one_in_stock == false %}
+			{% assign found_one_in_stock = true %}
+			{% for option in product.options %}
+			$('#detail-product .single-option-selector:eq({{ forloop.index0 }})').val({{ variant.options[forloop.index0] | json }}).trigger('change');
+			 {% endfor %}
+			 {% endif %}
+			 {% endfor %}
+			 $('#detail-product .selector-wrapper select').each(function(){
+				 $(this).wrap( '<span class="custom-dropdown custom-dropdown--white"></span>');
+				 $(this).addClass("custom-dropdown__select custom-dropdown__select--white");
+			 });
+				{%endif%}
+				});
+</script>
+<script>
+	var swatch_size = parseInt($('#add-item-form .select-swatch').children().size());
+	jQuery(document).on('click','#add-item-form .swatch input', function(e) {  
+		e.preventDefault();
+		var $this = $(this);
+		var _available = '';
+		$this.parent().siblings().find('label').removeClass('sd');
+		$this.next().addClass('sd');
+		var name = $this.attr('name');
+		var value = $this.val();
+		$('#add-item-form select[data-option='+name+']').val(value).trigger('change');
+		if(swatch_size == 2){
+			if(name.indexOf('1') != -1){
+				$('#add-item-form #variant-swatch-1 .swatch-element').find('input').prop('disabled', false);
+				$('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+				$('#add-item-form #variant-swatch-1 .swatch-element label').removeClass('sd');
+				$('#add-item-form #variant-swatch-1 .swatch-element').removeClass('soldout');
+				$('#add-item-form .selector-wrapper .single-option-selector').eq(1).find('option').each(function(){
+					var _tam = $(this).val();
+					$(this).parent().val(_tam).trigger('change');
+					if(check_variant){
+						if(_available == '' ){
+							_available = _tam;
+						}
+					}
+					else{
+						$('#add-item-form #variant-swatch-1 .swatch-element[data-value="'+_tam+'"]').addClass('soldout');
+						$('#add-item-form #variant-swatch-1 .swatch-element[data-value="'+_tam+'"]').find('input').prop('disabled', true);
+					}
+				})
+				$('#add-item-form .selector-wrapper .single-option-selector').eq(1).val(_available).trigger('change');
+				$('#add-item-form #variant-swatch-1 .swatch-element[data-value="'+_available+'"] label').addClass('sd');
+			}
+		}
+		else if (swatch_size == 3){
+			var _count_op2 = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+			var _count_op3 = $('#add-item-form #variant-swatch-2 .swatch-element').size();
+			if(name.indexOf('1') != -1){
+				$('#add-item-form #variant-swatch-1 .swatch-element').find('input').prop('disabled', false);
+				$('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+				$('#add-item-form #variant-swatch-1 .swatch-element label').removeClass('sd');
+				$('#add-item-form #variant-swatch-1 .swatch-element').removeClass('soldout');
+				$('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+				$('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+				var _avi_op1 = '';
+				var _avi_op2 = '';
+				$('#add-item-form #variant-swatch-1 .swatch-element').each(function(ind,value){
+					var _key = $(this).data('value');
+					var _unavi = 0;
+					$('#add-item-form .single-option-selector').eq(1).val(_key).change();
+					$('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+					$('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+					$('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+					$('#add-item-form #variant-swatch-2 .swatch-element').each(function(i,v){
+						var _val = $(this).data('value');
+						$('#add-item-form .single-option-selector').eq(2).val(_val).change();
+						if(check_variant == true){
+							if(_avi_op1 == ''){
+								_avi_op1 = _key;
+							}
+							if(_avi_op2 == ''){
+								_avi_op2 = _val;
+							}
+							//console.log(_avi_op1 + ' -- ' + _avi_op2)
+						}else{
+							_unavi += 1;
+						}
+					})
+					if(_unavi == _count_op3){
+						$('#add-item-form #variant-swatch-1 .swatch-element[data-value = "'+_key+'"]').addClass('soldout');
+						setTimeout(function(){
+							$('#add-item-form #variant-swatch-1 .swatch-element[data-value = "'+_key+'"] input').attr('disabled','disabled');
+						})
+					}
+				})
+				$('#add-item-form #variant-swatch-1 .swatch-element[data-value="'+_avi_op1+'"] input').click();
+			}
+			else if(name.indexOf('2') != -1){
+				$('#add-item-form #variant-swatch-2 .swatch-element label').removeClass('sd');
+				$('#add-item-form #variant-swatch-2 .swatch-element').removeClass('soldout');
+				$('#add-item-form #variant-swatch-2 .swatch-element').find('input').prop('disabled', false);
+				$('#add-item-form .selector-wrapper .single-option-selector').eq(2).find('option').each(function(){
+					var _tam = $(this).val();
+					$(this).parent().val(_tam).trigger('change');
+					if(check_variant){
+						if(_available == '' ){
+							_available = _tam;
+						}
+					}else{
+						$('#add-item-form #variant-swatch-2 .swatch-element[data-value="'+_tam+'"]').addClass('soldout');
+						$('#add-item-form #variant-swatch-2 .swatch-element[data-value="'+_tam+'"]').find('input').prop('disabled', true);
+					}
+				})
+				$('#add-item-form .selector-wrapper .single-option-selector').eq(2).val(_available).trigger('change');
+				$('#add-item-form #variant-swatch-2 .swatch-element[data-value="'+_available+'"] label').addClass('sd');
+			}
+		}
+
+		if(template_style == 'style-01'){
+			if(checkScroll != '' && $(window).width() > 991 && fIndex == true){
+				var indeximg1 = $(".sliderOwl-product div.product-gallery[data-image='"+checkScroll+"']").index();
+				$('html, body').animate({
+					scrollTop: $('.sliderOwl-product div.product-gallery:eq('+indeximg1+')').offset().top - 15
+				}, 800);	
+			}
+		}
+	})
+	$(document).ready(function(){
+		var vl = $('#add-item-form .swatch .color input').val();
+		var _chage = '';
+		$('#add-item-form .swatch-element[data-value="'+$('#add-item-form .selector-wrapper .single-option-selector').eq(0).val()+'"]').find('input').click();
+		$('#add-item-form .swatch-element[data-value="'+$('#add-item-form .selector-wrapper .single-option-selector').eq(1).val()+'"]').find('input').click();
+		if(swatch_size == 2){
+			var _avi_op1 = '';
+			var _avi_op2 = '';
+			var _count = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+			$('#add-item-form #variant-swatch-0 .swatch-element').each(function(ind,value){
+				var _key = $(this).data('value');
+				var _unavi = 0;
+				$('#add-item-form .single-option-selector').eq(0).val(_key).change();
+				$('#add-item-form #variant-swatch-1 .swatch-element').each(function(i,v){
+					var _val = $(this).data('value');
+					$('#add-item-form .single-option-selector').eq(1).val(_val).change();
+					if(check_variant == true){
+						if(_avi_op1 == ''){
+							_avi_op1 = _key;
+						}
+						if(_avi_op2 == ''){
+							_avi_op2 = _val;
+						}
+					}else{
+						_unavi += 1;
+					}
+				})
+				if(_unavi == _count){
+					$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_key+'"]').addClass('soldout');
+					//$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_key+'"]').find('input').attr('disabled','disabled');
+				}
+			})
+			$('#add-item-form #variant-swatch-1 .swatch-element[data-value = "'+_avi_op2+'"] input').click();
+			$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_avi_op1+'"] input').click();
+		}
+		else if(swatch_size == 3){
+			var _avi_op1 = '';
+			var _avi_op2 = '';
+			var _avi_op3 = '';
+			var _size_op2 = $('#add-item-form #variant-swatch-1 .swatch-element').size();
+			var _size_op3 = $('#add-item-form #variant-swatch-2 .swatch-element').size();
+
+			$('#add-item-form #variant-swatch-0 .swatch-element').each(function(ind,value){
+				var _key_va1 = $(this).data('value');
+				var _count_unavi = 0;
+				$('#add-item-form .single-option-selector').eq(0).val(_key_va1).change();
+				$('#add-item-form #variant-swatch-1 .swatch-element').each(function(i,v){
+					var _key_va2 = $(this).data('value');
+					var _unavi_2 = 0;
+					$('#add-item-form .single-option-selector').eq(1).val(_key_va2).change();
+					$('#add-item-form #variant-swatch-2 .swatch-element').each(function(j,z){
+						var _key_va3 = $(this).data('value');
+						$('#add-item-form .single-option-selector').eq(2).val(_key_va3).change();
+						if(check_variant == true){
+							if(_avi_op1 == ''){
+								_avi_op1 = _key_va1;
+							}
+							if(_avi_op2 == ''){
+								_avi_op2 = _key_va2;
+							}
+							if(_avi_op3 == ''){
+								_avi_op3 = _key_va3;
+							}
+						}else{
+							_unavi_2 += 1;
+						}
+					})
+					if(_unavi_2 == _size_op3){
+						_count_unavi += 1;
+					}
+				})
+				if(_size_op2 == _count_unavi){
+					$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_key_va1+'"]').addClass('soldout');
+					//	$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_key_va1+'"]').find('input').attr('disabled','disabled');
+				}
+			})
+			$('#add-item-form #variant-swatch-0 .swatch-element[data-value = "'+_avi_op1+'"] input').click();
+		}
+		else{}
+		if(template_style == 'style-01'){
+			fIndex = true;
+			if(checkScroll != ''){
+				if($(window).width() > 991){
+					var indeximg1 = $(".sliderOwl-product div.product-gallery[data-image='"+checkScroll+"']").index();
+					if($(window).scrollTop() > $('.productDetail-information').offset().top){
+						$('html, body').animate({
+							scrollTop: $('.sliderOwl-product div.product-gallery:eq('+indeximg1+')').offset().top - 15
+						}, 800);	
+					}
+				}
+			}	
+		}
+
+		$('#add-item-form .swatch .color input').parents(".swatch").find(".header-swatch span").html(vl);
+		$("#add-item-form .select-swap .color" ).hover(function() { 
+			var value = $( this ).data("value");
+			$(this).parents(".swatch").find(".header-swatch span").html( value );
+		},function(){
+			var value = $("#add-item-form .select-swap .color label.sd span").html();
+			$(this).parents(".swatch").find(".header-swatch span").html( value );
+		});
+	});
+</script>

@@ -1,0 +1,207 @@
+<div class="wrapper-layered-filter mobile-filter">
+	<div class="layered-filter-container">
+		<div class="layered-filter-group">
+			<!-- ./filter brand -->
+			{%- if settings.use_vendor_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.vendor_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-brand" class="filter-group-content filter-brand">
+						<ul class="checkbox-list">
+							{%- assign vendors = collection.all_vendors | sort -%}
+							{%- for vendor in vendors -%}	
+							<li>
+								<input type="checkbox" id="data-brand-p{{forloop.index}}" value="{{vendor}}" name="brand-filter" data-vendor="(vendor:product={{vendor}})"/>
+								<label for="data-brand-p{{forloop.index}}">{{vendor}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+			<!-- ./filter type -->
+			{%- if settings.use_type_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.type_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-type" class="filter-group-content filter-type">
+						<ul class="checkbox-list">
+							{%- assign types = collection.all_types | sort -%}
+							{%- for type in types limit: settings.type_limit -%}	
+							<li>
+								<input type="checkbox" id="data-type-p{{forloop.index}}" value="{{type}}" name="type-filter" data-type="(product_type:product={{type}})"/>
+								<label for="data-type-p{{forloop.index}}">{{type}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+			<!-- ./filter price -->
+			{%- if settings.use_price_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.price_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-price" class="filter-group-content filter-price">
+						<ul class="checkbox-list">
+							<li>
+								<input type="checkbox" id="p1" name="cc" data-price="(price:product<={{ settings.1_price_to }})" />
+								<label for="p1">
+									<span>Dưới</span> {{ settings.1_price_to | money | replace: ',','.' }}
+								</label>   
+							</li>
+							<li>
+								<input type="checkbox" id="p2" name="cc" data-price="((price:product>{{ settings.2_price_from }})&amp;&amp;(price:product<={{ settings.2_price_to }}))"/>
+								<label for="p2">
+									{{ settings.2_price_from | money | replace: ',','.' }} - {{ settings.2_price_to | money | replace: ',','.' }}
+								</label>   
+							</li>
+							<li>
+								<input type="checkbox" id="p3" name="cc" data-price="((price:product>{{ settings.3_price_from }})&amp;&amp;(price:product<={{ settings.3_price_to }}))"/>
+								<label for="p3">
+									{{ settings.3_price_from | money | replace: ',','.' }} - {{ settings.3_price_to | money | replace: ',','.' }}
+								</label>   
+							</li>
+							<li>
+								<input type="checkbox" id="p4" name="cc" data-price="((price:product>{{ settings.4_price_from }})&amp;&amp;(price:product<={{ settings.4_price_to }}))"/>
+								<label for="p4">
+									{{ settings.4_price_from | money | replace: ',','.' }} - {{ settings.4_price_to | money | replace: ',','.' }}
+								</label>   
+							</li>
+							<li>
+								<input type="checkbox" id="p5" name="cc" data-price="(price:product>={{ settings.5_price_from }})"/>
+								<label for="p5">
+									<span>Trên</span> {{ settings.5_price_from | money | replace: ',','.' }}
+								</label>   
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+			<!-- ./filter color -->
+			{%- if settings.use_color_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.color_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-color" class="filter-group-content filter-color">
+						<ul class="checkbox-list clearfix">
+							{%- for i in (1..20) %}
+							{%- capture use_color %}use_color_filter_{{i}}{%- endcapture -%}
+							{%- capture color_name %}color_name_new_{{i}}{%- endcapture -%}
+							{%- capture color_code %}color_code_new_{{i}}{%- endcapture -%}
+							{%- capture value %}{{settings[color_name]}}{%- endcapture -%}
+							{%- if settings[use_color] -%}
+							<li>
+								<input type="checkbox" id="data-color-p{{forloop.index}}" value="{{value}}" name="color-filter" data-color="(tag:product contains {{value}})"/>
+								<label for="data-color-p{{forloop.index}}" style="background-color: {{settings.[color_code]}}">{{settings[color_name]}}</label>  
+							</li>
+							{%- endif -%}
+							{%- endfor -%}	
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+			<!-- ./filter chất liệu -->
+			{%- if settings.use_tag_custom_2 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_2}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size" class="filter-group-content filter-size">
+						{%- assign tags = settings.enter_tag_2 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size-p{{forloop.index}}" value="{{tag}}" name="size-filter" data-size="(tag:product={{tag}})"/>
+								<label for="data-size-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_0 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_0}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size0" class="filter-group-content filter-size0">
+						{%- assign tags = settings.enter_tag_0 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size0-p{{forloop.index}}" value="{{tag}}" name="size0-filter" data-size0="(tag:product contains {{tag}})"/>
+								<label for="data-size0-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_3 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_3}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size3" class="filter-group-content filter-size3">
+						{%- assign tags = settings.enter_tag_3 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size3-p{{forloop.index}}" value="{{tag}}" name="size3-filter" data-size3="(tag:product={{tag}})"/>
+								<label for="data-size3-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_4 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_4}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size4" class="filter-group-content filter-size4">
+						{%- assign tags = settings.enter_tag_4 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size4-p{{forloop.index}}" value="{{tag}}" name="size4-filter" data-size4="(tag:product={{tag}})"/>
+								<label for="data-size4-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+		</div>
+	</div>
+</div>

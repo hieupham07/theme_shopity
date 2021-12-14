@@ -1,0 +1,95 @@
+<footer>
+	<div class="footer-top">
+		<div class="menuColumn clearfix">
+			<div class="colCustom col-one">
+				<h3>{{settings.footer1_title}}</h3>
+				<div class="footer-content">
+					<p>{{settings.footer1_information}}</p>
+					{% if settings.show_logo_bct %}
+					<div class="logo-footer">
+						<a class="iconBCT" href="{{ settings.link_logo_bct }}" target="_blank" rel="noreferrer">
+							<amp-img width="150" height="56" layout="fixed" src="{{ 'logo_bct.jpg'| asset_url }}" alt="Logo Bộ Công Thương"></amp-img>
+						</a>
+					</div>
+					{% endif %}
+					{% if settings.show_social_icon_footer %}
+					<div class="footer-item_social">
+						<ul class="social-media list-unstyled">
+							{%- if settings.link_social_facebook != ''-%}
+							<li class="social-media_item social-media_item--facebook">
+								<a href="{{settings.link_social_facebook}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Facebook"><i class="fa fa-facebook"></i></a>
+								<div class="tooltip">Facebook</div>
+							</li>
+							{%- endif-%}
+							{%- if settings.link_social_youtube != ''-%}
+							<li class="social-media_item social-media_item--youtube">
+								<a href="{{settings.link_social_youtube}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Youtube"><i class="fa fa-youtube"></i></a>
+								<div class="tooltip">Youtube</div>
+							</li>
+							{%- endif-%}
+							{%- if settings.link_social_pinterest != ''-%}
+							<li class="social-media_item social-media_item--pinterest">
+								<a href="{{settings.link_social_pinterest}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Pinterest"><i class="fa fa-pinterest"></i></a>
+								<div class="tooltip">Pinterest</div>
+							</li>
+							{%- endif-%}
+							{%- if settings.link_social_twitter != ''-%}
+							<li class="social-media_item social-media_item--twitter">
+								<a href="{{settings.link_social_twitter}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Twitter"><i class="fa fa-twitter"></i></a>
+								<div class="tooltip">Twitter</div>
+							</li>
+							{%- endif-%}
+							{%- if settings.link_social_instagram != ''-%}
+							<li class="social-media_item social-media_item--instagram">
+								<a href="{{settings.link_social_instagram}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Instagram"><i class="fa fa-instagram"></i></a>
+								<div class="tooltip">Instagram</div>
+							</li>
+							{%- endif-%}
+						</ul>
+					</div>
+					{%- endif -%}
+				</div>
+			</div>
+			<div class="colCustom col-one footer-link-list">
+				<h3>{{settings.footer2_title}}</h3>
+				<ul>
+					{% for link in linklists[settings.footer_link1_menu].links %}
+					<li><a href="{{ link.url }}?view=amp">{{ link.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="colCustom col-one footer-link-list">
+				<h3>{{settings.footer3_title}}</h3>
+				<ul>
+					{% for link in linklists[settings.footer_link2_menu].links %}
+					<li><a href="{{ link.url }}?view=amp">{{ link.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="colCustom col-one ">
+				<h3>{{settings.footer4_title}}</h3>
+				<div class="footer-content">					
+					<amp-facebook-page width="345"
+														 height="235"
+														 layout="responsive"
+														 data-show-facepile="true"
+														 data-href="https://www.facebook.com/NoritakeVietnam">
+					</amp-facebook-page>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerBottom clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-one text-center">
+					<p>Copyright © {{ "now" | date: "%Y" }} <a href="{{ shop.url }}?view=amp"> {{ shop.name }}</a>.<a target="_blank" href="https://www.haravan.com" rel="noreferrer noopener">Powered by Haravan</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+

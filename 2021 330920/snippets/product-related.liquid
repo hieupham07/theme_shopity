@@ -1,0 +1,107 @@
+{% assign flag = false %}
+{% assign flagHandle = '' %}
+{% for tag in product.tags %}
+{% if tag contains 'collections_' %}
+{% assign flag = true %}
+{% assign flagHandle = tag | split:'_' | last %}
+{% endif %}
+{% endfor %}
+<div class="productDetail-related clearfix border-top pt-4">
+	<div class="container-fluid">
+		<div class="productRelated-title text-center">
+				{% if flag %}
+			<a href="{{ collections[flagHandle].url }}">
+				<h3>{{settings.productspg_related_title}}</h3>
+			</a>
+			{% else %}
+			<h3>{{settings.productspg_related_title}}</h3>
+			{% endif %}
+		</div>
+		{% if flag %}
+		<div class="productRelated-content">
+			<div class="content-product-list owl-carousel productDetail-owl" id="owlProductRelated">
+				{%- for product in collections[flagHandle].products -%}
+				<div class="product-loop">
+					{%- include 'product-loop' -%}
+				</div>
+				{%- endfor -%}
+			</div>
+		</div>
+		{% else %}
+		<div class="productRelated-content">
+			{%- assign cp = product -%}
+			{%- assign number_of_related_products_to_show = settings.productspg_featured_quantity -%}
+			{%- assign number_of_related_products_to_fetch = number_of_related_products_to_show -%}
+			{%- if collection == null or collection.handle == 'frontpage' or collection.handle == 'all' -%}
+			{%- assign found_a_collection = false -%}
+			{%- for c in product.collections -%}
+			{%- if found_a_collection == false and c.handle != 'frontpage' and c.handle != 'all' and c.all_products_count > 1 -%}
+			{%- assign found_a_collection = true -%}
+			{%- assign collection = c -%}
+			{%- endif -%}
+			{%- endfor -%}
+			{%- endif -%}
+			{%- if collection and collection.products_count > 0 -%}
+			<div class="content-product-list owl-carousel productDetail-owl" id="owlProductRelated">
+				{%- assign current_product = product -%}
+				{%- assign current_product_found = false -%}
+				{%- assign counter_p = 0 -%}
+				{%- for product in collection.products -%}
+				{%- if counter_p >= number_of_related_products_to_show -%}
+				{%- break -%}
+				{%- endif -%}
+				{%- if cp.handle != product.handle -%}
+				<div class="product-loop">
+					{%- include 'product-loop' -%}
+				</div>
+				{%- assign counter_p =counter_p | plus : 1 -%}
+				{%- endif -%}
+				{%- endfor -%}
+			</div>
+			{%- else -%}
+			{%- if collections.all.products.size > 0 -%}
+			<div class="content-product-list owl-carousel productDetail-owl" id="owlProductRelated">
+				{%- for product in collections.all.products limit: number_of_related_products_to_fetch -%}
+				{%- if cp.handle != product.handle -%}
+				<div class="product-loop">
+					{%- include 'product-loop' -%}
+				</div>
+				{%- endif -%}
+				{%- endfor -%}
+			</div>
+			{%- else -%}
+			<p>Không tìm thấy sản phẩm nào</p>
+			{%- endif -%}
+			{%- endif -%}	
+		</div>
+		{% endif %}
+	</div>
+</div>
+
+<script>
+	(function($){
+		$.fn.shuffle = function() {
+			var allElems = this.get(),
+					getRandom = function(max) {
+						return Math.floor(Math.random() * max);
+					},
+					shuffled = $.map(allElems, function(){
+						var random = getRandom(allElems.length),
+								randEl = $(allElems[random]).clone(true)[0];
+						allElems.splice(random, 1);
+						return randEl;
+					});
+			this.each(function(i){
+				$(this).replaceWith($(shuffled[i]));
+			});
+			return $(shuffled);
+		};
+	})(jQuery);
+
+
+	$('#owlProductRelated .product-loop').shuffle();
+
+</script>
+
+
+

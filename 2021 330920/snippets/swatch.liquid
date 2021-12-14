@@ -1,0 +1,54 @@
+{%- assign found_option = true -%}
+{%- assign is_color = false -%}
+{%- assign downcased_option = swatch | downcase -%}
+{%- if downcased_option contains 'màu sắc' or downcased_option contains 'màu' or downcased_option contains 'color' -%}
+	{%- assign is_color = true -%}
+{%- endif -%}
+<div id="variant-swatch-{{option_index}}" class="swatch clearfix" data-option="option{{option_index | plus: 1 }}" data-option-index="{{ option_index }}">
+	<div class="header-swatch">
+		{{ swatch }}: {%- if is_color == true -%}<span class=""></span>{%- endif -%}
+	</div>
+	<div class="select-swap clearfix">
+		{%- assign values = '' -%}
+		{%- for variant in product.variants -%}
+		{%- assign value = variant.options[option_index] -%}
+		{%- unless values contains value -%}
+		{%- assign values = values | join: ',' -%}
+		{%- assign values = values | append: ',' | append: value -%} 
+		{%- assign values = values | split: ',' -%} 
+
+		{%- assign imgBG = '' -%}
+		{%- assign valHanlde = value | handleize -%}
+		{%- for img in product.images -%}
+		{%- assign srcImg = img.alt | downcase | handleize -%}
+		{%- if srcImg == valHanlde -%}
+		{%- assign imgBG = img.src | img_url: 'icon' -%}
+		{%- break -%}
+		{%- endif -%}
+		{%- endfor -%}
+
+		{%- assign soldout = '' -%}
+		{%- if product.options.size == 1 -%}
+		{%- unless variant.available -%}
+		{%- assign soldout = 'soldout' -%}
+		{%- endunless -%}
+		{%- endif -%}
+		
+		<div data-value="{{ value | escape }}" class="n-sd swatch-element {% if is_color %}color{% endif %} {{ value | handle }} {% if option_index == 2 %}variant-3{%endif%} {{soldout}}">
+			{%- if is_color -%}<div class="tooltip">{{ value }}</div>	{%- endif -%}
+			<input class="variant-{{option_index}}" id="swatch-{{ option_index }}-{{ value | handle }}" type="radio" name="option{{ option_index | plus: 1 }}" value="{{ value | escape }}" data-vhandle="{{ value | handle }}" {% if forloop.first %}checked{% endif %} {{disabled}}/>
+			{%- if is_color -%}
+			{%- assign img_url = variant.image.src | img_url: 'small' -%}
+			<label class="{{ value | handle }}" for="swatch-{{ option_index }}-{{ value | handle }}" >
+				<span {% if imgBG != '' %}style="background: url({{ imgBG }});background-repeat:no-repeat;background-size:20px;background-position:center;"{% endif %}>{{value}}</span>
+			</label>
+			{%- else -%}
+			<label for="swatch-{{ option_index }}-{{ value | handle }}">
+				<span>{{ value }}</span>
+			</label>
+			{%- endif -%}
+		</div>
+		{%- endunless -%}
+		{%- endfor -%}
+	</div>
+</div>

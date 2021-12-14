@@ -1,0 +1,595 @@
+<script>
+	$(document).ready(function(){
+		if($(window).width() < 991){
+			$('.desktop-filter').remove();
+		}else{
+			$('.mobile-filter').remove();
+			$('.desktop-filter').show();
+		}
+		var flag = false;
+		const cloneFilter = $('.fixed_filter').clone();
+		$(window).scroll(function(){
+			if($(window).width() > 991){
+				if($(this).scrollTop() > ($('.collection-heading-page').position().top + 80)){
+					if(!flag){
+						flag = true;
+						$('.navigation-header').append(cloneFilter);
+						$('.wrapper-mainCollection .fixed_filter').remove();
+					}
+				}
+				if($(this).scrollTop() < $('.collection-heading-page').position().top){
+					if(flag){
+						$('.navigation-header .fixed_filter').fadeOut('fast', function() {
+							$('.navigation-header .fixed_filter').remove();
+							$('.wrapper-mainCollection .collection-heading-page .row').append(cloneFilter);
+							$('.wrapper-mainCollection .collection-heading-page .row .fixed_filter').show();
+						});
+						flag = false;
+					}
+				}
+			}
+		})
+	})
+</script>
+<div id="collection" class="layout-collectionPage mb-5 collection-temp2">
+	{%- paginate collection.products by settings.pagination_limit -%}
+	{%- if settings.show_collection_image -%}	
+	<div class="banner-collection-header text-center">
+		{% if collection.image != blank %}
+		<img src="{{ collection.image.src }}" alt="{{collection.title}}"/>
+		{% else %}
+		<img src="{{ 'collection_banner.jpg' | asset_url }}" alt="{{collection.title}}"/>
+		{% endif %}
+	</div>	
+	{%- endif -%}
+	{%- include 'breadcrumb' -%}
+	<div class="wrapper-mainCollection mt-4 mt-lg-5">
+		{%- assign check_filter = false -%}
+		{%- if settings.collection_filter_show -%}
+		{%- assign check_filter = true -%}
+		{%- endif -%}
+		<div class="container-fluid">
+			<div class="collection-heading-page">
+				<div class="row align-items-center">
+					<div class="col-12 collection-heading_title">
+						<h1 class="title text-center mb-3 mb-lg-0" style="color:#d29f13">
+							{%- if collection.handle == 'all' -%}Tất cả sản phẩm{%- else -%}{{collection.title}}{%- endif -%}
+						</h1>
+					</div>
+					<div class="d-lg-none col-12 col-lg-4 col-xl-3 collection-heading_options">
+						<div class="collection-options-desktop d-flex justify-content-lg-end align-items-center {% if check_filter %}collection-options-desktop_filter{%endif%}">
+							{%- if check_filter -%}
+							<div class="collection-options-filter mr-lg-4">
+								<a href="javascript:;" class="js-collection-options-filter d-flex align-items-center">
+									<span class="options-filter-title">{{settings.collection_filter_title}}</span>
+									<span class="options-filter-box-icon">
+										<svg class="icon-filter-collections" aria-labelledby="icon-filters">
+											<path d="M13.0071429,11.6454121 C13.9865414,11.6454121 14.8197845,12.2509576 15.1288623,13.0962538 L17.475,13.0969414 C17.7649495,13.0969414 18,13.3319919 18,13.6219414 L18,13.9118146 C18,14.2017641 17.7649495,14.4368146 17.475,14.4368146 L15.1664412,14.4366893 C14.8925267,15.3402237 14.0294572,16 13.0071429,16 C11.9848285,16 11.121759,15.3402237 10.8478446,14.4366893 L0.524999991,14.4368146 C0.235050502,14.4368146 -3.51720511e-15,14.2017641 -3.55271368e-15,13.9118146 L-3.55271368e-15,13.6219414 C-3.58822225e-15,13.3319919 0.235050502,13.0969414 0.524999991,13.0969414 L10.8854234,13.0962538 C11.1945013,12.2509576 12.0277443,11.6454121 13.0071429,11.6454121 Z M3.56868134,6.38034864 C4.47896885,6.38034864 5.26299991,6.90344895 5.61727348,7.65595581 L17.475,7.65641836 C17.7649495,7.65641836 18,7.89146886 18,8.18141835 L18,8.47129156 C18,8.76124105 17.7649495,8.99629155 17.475,8.99629155 L5.77283806,8.99706359 C5.56278707,9.98891044 4.65576532,10.7349365 3.56868134,10.7349365 C2.48159737,10.7349365 1.57457561,9.98891044 1.36452462,8.99706359 L0.524999991,8.99629155 C0.235050502,8.99629155 -3.51720511e-15,8.76124105 -3.55271368e-15,8.47129156 L-3.55271368e-15,8.18141835 C-3.58822225e-15,7.89146886 0.235050502,7.65641836 0.524999991,7.65641836 L1.5200892,7.65595581 C1.87436277,6.90344895 2.65839383,6.38034864 3.56868134,6.38034864 Z M12.7994507,4.4408921e-16 C13.7788493,4.4408921e-16 14.6120923,0.60554546 14.9211702,1.45084169 L17.475,1.45152929 C17.7649495,1.45152929 18,1.68657979 18,1.97652928 L18,2.26640249 C18,2.55635198 17.7649495,2.79140248 17.475,2.79140248 L14.958749,2.79127719 C14.6848346,3.69481158 13.8217651,4.35458787 12.7994507,4.35458787 C11.7771364,4.35458787 10.9140669,3.69481158 10.6401524,2.79127719 L0.524999991,2.79140248 C0.235050502,2.79140248 -3.38844167e-15,2.55635198 -3.55271368e-15,2.26640249 L-3.55271368e-15,1.97652928 C-3.58822225e-15,1.68657979 0.235050502,1.45152929 0.524999991,1.45152929 L10.6777313,1.45084169 C10.9868091,0.60554546 11.8200521,4.4408921e-16 12.7994507,4.4408921e-16 Z" transform="translate(6.000000, 7.000000)"></path>
+										</svg>
+										<svg class="icon-filter-close" aria-labelledby="icon-filters-close">
+											<path d="M21.651829,9.348171 C21.925196,9.62153801 21.925196,10.0647535 21.651829,10.3381205 L16.4899495,15.5 L21.651829,20.6618795 C21.925196,20.9352465 21.925196,21.378462 21.651829,21.651829 C21.378462,21.925196 20.9352465,21.925196 20.6618795,21.651829 L15.5,16.4899495 L10.3381205,21.651829 C10.0647535,21.925196 9.62153801,21.925196 9.348171,21.651829 C9.074804,21.378462 9.074804,20.9352465 9.348171,20.6618795 L14.5100505,15.5 L9.348171,10.3381205 C9.074804,10.0647535 9.074804,9.62153801 9.348171,9.348171 C9.62153801,9.074804 10.0647535,9.074804 10.3381205,9.348171 L15.5,14.5100505 L20.6618795,9.348171 C20.9352465,9.074804 21.378462,9.074804 21.651829,9.348171 Z"></path>
+										</svg>
+									</span>
+								</a>
+							</div>
+							{%- endif-%}
+							{%- if collection.products_count > 0 -%}
+							<div class="collection-options-sortby collection-sortby collection-sortby-option">
+								<div class="collection-sortby-title js-sortby-title d-flex align-items-center">
+									<span class="title-sort"></span>
+									<span class="sort-by-icon">
+										<svg class="icon-sort-by" aria-labelledby="sort-by-dropdown">
+											<path d="M22.4960571,11.5078274 C22.7675921,11.7793624 22.7675921,12.2196077 22.4960571,12.4911427 L15.4914,19.4961248 C15.219865,19.7676598 14.7796197,19.7676598 14.5080847,19.4961248 L7.50335959,12.4913996 C7.23182458,12.2198646 7.23182458,11.7796194 7.50335959,11.5080844 C7.77489459,11.2365494 8.21513981,11.2365494 8.48667481,11.5080844 L14.9995799,18.0209894 L21.5127419,11.5078274 C21.7842769,11.2362924 22.2245221,11.2362924 22.4960571,11.5078274 Z"></path>
+										</svg>
+									</span>
+								</div>
+								<div class="collection-sortby-custom collection-sortby-custom_option collection-siderbar-options_mb">
+									<div class="collection-options_fixed-mb">
+										<div class="collection-sortby-close_mb sidebar-options-close">
+											<span class="collection-sortby-title sidebar-options-title">Sắp xếp</span>
+											<div class="back-icon_sortby back-icon">
+												<svg class="icon-sortby-back" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+													<g>
+														<g>
+															<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+																			 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+																			 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+																			 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+																			 L284.286,256.002z" />
+														</g>
+													</g>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<ul class="custom-select-menu sort-by">
+										{%- unless collection.handle == 'all' -%}									
+										<li><span data-value="manual">Nổi bật</span></li>
+										{%- endunless -%}
+										<li><span data-value="price-ascending" data-filter="&amp;sortby=(price:product=asc)">Giá: Tăng dần</span></li>
+										<li><span data-value="price-descending" data-filter="&amp;sortby=(price:product=desc)">Giá: Giảm dần</span></li>
+										<li><span data-value="title-ascending" data-filter="&amp;sortby=(title:product=asc)">Tên: A-Z</span></li>
+										<li><span data-value="title-descending" data-filter="&amp;sortby=(price:product=desc)">Tên: Z-A</span></li>
+										<li><span data-value="created-ascending" data-filter="&amp;sortby=(updated_at:product=desc)">Cũ nhất</span></li>
+										<li><span data-value="created-descending" data-filter="&amp;sortby=(updated_at:product=asc)">Mới nhất</span></li>
+										<li><span data-value="best-selling" data-filter="&amp;sortby=(sold_quantity:product=desc)">Bán chạy nhất</span></li>
+										<li><span data-value="quantity-descending">Tồn kho: Giảm dần</span></li>
+									</ul>
+								</div>
+							</div>
+							{%- endif-%}
+						</div>
+					</div>
+					<div class="col-12 fixed_filter">
+						{% include 'desktop-filter' %}
+					</div>
+				</div>
+			</div>
+			<div class="row flex-lg-nowrap collection-content-page">
+				<div class="col-12 collection-content-list_product">
+					{%- if check_filter -%}
+					<div class="collection-filter-tags pb-3">
+						<div class="layered_filter_tags">
+							{%- if settings.use_vendor_filter -%}
+							<div class="filter_tags border">			
+								{{settings.vendor_title}}: <b></b>		
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}
+							{%- if settings.use_type_filter -%}
+							<div class="filter_tags border">			
+								{{settings.type_title}}: <b></b>		
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}
+							{%- if settings.use_price_filter -%}	
+							<div class="filter_tags border">{{settings.title_tag_3}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}	
+							{%- if settings.use_color_filter -%}
+							<div class="filter_tags border">{{settings.color_title}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}	
+							{%- if settings.use_tag_custom_2 -%}
+							<div class="filter_tags border">{{settings.tag_title_custom_2}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}	
+							{%- if settings.use_tag_custom_0 -%}
+							<div class="filter_tags border">{{settings.tag_title_custom_0}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}
+							{%- if settings.use_tag_custom_3 -%}
+							<div class="filter_tags border">{{settings.tag_title_custom_3}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}
+							{%- if settings.use_tag_custom_4 -%}
+							<div class="filter_tags border">{{settings.tag_title_custom_4}}: <b></b>
+								<span class="filter_tags_remove">
+									<svg class="icon icon--close" viewBox="0 0 19 19">
+										<path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="#fff" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</div>
+							{%- endif -%}
+							<div class="filter_tags filter_tags_remove_all border-0"><span>Xóa hết </span></div>
+						</div>
+					</div>
+					{%- endif -%}
+					<div class="collection-list-product">
+						<div id="loader"></div>
+						<div id="collection-body">
+							<div class="wrapper-list-collection">
+								<div class="row product-list-filter">
+									{%- if collection.products.size == 0 -%}
+									<div class="col-12 product-noloop"><div class="collection-alert-no"><p>Chưa có sản phẩm nào trong danh mục này</p></div></div>
+									{%- else -%}
+									{%- for product in collection.products -%}
+									<div class="col-6 col-md-4 col-lg-3 product-loop">
+										{%- include 'product-loop' with collection.handle  -%}
+									</div>
+									{%- endfor -%}	
+									{%- endif -%}
+								</div>
+								{%- if collection.products.size > 0 -%}
+								<div class="row collection-pagination pagination-filter justify-content-center">
+									<div class="col-12">
+										{%- include 'pagination-default' -%}
+									</div>
+								</div>
+								{%- endif -%}
+							</div>
+						</div>
+					</div>
+				</div>
+				{%- if check_filter -%}
+				<div class="col-3 collection-siderbar-filter collection-siderbar-options_mb">
+					<div class="collection-filter siderbar-filter-sticky">
+						<div class="collection-option-sticky">
+							<div class="collection-options-filter mr-lg-4 ">
+								<a href="javascript:;" class="js-collection-options-filter d-flex align-items-center">
+									<span class="options-filter-title">{{settings.collection_filter_title}}</span>
+									<span class="options-filter-box-icon">
+										<svg class="icon-filter-collections" aria-labelledby="icon-filters">
+											<path d="M13.0071429,11.6454121 C13.9865414,11.6454121 14.8197845,12.2509576 15.1288623,13.0962538 L17.475,13.0969414 C17.7649495,13.0969414 18,13.3319919 18,13.6219414 L18,13.9118146 C18,14.2017641 17.7649495,14.4368146 17.475,14.4368146 L15.1664412,14.4366893 C14.8925267,15.3402237 14.0294572,16 13.0071429,16 C11.9848285,16 11.121759,15.3402237 10.8478446,14.4366893 L0.524999991,14.4368146 C0.235050502,14.4368146 -3.51720511e-15,14.2017641 -3.55271368e-15,13.9118146 L-3.55271368e-15,13.6219414 C-3.58822225e-15,13.3319919 0.235050502,13.0969414 0.524999991,13.0969414 L10.8854234,13.0962538 C11.1945013,12.2509576 12.0277443,11.6454121 13.0071429,11.6454121 Z M3.56868134,6.38034864 C4.47896885,6.38034864 5.26299991,6.90344895 5.61727348,7.65595581 L17.475,7.65641836 C17.7649495,7.65641836 18,7.89146886 18,8.18141835 L18,8.47129156 C18,8.76124105 17.7649495,8.99629155 17.475,8.99629155 L5.77283806,8.99706359 C5.56278707,9.98891044 4.65576532,10.7349365 3.56868134,10.7349365 C2.48159737,10.7349365 1.57457561,9.98891044 1.36452462,8.99706359 L0.524999991,8.99629155 C0.235050502,8.99629155 -3.51720511e-15,8.76124105 -3.55271368e-15,8.47129156 L-3.55271368e-15,8.18141835 C-3.58822225e-15,7.89146886 0.235050502,7.65641836 0.524999991,7.65641836 L1.5200892,7.65595581 C1.87436277,6.90344895 2.65839383,6.38034864 3.56868134,6.38034864 Z M12.7994507,4.4408921e-16 C13.7788493,4.4408921e-16 14.6120923,0.60554546 14.9211702,1.45084169 L17.475,1.45152929 C17.7649495,1.45152929 18,1.68657979 18,1.97652928 L18,2.26640249 C18,2.55635198 17.7649495,2.79140248 17.475,2.79140248 L14.958749,2.79127719 C14.6848346,3.69481158 13.8217651,4.35458787 12.7994507,4.35458787 C11.7771364,4.35458787 10.9140669,3.69481158 10.6401524,2.79127719 L0.524999991,2.79140248 C0.235050502,2.79140248 -3.38844167e-15,2.55635198 -3.55271368e-15,2.26640249 L-3.55271368e-15,1.97652928 C-3.58822225e-15,1.68657979 0.235050502,1.45152929 0.524999991,1.45152929 L10.6777313,1.45084169 C10.9868091,0.60554546 11.8200521,4.4408921e-16 12.7994507,4.4408921e-16 Z" transform="translate(6.000000, 7.000000)"></path>
+										</svg>
+										<svg class="icon-filter-close" aria-labelledby="icon-filters-close">
+											<path d="M21.651829,9.348171 C21.925196,9.62153801 21.925196,10.0647535 21.651829,10.3381205 L16.4899495,15.5 L21.651829,20.6618795 C21.925196,20.9352465 21.925196,21.378462 21.651829,21.651829 C21.378462,21.925196 20.9352465,21.925196 20.6618795,21.651829 L15.5,16.4899495 L10.3381205,21.651829 C10.0647535,21.925196 9.62153801,21.925196 9.348171,21.651829 C9.074804,21.378462 9.074804,20.9352465 9.348171,20.6618795 L14.5100505,15.5 L9.348171,10.3381205 C9.074804,10.0647535 9.074804,9.62153801 9.348171,9.348171 C9.62153801,9.074804 10.0647535,9.074804 10.3381205,9.348171 L15.5,14.5100505 L20.6618795,9.348171 C20.9352465,9.074804 21.378462,9.074804 21.651829,9.348171 Z"></path>
+										</svg>
+									</span>
+								</a>
+							</div>
+							{%- if collection.products_count > 0 -%}
+							<div class="collection-options-sortby collection-sortby collection-sortby-option">
+								<div class="collection-sortby-title js-sortby-title d-flex align-items-center">
+									<span class="title-sort"></span>
+									<span class="sort-by-icon">
+										<svg class="icon-sort-by" aria-labelledby="sort-by-dropdown">
+											<path d="M22.4960571,11.5078274 C22.7675921,11.7793624 22.7675921,12.2196077 22.4960571,12.4911427 L15.4914,19.4961248 C15.219865,19.7676598 14.7796197,19.7676598 14.5080847,19.4961248 L7.50335959,12.4913996 C7.23182458,12.2198646 7.23182458,11.7796194 7.50335959,11.5080844 C7.77489459,11.2365494 8.21513981,11.2365494 8.48667481,11.5080844 L14.9995799,18.0209894 L21.5127419,11.5078274 C21.7842769,11.2362924 22.2245221,11.2362924 22.4960571,11.5078274 Z"></path>
+										</svg>
+									</span>
+								</div>
+								<div class="collection-sortby-custom collection-sortby-custom_option">
+									<ul class="custom-select-menu sort-by">
+										{%- unless collection.handle == 'all' -%}									
+										<li><span data-value="manual">Nổi bật</span></li>
+										{%- endunless -%}
+										<li><span data-value="price-ascending" data-filter="&amp;sortby=(price:product=asc)">Giá: Tăng dần</span></li>
+										<li><span data-value="price-descending" data-filter="&amp;sortby=(price:product=desc)">Giá: Giảm dần</span></li>
+										<li><span data-value="title-ascending" data-filter="&amp;sortby=(title:product=asc)">Tên: A-Z</span></li>
+										<li><span data-value="title-descending" data-filter="&amp;sortby=(price:product=desc)">Tên: Z-A</span></li>
+										<li><span data-value="created-ascending" data-filter="&amp;sortby=(updated_at:product=desc)">Cũ nhất</span></li>
+										<li><span data-value="created-descending" data-filter="&amp;sortby=(updated_at:product=asc)">Mới nhất</span></li>
+										<li><span data-value="best-selling" data-filter="&amp;sortby=(sold_quantity:product=desc)">Bán chạy nhất</span></li>
+										<li><span data-value="quantity-descending">Tồn kho: Giảm dần</span></li>
+									</ul>
+								</div>
+							</div>
+							{%- endif-%}
+						</div>
+						<div class="collection-filter_sticky-mb collection-options_fixed-mb">
+							<div class="sidebar-filter-close filter-close sidebar-options-close">
+								<span class="sidebar-filter-title sidebar-options-title">{{settings.collection_filter_title}}</span>
+								<div class="back-icon_filter back-icon">
+									<svg class="icon-filter-back" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+										<g>
+											<g>
+												<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+																 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+																 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+																 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+																 L284.286,256.002z" />
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+						{%- include 'mobile-filter'-%}
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+		<input type="text" class="d-none" id="coll-handle" value="{% if collection.handle == 'all' %}(collectionid:product>=0){% else %}(collectionid:product={{collection.id}}){% endif %}" />
+	</div>
+	{%- endpaginate -%}
+</div>
+<script>
+	Haravan.queryParams = {};
+	if (location.search.length) {
+		for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+			aKeyValue = aCouples[i].split('=');
+			if (aKeyValue.length > 1) {
+				Haravan.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+			}
+		}
+	}
+	var collectionsort = "{{ collection.sort_by | default: collection.default_sort_by  }}";
+	jQuery('.sort-by li').each(function(){
+		if($(this).find('span').data('value') == collectionsort){
+			$('.collection-sortby-title').find('.title-sort').html($(this).text());
+			$(this).addClass('active');
+		}
+	});
+</script>
+<script>
+	function smoothScroll(a, b){
+		$('body,html').animate({
+			scrollTop : a
+		}, b);
+	}
+	function loadNow(opacity) {
+		if (opacity <= 0) {
+			$('#loader').css('display','none');
+			$('#collection-body').css('opacity','1');
+		} 
+		else {
+			$('#loader').css('opacity',opacity);
+			$('#loader').css('display','block');
+			$('#collection-body').css('opacity','0');
+			setTimeout(function() {
+				loadNow(opacity - 0.05);
+			}, 20);
+		}
+	}
+	jQuery(document).ready(function(){
+		jQuery('body').on('click', '.sort-by li', function(){
+			Haravan.queryParams.sort_by = jQuery(this).find('span').data('value');
+			location.search = jQuery.param(Haravan.queryParams);
+		})
+		jQuery('body').on('click', '.js-collection-options-filter', function(e){
+			e.preventDefault();
+			if(jQuery(window).width() > 992){
+				$('.js-collection-options-filter').parent().toggleClass('filters-open');
+				$(this).parents('.wrapper-mainCollection').toggleClass('filter-active');
+				if($(this).parents('.wrapper-mainCollection').hasClass('filter-active')){
+					$('.collection-list-product').parent().attr('class','col-9 collection-content-list_product');
+					loadNow(1);
+					fixHeightProduct('.wrapper-list-collection .product-list-filter', '.product-resize', '.image-resize');
+				} 
+				else{
+					$('.collection-list-product').parent().attr('class','col-12 collection-content-list_product');
+					loadNow(1);
+					fixHeightProduct('.wrapper-list-collection .product-list-filter', '.product-resize', '.image-resize');
+				}		
+			}
+		});
+		if(jQuery(window).width() > 992){
+			$(window).scroll(function () {
+				if ($(window).scrollTop() >= $('.collection-content-page').offset().top) {
+					$('.collection-content-page').addClass("affix-filter");
+					$('.collection-options-sortby').removeClass("open-sort");
+				} else {
+					$('.collection-content-page').removeClass("affix-filter");
+				}
+			});
+		}
+		jQuery('body').on('click', '.checkbox-list li > input', function(){
+			jQuery(this).parent().toggleClass('active');
+			Stringfilter();
+			var indexTitle = jQuery(this).parents('.filter-group').index();
+			if (jQuery(this).parents('.filter-group').find('li.active').length > 0 ){
+				var textFilter = [];
+				jQuery(this).parents('.filter-group').find('li.active').each(function(){
+					var textVal = $(this).find('label').html();
+					textFilter.push(textVal);
+				});
+				$('.filter_tags:eq('+indexTitle+') b').html(textFilter.join(',')).parent().addClass('opened');
+				if ($('.filter_tags:not(.filter_tags_remove_all).opened').length > 1 ){
+					$('.filter_tags_remove_all').addClass('opened');
+				}
+			}
+			else{
+				$('.filter_tags:eq('+indexTitle+') b').html('').parent().removeClass('opened');
+				$('.filter_tags_remove_all').removeClass('opened');
+			}
+			if ($(window).width() < 992){
+				$('body').removeClass('open-filter');
+			}
+		});
+		jQuery('body').on('click', '.filter_tags_remove', function(){
+			$(this).parent().removeClass('opened').find('b').html();
+			var indexClick = $(this).parent().index();
+			$('.filter-group:eq('+indexClick+') li.active input').attr('checked',false);
+			$('.filter-group:eq('+indexClick+') li.active').removeClass('active');
+			if($('.filter_tags:not(.filter_tags_remove_all).opened').length == 1){
+				$('.filter_tags_remove_all').removeClass('opened');
+			}
+			Stringfilter();
+		});
+		jQuery('body').on('click', '.filter_tags_remove_all', function(){
+			$('.filter-group li.active input').attr('checked',false);
+			$('.filter-group li.active').removeClass('active');
+			$('.filter_tags b').html('').parent().removeClass('opened');
+			$('.filter_tags_remove_all').removeClass('opened');
+			Stringfilter();
+		});
+		str = "";
+		var Stringfilter = function(){
+			var q="", gia="", vendor="", type="", color="", size1="", size2="", size3="", size4="", size5="", total_page=0, cur_page=1;
+			var handle_coll = $('#coll-handle').val();
+			var str_url = 'filter=';
+			q = "("+handle_coll+")";
+			jQuery('.filter-price ul.checkbox-list li.active').each(function(){
+				gia = gia + jQuery(this).find('input').data('price') + '||';
+			})
+			gia=gia.substring(0,gia.length -2);
+			if(gia != ""){
+				gia='('+gia+')';
+				q+='&&'+gia;
+			}
+
+			jQuery('.filter-brand ul.checkbox-list li.active').each(function(){
+				vendor = vendor + jQuery(this).find('input').data('vendor') + '||';
+			})
+			vendor=vendor.substring(0,vendor.length -2);
+			if(vendor != ""){
+				vendor='('+vendor+')';
+				q+='&&'+vendor;
+			}
+
+			jQuery('.filter-color ul.checkbox-list li.active').each(function(){
+				color = color + jQuery(this).find('input').data('color') + '||';
+			})
+			color=color.substring(0,color.length -2);
+			if(color != ""){
+				color='('+color+')';
+				q+='&&'+color;
+			}
+
+			jQuery('.filter-size1 ul.checkbox-list li.active').each(function(){
+				size1 = size1 + jQuery(this).find('input').data('size1') + '||';
+			})
+			size1=size1.substring(0,size1.length -2);
+			if(size1 != ""){
+				size1='('+size1+')';
+				q+='&&'+size1;
+			}
+
+			jQuery('.filter-size2 ul.checkbox-list li.active').each(function(){
+				size2 = size2 + jQuery(this).find('input').data('size2') + '||';
+			})
+			size2=size2.substring(0,size2.length -2);
+			if(size2 != ""){
+				size2='('+size2+')';
+				q+='&&'+size2;
+			}
+
+			jQuery('.filter-size3 ul.checkbox-list li.active').each(function(){
+				size3 = size3 + jQuery(this).find('input').data('size3') + '||';
+			})
+			size3=size3.substring(0,size3.length -2);
+			if(size3 != ""){
+				size3='('+size3+')';
+				q+='&&'+size3;
+			}
+
+			jQuery('.filter-size4 ul.checkbox-list li.active').each(function(){
+				size4 = size4 + jQuery(this).find('input').data('size4') + '||';
+			})
+			size4=size4.substring(0,size4.length -2);
+			if(size4 != ""){
+				size4='('+size4+')';
+				q+='&&'+size4;
+			}
+
+			jQuery('.filter-size5 ul.checkbox-list li.active').each(function(){
+				size5 = size5 + jQuery(this).find('input').data('size5') + '||';
+			})
+			size5=size5.substring(0,size5.length -2);
+			if(size5 != ""){
+				size5='('+size5+')';
+				q+='&&'+size5;
+			}
+
+			//console.log(str_url + q);
+			str_url += encodeURIComponent(q);
+			str = str_url;
+
+			jQuery.ajax({
+				// lấy tổng số trang của kết quả filter
+				url: "/search?q="+str_url+"&view=pagesize",	
+				async: false,
+				success:function(data){
+					total_page = parseInt(data);
+					//console.log(total_page)
+				}
+			})
+			if(cur_page <= total_page){
+				jQuery('.pagination-filter').show();
+				jQuery.ajax({
+					url : "/search?q="+str_url+"&view=filter",
+					success: function(data){
+						jQuery(".product-noloop").remove();
+						jQuery(".product-list-filter").html('');
+						jQuery(".product-list-filter").html(data);
+						/*jQuery('.product-list-filter').imagesLoaded( function() {									
+						jQuery(window).resize();
+					});*/
+					}
+				})
+				jQuery.ajax({
+					url: "/search?q="+str_url+"&view=paginate",
+					async: false,
+					success:function(data){
+						jQuery(".pagination-filter").html(data); // in phân trang
+					}
+				})
+			}
+			else{
+				jQuery(".product-list-filter").html('');	
+				jQuery(".product-list-filter").append('<div class="col-md-12 product-noloop"><div class="collection-alert-no"><p>Không tìm thấy kết quả. Vui lòng thử lại!</p></div></div>');
+				jQuery('.pagination-filter').hide();
+			}
+			jQuery('body').on("click",".pagination-filter a",function(){
+				// bắt sự kiện click các nút phân trang
+				var link = jQuery(this).attr("data-link");
+				if(link == 'm'){
+					link = cur_page - 1;
+				}
+				if(link == 'p'){
+					link = cur_page + 1;
+				}
+				link = parseInt(link);
+				jQuery.ajax({
+					url : "/search?q="+str+"&view=filter&page="+link, 
+					success: function(data){
+						jQuery(".product-list-filter").html('');
+						jQuery(".product-list-filter").html(data);
+						/*jQuery('.product-list-filter').imagesLoaded( function() {									
+						jQuery(window).resize();
+					});*/
+						cur_page = link;
+						var x = $('.wrapper-mainCollection').offset().top;
+					}
+				})
+				jQuery.ajax({ 
+					url: "/search?q="+str+"&view=paginate&page="+link,	
+					success:function(data){
+						jQuery(".pagination-filter").html(data); // in phân trang
+					}
+				})
+			});
+			var x = $('.wrapper-mainCollection').offset().top;
+			checkStore();
+		}
+		function checkStore(){
+			let setStorage = {};
+			$('input:checked').each(function(){
+				setStorage[$(this).attr('id')] = $(this).attr('value');
+			})
+			sessionStorage.setItem('filter', JSON.stringify(setStorage));
+		}
+		if(performance.navigation.type == 2 || performance.navigation.type == 1){
+				$('input:checked').prop('checked',false);
+				let getStorage = sessionStorage.getItem('filter');
+				if(getStorage != null){
+					var parseStorage = JSON.parse(getStorage);
+					//console.log(parseStorage);
+					$.each(parseStorage, function(id, value){
+						$(`#${id}`).trigger('click');
+						setTimeout(function(){ 
+								if(!$(`#${id}`).is(':checked')){
+									$(`#${id}`).prop('checked',true);
+								} 
+							}, 1000)
+					})
+				}
+		}
+	})
+</script>
+
+

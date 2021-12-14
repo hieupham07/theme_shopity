@@ -1,0 +1,61 @@
+{%- assign on_sale = false -%}
+{%- if product.available and product.variants.first.compare_at_price > product.variants.first.price -%}
+{%- assign on_sale = true -%}
+{%- endif -%}
+{%- if product.variants.first.compare_at_price > product.variants.first.price -%}
+{%- assign price_sale = 0 -%}
+{%- assign price_sale = product.variants.first.compare_at_price | minus: product.variants.first.price | divided_by:product.variants.first.compare_at_price | times : 100 | round : 0 -%}
+{%- endif -%}
+{%- assign sold_out = true -%}
+{%- if product.available -%}
+{%- assign sold_out = false -%}
+{%- endif -%} 
+<div class="product-inner product-resize d-flex">
+	<div class="product-image d-flex jutify-content-center align-items-center image-resize">
+		{%- if on_sale -%}<div class="product-sale"><span>-{{price_sale}}%</span></div>{%- endif -%}		
+		<a href="{{product.url}}" title="{{product.title}}" class="aspect-ratio">
+			<div class="image-first-holder d-flex justify-content-center align-items-center">
+				<img class="image-loop lazyload" data-sizes="auto"
+						 data-src="{%if product.images.size > 0%}{{ product.featured_image.src | product_img_url: 'compact' }}{%else%}{{'no_image.jpg' | asset_url}}{%endif%}"
+						 data-lowsrc="{%if product.images.size > 0%}{{ product.featured_image.src | product_img_url: 'compact' }}{%else%}{{'no_image.jpg' | asset_url}}{%endif%}"
+						 src="data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'></svg>"
+						 alt="{% if product.featured_image.alt.size >0 %}{{ product.featured_image.alt | escape }}{% else%} {{product.title}} {% endif %}">
+			</div>
+			<div class="image-second-holder d-flex justify-content-center align-items-center">
+				<img class="image-hover lazyload"
+						 data-src="{%if product.images.size > 1%}{{ product.images[1] | product_img_url: 'compact' }}{%else%}{%if product.images.size > 0%}{{ product.featured_image.src | product_img_url: 'compact' }}{%else%}{{'no_image.jpg' | asset_url}}{%endif%}{%endif%}"
+						 src="data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'></svg>"
+						 alt="{% if product.featured_image.alt.size > 1 %}{{ product.featured_image.alt | escape }}{% else%} {{product.title}} {% endif %}">
+			</div>
+		</a>
+	</div>
+	<div class="product-detail">
+		<div class="box-pro-detail">
+			<span class="pro-vendor"><a title="Xem bộ sưu tập: {{ product.vendor }}" href="/collections/{{ product.vendor  | handleize }}">{{ product.vendor }}</a></span>
+			<h3 class="pro-name">
+				<a href="{{product.url}}" title="{{product.title}}" class="link">
+					{{ product.title }}
+				</a>
+			</h3>
+			<div class="box-pro-prices">	
+				<p class="block-pro-price {% if on_sale or product.variants.first.compare_at_price > product.variants.first.price %}highlight{% endif %}">
+					{%- if product.variants.first.price == 0 -%}
+					<span class="pro-price-contact">Liên hệ</span>
+					{%- else -%}
+					<span class="pro-price">{{ product.variants.first.price | money }}</span>
+					{%- if on_sale or product.variants.first.compare_at_price > product.variants.first.price-%}
+					<span class="pro-price-del">
+						<del class="compare-price" style="margin-right: 10px;">
+							{{ product.variants.first.compare_at_price | money }}
+						</del>
+					</span>
+					{%- endif -%}
+					{%- if sold_out -%}
+					<span class="block-pro-sold-out sold-out">Liên hệ</span>
+					{%- endif -%}	
+					{%- endif -%}	
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

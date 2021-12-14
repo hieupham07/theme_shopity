@@ -1,0 +1,112 @@
+<div id="account-popover" class="header_dropdown_content site_account {% if customer %}site-account--info{% endif %}">
+	<span class="box-triangle">
+		<svg class="icon--nav-triangle" viewBox="0 0 20 9">
+			<path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+		</svg>
+	</span>
+	<div class="site-nav-container text-center">
+		{%- if shop.customer_accounts_enabled -%}
+		{%- if customer -%}
+		{%- if customer.default_address.first_name == empty and customer.default_address.last_name == empty -%}
+		<div class="site-account-infor">
+			<div class="site-account-infor_header">
+				<h2>Thông tin tài khoản</h2>
+			</div>
+			<ul class="site-account-infor_list text-left">
+				<li><span>Xin chào, {{customer.first_name}} {{customer.last_name}}</span></li>
+				<li><a href="/account" class="link">Tài khoản của tôi</a></li>
+				<li><a href="/account/addresses" class="link">Danh sách địa chỉ</a></li>
+				<li><a href="/account/logout" class="link">Đăng xuất</a></li>
+			</ul>
+		</div>
+		{%- else -%}
+		<div class="site-account-infor">
+			<div class="site-account-infor_header">
+				<h2>Thông tin tài khoản</h2>
+			</div>
+			<ul class="site-account-infor_list text-left">
+				<li><span>Xin chào, {{customer.default_address.first_name}} {{customer.default_address.last_name}}</span></li>
+				<li><a href="/account" class="link">Tài khoản của tôi</a></li>
+				<li><a href="/account/addresses" class="link">Danh sách địa chỉ</a></li>
+				<li><a href="/account/logout" class="link">Đăng xuất</a></li>
+			</ul>
+		</div>
+		{%- endif -%}
+		{%- else -%}
+		<div class="popover-panel_list">
+			<div id="header-login-panel" class="popover-panel popover-panel_default is-selected">
+				<div class="popover-inner">
+					{%- capture formLoginHeader -%}
+					{% form 'customer_login' %}
+					{{ form.errors | default_errors }}
+					<div class="popover_header">
+						<h2 class="popover_title">Đăng nhập tài khoản</h2>
+						<p class="popover_legend">Nhập email và mật khẩu của bạn:</p>
+					</div>
+					<div class="form-group form-input-wrapper form-input-wrapper_labelled">
+						<input type="email" id="login-customer[email]" class="form-field_text form-control" name="customer[email]" required="required" autocomplete="off">
+						<label for="login-customer[email]" class="text-field form-floating_label">Email</label>
+					</div>
+					{%- if form.password_needed -%}
+					<div class="form-group form-input-wrapper form-input-wrapper_labelled">
+						<input type="password" id="login-customer[password]" class="form-field_text form-control" name="customer[password]" required="required" autocomplete="off">
+						<label for="login-customer[password]" class="text-field form-floating_label">Mật khẩu</label>
+					</div>
+					{%- endif -%}
+					<div class="sitebox-recaptcha mb-3">
+						This site is protected by reCAPTCHA and the Google
+						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+						and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+					</div>
+					<button type="submit" class="form-submit btn btn-box dark" id="form-submit_login">Đăng nhập</button>
+					{%- endform-%}
+					{%- endcapture -%}
+					{{ formLoginHeader | replace: 'script','noscript'}}					
+					<div class="popover-secondary-action">
+						<p class="mb-2">Khách hàng mới? 
+							<a href="/account/register" class="link">Tạo tài khoản</a>
+						</p>
+						<p class="mb-0">Quên mật khẩu? 
+							<button data-action="show-popover-panel" aria-controls="header-recover-panel" class="link-accented link">Khôi phục mật khẩu</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="header-recover-panel" class="popover-panel popover-panel_sliding">
+				<div class="popover-inner">
+					{%- capture formRecoverHeader -%}
+					{%- form 'recover_customer_password' -%}
+					{{ form.errors | default_errors }}
+					<div class="popover_header">
+						<h2 class="popover_title">Khôi phục mật khẩu</h2>
+						<p class="popover_legend">Nhập email của bạn:</p>
+					</div>
+					<div class="form-group form-input-wrapper form-input-wrapper_labelled">
+						<input type="email" id="recover-customer[recover_email]" class="form-field_text form-control" name="email" required="required" autocomplete="off">
+						<label for="recover-customer[recover_email]" class="text-field form-floating_label">Email</label>
+					</div>
+					<div class="sitebox-recaptcha mb-3">
+						This site is protected by reCAPTCHA and the Google
+						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+						and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+					</div>
+					<button type="submit" class="btn form-submit btn-box dark" id="form-submit_recover">Khôi phục</button>
+					{%- endform -%}
+					{%- endcapture -%}
+					{{ formRecoverHeader | replace: 'script','noscript'}}				
+					<div class="popover-secondary-action">
+						<p class="mb-0">Bạn đã nhớ mật khẩu? 
+							<button data-action="show-popover-panel" aria-controls="header-login-panel" class="link-accented link">Trở về đăng nhập</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		{%- endif -%}
+		{%- endif -%}
+	</div>
+</div>
+
+
+
+

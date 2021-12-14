@@ -1,0 +1,944 @@
+{%- if settings.show_slider_home_banner -%}
+{%-include 'home-slider'-%}
+{%- endif -%}
+{%- if settings.display_banner_introproduct_1_home-%}
+<section id="section-banner-home-frist" class="section section-banner">
+	<div class="wrapper-banner-introproduct introproduct-1">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="d-none d-md-block col-md-6 order-2 order-md-0"></div>
+				<div class="col-12 col-md-6 order-2 order-md-0">
+					<div class="banner-introproduct">
+						{%-if settings.banner_introproduct_title_first_1 != ''-%}
+						<span class="banner-introproduct-title_first">{{settings.banner_introproduct_title_first_1}}</span>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_title_second_1 != ''-%}
+						<h2 class="banner-introproduct-title_second">{{settings.banner_introproduct_title_second_1}}</h2>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_desc_1 != ''-%}
+						<p class="banner-introproduct-desc">{{settings.banner_introproduct_desc_1}}</p>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_btn_1 != ''-%}
+						<a href="{{settings.banner_introproduct_btn_link_1}}" class="banner-introproduct-button btn-box dark">{{settings.banner_introproduct_btn_1}}</a>
+						{%-endif-%}
+
+					</div>
+				</div>
+				<div class="col-12 col-md-6 order-1 order-md-0">
+					<div class="banner-introproduct-image aspect-ratio text-center">
+						<img class="lazyload" data-src="{{'img_intro_product_1.png' | asset_url }}" 
+								 data-lowsrc="{{'img_intro_product_1.png' | asset_url }}" 
+								 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								 alt="{{settings.alt_img_intro_product_1}}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+{%- if settings.display_banner_introproduct_2_home-%}
+<section id="section-banner-home-second" class="section section-banner">
+	<div class="wrapper-banner-introproduct introproduct-2">
+		<div class="container">
+			<div class="row align-items-md-center">
+				<div class="col-12 col-md-6">
+					<div class="banner-introproduct-image aspect-ratio text-center">
+						<img class="lazyload" data-src="{{'img_intro_product_2.png' | asset_url }}" 
+								 data-lowsrc="{{'img_intro_product_2.png' | asset_url }}" 
+								 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								 alt="{{settings.alt_img_intro_product_2}}">
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="banner-introproduct p-4"> 
+						{%-if settings.banner_introproduct_title_first_2 != ''-%}
+						<span class="banner-introproduct-title_first">{{settings.banner_introproduct_title_first_2}}</span>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_title_second_12 != ''-%}
+						<h2 class="banner-introproduct-title_second">{{settings.banner_introproduct_title_second_2}}</h2>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_desc_2 != ''-%}
+						<p class="banner-introproduct-desc">{{settings.banner_introproduct_desc_2}}</p>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_btn_2 != ''-%}
+						<a href="{{settings.banner_introproduct_btn_link_2}}" class="banner-introproduct-button btn-box dark">{{settings.banner_introproduct_btn_2}}</a>
+						{%-endif-%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+<section id="features-products-home" class="section features-products-home">
+<div class="container-fluid">
+	<div class="wrapper-heading-home text-center">
+		<h2>
+				<a class="titleH-second link" href="/collections/tim-theo-bo-suu-tap-collections-search">
+					Các bộ sưu tập nổi bật
+				</a>
+			</h2>
+		</div>
+	<div class="wrapper-features-products">
+		<div id="features-products-list" class="owl-carousel product-list-feature">
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Evening Majesty" href="https://noritake-vietnam.com/collections/evening-majesty-4818"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-evening-majesty.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-evening-majesty.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Evening Majesty" href="https://noritake-vietnam.com/collections/evening-majesty-4818"><span class="name-pro">Evening Majesty</span><span class="sku-pro">(4818)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Yoshino" href="https://noritake-vietnam.com/collections/Yoshino-9983"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-yoshino.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-yoshino.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Yoshino" href="https://noritake-vietnam.com/collections/Yoshino-9983"><span class="name-pro">Yoshino</span><span class="sku-pro">(9983)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Trefolio Gold" href="https://noritake-vietnam.com/collections/Trefolio-Gold-4945"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-trefolio-gold.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-trefolio-gold.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Trefolio Gold" href="https://noritake-vietnam.com/collections/Trefolio-Gold-4945"><span class="name-pro">Trefolio Gold</span><span class="sku-pro">(4945)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Trefolio Platinum" href="https://noritake-vietnam.com/collections/Trefolio-Platinum-4957"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-trefolio-platinum.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-trefolio-platinum.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Trefolio Platinum" href="https://noritake-vietnam.com/collections/Trefolio-Platinum-4957"><span class="name-pro">Trefolio Platinum</span><span class="sku-pro">(4957)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Eternal Palace" href="https://noritake.vn/collections/Eternal-Palace-1717"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/enternal-home.jpg?v=386" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/enternal-home.jpg?v=386" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Trefolio Platinum" href="https://noritake.vn/collections/Eternal-Palace-1717"><span class="name-pro">Eternal Palace</span><span class="sku-pro">(1717)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Aidan" href="https://noritake-vietnam.com/collections/aidan-4867"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-aidan-4867.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-aidan-4867.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Aidan" href="https://noritake-vietnam.com/collections/aidan-4867"><span class="name-pro">Aidan</span><span class="sku-pro">(4867)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Aidan Gold" href="https://noritake-vietnam.com/collections/aidan-gold-4941"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-aidan-gold.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-aidan-gold.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Aidan Gold" href="https://noritake-vietnam.com/collections/aidan-gold-4941"><span class="name-pro">Aidan Gold</span><span class="sku-pro">(4941)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Islay" href="https://noritake-vietnam.com/collections/islay-4885"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-islay.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-islay.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Islay" href="https://noritake-vietnam.com/collections/islay-4885"><span class="name-pro">Islay</span><span class="sku-pro">(4885)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Islay Platinum" href="https://noritake-vietnam.com/collections/islay-platinum-4897"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-islay-platinum.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-islay-platinum.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Islay Platinum" href="https://noritake-vietnam.com/collections/islay-platinum-4897"><span class="name-pro">Islay Platinum</span><span class="sku-pro">(4897)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Jardin Fleuri" href="https://noritake-vietnam.com/collections/jardin-fleuri-4910"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/jardin-fleuri-fixed.jpg?v=390" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/jardin-fleuri-fixed.jpg?v=390" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Jardin Fleuri" href="https://noritake-vietnam.com/collections/jardin-fleuri-4910"><span class="name-pro">Jardin Fleuri</span><span class="sku-pro">(4910)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Moonlit Blossoms" href="https://noritake-vietnam.com/collections/Moonlit-Blossoms-4969"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-moonlit-blossoms.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-moonlit-blossoms.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Moonlit Blossoms" href="https://noritake-vietnam.com/collections/Moonlit-Blossoms-4969"><span class="name-pro">Moonlit Blossoms</span><span class="sku-pro">(4969)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Cobalt Platinum" href="https://noritake-vietnam.com/collections/Odessa-Cobalt-Platinum-4922"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-odessa-cobalt-platinum.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-odessa-cobalt-platinum.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Cobalt Platinum" href="https://noritake-vietnam.com/collections/Odessa-Cobalt-Platinum-4922"><span class="name-pro">Odessa Cbt Platinum</span><span class="sku-pro">(4922)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Platinum" href="https://noritake-vietnam.com/collections/Odessa-Platinum-4875"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-odessa-platinum.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-odessa-platinum.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Platinum" href="https://noritake-vietnam.com/collections/Odessa-Platinum-4875"><span class="name-pro">Odessa Platinum</span><span class="sku-pro">(4875)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Summit Gold" href="https://noritake-vietnam.com/collections/Summit-Gold-4912"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-summit-gold.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-summit-gold.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Summit Gold" href="https://noritake-vietnam.com/collections/Summit-Gold-4912"><span class="name-pro">Summit Gold</span><span class="sku-pro">(4912)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Summit Platinum" href="https://noritake-vietnam.com/collections/Summit-Platinum-4919"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-summit-platinum.jpg?v=294" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000794328/14/bst-home-summit-platinum.jpg?v=294" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Summit Platinum" href="https://noritake-vietnam.com/collections/Summit-Platinum-4919"><span class="name-pro">Summit Platinum</span><span class="sku-pro">(4919)</span></a></p>
+    </div>
+</div>
+	</div>
+	<div class="f-more visible-xs">
+				<a href="/collections/tim-theo-bo-suu-tap-collections-search">Xem tất cả</a>
+			</div>
+	</div>
+</section>
+{%- if settings.display_banner_introproduct_1_home_3-%}
+<section id="section-banner-home-frist" class="section section-banner  sc-bk-button-1 m-0">
+	<div class="wrapper-banner-introproduct introproduct-3">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="d-none d-md-block col-md-7 order-2 order-md-0"></div>
+				<div class="col-12 col-md-5 order-2 order-md-0">
+					<div class="banner-introproduct items-history">
+						{%-if settings.banner_introproduct_title_first_1_3 != ''-%}
+						<span class="banner-introproduct-title_first">{{settings.banner_introproduct_title_first_1_3}}</span>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_title_second_1_3 != ''-%}
+						<h2 class="banner-introproduct-title_second">{{settings.banner_introproduct_title_second_1_3}}</h2>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_desc_1_3 != ''-%}
+						<p class="banner-introproduct-desc">{{settings.banner_introproduct_desc_1_3}}</p>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_btn_1_3 != ''-%}
+						<a href="{{settings.banner_introproduct_btn_link_1_3}}" class="banner-introproduct-button btn-box dark">{{settings.banner_introproduct_btn_1_3}}</a>
+						{%-endif-%}
+					</div>
+				</div>
+				<div class="d-block d-md-none col-12 order-1 order-md-0 px-0">
+					<div class="banner-introproduct-image aspect-ratio text-center mb-0">
+						<picture>
+							<source media="(min-width:481px)" srcset="{{'img_intro_product_1_3.png' | asset_url }}">
+							<source media="(max-width:480px)" srcset="{{'img_intro_product_1_mobile_3.png' | asset_url }}">
+							<img src="{{'img_intro_product_1_3.png' | asset_url }}" alt="{{settings.alt_img_intro_product_1_3}}">
+						</picture>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+<section id="product-see-more" class="section product-see-more">
+<div class="container-fluid">
+	<div class="wrapper-heading-home text-center">
+		<h2>
+				<a class="titleH-second link">
+					Bộ sưu tập sắp ra mắt
+				</a>
+			</h2>
+		</div>
+	<div class="wrapper-features-products">
+		<div id="features-products-more" class="owl-carousel product-list-feature">
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Blooming Splendor (4892)" href="https://noritake.vn/collections/blooming-splendor-4892/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/blooming-splendar-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/blooming-splendar-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Blooming Splendor (4892)" href="https://noritake.vn/collections/blooming-splendor-4892/"><span class="name-pro">Blooming Splendor</span><span class="sku-pro">(4892)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Blue Sorrentino (4562L)" href="https://noritake.vn/collections/blue-sorrentino-4562l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/blue-sorrentino-4562l-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/blue-sorrentino-4562l-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Blue Sorrentino (4562L)" href="https://noritake.vn/collections/blue-sorrentino-4562l/"><span class="name-pro">Blue Sorrentino</span><span class="sku-pro">(4562L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Bogart Platinum (4958)" href="https://noritake.vn/collections/bogart-platinum-4959/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/bogart-platinum-4958-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/bogart-platinum-4958-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Bogart Platinum (4958)" href="https://noritake.vn/collections/bogart-platinum-4959/"><span class="name-pro">Bogart Platinum</span><span class="sku-pro">(4958)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Broome Street (4913)" href="https://noritake.vn/collections/broome-street-4914/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/broome-street-4913-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/broome-street-4913-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Broome Street (4913)" href="https://noritake.vn/collections/broome-street-4914/"><span class="name-pro">Broome Street</span><span class="sku-pro">(4913)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Coco Fleur (4960)" href="https://noritake.vn/collections/coco-fleur-4960/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/coco-fleur-4960-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/coco-fleur-4960-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Coco Fleur (4960)" href="https://noritake.vn/collections/coco-fleur-4960/"><span class="name-pro">Coco Fleur</span><span class="sku-pro">(4960)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Crochet (4966)" href="https://noritake.vn/collections/crochet-4967/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/crochet-4966-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/crochet-4966-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Crochet (4966)" href="https://noritake.vn/collections/crochet-4967/"><span class="name-pro">Crochet</span><span class="sku-pro">(4966)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập English Herbs (4942)" href="https://noritake.vn/collections/english-herbs-4942/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/english-herbs-4942-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/english-herbs-4942-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập English Herbs (4942)" href="https://noritake.vn/collections/english-herbs-4942/"><span class="name-pro">English Herbs</span><span class="sku-pro">(4942)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Forever Fields (4950)" href="https://noritake.vn/collections/forever-fields-4950/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/forever-fields-4950-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/forever-fields-4950-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Forever Fields (4950)" href="https://noritake.vn/collections/forever-fields-4950/"><span class="name-pro">Forever Fields</span><span class="sku-pro">(4950)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Hana Sarasa (4409L)" href="https://noritake.vn/collections/hana-sarasa-4409l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/hana-sarasa-4409l-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/hana-sarasa-4409l-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Hana Sarasa (4409L)" href="https://noritake.vn/collections/hana-sarasa-4409l/"><span class="name-pro">Hana Sarasa</span><span class="sku-pro">(4409L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Hertford (4861)" href="https://noritake.vn/collections/hertford-4862/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/hertford-4861-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/hertford-4861-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Hertford (4861)" href="https://noritake.vn/collections/hertford-4862/"><span class="name-pro">Hertford</span><span class="sku-pro">(4861)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Gold (4874)" href="https://noritake.vn/collections/odessa-gold-4874/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/odessa-gold-4874-bts.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/odessa-gold-4874-bts.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Odessa Gold (4874)" href="https://noritake.vn/collections/odessa-gold-4874/"><span class="name-pro">Odessa Gold</span><span class="sku-pro">(4874)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Orchard Garden (4911)" href="https://noritake.vn/collections/orchard-garden-4911/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/orchard-garden-4911-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/orchard-garden-4911-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Orchard Garden (4911)" href="https://noritake.vn/collections/orchard-garden-4911/"><span class="name-pro">Orchard Garden</span><span class="sku-pro">(4911)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Palace Rose (4863)" href="https://noritake.vn/collections/palace-rose-4864/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/palace-rose-4863-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/palace-rose-4863-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Palace Rose (4863)" href="https://noritake.vn/collections/palace-rose-4864/"><span class="name-pro">Palace Rose</span><span class="sku-pro">(4863)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Primrose (4909)" href="https://noritake.vn/collections/primrose-4909/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/primrose-4909-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/primrose-4909-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Primrose (4909)" href="https://noritake.vn/collections/primrose-4909/"><span class="name-pro">Primrose</span><span class="sku-pro">(4909)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Splendid Umber (4970L)" href="https://noritake.vn/collections/splendid-umber-4970l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/splendid-umber-4970l-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/splendid-umber-4970l-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Splendid Umber (4970L)" href="https://noritake.vn/collections/splendid-umber-4970l/"><span class="name-pro">Splendid Umber</span><span class="sku-pro">(4970L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Yae (4968)" href="https://noritake.vn/collections/yae-4968/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/yae-4968-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/yae-4968-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Yae (4968)" href="https://noritake.vn/collections/yae-4968/"><span class="name-pro">Yae</span><span class="sku-pro">(4968)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập AEGEAN DREAMS (1740L)" href="https://noritake.vn/collections/aegean-dreams-1740l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/aegean-dreams-bst.jpg?v=851" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/aegean-dreams-bst.jpg?v=851" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập AEGEAN DREAMS (1740L)" href="https://noritake.vn/collections/aegean-dreams-1740l/"><span class="name-pro">Aegean Dreams</span><span class="sku-pro">(1740L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Bountiful Garden (M-667L)" href="https://noritake.vn/collections/bountiful-garden-m-667l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/bountiful-garden-m-667l-bts.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/bountiful-garden-m-667l-bts.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Bountiful Garden (M-667L)" href="https://noritake.vn/collections/bountiful-garden-m-667l/"><span class="name-pro">Bountiful Garden</span><span class="sku-pro">(M-667L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Eternal Palace Gold (1728L)" href="https://noritake.vn/collections/eternal-palace-gold-1728l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/eternal-palace-gold-1728l-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/eternal-palace-gold-1728l-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Eternal Palace Gold (1728L)" href="https://noritake.vn/collections/eternal-palace-gold-1728l/"><span class="name-pro">Eternal Palace Gold</span><span class="sku-pro">(1728L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Lodi_s Morning (M-666L)" href="https://noritake.vn/collections/lodi-s-morning-m-666l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/lodi-s-morning-m-666l-bst.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/lodi-s-morning-m-666l-bst.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Lodi_s Morning (M-666L)" href="https://noritake.vn/collections/lodi-s-morning-m-666l/"><span class="name-pro">Lodi_s Morning</span><span class="sku-pro">(M-666L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập New Morning (1738L)" href="https://noritake.vn/collections/new-morning-1738l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/new-morning-1738l-bts.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/new-morning-1738l-bts.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập New Morning (1738L)" href="https://noritake.vn/collections/new-morning-1738l/"><span class="name-pro">New Morning</span><span class="sku-pro">(1738L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Poppy Place (1737L)" href="https://noritake.vn/collections/poppy-place-1737l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/poppy-place-1737l-bts.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/poppy-place-1737l-bts.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Poppy Place (1737L)" href="https://noritake.vn/collections/poppy-place-1737l/"><span class="name-pro">Poppy Place</span><span class="sku-pro">(1737L)</span></a></p>
+    </div>
+    <div class="product-list-feature__item">
+        <div class="p-0 banner-image-testimonials">
+            <div class="banner-image-testimonials_content effect-banner"><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Rosa Basket (1736L)" href="https://noritake.vn/collections/rosa-basket-1736l/"><span class="effect-banner-image"><img data-src="https://theme.hstatic.net/200000296482/1000727098/14/rosa-basket-1736l-bts.jpg?v=853" class="lazyloaded" src="https://theme.hstatic.net/200000296482/1000727098/14/rosa-basket-1736l-bts.jpg?v=853" /> </span> </a></div>
+        </div>
+        <p><a title="Xem thêm: Các sản phẩm trong bộ sưu tập Rosa Basket (1736L)" href="https://noritake.vn/collections/rosa-basket-1736l/"><span class="name-pro">Rosa Basket</span><span class="sku-pro">(1736L)</span></a></p>
+    </div>
+</div>
+	</div>
+	</div>
+</section>
+<section class="qua-tang qua-tang-ca-nhan">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 d-block d-md-none px-0">
+			<div class="qua-tang__images">
+				<img src="https://theme.hstatic.net/200000296482/1000794328/14/qua-tang-ca-nhan-fixed.jpg?v=386" alt="GỢI Ý QUÀ TẶNG CÁ NHÂN"/>
+			</div>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="qua-tang__item">
+				<h2 class="qua-tang__item__title">
+					GỢI Ý QUÀ TẶNG CÁ NHÂN
+				</h2>
+				<p class="qua-tang__item__sub-title">
+					Quà tặng gởi trao - Mang bao tâm ý
+				</p>
+				<p class="qua-tang__item__desc">
+					Được biết đến với thương hiệu gốm sứ lâu đời và cao cấp hàng đầu tại Nhật Bản, Noritake luôn là gợi ý của những món quà tinh tế, mang theo tâm ý của người trao dành cho người nhận.
+				</p>
+				<div class="qua-tang__item__btn">
+					<a href="https://noritake.vn/pages/qua-tang" class="qua-tang__item__btn__link">Xem thêm</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+{%- if settings.use_collection_one_products-%}
+<section id="section-collection-home" class="section section-collection">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			{%- if settings.heading_collection_home_frist != '' -%}<span class="titleH-first">{{settings.heading_collection_home_frist}}</span>{%-endif-%}
+			<h2>
+				<a class="titleH-second link" href="{{collections[settings.collection_home].url}}">
+					{%- if settings.heading_collection_home_second  == '' -%}
+					{{collections[settings.collection_home].title}}
+					{%- else -%}
+					{{settings.heading_collection_home_second}}
+					{%- endif -%}
+				</a>
+			</h2>
+		</div>
+		<div class="wrapper-collection-1">
+			{%- if collections[settings.collection_home].products.size > 0 -%}
+			{%- if collections[settings.collection_home].products.size > 2 -%}
+			<div id="content-product-list-1" class="owl-carousel content-product-list content-product-list_vertical">
+				{%- assign collection_one_size = settings.limit_one_size -%}
+				{%- for product in collections[settings.collection_home].products limit: collection_one_size -%}
+				<div class="product-loop-slide">
+					{%- include 'product-loop' with collection.handle -%}
+				</div>
+				{%- endfor -%}
+			</div>
+			{%- elseif collections[settings.collection_home].products.size > 1 -%}		
+			<div class="row collection-special-two">
+				{%- for product in collections[settings.collection_home].products limit: 2 -%}
+				<div class="col-12 col-lg-6 ">
+					{%- include 'product-loop-special' with collection.handle -%}
+				</div>
+				{%- endfor -%}
+			</div>
+			{%- else -%}
+			<div class="collection-special-one">
+				{%- for product in collections[settings.collection_home].products limit: 1 -%}
+				{%- include 'product-loop-special' with collection.handle -%}
+				{%- endfor -%}
+			</div>
+			{%- endif -%}
+			<div class="f-more visible-xs">
+				<a href="{{collections[settings.collection_home].url}}">Xem tất cả</a>
+			</div>
+			{%- else -%}
+			<div class="row content-product-list content-product-list_vertical">
+				{%- include 'no-product-loop'-%}
+			</div>
+			{%- endif -%}
+		</div>
+	</div>
+</section>
+{%- endif -%}
+<section class="qua-tang qua-tang--doanh-nghiep-home">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 d-block d-md-none px-0">
+			<div class="qua-tang__images">
+				<img src="https://theme.hstatic.net/200000296482/1000794328/14/qua-tang-doanh-nghiep-mobile.jpg?v=356" alt="CẨM NANG QUÀ TẶNG DOANH NGHIỆP"/>
+			</div>
+		</div>
+		<div class="col-12 col-md-7">
+			<div class="qua-tang__item qua-tang__item--dn">
+				<h2 class="qua-tang__item__title">
+					QUÀ TẶNG DOANH NGHIỆP
+				</h2>
+				<p class="qua-tang__item__sub-title">
+					Quà tặng tinh tế - Xu thế doanh nghiệp
+				</p>
+				<p class="qua-tang__item__desc">
+					Với chất lượng cao cấp cùng thương hiệu uy tín tại Nhật, Noritake luôn được nhiều doanh nghiệp sử dụng làm quà tặng trong các dịp đặc biệt. Đội ngũ nhân viên Noritake tận tình và chuyên nghiệp luôn sẵn sàng tư vấn các sản phẩm quà tặng phù hợp với ngân sách cũng như nhu cầu của quý công ty.
+				</p>
+				<div class="qua-tang__item__btn">
+					<a href="https://noritake.vn/pages/qua-tang-doanh-nghiep-noritake" class="qua-tang__item__btn__link">Xem thêm</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+{%- if settings.display_banner_introproduct_2_home_4-%}
+<section id="section-banner-home-second" class="section section-banner sc-bk-button-2 m-0">
+	<div class="wrapper-banner-introproduct introproduct-4">
+		<div class="col-md-12 p-0">
+			<div class="row align-items-md-center">
+				<div class="col-12 col-md-7">
+					<div class="banner-introproduct-image aspect-ratio text-center">
+						<picture>
+							<source media="(min-width:481px)" srcset="{{'img_intro_product_2_4.png' | asset_url }}">
+							<source media="(max-width:480px)" srcset="{{'img_intro_product_2_mobile_4.png' | asset_url }}">
+							<img src="{{'img_intro_product_2_4.png' | asset_url }}" alt="{{settings.alt_img_intro_product_2_4}}">
+						</picture>
+					</div>
+				</div>
+				<div class="col-12 col-md-5">
+					<div class="banner-introproduct text-center p-4">
+						{%-if settings.banner_introproduct_title_first_2_4 != ''-%}
+						<span class="banner-introproduct-title_first">{{settings.banner_introproduct_title_first_2_4}}</span>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_title_second_12_4 != ''-%}
+						<h2 class="banner-introproduct-title_second">{{settings.banner_introproduct_title_second_2_4}}</h2>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_desc_2_4 != ''-%}
+						<p class="banner-introproduct-desc">{{settings.banner_introproduct_desc_2_4}}</p>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_btn_2_4 != ''-%}
+						<a href="{{settings.banner_introproduct_btn_link_2_4}}" class="banner-introproduct-button btn-box dark">{{settings.banner_introproduct_btn_2_4}}</a>
+						{%-endif-%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+{%- if settings.display_banner_introproduct_1_home_5-%}
+<section id="section-banner-home-frist" class="section section-banner sc-bk-button-3 m-0">
+	<div class="wrapper-banner-introproduct introproduct-5">
+		<div class="col-md-12 p-0">
+			<div class="row align-items-md-center">
+				<div class="col-12 col-md-5 order-2 order-md-0">
+					<div class="banner-introproduct text-center p-4">
+						{%-if settings.banner_introproduct_title_first_1_5 != ''-%}
+						<span class="banner-introproduct-title_first">{{settings.banner_introproduct_title_first_1_5}}</span>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_title_second_1_5 != ''-%}
+						<h2 class="banner-introproduct-title_second">{{settings.banner_introproduct_title_second_1_5}}</h2>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_desc_1_5 != ''-%}
+						<p class="banner-introproduct-desc">{{settings.banner_introproduct_desc_1_5}}</p>
+						{%-endif-%}
+						{%-if settings.banner_introproduct_btn_1_5 != ''-%}
+						<a href="{{settings.banner_introproduct_btn_link_1_5}}" class="banner-introproduct-button btn-box dark">{{settings.banner_introproduct_btn_1_5}}</a>
+						{%-endif-%}
+					</div>
+				</div>
+				<div class="col-12 col-md-7 order-1 order-md-0">
+					<div class="banner-introproduct-image aspect-ratio text-center">
+						<picture>
+							<source media="(min-width:481px)" srcset="{{'img_intro_product_1_5.png' | asset_url }}">
+							<source media="(max-width:480px)" srcset="{{'img_intro_product_1_mobile_5.png' | asset_url }}">
+							<img src="{{'img_intro_product_1_5.png' | asset_url }}" alt="{{settings.alt_img_intro_product_1_5}}">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+
+{%- if settings.use_collection_three_products-%}
+<section id="section-collection-three" class="section section-collection-three">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			{%-if settings.heading_collection_home_three_frist != ''-%}<span class="titleH-first">{{settings.heading_collection_home_three_frist}}</span>{%-endif-%}
+			<h2>
+				<a class="titleH-second link" href="{{collections[settings.collection_home_three].url}}">
+					{%- if settings.heading_collection_home_three_second  == '' -%}
+					{{collections[settings.collection_home_three].title}}
+					{%- else -%}
+					{{settings.heading_collection_home_three_second}}
+					{%- endif -%}
+				</a>
+			</h2>
+		</div>
+		<div class="wrapper-collection-3">
+			{%- if collections[settings.collection_home_three].products.size > 0 -%}
+			{%- if collections[settings.collection_home_three].products.size > 2 -%}
+			<div id="content-product-list-3" class="owl-carousel content-product-list content-product-list_vertical">
+				{%- assign collection_three_size = settings.limit_three_size -%}
+				{%- for product in collections[settings.collection_home_three].products limit: collection_three_size -%}
+				<div class="product-loop-slide" >
+					{%- include 'product-loop' with collection.handle -%}
+				</div>
+				{%- endfor -%}
+			</div>
+			{%- elseif collections[settings.collection_home_three].products.size > 1 -%}		
+			<div class="row collection-special-two">
+				{%- for product in collections[settings.collection_home_three].products limit: 2 -%}
+				<div class="col-12 col-lg-6 ">
+					{%- include 'product-loop-special' with collection.handle -%}
+				</div>
+				{%- endfor -%}
+			</div>
+			{%- else -%}
+			<div class="collection-special-one">
+				{%- for product in collections[settings.collection_home_three].products limit: 1 -%}
+				{%- include 'product-loop-special' with collection.handle -%}
+				{%- endfor -%}
+			</div>
+			{%- endif -%}
+			<div class="f-more visible-xs">
+				<a href="{{collections[settings.collection_home_three].url}}">Xem tất cả</a>
+			</div>
+			{%- else -%}
+			<div class="row content-product-list content-product-list_vertical">
+				{%- include 'no-product-loop'-%}
+			</div>
+			{%- endif -%}
+		</div>
+	</div>
+</section>
+{%- endif -%}
+{%- if settings.display_banner_testimonials_home-%}
+<section id="section-about-banner-home" class="section section-banner-testimonials d-none">
+	<div class="wrapper-banner-testimonials">
+		<div class="row align-items-lg-center">
+			<div class="col-12 col-sm-9 col-lg-9">
+				<div class="slider-banner-testimonials owl-carousel">
+					{%- for i in (1..3) -%}
+					{%- capture show_banner_testimonials -%}show_banner_testimonials_{{i}}{%- endcapture -%}
+					{%- capture testimonials_title_frist -%}testimonials_title_frist_{{i}}{%- endcapture -%}
+					{%- capture testimonials_title_second -%}testimonials_title_second_{{i}}{%- endcapture -%}
+					{%- capture testimonials_desc -%}testimonials_desc_{{i}}{%- endcapture -%}
+					{%- if settings[show_banner_testimonials]-%}
+					<div class="banner-testimonials">
+						{%-if settings[testimonials_title_frist] != ''-%}<span class="banner-testimonials-title_frist">{{ settings[testimonials_title_frist]}}</span>{%-endif-%}
+						{%-if settings[testimonials_title_second] != ''-%}<h2 class="banner-testimonials-title_second">{{ settings[testimonials_title_second]}}</h2>{%-endif-%}
+						{%-if settings[testimonials_desc] != ''-%}<p class="banner-testimonials-desc">{{ settings[testimonials_desc]}}</p>{%-endif-%}
+					</div>
+					{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+			<div class="col-12 col-sm-3 col-lg-3 p-0 banner-image-testimonials">
+				<div class="banner-image-testimonials_content effect-banner">
+					<span class="effect-banner-image">
+						<img class="lazyload" data-src="{{'banner_img_testimonials.jpg' | asset_url }}" 
+								 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								 alt="{{settings.banner_alt_testimonials}}">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+{%- if settings.use_collection_two_products-%}
+<section id="section-collection-two" class="section section-collection-two pt-5">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			{%-if settings.heading_collection_home_two_frist != ''-%}<span class="titleH-first">{{settings.heading_collection_home_two_frist}}</span>{%-endif-%}
+			<h2>
+				<a class="titleH-second link" href="{{collections[settings.collection_home_two].url}}">
+					{%- if settings.heading_collection_home_two_second  == '' -%}
+					{{collections[settings.collection_home_two].title}}
+					{%- else -%}
+					{{settings.heading_collection_home_two_second}}
+					{%- endif -%}
+				</a>
+			</h2>
+		</div>
+		<div class="wrapper-collection-2">
+			{%- if collections[settings.collection_home_two].products.size > 0 -%}
+			{%- if collections[settings.collection_home_two].products.size > 4 -%}
+			<div class="row  owl-carousel d-flex" id="collection-two-slide">
+				{%- assign collection_two_size = 12 -%}
+				{%- for product in collections[settings.collection_home_two].products limit: collection_two_size -%}
+				{%- assign twoprod = forloop.index | modulo: 3 -%}
+				{%- if twoprod == 1 -%}
+				<div class="col-12 product-colmnloop">
+					{%- endif -%}
+					<div class="col-12 product-loop product-horizontal">
+						{%- include 'product-loop-horizontal' with collection.handle -%}
+					</div>
+					{%- if twoprod == 0 or forloop.last  -%}
+				</div>
+				{%- endif -%}
+				{%- endfor -%}
+			</div>
+			{%- else -%}
+			<div class="row">
+				{%- for product in collections[settings.collection_home_two].products limit: 4 -%}
+				<div class="col-12 col-md-6 col-lg-3 product-loop product-horizontal">
+					{%- include 'product-loop-horizontal' with collection.handle-%}
+				</div>
+				{%- endfor -%}
+			</div>
+			{%- endif -%}
+			{%- else -%}
+			<div class="row content-product-list owl-carousel d-flex" id="collection-two-slide">
+				{%- include 'no-product-loop-horizontal'-%}
+			</div>
+			{%- endif -%}
+		</div>
+	</div>
+</section>
+{%- endif -%}
+{% if settings.home-blog-check %}
+<div class="home-blog">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			{%-if settings.home-blog-title-first != ''-%}<span class="titleH-first">{{settings.home-blog-title-first }}</span>{%-endif-%}
+			<h2>
+				<a class="titleH-second link" href="{{collections[settings.collection_home_two].url}}">
+					{%- if settings.home-blog-title  == '' -%}
+					{{blogs[settings.home-blog-handle].title}}
+					{%- else -%}
+					{{settings.home-blog-title }}
+					{%- endif -%}
+				</a>
+			</h2>
+		</div>
+		{%- if blogs[settings.home-blog-handle].articles.size > 0 -%}
+		<div class="home-blog-wrap">
+			{%- for article in blogs[settings.home-blog-handle].articles limit: settings.home-blog-limit -%}
+			{%- if article.image -%}
+			{%- assign imageUrl = article.image.src -%}
+			{%- else -%}
+			{%- assign imageUrl = '' -%}
+			{%- if article.excerpt contains 'src=' -%}
+			{%- assign imageExcerptNotNull = true -%}
+			{%- else -%}
+			{%- assign imageExcerptNotNull = false -%}
+			{%- endif -%}
+			{%- if article.content contains 'src=' -%}
+			{%- assign imageContentNotNull = true -%}
+			{%- else -%}
+			{%- assign imageContentNotNull = false -%}
+			{%- endif -%}
+			{%- if imageExcerptNotNull -%}
+			{%- assign arrayUrl = article.excerpt | split : 'src="' -%}
+			{%- else -%}
+			{%- if imageContentNotNull -%}
+			{%- assign arrayUrl = article.content | split : 'src="' -%}
+			{%- endif -%}
+			{%- endif -%}
+			{%- if imageExcerptNotNull == false and imageContentNotNull == false -%}
+			{%- assign imageUrl = '//theme.hstatic.net/1000300454/1000391697/14/blog_no_image.jpg' -%}
+			{%- else -%}
+			{%- assign imageUrl = arrayUrl[1] | split : '"' -%}
+			{%- if imageUrl contains '//hstatic' -%}
+			{%- assign imageUrl = imageUrl.first | product_img_url : 'large' -%}
+			{%- else -%}
+			{%- assign imageUrl = imageUrl.first -%}
+			{%- endif -%}
+			{%- endif -%}
+			{%- endif -%}
+			<div class="home-blog-wrap-item">
+				<div class="home-blog-wrap-item-image">
+					<a href="{{ article.url }}">
+						<img src="{{ imageUrl }}" alt="{{ article.title }}">
+					</a>
+				</div>
+				<h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+				<p>{{ article.content | strip_html | truncatewords: 50 }}</p>
+			</div>
+			{%- endfor -%}
+		</div>
+		{%- else -%} 
+		<div class="text-center">
+			<p>Chưa có bài viết nào trong mục này</p>
+		</div>
+		{%- endif -%}
+	</div>
+</div>
+{% endif %}
+<section class="qua-tang qua-tang--nha-hang-khach-san-home">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 d-block d-md-none px-0">
+			<div class="qua-tang__images">
+				<img src="https://theme.hstatic.net/200000296482/1000794328/14/home-banner-mobile-nha-hang-khach-san.jpg?v=312" alt="NHÀ HÀNG - KHÁCH SẠN"/>
+			</div>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="qua-tang__item">
+				<h2 class="qua-tang__item__title">
+					NHÀ HÀNG - KHÁCH SẠN
+				</h2>
+				<p class="qua-tang__item__sub-title">
+					Điểm nhấn bàn ăn - Nâng tầm ẩm thực
+				</p>
+				<p class="qua-tang__item__desc">
+					Nổi tiếng với chất lượng hàng đầu tại Nhật trong suốt 100 năm qua, Noritake tự hào khi trở thành các đơn vị cung cấp các sản phẩm gốm sứ, bộ đồ ăn cho các nhà hàng, khách sạn 5 sao thuộc hơn 100 quốc gia trên toàn thế giới.
+				</p>
+				<div class="qua-tang__item__btn">
+					<a href="https://noritake.vn/pages/nha-hang-khach-san" class="qua-tang__item__btn__link">Xem thêm</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+{%- if settings.display_instagram -%}
+<section id="section-instagram" class="section section-instagram">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			<span class="titleH-first">{{settings.instagram_title_desc}}</span>
+			<h2>
+				<a class="titleH-second link" href="{{settings.instagram_title_link}}">
+					{{settings.instagram_title}}
+				</a>
+			</h2>
+		</div>
+		<div class="instagram-list-img">
+			{%for i in (1..4)%}
+			{%capture imgIns%}instagram_image_{{i}}.jpg{%endcapture%}
+			{%capture linkIns%}instagram_image_link_{{i}}{%endcapture%}
+			<div class="instagram-list-img-item text-center"><a href="{{settings[linkIns]}}" target="_blank"><img src="{{imgIns | img_url:'grande' | asset_url}}"></a></div>
+			{%endfor%}
+		</div>
+	</div>
+</section>
+{%- endif -%}
+<section id="section-videos" class="section section-videos">
+	<div class="container-fluid">
+		<div class="wrapper-heading-home text-center">
+			<h2>
+				<a class="titleH-second link" href="https://www.youtube.com/channel/UCjP5BI9Z4-AsIrkSDjdub0w">
+					Youtube: <span class="text-capitalize">Noritake VietNam</span>
+				</a>
+			</h2>
+		</div>
+		<div class="wrapper-videos">
+			<div class="row">
+				<div class="col-12 col-md-8 col-mobile-padding">
+					<div class="wrapper-videos__items">
+						<a href="#gioithieu" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+							<img src="https://theme.hstatic.net/200000296482/1000794328/14/thumbnail-gioi-thieu.jpg?v=208" alt="Gioi thieu Noritake">
+							<i class="far fa-play-circle main-icon-video fa-4x"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 px-0">
+					<div class="wrapper-videos__list">
+						<div class="wrapper-videos__list__item">
+							<a href="#evening" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+								<img src="https://theme.hstatic.net/200000296482/1000794328/14/thumbnail-evening.jpg?v=208" alt="Evening">
+								<i class="far fa-play-circle main-icon-video fa-2x"></i>
+							</a>
+						</div>
+						<div class="wrapper-videos__list__item">
+							<a href="#yoshino" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+								<img src="https://theme.hstatic.net/200000296482/1000794328/14/thumbnail-yoshino.jpg?v=208" alt="Yoshino">
+								<i class="far fa-play-circle main-icon-video fa-2x"></i>
+							</a>
+						</div>
+						<div class="wrapper-videos__list__item">
+							<a href="#homage" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+								<img src="https://theme.hstatic.net/200000296482/1000794328/14/thumbnail-homage.jpg?v=208" alt="Homage">
+								<i class="far fa-play-circle main-icon-video fa-2x"></i>
+							</a>
+						</div>
+						<div class="wrapper-videos__list__item">
+							<a href="#enternal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+								<img src="https://theme.hstatic.net/200000296482/1000794328/14/eternal-video.png?v=388" alt="Enternal">
+								<i class="far fa-play-circle main-icon-video fa-2x"></i>
+							</a>
+						</div>
+						<div class="wrapper-videos__list__item">
+							<a href="#trefolio" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+								<img src="https://theme.hstatic.net/200000296482/1000794328/14/trefolio-video.jpg?v=432" alt="Trefolio">
+								<i class="far fa-play-circle main-icon-video fa-2x"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-contact-home">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-8 d-none d-md-block"></div>
+			<div class="col-12 col-md-4">
+				<div class="section-contact-home__item">
+					<div style="margin:0 auto;" id="zbwid-6b50ea2f"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Modal Gioi thieu-->
+<div class="modal fade video-modal" id="gioithieu" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/R-EeXOLH8RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal evening-->
+<div class="modal fade video-modal" id="evening" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/W0Dgd75ND7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Yoshino-->
+<div class="modal fade video-modal" id="yoshino" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/kkjKKlUIBKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Homage-->
+<div class="modal fade video-modal" id="homage" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/02JeTL34rsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Enternal-->
+<div class="modal fade video-modal" id="enternal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/dBTNxkTFOos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Trefolio -->
+<div class="modal fade video-modal" id="trefolio" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/fMnMWcRVuQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

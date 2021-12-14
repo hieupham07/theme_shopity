@@ -1,0 +1,58 @@
+{%for i in (1..5)%}
+<div class="col-6 col-md-4 col-lg-3 product-loop">
+	<div class="product-inner product-resize fixheight">
+		<div class="product-image d-flex jutify-content-center align-items-center image-resize">
+			<div class="product-sale"><span>-10%</span></div>
+			<a href="/adminv2/products_new" title="Sản phẩm mẫu 1" >
+				<img class="img-loop" alt="Sản phẩm mẫu" src="{{'spm1.png' | asset_url}}">
+			</a>
+		</div>
+		<div class="product-detail">
+			<div class="box-pro-detail">
+				<h3 class="pro-name">
+					<a href="/adminv2/products_new" title="Tiêu đề sản phẩm mẫu 1" class="link">
+						Tiêu đề sản phẩm mẫu 1
+					</a>
+				</h3>
+				<div class="box-pro-prices">	
+					<p class="block-pro-price highlight">
+						<span class="pro-price">260,000₫</span>
+						<span class="pro-price-del">
+							<del class="compare-price">
+								290,000₫
+							</del>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>				
+</div>
+<div class="col-6 col-md-4 col-lg-3 product-loop">
+	<div class="product-inner product-resize fixheight">
+		<div class="product-image d-flex jutify-content-center align-items-center image-resize">
+			<div class="sold-out"><span>Hết hàng</span></div>
+			<a href="/adminv2/products_new" title="Sản phẩm mẫu 2" >
+				<img class="img-loop" alt="Sản phẩm mẫu" src="{{'spm2.png' | asset_url}}">
+			</a>
+		</div>
+		<div class="product-detail">
+			<div class="box-pro-detail">
+				<h3 class="pro-name">
+					<a href="/adminv2/products_new" title="Tiêu đề sản phẩm mẫu 2" class="link">
+						Tiêu đề sản phẩm mẫu 2
+					</a>
+				</h3>
+				<div class="box-pro-prices">	
+					<p class="block-pro-price">
+						<span class="pro-price">360,000₫</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>				
+</div>
+{%endfor%}
+
+
+

@@ -1,0 +1,332 @@
+{%- if settings.about_style_selected == 'about_style_2' -%}
+<div class="layoutPage-about-two wrapper-page-content mb-5">
+	{%- if settings.about02_banner_show -%}
+	<section class="section-about-headtitle">
+		<div class="aspect-ratio">
+			<img src="{{ 'about02_banner_bkg.jpg' | asset_url }}" alt="{{page.title}}">
+		</div>
+		<div class="headtitle-block">
+			<div class="container-fluid">
+				<h1>{{page.title}}</h1>
+				{%- include 'breadcrumb' -%}
+			</div>
+		</div> 			
+	</section>
+	{%- endif -%}
+	{%- if settings.about02_infor_show -%}
+	<section class="section-about-information">
+		<div	class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+					<div class="groupAbout-title text-center">			
+						{% if settings.about02_infor_title != blank %}<h2 class="title-big">{{ settings.about02_infor_title }}</h2>{% endif %}
+						{% if settings.about02_infor_desc != blank %}<p class="title-desc">{{ settings.about02_infor_desc }}	</p>{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="groupAbout-content text-center">
+				<div class="row flex-container-information justify-content-center">
+					{%- for i in (1..3) -%}		
+					{%- capture aboutInfor_show -%}about02_infor_{{i}}_show{%- endcapture -%}
+					{%- capture aboutInfor_icon -%}about02_infor_{{i}}_ico.png{%- endcapture -%}
+					{%- capture aboutInfor_text -%}about02_infor_{{i}}_text{%- endcapture -%}
+					{%- capture aboutInfor_desc -%}about02_infor_{{i}}_desc{%- endcapture -%}
+
+					{%- if settings[aboutInfor_show] -%}
+					<div class="col-lg-4 col-md-4 col-sm-4 col-12 information-column">
+						<div class="information-area">
+							<div class="information-area_icon aspect-ratio">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+										 class="lazyload" data-src="{{ aboutInfor_icon | asset_url }}" alt="{{ settings[aboutInfor_text] }}"/>
+							</div>
+							<h3>{{ settings[aboutInfor_text] }}</h3>
+							<p>{{ settings[aboutInfor_desc] }}</p>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section>
+	{%- endif -%}	
+	{%- if settings.about02_team_show -%}
+	<section class="section-about-members">
+		<div	class="container-fluid">
+			<div class="wrapbox-content-members">
+				<div class="groupAbout-title text-center">
+					{% if settings.about02_team_title != blank %}<h2 class="title-big">{{settings.about02_team_title}}</h2>{% endif %}
+					{% if settings.about02_team_desc != blank %}<p class="title-desc">{{settings.about02_team_desc}}	</p>{% endif %}
+				</div>
+				<div class="row">
+					{% for i in (1..4) %}		
+					{% capture aboutTeam_show %}about02_team_{{i}}_show{% endcapture %}
+					{% capture aboutTeam_thumb %}about02_team_{{i}}_img.jpg{% endcapture %}
+					{% capture aboutTeam_name %}about02_team_{{i}}_name{% endcapture %}
+					{% capture aboutTeam_postion %}about02_team_{{i}}_postion{% endcapture %}
+
+					{% if settings[aboutTeam_show] %}
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 members-item">
+						<div class="members-item-block">
+							<div class="members-item-avatar effect aspect-ratio">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+										 class="lazyload img-fluid" data-src="{{ aboutTeam_thumb | asset_url }}" alt="{{ settings[aboutTeam_name] }}"/>
+							</div>
+							<div class="members-item-text">
+								<p class="mib-name">{{ settings[aboutTeam_name] }}</p>
+								<p>{{ settings[aboutTeam_postion] }}
+								</p>
+							</div>
+						</div>
+					</div>
+					{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>	
+	</section>
+	{%- endif -%}
+	{%- if settings.about02_services_show -%}
+	<section class="section-about-services ">
+		<div	class="container-fluid">
+			<div class="groupAbout-title text-center">
+				{% if settings.about02_services_title != blank %}<h2 class="title-big">{{settings.about02_services_title}}</h2>{% endif %}
+				{% if settings.about02_services_desc != blank %}<p class="title-desc">{{settings.about02_services_desc}}	</p>{% endif %}
+			</div>
+			<div class="groupAbout-content text-center">
+				<div class="row flex-container-services justify-content-center">
+					{%- for i in (1..6) -%}		
+					{%- capture aboutService_show -%}about02_services_{{i}}_show{%- endcapture -%}
+					{%- capture aboutService_icon -%}about02_services_{{i}}_ico.png{%- endcapture -%}
+					{%- capture aboutService_text -%}about02_services_{{i}}_text{%- endcapture -%}
+					{%- capture aboutService_desc -%}about02_services_{{i}}_desc{%- endcapture -%}
+
+					{%- if settings[aboutService_show] -%}
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 services-column">
+						<div class="services-area">
+							<div class="services-area-thumb aspect-ratio">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+										 class="lazyload" data-src="{{ aboutService_icon | asset_url }}" alt="{{ settings[aboutService_text] }}"/>
+							</div>
+							<div class="services-area-content">
+								<h3>{{settings[aboutService_text]}}</h3>
+								<p>{{settings[aboutService_desc]}}</p>
+							</div>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section>
+	{%- endif -%}
+</div>
+{% elsif settings.about_style_selected == 'about_style_3' %}
+<div class="layoutPage-about-three wrapper-page-content mb-5">
+	{%- if settings.about03_banner_show -%}
+	<section class="section-about-headtitle">
+		<div class="aspect-ratio">
+			<img src="{{ 'about03_banner_bkg.jpg' | asset_url }}" alt="{{page.title}}">
+		</div>	
+		<div class="headtitle-block">
+			<div class="container-fluid">
+				<h1>{{page.title}}</h1>
+				{%- include 'breadcrumb' -%}
+			</div>
+		</div> 			
+	</section>
+	{%- endif -%}
+	{%- if settings.about03_infor_show -%}
+	<section class="section-about-information">
+		<div	class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
+					<div class="groupAbout-title text-center">			
+						{% if settings.about03_infor_title != blank %}<h2 class="title-big">{{ settings.about03_infor_title }}</h2>{% endif %}
+						{% if settings.about03_infor_desc != blank %}<p class="title-desc">{{ settings.about03_infor_desc }}	</p>{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="groupAbout-content text-center">
+				<div class="row flex-container-information justify-content-center">
+					{%- for i in (1..3) -%}		
+					{%- capture aboutInfor_show -%}about03_infor_{{i}}_show{%- endcapture -%}
+					{%- capture aboutInfor_icon -%}about03_infor_{{i}}_ico.png{%- endcapture -%}
+					{%- capture aboutInfor_text -%}about03_infor_{{i}}_text{%- endcapture -%}
+					{%- capture aboutInfor_desc -%}about03_infor_{{i}}_desc{%- endcapture -%}
+
+					{%- if settings[aboutInfor_show] -%}
+					<div class="col-lg-4 col-md-4 col-sm-4 col-12 information-column">
+						<div class="information-area">
+							<div class="information-area_icon aspect-ratio">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+										 class="lazyload" data-src="{{ aboutInfor_icon | asset_url }}" alt="{{ settings[aboutInfor_text] }}"/>
+							</div>
+							<h3>{{ settings[aboutInfor_text] }}</h3>
+							<p>{{ settings[aboutInfor_desc] }}</p>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section>
+	{%- endif -%}	
+	{%- if settings.about03_team_show -%}
+	<section class="section-about-alternate">
+		<div	class="container-fluid">
+			{% for i in (1..4) %}		
+			{% capture aboutTeam_show %}about03_team_{{i}}_show{% endcapture %}
+			{% capture aboutTeam_thumb %}about03_team_{{i}}_img.jpg{% endcapture %}
+			{% capture aboutTeam_name %}about03_team_{{i}}_name{% endcapture %}
+			{% capture aboutTeam_postion %}about03_team_{{i}}_postion{% endcapture %}
+			{% if settings[aboutTeam_show] %}
+			<div class="row wrapbox-alternate align-items-center">		
+				<div class="col-lg-6 col-md-6 col-sm-6 col-12 alternate-detail">
+					<div class="block-detail row">
+						<div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-12 mt-md-3 ">
+							<h2>{{ settings[aboutTeam_name] }}</h2>
+							<p>{{ settings[aboutTeam_postion] }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-12 alternate-image">
+					<figure class="block-image m-0 effect">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+								 class="lazyload img-fluid" data-src="{{ aboutTeam_thumb | asset_url }}" alt="{{ settings[aboutTeam_name] }}"/>
+					</figure>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>	
+	</section>
+	{%- endif -%}
+	{%- if settings.about03_services_show -%}
+	<section class="section-about-services">
+		<div	class="container-fluid">
+			<div class="groupAbout-title text-center">
+				{% if settings.about03_services_title != blank %}<h2 class="title-big">{{settings.about03_services_title}}</h2>{% endif %}
+				{% if settings.about03_services_desc != blank %}<p class="title-desc">{{settings.about03_services_desc}}	</p>{% endif %}
+			</div>
+			<div class="groupAbout-content text-center">
+				<div class="row flex-container-services justify-content-center">
+					{%- for i in (1..6) -%}		
+					{%- capture aboutService_show -%}about03_services_{{i}}_show{%- endcapture -%}
+					{%- capture aboutService_icon -%}about03_services_{{i}}_ico.png{%- endcapture -%}
+					{%- capture aboutService_text -%}about03_services_{{i}}_text{%- endcapture -%}
+					{%- capture aboutService_desc -%}about03_services_{{i}}_desc{%- endcapture -%}
+
+					{%- if settings[aboutService_show] -%}
+					<div class="col-lg-4 col-md-6 col-sm-6 col-12 services-column">
+						<div class="services-area">
+							<div class="services-area-thumb aspect-ratio">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+										 class="lazyload" data-src="{{ aboutService_icon | asset_url }}" alt="{{ settings[aboutService_text] }}"/>
+							</div>
+							<div class="services-area-content">
+								<h3>{{settings[aboutService_text]}}</h3>
+								<p>{{settings[aboutService_desc]}}</p>
+							</div>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</section>
+	{%- endif -%}
+</div>
+{% else %}
+<div class="layoutPage-about-one">
+	{%- if settings.about01_banner_show -%}
+	<div class="section-about-headtitle">
+		<div class="aspect-ratio">
+			<img src="{{ 'about01_banner_bkg.jpg' | asset_url }}" alt="{{page.title}}">
+		</div>
+		<div class="headtitle-block">
+			<div class="container-fluid">
+				<h1>{{page.title}}</h1>
+				{%- include 'breadcrumb' -%}
+			</div>
+		</div> 			
+	</div>
+	{%- endif -%}
+	<div class="wrapper-page-content mt-4 mt-lg-5 mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<div class="page-wrapper">
+						<div class="wrapbox-content-page">
+							<div class="content-page">
+								{{ page.content }}
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="col-12 col-lg-3">
+					{%- if settings.show_page_menu-%}
+					<div class="sidebox_wrapper border py-4 px-3">
+						<div class="sidebox_title js-sidebox-title">
+							<h3 class="htitle text-center">{{settings.page_menu_title}}<span class="fa fa-angle-down"></span></h3>
+						</div>
+						<div class="sidebox_content sidebox-content-togged clearfix">
+							<ul class="menuList-links">
+								{% for link in linklists[settings.page_menu].links limit: 10 %}
+								{% if linklists[link.handle].links == empty %}				
+								<li class="{% if link.active %} active {% endif %}"><a href="{{link.url}}" title="{{link.title}}"><span>{{link.title}}</span></a></li>
+								{% else %}
+								<li class="has-submenu level0 {% if link.active %} active {% endif %}">
+									<a href="{{ link.url }}" title="{{link.title}}">{{ link.title }} <span class="icon-plus-submenu plus-nClick1"></span></a>
+									<ul class="submenu-links">
+										{% for link2 in linklists[link.handle].links %}
+										{% if linklists[link2.handle].links == empty %}
+										<li><a href="{{ link2.url }}" title="{{link2.title}}">{{ link2.title }}</a></li>
+										{% else %}
+										<li class="has-submenu level1">
+											<a href="{{ link2.url }}">{{ link2.title }}  <span class="icon-plus-submenu plus-nClick2"></span></a>
+											<ul class="submenu-links" >
+												{% for link3 in linklists[link2.handle].links %}	
+												{% if linklists[link3.handle].links == empty %}
+												<li class=""><a href="{{ link3.url }}" title="{{link3.title}}" >{{ link3.title }}</a></li>
+												{% else %}
+												<li class="has-submenu level2">
+													<a href="{{ link3.url }}" title="{{link3.title}}">{{ link3.title }} <span class="icon-plus-submenu plus-nClick3"></span></a>
+													<ul class="submenu-links" >
+														{% for link4 in linklists[link3.handle].links %}	
+														<li class=""><a href="{{ link4.url }}" title="{{link4.title}}" >{{ link4.title }}</a></li>
+														{% endfor %}
+													</ul>
+												</li>
+												{% endif %}
+												{% endfor %}
+											</ul>
+										</li>
+										{% endif %}
+										{% endfor %}
+									</ul>
+								</li>
+								{% endif %}
+								{% endfor%}
+							</ul>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- if settings.show_banner_image_page-%}
+					<div class="banner-image-page mt-5  d-none d-md-block">
+						<a href="{{settings.banner_page_href}}" class="aspect-ratio" aria-label="{{page.title | strip_html | escape}}">
+							<img class="lazyload" data-src="{{'banner_image_page.jpg'|asset_url}}"
+									 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+									 alt="{{page.title | strip_html | escape}}"/>
+						</a>
+					</div>
+					{%- endif -%}
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}

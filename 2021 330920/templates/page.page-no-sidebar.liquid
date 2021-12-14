@@ -1,0 +1,30 @@
+<div class="layoutPage-about-one">
+	{%- if settings.about01_banner_show -%}
+	<div class="section-about-headtitle">
+		<div class="aspect-ratio">
+			<img src="{{ 'about01_banner_bkg.jpg' | asset_url }}" alt="{{page.title}}">
+		</div>
+		<div class="headtitle-block">
+			<div class="container-fluid">
+				<h1>{{page.title}}</h1>
+				{%- include 'breadcrumb' -%}
+			</div>
+		</div> 			
+	</div>
+	{%- endif -%}
+	<div class="wrapper-page-content mt-4 mt-lg-5 mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<div class="page-wrapper">
+						<div class="wrapbox-content-page">
+							<div class="content-page">
+								{{ page.content }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

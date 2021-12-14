@@ -1,0 +1,79 @@
+<div id="collection">
+	{% paginate collection.products by settings.pagination_limit %}
+	{%- if settings.show_collection_image -%}	
+	<div class="banner-collection-header text-center">
+		{% if collection.image != blank %}
+		<img src="{{ collection.image.src }}" alt="{{collection.title}}"/>
+		{% else %}
+		<img src="{{ 'collection_banner.jpg' | asset_url }}" alt="{{collection.title}}"/>
+		{% endif %}
+	</div>	
+	{%- endif -%}
+	<!-- Begin collection info -->
+	<!-- Content-->
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="row align-items-center justify-content-center">
+			<div class="col-12 col-md-8">
+				<div class="notify-empty">
+<h2 class="notify-empty__heading">Danh mục sản phẩm hiện đang được cập nhật. Vui lòng liên hệ với chúng tôi để được tư vấn trực tiếp theo số hotline: <a href="tel:0934033988">0934 033 988</a> hoặc điền thông tin bên dưới:</h2>
+<div class="notify-empty__form">
+<div style="margin:0 auto;" id="zbwid-8efc717d"></div>
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End collection info -->
+	<!-- Begin no products -->
+	
+	{% endpaginate %}
+	<!-- End no products -->
+</div>
+<script>
+Haravan.queryParams = {};
+if (location.search.length) {
+	for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+		aKeyValue = aCouples[i].split('=');
+		if (aKeyValue.length > 1) {
+			Haravan.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+		}
+	}
+}
+var collFilters = jQuery('.coll-filter');
+collFilters.change(function() {
+	var newTags = [];
+	var newURL = '';
+	delete Haravan.queryParams.page;
+	collFilters.each(function() { 
+		if (jQuery(this).val()) {
+			newTags.push(jQuery(this).val());
+		}
+	});
+	{% if collection.handle %}
+	newURL = '/collections/' + '{{ collection.handle }}';
+	 if (newTags.length) {
+		 newURL += '/' + newTags.join('+');
+	 }
+	 var search = jQuery.param(Haravan.queryParams);
+	 if (search.length) {
+		 newURL += '?' + search;
+	 }
+	 location.href = newURL;    
+	 {% else %}
+	 if (newTags.length) {
+		 Haravan.queryParams.constraint = newTags.join('+');        
+	 }
+		else {
+			delete Haravan.queryParams.constraint;
+		}
+		location.search = jQuery.param(Haravan.queryParams);
+		{% endif %}      
+		});
+		jQuery('.sort-by')
+		.val('{{ collection.sort_by | default: collection.default_sort_by  }}')
+		.bind('change', function() {
+			Haravan.queryParams.sort_by = jQuery(this).val();
+			location.search = jQuery.param(Haravan.queryParams);
+		});
+		</script>

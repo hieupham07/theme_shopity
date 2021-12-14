@@ -1,0 +1,61 @@
+{%assign xcontent = product.description | split:'#####' | last%}	
+{%assign handle = xcontent | strip_html%}
+{% if handle != blank %}
+<div class="productDetail-related clearfix border-top pt-4">
+	<div class="container-fluid"> 
+		<div class="productRelated-title text-center">
+			<a href="/collections/{{handle}}">
+				<h3>{{settings.productspg_related_titlex}}</h3>
+			</a>
+		</div>
+		<div class="noritake-conetent owl-carousel owl-theme">
+		</div>  
+	</div>
+</div>  
+<script>
+	$(document).ready(function(){
+		jQuery.ajax({
+			url: '/collections/{{handle}}?view=pagepro',
+			async:false,  
+			success:function(data){
+				$(".noritake-conetent").append(data);
+				if($(".noritake-conetent").length > 0){
+					$('.noritake-conetent').owlCarousel({
+						items:5,
+						nav: true,
+						dots: false,
+						pagination: false,
+						slideSpeed : 1000,
+						smartSpeed:1000,
+						addClassActive: true,
+						scrollPerPage: false,
+						touchDrag: true,
+						autoplay: false,
+						loop: false,
+						responsive:{
+							0:{
+								items:2,
+								stagePadding: 15,
+								margin:15
+							},
+							768:{
+								items:4,
+								margin:15,
+							},
+							992:{
+								items:5,
+								margin:15
+							},
+							1200:{
+								items:5,
+								margin:15
+							}
+						}
+					});
+				}
+			}
+		});
+	})
+</script>
+
+{% endif %}

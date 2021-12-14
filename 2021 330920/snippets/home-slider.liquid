@@ -1,0 +1,64 @@
+<section id="section-slider" class="section section--home-slider">
+	<div id="home-slider" class="owl-carousel">
+		<div class="wrapper-item">
+			<div class="slider-image">
+				<picture>
+					<source media="(max-width: 767px)" srcset="{{ 'slideshow_1_mb.jpg' | asset_url}}"/>
+					<source media="(min-width: 768px)" srcset="{{'slideshow_1.jpg' | asset_url}}"/>
+					<img src="{{ 'slideshow_1.jpg' | asset_url }}" alt="{{ settings.slide_1_alt }}"/>
+				</picture>
+			</div>
+            <a href="{{ settings.slide_1_link }}" target="_blank">
+			<div class="slider-content-text d-flex align-items-center text-center">
+				<div class="container">
+					<div class="wrap-content-slider">
+						<div class="title-content-slider">
+							{%- if settings.slide_1_title_1 != empty -%}<p class="title-first-slider">{{ settings.slide_1_title_1}}</p>{%- endif -%}
+							{%- if settings.slide_1_title_2 != empty -%}<h2 class="title-second-slider">{{ settings.slide_1_title_2}}</h2>{%- endif-%}
+						</div>
+						<div class="button-content-slider button_content_box">
+							{%- if settings.slide_1_button != empty -%}<a href="{{ settings.slide_1_link }}" class="btn btn-box dark">{{ settings.slide_1_button}}</a>{%- endif-%}
+						</div>
+					</div>
+				</div>
+			</div>
+            </a>
+		</div>
+		{%- for i in (2..4) -%}
+		{%- capture slide_show -%}slide_{{ i }}{%- endcapture -%}
+		{%- capture slide_image -%}slideshow_{{ i }}.jpg{%- endcapture -%}
+		{%- capture slide_image_mb -%}slideshow_{{ i }}_mb.jpg{%- endcapture -%}
+		{%- capture slide_image_alt -%}slide_{{i}}_alt{%- endcapture -%}
+		{%- capture slide_title_1 -%}slide_{{i}}_title_1{%- endcapture -%}
+		{%- capture slide_title_2 -%}slide_{{i}}_title_2{%- endcapture -%}
+		{%- capture slide_btn -%}slide_{{i}}_button{%- endcapture -%}
+		{%- capture slide_link -%}slide_{{i}}_link{%- endcapture -%}
+		{%- if settings[slide_show] -%}
+		<div class="wrapper-item">
+			<div class="slider-image">
+				<picture>
+					<source class="owl-lazy" media="(max-width: 767px)" data-srcset="{{ slide_image_mb | asset_url}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="/>
+					<source class="owl-lazy" media="(min-width: 768px)" data-srcset="{{ slide_image | asset_url}}" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="/>
+					<img class="owl-lazy" alt="{{ settings[slide_image_alt] }}" data-src="{{ slide_image | asset_url }}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="/>
+				</picture>
+			</div>
+            <a href="{{ settings[slide_link] }}" target="_blank">
+			<div class="slider-content-text d-flex align-items-center text-center">
+				<div class="container">
+					<div class="wrap-content-slider">
+						<div class="title-content-slider">
+							{%- if settings[slide_title_1] != empty -%}<p class="title-first-slider">{{ settings[slide_title_1]}}</p>{%- endif-%}
+							{%- if settings[slide_title_2] != empty -%}<h2 class="title-second-slider">{{ settings[slide_title_2]}}</h2>{%- endif-%}
+						</div>
+						<div class="button-content-slider button_content_box">
+							{%- if settings[slide_btn] != empty -%}<a href="{{ settings[slide_link] }}" class="btn btn-box dark">{{ settings[slide_btn]}}</a>{%- endif-%}
+						</div>
+					</div>
+				</div>
+			</div>
+            </a>
+		</div>
+		{%- endif -%}
+		{%- endfor -%}
+	</div>
+</section>

@@ -1,0 +1,35 @@
+<div class="layout-account mb-5 mt-5">
+	<div class="container">
+		<div class="wrapbox-content-account pb-4">
+			<div class="customers-account-form userbox m-auto">
+				<div id="login" class="customers-account">
+					<div class="account-type text-center"><h1>Kích hoạt tài khoản</h1></div>		
+					{%- form 'activate_customer_password' -%}
+					{{ form.errors | default_errors }}
+					<p class="create-password mb-3">Điền mật khẩu để kích hoạt tài khoản của bạn</p>
+					<div class="form-group mb-4 clearfix">
+						<label for="customer_password" class="text-field d-block font-weight-normal text-uppercase mb-2">Mật khẩu</label>
+						<input id="customer_password" required type="password" name="customer[password]" placeholder="......" autocomplete="off" class="form-control"/>      
+					</div>
+					<div class="form-group mb-4 clearfix">
+						<label for="customers_password" class="text-field d-block font-weight-normal text-uppercase mb-2">Xác nhận mật khẩu</label>
+						<input id="customers_password" required type="password" name="customer[password_confirmation]" placeholder="......" autocomplete="off" class="form-control"/>      
+					</div>
+					<div class="sitebox-recaptcha mb-4">
+						This site is protected by reCAPTCHA and the Google
+						<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+						and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+					</div>
+					<div class="customers-action-account clearfix">
+						<div class="action-button">
+							<button type="submit" class="btn btn-box dark">Kích hoạt</button>
+						</div>
+					</div>
+					{%- endform -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

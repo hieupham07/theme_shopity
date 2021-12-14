@@ -1,0 +1,75 @@
+{%- layout 'amp' -%}
+<div class="bg-breadcrumb">
+	{% include 'breadcrumb-amp' %}
+</div>
+<section>
+	<div class="main-content-pd">
+		<div class="box-image-slide">
+			<div class="box-featured-image">
+				{% if product.images.size > 0 %}
+				<amp-img width="1000" height="1250" layout="responsive" src="{{ product.featured_image | product_img_url : 'large' }}"></amp-img>
+				{% else %}
+				<amp-img width="1000" height="1250" layout="responsive" src="{{'no_image.jpg' | asset_url}}"></amp-img>
+				{% endif %}
+			</div>
+			{% if product.images.size > 1 %}
+			<div class="box-slide-thumb">
+				<amp-carousel height="160"
+											layout="fixed-height"
+											type="carousel">
+					{% for image in product.images %}
+					{% unless forloop.first %}
+					<amp-img src="{{ image.src | product_img_url : 'medium' }}"
+									 width="128"
+									 height="160"
+									 alt="a sample image"></amp-img>
+					{% endunless %}
+					{% endfor %}
+				</amp-carousel>
+			</div>
+			{% endif %}
+		</div>
+		<div class="box-infor-product">
+			<h1 class="product-title">{{ product.title }}</h1>
+			<p class="product-sku">SKU: {{ product.variants.first.sku }}</p>
+			<p class="product-price">
+				<span>{{ product.price | money }}</span>
+				{% if product.compare_at_price > product.price %}
+				<del>{{ product.compare_at_price | money }}</del>
+				{% endif %}
+			</p>
+		</div>
+		<div>
+			{% assign hide_default_title = false %}
+			{% if product.variants.size == 1 and product.variants.first.title contains 'Default' and product.options.size == 1%}
+			{% assign hide_default_title = true %}
+			{% endif %}
+			<form method="get" action="{{ shop.url | replace: 'http:', '' | replace: 'https:', '' }}/cart/change" target="_top">
+				<div class="flex">
+					<div class="flexbox-content">
+						<select class="form-control" name="id">
+							{% for variant in product.variants %}
+							<option value="{{ variant.id }}">{{ variant.title }}</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="flexbox-auto-80px">
+						<select name="quantity" class="form-control">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+				<button type="submit" class="ampstart-btn btn-detail btn-color-add">Thêm vào giỏ</button>
+			</form>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,9 @@
+{%layout none%} 
+{% for product in collection.products limit: settings.number_of_related_products_to_fetchx %}
+<div class="product-loop">
+	{%- include 'product-loop' -%}
+</div>
+{% endfor %}
+ 
+
+

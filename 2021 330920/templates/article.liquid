@@ -1,0 +1,201 @@
+{%include 'breadcrumb'%}
+<div id="article">
+	<div class="wrapper-content-article mt-4 mt-lg-5 mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<div class="list_blog article-content" itemscope itemtype="https://schema.org/Recipe">
+						<div class="article-heading clearfix">		
+							{%- assign no_image = false -%}
+							{%- if article.image -%}
+							{%- assign imageUrl = article.image.src | product_img_url : '1024x1024' -%}
+							{%- else -%}
+							{%- assign imageUrl = '' -%}
+							{%- if article.excerpt contains 'src=' -%}
+							{%- assign imageExcerptNotNull = true -%}
+							{%- else -%}
+							{%- assign imageExcerptNotNull = false -%}
+							{%- endif -%}
+							{%- if article.content contains 'src=' -%}
+							{%- assign imageContentNotNull = true -%}
+							{%- else -%}
+							{%- assign imageContentNotNull = false -%}
+							{%- endif -%}
+							{%- if imageExcerptNotNull -%}
+							{%- assign arrayUrl = article.excerpt | split : 'src="' -%}
+							{%- else -%}
+							{%- if imageContentNotNull -%}
+							{%- assign arrayUrl = article.content | split : 'src="' -%}
+							{%- endif -%}
+							{%- endif -%}
+							{%- if imageExcerptNotNull == false and imageContentNotNull == false -%}
+							{%- assign imageUrl = '//theme.hstatic.net/1000300454/1000391697/14/blog_no_image.jpg' -%}
+							{%- else -%}
+							{%- assign imageUrl = arrayUrl[1] | split : '"' -%}
+							{%- if imageUrl contains '//hstatic' -%}
+							{%- assign imageUrl = imageUrl.first | product_img_url : '1024x1024' -%}
+							{%- else -%}
+							{%- assign imageUrl = imageUrl.first -%}
+							{%- endif -%}
+							{%- endif -%}
+							{%- endif -%}
+							<h1 class="article-heading_title" itemprop="name">{{article.title}}</h1>
+							<ul class="article-heading_info article-info-more">
+								<li>
+									<span class="article-heading_info-author" itemprop="author">Người viết: {{article.author}} lúc</span>
+									<span class="article-heading_info-date" itemprop="datePublished">
+										<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%d.%m.%Y' }}</time>
+									</span>
+								</li>
+								<li><i class="fa fa-file-text-o"></i><a href="/blogs/{{ blog.handle }}"> {{blog.title}}</a> </li>
+								{%- if blog.comments_enabled? -%}
+								<li>- <i class="comment-icon fa fa-comment-o"></i>
+									<a data-spy="scroll" data-target="#comment" href="#comment">
+										{{ article.comments_count }}<span> {{ article.comments_count | pluralize: 'Bình luận','Bình luận' }}</span>
+									</a>
+								</li>
+								{%- endif -%}	
+							</ul>								
+						</div>
+						<div class="article-background-image mb-4 aspect-ratio">
+							<img itemprop="image" class="lazyload" data-src="{{ imageUrl }}" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="{{ article.title }}" >
+						</div>
+						<div class="article-content-desc mb-4" itemprop="description">{{ article.content }}</div>
+						{%- if article.tags.size > 0 -%}
+						<div class="article-meta-tags mb-4">
+							<span class="article-meta-tags_title">Tags: </span> 
+							{%- for tag in article.tags -%}
+							<a class="article-meta_tag" href="{{shop.url}}/blogs/all/tagged/{{ tag | handle }}" itemprop="suitableForDiet">{{ tag }}, </a>
+							{%- endfor -%}
+						</div>
+						{%- endif -%}
+						<div class="article-post-nav clearfix mb-4">							
+							{%- if blog.previous_article -%}
+							<span class="float-left left">
+								<svg class="arrow-left d-inline-block align-middle" viewBox="0 0 11 18">
+									<path d="M9.5 1.5L1.5 9l8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+								</svg>
+								{{ 'Bài trước' | link_to: blog.previous_article}}
+							</span>
+							{%- endif -%}
+							{%- if blog.next_article -%}
+							<span class="float-right right">
+								{{ 'Bài sau' | link_to: blog.next_article }}
+								<svg class="arrow-right d-inline-block align-middle" viewBox="0 0 11 18">
+									<path d="M1.5 1.5l8 7.5-8 7.5" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+								</svg>
+							</span>
+							{%- endif -%}							
+						</div>
+					</div>
+					{%- if blog.comments_enabled? -%}
+					<div class="article-comment" role="tablist">
+						<div class="article-comment_title mt-5">
+							<h2 class="mb-4 text-uppercase">
+								<a data-spy="scroll" data-target="#comment" href="#comment" aria-controls="comment" role="tab">Viết bình luận</a>
+							</h2>
+						</div>
+						<div class="article-comment_form" id="comment">
+							<div class="comment-form">
+								{%- form "new_comment", article -%}
+								{%- if form.posted_successfully? -%}
+								{%- if blog.moderated? -%}
+								<p class="subtext success alert alert-warning" role="alert">Bình luận thành công! Tuy nhiên, lời bình cần được kiểm duyệt trước khi đăng lên</p>
+								{%- else -%}
+								<p class="subtext success alert alert-warning" role="alert">Bình luận của bạn đã được đăng lên</p>
+								{%- endif -%}
+								{%- endif -%}
+								{%- if form.errors -%}
+								<p class="subtext error alert alert-danger" role="alert">Thông tin bạn nhập chưa đầy đủ</p>
+								{%- endif -%}
+								<div class="row">
+									<div class="col-12 col-md-6 pr-md-2">
+										<div class="form-group">
+											<input required type="text" id="comment_author" name="comment[author]" size="40" class="text form-control" placeholder="Tên của bạn " aria-label="Tên của bạn"/>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 pl-md-2">
+										<div class="form-group">
+											<input required type="text" id="comment_email" name="comment[email]" size="40" class="text form-control" placeholder="Email của bạn" aria-label="Email của bạn"/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<textarea id="comment_body" name="comment[body]" cols="40" rows="5" class="text form-control" placeholder="Viết bình luận ..." aria-label="Viết bình luận ...">{{form.body}}</textarea>
+								</div>
+								{{form.captcha_html}}
+								{%comment%}
+								{%- if blog.moderated? -%}
+								<div class="notice mb-2">Bình luận của bạn sẽ được duyệt trước khi đăng lên</div>
+								{%- endif -%}
+								{%endcomment%}
+								<div class="sitebox-recaptcha mb-3">
+									This site is protected by reCAPTCHA and the Google
+									<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+									and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+								</div>
+								<button type="submit" class="btn submitcomment btn-box dark clearfix" id="comment-submit" >Gửi bài viết</button>
+								{%- endform -%}
+							</div>
+						</div>
+						{%- if article.comments.size > 0 or comment.created_at -%}
+						<div class="article-comment_title mt-4">
+							<h2 class="mb-4 text-uppercase">Bình luận</h2>
+						</div>
+						<div class="article-comment_content" id="cmt-content">
+							{%- if comment and comment.created_at -%}
+							<div id="comment-{{ comment.id }}" class="article-comment_user border-bottom clearfix">
+								<h3 class="article-comment_user-author">
+									<strong>{{ comment.author }}</strong>
+									<span class="date float-right">{{ comment.created_at | date: '%d/%m/%Y' }}</span>
+								</h3>
+								<p>{{ comment.content }}</p>
+							</div>
+							{%- endif -%}
+							{%- for comment in article.comments -%}
+							<div id="comment-{{ comment.id }}" class="article-comment_user border-bottom clearfix">
+								<h3 class="article-comment_user-author">
+									<strong>{{ comment.author }}</strong>
+									<span class="date float-right">{{ comment.created_at | date: '%d/%m/%Y' }}</span>
+								</h3>
+								<div class="article-comment_user-content-text">
+									<p>{{ comment.content }}</p>						
+								</div>
+							</div>
+							{%- endfor -%}
+						</div>
+						{%- endif -%}
+					</div>
+					{%- endif -%}
+				</div>
+				<div class="col-12 col-lg-3">
+					{%- include 'siderbar-blog'-%}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	(function($){
+		$.fn.shuffle = function() {
+			var allElems = this.get(),
+					getRandom = function(max) {
+						return Math.floor(Math.random() * max);
+					},
+					shuffled = $.map(allElems, function(){
+						var random = getRandom(allElems.length),
+								randEl = $(allElems[random]).clone(true)[0];
+						allElems.splice(random, 1);
+						return randEl;
+					});
+			this.each(function(i){
+				$(this).replaceWith($(shuffled[i]));
+			});
+			return $(shuffled);
+		};
+	})(jQuery);
+
+
+	$('#owlProductRelated .product-loop').shuffle();
+
+</script>

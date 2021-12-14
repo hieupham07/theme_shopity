@@ -1,0 +1,79 @@
+<div class="layout-info-account mb-5">
+	<div class="container">
+		<div class="title-info-account text-center py-5">
+			<h1 class="m-0">Tài khoản của bạn</h1>
+		</div>
+		<div class="content-infor-account">
+			<div class="row">
+				<div class="col-12 col-md-3">
+					<div class="sidebar-account-inner mb-4">
+						{%- include 'sidebar-account'-%}
+					</div>
+				</div>
+				<div class="col-12 col-md-9">
+					<div class="customer-sidebar clearfix">
+						<h2 class="title-detail mb-2 pb-2 text-uppercase">Thông tin tài khoản</h2>
+						<div class="box-info-sidebar">
+							{%- if customer.default_address.first_name == empty and customer.default_address.last_name == empty -%}
+							<p class="name-account mb-2"><span class="font-weight-bold mr-2">Họ tên: </span>{{ customer.last_name }} {{ customer.first_name }}</p>
+							{%- else -%}
+							<p class="name-account mb-2"><span class="font-weight-bold mr-2">Họ tên: </span>{{ customer.default_address.last_name }} {{ customer.default_address.first_name }}</p>
+							{%- endif -%}
+							<p class="email mb-2"><span class="font-weight-bold mr-2">Email: </span>{{ customer.email }}</p>
+							<div class="address">
+								<p class="mb-2"><span class="font-weight-bold mr-2">Địa chỉ 1: </span>{{ customer.default_address.address1 }}</p>
+								<p class="mb-2"><span class="font-weight-bold mr-2">Địa chỉ 2: </span>{{ customer.default_address.address2 }}</p>
+								<p class="mb-2"><span class="font-weight-bold mr-2">Quốc gia: </span>{{ customer.default_address.city}} {% if address.province_code %}{{customer.default_address.province_code}}, {% endif %}{{customer.default_address.country}}</p>
+								<p class="mb-2"><span class="font-weight-bold mr-2">Số điện thoại: </span>{{ customer.default_address.phone }}</p>
+								<a id="view_address" href="/account/addresses">Xem địa chỉ</a>
+							</div>
+						</div>
+					</div>
+					<div class="customer-orders mb-4">
+						<div class="wrap-order-table p-2 mt-4 mb-3">
+							<div id="customer_orders" class="customers-order-bg p-2">
+								{%- if customer.orders.size != 0 -%}
+								<p class="title-detail mb-0 pb-2 text-uppercase">Danh sách đơn hàng mới nhất</p>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="order_number text-center">Mã đơn hàng</th>
+												<th class="date text-center">Ngày đặt</th>
+												<th class="total text-right">Thành tiền</th>
+												<th class="payment_status text-center">Trạng thái thanh toán</th>
+												<th class="fulfillment_status text-center">Vận chuyển</th>
+											</tr>
+										</thead>
+										<tbody>
+											{%- for order in customer.orders -%}
+											<tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+												<td class="text-center">{{ order.name | link_to: order.customer_url }}</td>
+												<td class="text-center"><span>{{ order.created_at | date: '%d/%m/%Y' }}</span></td>
+												<td class="text-right"><span class="total money">{{ order.total_price | money }}</span></td>
+												{% if order.financial_status contains 'pending' %}
+												<td class="text-center"><span class="status_{{ order.financial_status }}">{{ order.financial_status | replace : 'pending', 'Chờ xử lý'}}</span></td>
+												{% else %}
+												<td class="text-center"><span class="status_{{ order.financial_status }}">{{ order.financial_status | replace : 'paid', 'Đã hoàn tất'}}</span></td>
+												{% endif %}
+												{% if order.fulfillment_status contains 'not fulfilled' %}
+												<td class="text-center"><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status | replace : 'not fulfilled','Chưa giao hàng' }}</span></td>
+												{% else %}
+												<td class="text-center"><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status | replace : 'fulfilled', 'Đã giao hàng' }}</span></td>
+												{% endif %}
+											</tr>
+											{%- endfor -%}
+										</tbody>
+									</table>
+								</div>
+								{%- else -%}
+								<p class="mt-2">Bạn chưa đặt mua sản phẩm.</p>
+								{%- endif -%}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

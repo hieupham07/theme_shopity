@@ -1,0 +1,142 @@
+{%include 'breadcrumb'%}
+<div class="layout-pageContact mt-4 mt-lg-5 mb-5">
+	<div class="wrapper-infor-contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-6 mb-4">
+					<div class="heading-page-contact">
+						<h2 class="mb-3">{{page.title}}</h2>
+					</div>
+					{%- if settings.page_contact_description != empty-%}
+					<div class="description-contact">
+						<p>{{settings.page_contact_description}}</p>
+					</div>
+					{%- endif -%}
+					<div class="wrapper-info-contact">
+						<ul class="list-info-contact">
+							<li class="d-flex">
+								<div class="info-contact_left">
+									<span class="mr-3">Điện thoại</span>
+								</div>
+								<div class="info-contact_right">
+									<p class="m-0">{{settings.page_contact_phone}}</p>
+								</div>
+							</li>
+							<li class="d-flex">
+								<div class="info-contact_left">
+									<span class="mr-3">Địa chỉ</span>
+								</div>
+								<div class="info-contact_right">
+									<p class="m-0">{{settings.page_contact_address}}</p>
+								</div>
+							</li>
+							<li class="d-flex">
+								<div class="info-contact_left">
+									<span class="mr-3">Email</span>
+								</div>
+								<div class="info-contact_right">
+									<p class="m-0">{{settings.page_contact_email}}</p>
+								</div>
+							</li>
+							<li class="d-flex">
+								<div class="info-contact_left">
+									<span class="mr-3">Thời gian làm việc</span>
+								</div>
+								<div class="info-contact_right">
+									<p class="m-0">{{settings.page_contact_time}}</p>
+								</div>
+							</li>
+						</ul>
+						{%if settings.show_social_page_contact%}
+						<div class="list-icon-contact d-flex">
+							<span class="info-contact_left text-uppercase">Mạng xã hội</span>
+							<ul class="info-contact_right social-media list-unstyled">
+								{%- if settings.link_social_facebook_contact != ''-%}
+								<li class="social-media_item social-media_item--facebook">
+									<a href="{{settings.link_social_facebook_contact}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Facebook"><i class="fa fa-facebook"></i></a>
+									<div class="tooltip">Facebook</div>
+								</li>
+								{%- endif-%}
+								{%- if settings.link_social_youtube_contact != ''-%}
+								<li class="social-media_item social-media_item--youtube">
+									<a href="{{settings.link_social_youtube_contact}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Youtube"><i class="fa fa-youtube"></i></a>
+									<div class="tooltip">Youtube</div>
+								</li>
+								{%- endif-%}
+								{%- if settings.link_social_pinterest_contact != ''-%}
+								<li class="social-media_item social-media_item--pinterest">
+									<a href="{{settings.link_social_pinterest_contact}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Pinterest"><i class="fa fa-pinterest"></i></a>
+									<div class="tooltip">Pinterest</div>
+								</li>
+								{%- endif-%}
+								{%- if settings.link_social_twitter_contact != ''-%}
+								<li class="social-media_item social-media_item--twitter">
+									<a href="{{settings.link_social_twitter_contact}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Twitter"><i class="fa fa-twitter"></i></a>
+									<div class="tooltip">Twitter</div>
+								</li>
+								{%- endif-%}
+								{%- if settings.link_social_instagram_contact != ''-%}
+								<li class="social-media_item social-media_item--instagram">
+									<a href="{{settings.link_social_instagram_contact}}" target="_blank" rel="noreferrer noopener" aria-label="Follow us on Instagram"><i class="fa fa-instagram"></i></a>
+									<div class="tooltip">Instagram</div>
+								</li>
+								{%- endif-%}
+							</ul>
+						</div>
+						{%endif%}
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6 mb-4">
+					<div class="heading-page-contact">
+						<h2 class="mt-3 mt-md-0 mb-3">Gửi thắc mắc cho chúng tôi</h2>
+						<div class="description-contact">
+							<p>Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn sớm nhất có thể .</p>
+						</div>
+					</div>
+					<div class="wrapper-contact-form">
+						{%- form 'contact' -%}
+						{%- if form.posted_successfully? -%}
+						<div class="alert alert-success">
+							Cám ơn bạn đã liên hệ! Chúng tôi sẽ trả lời ngay khi có thể
+						</div>
+						{%- endif- %}
+						<div class="row">
+							<div class="col-12 col-md-6 pr-md-2">
+								<div class="form-group">
+									<input required type="text" name="contact[name]" class="form-control" placeholder="Tên của bạn"  aria-label="Tên của bạn">
+								</div>
+							</div>
+							<div class="col-12 col-md-6 pl-md-2">
+								<div class="form-group">
+									<input required type="text" name="contact[email]" class="form-control" placeholder="Email của bạn" aria-label="Email của bạn">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<input pattern="[0-9]{10,12}" required type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại của bạn" aria-label="Số điện thoại của bạn">
+						</div>
+						<div class="form-group">
+							<textarea required name="contact[body]" cols="40" rows="5" class="text form-control" placeholder="Nội dung" aria-label="Nội dung"></textarea>
+						</div>
+						<div class="sitebox-recaptcha mb-3">
+							This site is protected by reCAPTCHA and the Google
+							<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> 
+							and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
+						</div>
+						<button type="submit" class="btn btn-box dark clearfix" >Gửi cho chúng tôi</button>
+						{%- endform -%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{%- if settings.show_google_maps -%}
+	<div class="wrapper-map-contact pt-4">
+		<div class="container-fluid">
+			<div class="box-contact-map">
+				{{ settings.google_maps_code }}
+			</div>
+		</div>
+	</div>
+	{%- endif -%}
+</div>

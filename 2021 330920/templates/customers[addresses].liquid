@@ -1,0 +1,291 @@
+<div class="layout-info-account mb-5">
+	<div class="container">
+		<div class="title-info-account text-center py-5">
+			<h1 class="m-0">Thông tin địa chỉ</h1>
+		</div>
+		<div class="content-infor-account">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="sidebar-account-inner mb-4">
+						{%- include 'sidebar-account'-%}
+					</div>
+				</div>
+				<div class="col-12 col-lg-9">
+					<div class="row wrap_content_address">
+						<div class="col-12 col-lg-6">
+							<div class="wrap_edit_address">
+								{%- for address in customer.addresses -%}
+								{%- if address == customer.default_address -%}
+								<div class="address_title position-relative">
+									<h3 class="mb-0">
+										<strong>{{address.last_name }} {{ address.first_name }}</strong>									
+										<span class="default_address note">(Địa chỉ mặc định)</span>								
+									</h3>
+									<p class="address_actions position-absolute m-auto">
+										<span class="action_link action_edit d-inline-block align-middle text-center">{{ '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' | edit_customer_address_link: address.id }}</span>
+										<span class="action_link action_delete d-inline-block align-middle text-center">{{ '<i class="fa fa-times" aria-hidden="true"></i>' | delete_customer_address_link: address.id }}</span>
+									</p>
+								</div>
+								<div class="address_table p-3 mb-4 bg-light">
+									<div id="view_address_{{address.id}}" class="customer_address">
+										<div class="row">
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Họ tên:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{address.last_name }} {{ address.first_name }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Công ty:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.company }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Địa chỉ:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-2">{{ address.address1 }}</p>
+													<p class="mb-2">{{ address.address2 }}</p>
+													<p class="mb-0">{{ address.province }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Quốc gia:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.country }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Số điện thoại:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.phone }}</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="edit_address_{{address.id}}" class="customer_address edit_address" style="display:none;">
+										{%- form 'customer_address', address -%}
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+											<input type="text" id="address_last_name_{{form.id}}" class="input-textbox form-control" name="address[last_name]"  value="{{form.last_name}}" placeholder="Họ">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+											<input type="text" id="address_first_name_{{form.id}}" class="input-textbox form-control" name="address[first_name]" value="{{form.first_name}}" placeholder="Tên">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_company_{{form.id}}" class="input-textbox form-control" name="address[company]" value="{{form.company}}" placeholder="Công ty">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_address1_{{form.id}}" class="input-textbox form-control" name="address[address1]" value="{{form.address1}}" placeholder="Địa chỉ 1">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_address2_{{form.id}}" class="input-textbox form-control" name="address[address2]" value="{{form.address2}}" placeholder="Địa chỉ 2">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+											<select id="address_country_{{form.id}}" class="input-textbox custom-select" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+										</div>
+										<div class="input-group mb-3" id="address_province_container_{{address.id}}" style="display:none">
+											<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+											<select id="address_province_{{form.id}}" class="input-textbox custom-select" name="address[province]" data-default="{{form.province}}"></select>
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-phone"></i></span>
+											<input type="text" id="address_phone_{{form.id}}" class="input-textbox form-control" name="address[phone]" value="{{form.phone}}" placeholder="Số điện thoại">
+										</div>
+										<div class="special-default mb-3">   
+											{{ form.set_as_default_checkbox }}  Đặt làm địa chỉ mặc định.
+										</div>
+										<div class="action_bottom">
+											<input class="btn bg-dark text-white mr-1" type="submit" value="Cập nhật" />
+											<span class="">hoặc <a href="/" onclick="Haravan.CustomerAddress.toggleForm({{form.id}}); return false;" class="font-weight-bold">Hủy</a></span>
+										</div>  
+										{%- endform -%}
+									</div>
+								</div>
+								{%- endif -%}
+								{%- endfor -%}
+								{%- for address in customer.addresses -%}
+								{%- unless address == customer.default_address -%}
+								<div class="address_title position-relative">
+									<h3 class="mb-0">
+										<strong>{{address.last_name }} {{ address.first_name }}</strong>																
+									</h3>
+									<p class="address_actions position-absolute m-auto">
+										<span class="action_link action_edit d-inline-block align-middle text-center">{{ '<i class="fa fa-pencil-square-o" aria-hidden="true"></i>' | edit_customer_address_link: address.id }}</span>
+										<span class="action_link action_delete d-inline-block align-middle text-center">{{ '<i class="fa fa-times" aria-hidden="true"></i>' | delete_customer_address_link: address.id }}</span>
+									</p>
+								</div>
+								<div class="address_table p-3 mb-3 bg-light">
+									<div id="view_address_{{address.id}}" class="customer_address">
+										<div class="row">
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Họ tên:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{address.last_name }} {{ address.first_name }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Công ty:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.company }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Địa chỉ:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-2">{{ address.address1 }}</p>
+													<p class="mb-2">{{ address.address2 }}</p>
+													<p class="mb-0">{{ address.province }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Quốc gia:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.country }}</p>
+												</div>
+											</div>
+											<div class="col-12 large_view d-inline-flex mb-2">
+												<div class="lb-left pr-3">
+													<b>Số điện thoại:</b>
+												</div>
+												<div class="lb-right">
+													<p class="mb-0">{{ address.phone }}</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="edit_address_{{address.id}}" class="customer_address edit_address" style="display:none;">
+										{%- form 'customer_address', address -%}
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+											<input type="text" id="address_last_name_{{form.id}}" class="input-textbox form-control" name="address[last_name]"  value="{{form.last_name}}" placeholder="Họ">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+											<input type="text" id="address_first_name_{{form.id}}" class="input-textbox form-control" name="address[first_name]" value="{{form.first_name}}" placeholder="Tên">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_company_{{form.id}}" class="input-textbox form-control" name="address[company]" value="{{form.company}}" placeholder="Công ty">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_address1_{{form.id}}" class="input-textbox form-control" name="address[address1]" value="{{form.address1}}" placeholder="Địa chỉ 1">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+											<input type="text" id="address_address2_{{form.id}}" class="input-textbox form-control" name="address[address2]" value="{{form.address2}}" placeholder="Địa chỉ 2">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+											<select id="address_country_{{form.id}}" class="input-textbox custom-select" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+										</div>
+										<div class="input-group mb-3" id="address_province_container_{{address.id}}">
+											<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+											<select id="address_province_{{form.id}}" class="input-textbox custom-select" name="address[province]" data-default="{{form.province}}"></select>
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-icon text-center"><i class="fa fa-phone"></i></span>
+											<input type="text" id="address_phone_{{form.id}}" class="input-textbox form-control" name="address[phone]" value="{{form.phone}}" placeholder="Số điện thoại">
+										</div>
+										<div class="special-default mb-3">   
+											{{ form.set_as_default_checkbox }}  Đặt làm địa chỉ mặc định.
+										</div>
+										<div class="action_bottom">
+											<input class="btn bg-dark text-white mr-1" type="submit" value="Cập nhật" />
+											<span class="">hoặc <a href="/" onclick="Haravan.CustomerAddress.toggleForm({{form.id}}); return false;" class="font-weight-bold">Hủy</a></span>
+										</div>  
+										{%- endform -%}
+									</div>
+								</div>
+								{%- endunless -%}
+								{%- endfor -%}
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="wrap_edit_address">
+								<a href="#" onclick="Haravan.CustomerAddress.toggleNewForm(); return false;" class="add-new-address d-inline-block bg-dark text-white text-uppercase text-center w-100 p-2">Nhập địa chỉ mới</a>
+								<div id="add_address" class="customer_address add_address p-3 mb-3 bg-light" style="display:none;">
+									{%- form 'customer_address',  customer.new_address -%}
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+										<input type="text" id="address_last_name_new" class="input-textbox form-control" name="address[last_name]"  value="{{form.last_name}}" placeholder="Họ">
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-user-o"></i></span>
+										<input type="text" id="address_first_name_new" class="input-textbox form-control" name="address[first_name]" value="{{form.first_name}}" placeholder="Tên">
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+										<input type="text" id="address_company_new" class="input-textbox form-control" name="address[company]" value="{{form.company}}" placeholder="Công ty">
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+										<input type="text" id="address_address1_new" class="input-textbox form-control" name="address[address1]" value="{{form.address1}}" placeholder="Địa chỉ 1">
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-home"></i></span>
+										<input type="text" id="address_address2_new" class="input-textbox form-control" name="address[address2]" value="{{form.address2}}" placeholder="Địa chỉ 2">
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+										<select id="address_country_new" class="input-textbox custom-select" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
+									</div>
+									<div class="input-group mb-3" id="address_province_container_new" style="display:none">
+										<span class="input-icon text-center"><i class="fa fa-map-marker"></i></span>
+										<select id="address_province_new" class="input-textbox custom-select" name="address[province]" data-default="{{form.province}}">{{ country_option_tags }}</select>
+									</div>
+									<div class="input-group mb-3">
+										<span class="input-icon text-center"><i class="fa fa-phone"></i></span>
+										<input type="text" id="address_phone_new" class="input-textbox form-control" name="address[phone]" value="{{form.phone}}" placeholder="Số điện thoại">
+									</div>
+									<div class="special-default mb-3">   
+										{{ form.set_as_default_checkbox }}  Đặt làm địa chỉ mặc định.
+									</div>
+									<div class="action_bottom">
+										<input class="btn bg-dark text-white mr-1" type="submit" value="Cập nhật" />
+										<span class="">hoặc <a href="#" onclick="Haravan.CustomerAddress.toggleNewForm(); return false;" class="font-weight-bold">Hủy</a></span>
+									</div>  
+									{%- endform -%}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8">
+	document.addEventListener('DOMContentLoaded', function() {
+		// initialize observers on address selectors
+		new Haravan.CountryProvinceSelector('address_country_new', 'address_province_new', {hideElement: 'address_province_container_new'});  
+		{% for address in customer.addresses %}
+		new Haravan.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', {hideElement: 'address_province_container_{{address.id}}'});
+		 {% endfor %}
+		 
+		 });
+</script> 

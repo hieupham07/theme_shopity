@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="vi">
+	<!--<![endif]-->
+	<head>
+		<meta name="google-site-verification" content="4-fvO5AS925281T0M1gT-7DvYWzFO61YUIQz0Rc1Cr8" />
+		<meta name="facebook-domain-verification" content="s7um3vwiargardwbc79auelsj99t80" />
+		<meta charset="utf-8"/>		
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+		<!--[if lt IE 9]><script src="//hstatic.net/0/0/global/design/theme-default/html5shiv.js"></script><![endif]-->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0'/>
+		<meta name="revisit-after" content="1 day" />
+		<meta property="fb:app_id" content="3972659439413324" />
+		<meta property="fb:app_id" content="198500275779678" /> 
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="HandheldFriendly" content="true">
+		<link rel="shortcut icon" href="{{'favicon.png' | asset_url}}" type="image/png" />
+		<title>
+			{{ page_title | strip_html | strip_newlines | escape  }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+		</title>
+		{%- if page_description -%}	<meta name="description" content="{{ page_description | strip_html | strip_newlines }}" />{%- endif -%}	
+		<link rel="canonical" href="{{ canonical_url }}" />
+		<link rel="alternate" href="{{ canonical_url }}" hreflang="vi-vn" />	
+		<meta name="keywords" content="{{ shop.name }}">
+		{%if template contains 'search' %}
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
+		{% else %}
+		<meta name="robots" content="index,follow,noodp">
+		{%endif%} 		
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<link rel="dns-prefetch" href="{{shop.url}}">
+		<link rel="dns-prefetch" href="//hstatic.net">
+		<link rel="dns-prefetch" href="//theme.hstatic.net">
+		<link rel="dns-prefetch" href="//file.hstatic.net">
+		<link rel="dns-prefetch" href="//www.google-analytics.com/">
+		<link rel="dns-prefetch" href="//www.google.com">
+		<link rel="dns-prefetch" href="//fonts.gstatic.com">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//www.facebook.com">
+		<link rel="dns-prefetch" href="//connect.facebook.net">
+		<link rel="dns-prefetch" href="//static.ak.facebook.com">
+		<link rel="dns-prefetch" href="//static.ak.fbcdn.net">
+		<link rel="dns-prefetch" href="//s-static.ak.facebook.com"> 
+		<link rel="preload" as="style" href="{{ 'style-themes.scss.css' | asset_url }}">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300&family=Lobster&family=Passions+Conflict&family=Petemoss&display=swap" rel="stylesheet">
+		{%- if settings.use_logo -%}
+		<link rel="preload" href="{{ 'logo.png' | asset_url }}" as="image"> 
+		{%- endif -%}
+		<link rel="preconnect" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;display=swap&amp;subset=vietnamese">
+		<link rel="preload" href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;display=swap&amp;subset=vietnamese" as="style">
+		<link rel="preconnect" href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+		<link rel="preload" href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+		{%- if template contains 'index' -%}
+		{%- if settings.show_slider_home_banner -%}
+		<link rel="preload" href="{{ 'slideshow_1.jpg' | asset_url }}" as="image" media="(min-width: 768px)"> 
+		<link rel="preload" href="{{ 'slideshow_1_mb.jpg' | asset_url }}" as="image" media="(max-width: 767px)"> 
+		{%- endif -%}
+		{%- endif -%}
+		{% case collection.id %}
+		{% when '1002686791' %}
+		<meta property="og:image" content="https://theme.hstatic.net/200000296482/1000727098/14/coverbst.jpg?v=856" />
+		<meta property="og:image:secure_url" content="https://theme.hstatic.net/200000296482/1000727098/14/coverbst.jpg?v=856" />
+		{% endcase %}
+		{% case page.id %}
+		{% when '1002236762' %}
+		<meta property="og:image" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-qua-tang.jpg?v=853" />
+		<meta property="og:image:secure_url" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-qua-tang.jpg?v=853" />
+		{% when '1002240630' %}
+		<meta property="og:image" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-nhks-share.jpg?v=853" />
+		<meta property="og:image:secure_url" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-nhks-share.jpg?v=853" />
+		{% when '1002240888' %}
+		<meta property="og:image" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-qua-tang-doanh-nghiep-share.jpg?v=853" />
+		<meta property="og:image:secure_url" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-qua-tang-doanh-nghiep-share.jpg?v=853" />
+		{% when '1002258933' %}
+		<meta property="og:image" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-fb-black-friday.jpg?v=874" />
+		<meta property="og:image:secure_url" content="https://theme.hstatic.net/200000296482/1000727098/14/cover-fb-black-friday.jpg?v=874" />
+		{% endcase %}
+		{% include 'fb-open-graph-tags' %}
+		{% include 'master-include'%}
+		{{'f-cus.scss.css' | asset_url | stylesheet_tag }}
+		{% include 'seo-head' %}
+		{{ content_for_header }}
+		<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"{{shop.url | remove: 'https://' | remove: 'http://' }}","url":"{{shop.url}}","potentialAction":{"@type":"SearchAction","target":"{{shop.url}}/search?&q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					xfbml            : true,
+					version          : 'v10.0'
+				});
+			};
+
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+				 attribution="setup_tool"
+				 page_id="101945615048076">
+		</div>
+		<style>
+			.fb_dialog.fb_dialog_mobile {
+				display: none;
+			}
+		</style>
+
+		{% unless settings.title_font contains 'Arial' or settings.title_font contains  'Times' %}
+		{% if settings.title_font %}
+		<link rel="stylesheet" type="text/css" href="//hstatic.net/0/0/global/design/member/fonts-master/{{settings.title_font | replace: ' ', '' | downcase}}.css">
+		{% endif %}
+		{% endunless %}
+		{% unless settings.base_font contains 'Arial' or settings.base_font contains  'Times' or settings.base_font contains  'Nunito' %}
+		{% if settings.base_font %}
+		<link rel="stylesheet" type="text/css" href="//hstatic.net/0/0/global/design/member/fonts-master/{{settings.base_font | replace: ' ', '' | downcase}}.css">
+		{% endif %}
+		{% endunless %}
+
+		{% if settings.base_font contains  'Nunito' %}
+		{% if settings.base_font %}
+		{{ '//fonts.googleapis.com/css?family=' | append: settings.base_font | stylesheet_tag }}	
+		{% endif %}
+		{% endif %}
+
+		{% unless settings.new_title_font contains 'Arial' or settings.new_title_font contains  'Times' %}
+		{% if settings.new_title_font %}
+		<link rel="stylesheet" type="text/css" href="//hstatic.net/0/0/global/design/member/fonts-master/{{settings.new_title_font | replace: ' ', '' | downcase}}.css">
+		{% endif %}	
+		{% endunless %}
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<meta name="google-site-verification" content="EANweIjZLID4ZDfVeUIIAjigpr5WHRRP-k_g4E4mb1Y" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	</head>
+	<body id="nature-cycle-theme" class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}">
+		<div class="main-body{% if settings.addthis_iconList_show %} layoutProduct_scroll{% endif %}">
+			{% include 'header' %}
+			<main class="mainContent-theme{% if template == 'index' %} main-index {% endif %}">
+				{{ content_for_layout }}
+			</main>
+			{% include 'footer' %}
+			{% include 'addthis-sharing' %}
+			{%- if template contains 'index'-%}{% include 'popup-contact'%}{%- endif -%}
+		</div>
+		<div id="site-overlay" class="site-overlay"></div>
+		{% include 'footer-scripts'%}
+		<script>
+			$(document).ready(function(){
+				{% if settings.on-mega-3 %}
+				var arrayMenu3 = [];
+				 $('.onMega-3 .f-nav-two > li').each(function(){
+					 var clone3 = $(this).clone();
+					 arrayMenu3.push(clone3);
+				 })
+				 var html3 = `
+<div class="flex-1 flex-all">${arrayMenu3[0].context.outerHTML}</div>
+<div class="flex-2 flex-all">${arrayMenu3[1].context.outerHTML}${arrayMenu3[3].context.outerHTML}${arrayMenu3[2].context.outerHTML}${arrayMenu3[4].context.outerHTML}</div>
+<div class="flex-3 flex-all">${arrayMenu3[5].context.outerHTML}</div>
+<div class="flex-4 flex-all">${arrayMenu3[6].context.outerHTML}${arrayMenu3[7].context.outerHTML}${arrayMenu3[8].context.outerHTML}${arrayMenu3[9].context.outerHTML}${arrayMenu3[10].context.outerHTML}</div>
+`;
+				 $('.onMega-3 .f-nav-two').html('').append(html3);
+				 {% endif %}
+
+				 {% if settings.on-mega-2 %}
+				 var arrayMenu2 = [];
+					$('.onMega-2 .f-nav-two > li').each(function(){
+						var clone2 = $(this).clone();
+						arrayMenu2.push(clone2);
+					})
+					var html2 = `
+<div class="flex-1 flex-all">${arrayMenu2[0].context.outerHTML}</div>
+<div class="flex-2 flex-all">${arrayMenu2[1].context.outerHTML}</div>
+<div class="flex-3 flex-all">${arrayMenu2[2].context.outerHTML}</div>
+<div class="flex-4 flex-all">${arrayMenu2[3].context.outerHTML}</div>
+`;
+					$('.onMega-2 .f-nav-two').html('').append(html2)
+					{% endif %}
+
+					$('.home-blog-wrap').scroll(function(){
+						$('.home-blog-wrap').addClass('activeScroll');
+						setTimeout(function(){
+							$('.home-blog-wrap').removeClass('activeScroll');
+						},1000)
+					})
+					});
+		</script>
+		<style>
+			.swal-footer {
+				display: flex !important; 
+				justify-content: center !important; 
+				align-items: center;
+			}
+			.swal-overlay--show-modal .swal-button-container button {
+				background: #d29f13 !important; 
+				padding: 0 35px !important; 
+				color: #fff !important; 
+				font-weight: 500 !important; 
+				line-height: 20px !important; 
+				height: 33px !important; 
+				border-radius: 0 !important; 
+			}
+		</style>
+	</body>
+</html>
+
+
+
+

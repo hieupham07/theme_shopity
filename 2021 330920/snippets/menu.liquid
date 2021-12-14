@@ -1,0 +1,66 @@
+<nav class="f-nav">
+	<ul class="f-nav-one">
+		{%- for link in linklists[settings.mainmenu_link].links -%}
+		{% assign indexAll = forloop.index %}
+		{% capture onMega %}on-mega-{{ indexAll }}{% endcapture %}
+		{% capture onMegaImage %}on-mega-image-{{ indexAll }}.jpg{% endcapture %}
+		{% capture onMegaLink %}on-mega-link-{{ indexAll }}{% endcapture %}
+		{% capture alt %}on-mega-alt-{{ indexAll }}{% endcapture %}
+		{%- if linklists[link.handle].links == empty -%}
+		<li>
+			<a href="{{link.url}}" title="{{ link.title }}">{{ link.title }}</a>
+		</li>
+		{%- else-%}
+		<li class="{% if settings[onMega] %}onMega onMega-{{ indexAll }}{% endif %}">
+			<a href="{% if link.title == 'Thương hiệu Noritake' or link.title == 'Sản phẩm' %}javascript:void(0){% else %}{{ link.url }}{%endif %}" title="{{ link.title }}">{{ link.title }}<svg class="icon--arrow-bottom" viewBox="0 0 12 8"><path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2" fill="none" stroke-linecap="square"></path></svg></a>
+			<ul class="f-nav-two">
+				{%- for link_1 in linklists[link.handle].links -%}
+				{%- if linklists[link_1.handle].links == empty -%}
+				<li>
+					<a href="{{ link_1.url }}" title="{{ link_1.title }}"> 
+						{{ link_1.title }}
+					</a>
+				</li>
+				{% else %}
+				<li> 
+					<a href="{% if link_1.title == 'Về sản phẩm' or link_1.title == 'Lịch sử hình thành' or link_1.title == 'Tìm theo loại sản phẩm' or link_1.title == 'Tìm bộ sản phẩm' or link_1.title == 'Tìm theo chất liệu sản phẩm' or link_1.title == 'Tìm sản phẩm lẻ' or link_1.title == 'Tìm theo đặc tính sản phẩm'  or link_1.title == 'Tìm theo kiểu họa tiết'%}javascript:void(0){% else %}{{ link_1.url }}{% endif %}" title="{{ link_1.title }}"> 
+						{{ link_1.title }}<svg class="icon--arrow-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a.999.999 0 0 1-.707-1.707L11.586 10 7.293 5.707a.999.999 0 1 1 1.414-1.414l5 5a.999.999 0 0 1 0 1.414l-5 5A.997.997 0 0 1 8 16" fill-rule="evenodd" stroke-linecap="square"></path></svg>
+					</a>
+					<ul class="f-nav-three">
+						{%- for link_2 in linklists[link_1.handle].links -%}
+						<li>
+							<a href="{{ link_2.url }}" title="{{ link_2.title }}"> 
+								{{ link_2.title }}
+							</a>
+						</li>
+						{%- endfor -%}
+					</ul>
+				</li>
+				{%- endif -%}
+				{%- endfor -%}
+				{% if settings[onMega] %}
+				{% if indexAll != 2 %}
+				<li>
+					<a href="{{ settings.link_menu_3_1 }}" title='{{settings.link_menu_3_1_alt }}'>
+						<img src="{{ onMegaImage | asset_url }}" alt="{{settings.link_menu_3_1_alt }}"/>
+					</a> 
+				</li>
+				{% else %}
+				<li>
+					<a href="{{ settings.link_menu_2_1 }}" title='{{ settings.link_menu_2_1_alt }}'>
+						<img src="{{ onMegaImage | asset_url }}" alt="{{ settings.link_menu_2_1_alt }}"/>
+					</a>
+				</li>
+				<li>
+					<a href="{{ settings.link_menu_2_2 }}" title='{{ settings.link_menu_2_2_alt }}'>
+						<img src="{{ 'on-mega-image-2-1.jpg' | asset_url }}" alt="{{ settings.link_menu_2_2_alt }}"/>
+					</a>
+				</li>
+				{% endif %}
+				{% endif %}
+			</ul>
+		</li>
+		{%- endif -%}
+		{%- endfor -%}
+	</ul>
+</nav>

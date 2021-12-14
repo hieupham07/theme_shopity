@@ -1,0 +1,33 @@
+<div id="collection" class="layout-collectionPage mb-5 collection-temp2">
+	{%- if settings.show_collection_image -%}	
+	<div class="banner-collection-header text-center">
+		{% if collection.image != blank %}
+		<img src="{{ collection.image.src }}" alt="{{collection.title}}"/>
+		{% else %}
+		<img src="{{ 'collection_banner.jpg' | asset_url }}" alt="{{collection.title}}"/>
+		{% endif %}
+	</div>	
+	{%- endif -%}
+	{%- include 'breadcrumb' -%}
+<div class="wrapper-mainCollection mt-4 mt-lg-5">
+		<div class="container-fluid">
+			<div class="collection-heading-page h-50">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-12 col-xl-12 collection-heading_title">
+						<h1 class="title text-center mb-2 mb-lg-0" style="color:#d29f13">{{collection.title}}</h1>
+					</div>
+				</div>
+			</div>
+				<div class="row">
+				<div class="col-12 col-lg-12">
+					<div class="page-wrapper">
+						<div class="wrapbox-content-page">
+							<div id="colect-descr" style="Padding: 0px">{{ collection.description }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</div>

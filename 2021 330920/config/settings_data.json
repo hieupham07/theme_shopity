@@ -1,0 +1,12875 @@
+{
+
+"current": {
+
+
+"use_logo": true,
+
+
+"customer_layout": "theme",
+
+
+"logo": "https://file.hstatic.net/1000088429/file/logo_dfb01b70731f4332a05d2fe9c91a3833.png",
+
+
+"favicon": "https://file.hstatic.net/1000406611/file/favicon_696bb70236d241df9cf2e26c24aaed67.png",
+
+
+"shop_text_color": "#453536",
+
+
+"shop_title_color": "#453536",
+
+
+"btn_bg_shop": "#d29f13",
+
+
+"shop_text_hover_color": "#d29f13",
+
+
+"mainmenu_link": "main-menu-3",
+
+
+"share_fb_home": "https://file.hstatic.net/1000088429/file/share-fb-home_434f286540a24a1c9c7f4d4170a5b3f9.jpg",
+
+
+"slide_1": true,
+
+
+"slideshow_1": "https://file.hstatic.net/1000088429/file/home_slide_1_d0c4e0a9521b46d698d5747cf0b6b264.jpg",
+
+
+"slide_1_alt": "Noritake và tôi",
+
+
+"slide_1_title": "Khám phá ngay vẻ đẹp từ thiên nhiên",
+
+
+"slide_1_desc": "",
+
+
+"slide_1_button": "",
+
+
+"slide_1_link": "https://noritake.vn/blogs/news/cuoc-thi-anh-noritake-va-toi",
+
+
+"slide_2": true,
+
+
+"slideshow_2": "https://file.hstatic.net/1000088429/file/home_slide_2_744715ac3f51439ba436552c791acf4e.jpg",
+
+
+"slide_2_alt": "Yoshino",
+
+
+"slide_2_title": "Sản phẩm làm đẹp",
+
+
+"slide_2_desc": "",
+
+
+"slide_2_button": "",
+
+
+"slide_2_link": "https://noritake.vn/collections/yoshino-9983",
+
+
+"slide_3": true,
+
+
+"slideshow_3": "https://file.hstatic.net/1000088429/file/home_slide_3_8fd76b1273524842a165f670c2fe8d86.jpg",
+
+
+"slide_3_alt": "Eternal",
+
+
+"slide_3_title": "Kem tự nhiên cho làn da mềm mại",
+
+
+"slide_3_desc": "",
+
+
+"slide_3_button": "",
+
+
+"slide_3_link": "https://noritake.vn/collections/Eternal-Palace-1717",
+
+
+"slide_4": true,
+
+
+"slideshow_4": "",
+
+
+"slide_4_alt": "Evening Majesty",
+
+
+"slide_4_title": "",
+
+
+"slide_4_desc": "",
+
+
+"slide_4_button": "",
+
+
+"slide_4_link": "https://noritake.vn/collections/evening-majesty-4818",
+
+
+"slideshow_1_mb": "https://file.hstatic.net/1000088429/file/home_slide_1_mobile_c78c25c8e1ad405da41a9ff254099e5b.jpg",
+
+
+"slideshow_2_mb": "https://file.hstatic.net/1000088429/file/home_slide_2_mobile_d3fa970b3a4641f5b59390a3b715d843.jpg",
+
+
+"slideshow_3_mb": "https://file.hstatic.net/1000088429/file/home_slide_3_mobile_395e2dabe12641a2a28bc2c5e40ca4ce.jpg",
+
+
+"slideshow_4_mb": "",
+
+
+"use_collection_products": true,
+
+
+"heading_collection_home": "Sản phẩm mới nhất",
+
+
+"description_collection_home": "Chào mừng đến với nature cycle",
+
+
+"collection_home": "san-pham-theo-bo",
+
+
+"limit_one_size": "20",
+
+
+"display_banner_center_home": false,
+
+
+"img_banner_center": "https://file.hstatic.net/1000088429/file/banner_home_79a55d5d9a2242ac8db2846fcd2f39b9.jpg",
+
+
+"title_banner_center": "Kem khoáng Deadsea",
+
+
+"desc_banner_center": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB. ",
+
+
+"button_banner_center": "Xem ngay",
+
+
+"link_bnt_banner_center": "/collections/all",
+
+
+"display_banner_blog_home": false,
+
+
+"heading_blog_home": "Tin tức",
+
+
+"description_blog_home": "Cập nhập những tin tức mới nhất ",
+
+
+"blog_home": "news",
+
+
+"show_footer1": true,
+
+
+"footer1_title": "Giới thiệu",
+
+
+"footer1_information": "Chào mừng bạn đến với Nature Cycle. Tại đây, bạn sẽ tìm thấy hoàn toàn mọi thứ bạn cần để thể hiện công việc kinh doanh theo định hướng chăm sóc sức khỏe, spa hoặc sắc đẹp của mình theo cách hiện đại.",
+
+
+"footer_link1_show": true,
+
+
+"footer_link1_title": "Liên kết",
+
+
+"footer_link1_menu": "footer",
+
+
+"show_footer2": true,
+
+
+"footer2_title": "Liên kết",
+
+
+"footer-address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+"footer-tell": " 1900.636.099",
+
+
+"footer-fax": "1900.636.099",
+
+
+"footer-email": "hi@haravan.com",
+
+
+"show_footer3": true,
+
+
+"footer3_title": "Dịch vụ khách hàng",
+
+
+"fanpage_faceook": "https://www.facebook.com/NoritakeVietnam",
+
+
+"footer4_title": "Fanpage",
+
+
+"show_social_icon_footer": true,
+
+
+"link_social_facebook": "/",
+
+
+"link_social_youtube": "/",
+
+
+"link_social_pinterest": "/",
+
+
+"link_social_twitter": "/",
+
+
+"link_social_instagram": "/",
+
+
+"show_logo_bct": "1",
+
+
+"logo_bct": "https://file.hstatic.net/1000088429/file/logo-bct_38921d34df3e4a1687ad989a4a58a249.png",
+
+
+"link_logo_bct": "/",
+
+
+"title_help_menu_mb": "Hotline",
+
+
+"hotline_mb": "(+84) 934 033 988",
+
+
+"email_mb": "contact@noritake-vietnam.com",
+
+
+"pagination_blog_limit": "10",
+
+
+"news_recent_show": true,
+
+
+"news_recent_title": "Bài viết mới nhất",
+
+
+"show_blog_menu": true,
+
+
+"title_blog_menu": "Danh mục",
+
+
+"blog_menu": "main-menu",
+
+
+"show_footer4": "1",
+
+
+"show_blog_tags": true,
+
+
+"title_blog_tags": "Tags",
+
+
+"show_blog_follow": true,
+
+
+"title_blog_follow": "Mạng xã hội",
+
+
+"show_follow_facebook": "/",
+
+
+"show_follow_youtube": "/",
+
+
+"show_follow_pinterest": "/",
+
+
+"show_follow_twitter": "/",
+
+
+"show_follow_instagram": "/",
+
+
+"show_background_image_blog": true,
+
+
+"backgound_image_blog": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+"alt_backgound_image_blog": "Tin tức mới nhất",
+
+
+"show_page_menu": true,
+
+
+"title_page_menu": "Danh mục trang",
+
+
+"page_menu": "main-menu",
+
+
+"footer_phone": "1900.636.099",
+
+
+"footer_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+"footer_email": "hi@haravan.com",
+
+
+"footer_time": "Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+"show_social_icon_contact": false,
+
+
+"link_social_facebook_contact": "fb.com/noritakevietnam",
+
+
+"link_social_youtube_contact": "",
+
+
+"link_social_pinterest_contact": "",
+
+
+"link_social_twitter_contact": "",
+
+
+"link_social_instagram_contact": "https://www.instagram.com/noritakevietnam",
+
+
+"show_google_maps": true,
+
+
+"google_maps_code": "<iframe  title=\"Google maps\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.615593436863!2d106.65415201477133!3d10.76408024232994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec7752c743%3A0xd832d71bd12b6a15!2zRmxlbWluZ3RvbiBUb3dlciwgMTgyIEzDqiDEkOG6oWkgSMOgbmgsIHBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1521530731757\" width=\"100%\" height=\"350\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+
+
+"description_page_contact": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+"show_background_image_page_cart": "1",
+
+
+"backgound_image_page_cart": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+"alt_backgound_image_page_cart": "banner cart",
+
+
+"policy_cart_title": "",
+
+
+"policy_cart_1": "",
+
+
+"policy_cart_2": "",
+
+
+"policy_cart_3": "",
+
+
+"policy_cart_4": "",
+
+
+"show_collection_image": true,
+
+
+"banner_image_collection": "https://file.hstatic.net/1000088429/file/banner_collection_ea4d98f8263d45e8a65be10eb72c8e37.jpg",
+
+
+"pagination_limit": "30",
+
+
+"addthis_iconList_show": true,
+
+
+"addthis_icon1_show": true,
+
+
+"addthis_icon1_color1": "#d29f13",
+
+
+"addthis_icon1_color2": "#d29f13",
+
+
+"addthis_icon1_tootlip": "HOTLINE",
+
+
+"addthis_icon1_action": "0934 033 988",
+
+
+"addthis_icon2_show": true,
+
+
+"addthis_icon2_color1": "#d29f13",
+
+
+"addthis_icon2_color2": "#d29f13",
+
+
+"addthis_icon2_tootlip": "Chat với chúng tôi qua Zalo",
+
+
+"addthis_icon2_action": "//zalo.me/3535660045369223497",
+
+
+"addthis_icon3_show": true,
+
+
+"addthis_icon3_color1": "#d29f13",
+
+
+"addthis_icon3_color2": "#d29f13",
+
+
+"addthis_icon3_tootlip": "Đăng kí thông tin và để lại lời nhắn",
+
+
+"addthis_icon3_title": "Để lại lời nhắn cho chúng tôi",
+
+
+"addthis_icon3_title2": "Đăng kí thông tin thành công",
+
+
+"addthis_icon3_content": "Cảm ơn bạn đã để lại thông tin <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất\t",
+
+
+"addthis_icon4_show": true,
+
+
+"addthis_icon4_color1": "#d29f13",
+
+
+"addthis_icon4_color2": "#d29f13",
+
+
+"addthis_icon4_tootlip": "Xem địa chỉ doanh nghiệp",
+
+
+"addthis_icon4_action": "https://www.google.com/maps/place/Noritake+Vi%E1%BB%87t+Nam/@10.7733732,106.7247518,17z/data=!3m1!4b1!4m5!3m4!1s0x3175255cfaed7b6f:0xed24bb04136b5a20!8m2!3d10.7733732!4d106.7269405",
+
+
+"use_chatbot": true,
+
+
+"code_messenger_mb": "101945615048076",
+
+
+"link_follow_facebook_blog": "/",
+
+
+"link_follow_youtube_blog": "/",
+
+
+"link_follow_pinterest_blog": "/",
+
+
+"link_follow_twitter_blog": "/",
+
+
+"link_follow_instagram_blog": "/",
+
+
+"collection_filter_show": true,
+
+
+"collection_filter_title": "Bộ lọc",
+
+
+"use_vendor_filter": true,
+
+
+"vendor_title": "Bộ sưu tập",
+
+
+"vendor_limit": "50",
+
+
+"use_color_filter": false,
+
+
+"color_title": "Màu sắc",
+
+
+"use_color_filter_1": "1",
+
+
+"color_name_new_1": "Đỏ",
+
+
+"color_code_new_1": "#ff0000",
+
+
+"use_color_filter_2": "1",
+
+
+"color_name_new_2": "Vàng",
+
+
+"color_code_new_2": "#ffff05",
+
+
+"use_color_filter_3": "1",
+
+
+"color_name_new_3": "Cam",
+
+
+"color_code_new_3": "#f5b505",
+
+
+"use_color_filter_4": "1",
+
+
+"color_name_new_4": "Xanh dương",
+
+
+"color_code_new_4": "#5100ff",
+
+
+"use_color_filter_5": "1",
+
+
+"color_name_new_5": "Xanh lá",
+
+
+"color_code_new_5": "#3cfa08",
+
+
+"use_color_filter_6": true,
+
+
+"color_name_new_6": "Nâu",
+
+
+"color_code_new_6": "#753a3a",
+
+
+"use_color_filter_7": true,
+
+
+"color_name_new_7": "Xanh",
+
+
+"color_code_new_7": "#267a0b",
+
+
+"use_color_filter_8": false,
+
+
+"color_name_new_8": "Tím",
+
+
+"color_code_new_8": "#b5129a",
+
+
+"use_color_filter_9": "1",
+
+
+"color_name_new_9": "Hồng",
+
+
+"color_code_new_9": "#db999b",
+
+
+"use_color_filter_10": false,
+
+
+"color_name_new_10": "Đen",
+
+
+"color_code_new_10": "#000000",
+
+
+"use_color_filter_11": false,
+
+
+"color_name_new_11": "Đen",
+
+
+"color_code_new_11": "#000000",
+
+
+"use_color_filter_12": false,
+
+
+"color_name_new_12": "Đen",
+
+
+"color_code_new_12": "#000000",
+
+
+"use_color_filter_13": false,
+
+
+"color_name_new_13": "Đen",
+
+
+"color_code_new_13": "#000000",
+
+
+"use_color_filter_14": false,
+
+
+"color_name_new_14": "Đen",
+
+
+"color_code_new_14": "#000000",
+
+
+"use_color_filter_15": false,
+
+
+"color_name_new_15": "Đen",
+
+
+"color_code_new_15": "#000000",
+
+
+"use_color_filter_16": false,
+
+
+"color_name_new_16": "Nâu",
+
+
+"color_code_new_16": "#753a3a",
+
+
+"use_color_filter_17": false,
+
+
+"color_name_new_17": "Xám",
+
+
+"color_code_new_17": "#cccaca",
+
+
+"use_color_filter_18": false,
+
+
+"color_name_new_18": "Tím",
+
+
+"color_code_new_18": "#b5129a",
+
+
+"use_color_filter_19": false,
+
+
+"color_name_new_19": "Hồng",
+
+
+"color_code_new_19": "#db999b",
+
+
+"use_color_filter_20": false,
+
+
+"color_name_new_20": "Đen",
+
+
+"color_code_new_20": "#000000",
+
+
+"use_color_filter_21": false,
+
+
+"color_name_new_21": "Đỏ",
+
+
+"color_code_new_21": "#ff0000",
+
+
+"use_color_filter_22": false,
+
+
+"color_name_new_22": "Vàng",
+
+
+"color_code_new_22": "#ffff05",
+
+
+"use_color_filter_23": false,
+
+
+"color_name_new_23": "Cam",
+
+
+"color_code_new_23": "#f5b505",
+
+
+"use_color_filter_24": false,
+
+
+"color_name_new_24": "Xanh dương",
+
+
+"color_code_new_24": "#5100ff",
+
+
+"use_color_filter_25": false,
+
+
+"color_name_new_25": "Xanh lá",
+
+
+"color_code_new_25": "#3cfa08",
+
+
+"use_color_filter_26": false,
+
+
+"color_name_new_26": "Nâu",
+
+
+"color_code_new_26": "#753a3a",
+
+
+"use_color_filter_27": false,
+
+
+"color_name_new_27": "Xám",
+
+
+"color_code_new_27": "#cccaca",
+
+
+"use_color_filter_28": false,
+
+
+"color_name_new_28": "Tím",
+
+
+"color_code_new_28": "#b5129a",
+
+
+"use_color_filter_29": false,
+
+
+"color_name_new_29": "Hồng",
+
+
+"color_code_new_29": "#db999b",
+
+
+"use_color_filter_30": false,
+
+
+"color_name_new_30": "Đen",
+
+
+"color_code_new_30": "#000000",
+
+
+"use_tag_custom_2": true,
+
+
+"tag_title_custom_2": "Chất liệu",
+
+
+"enter_tag_2": "Sứ xương, Sứ trắng cao cấp, Sứ trắng, Kim loại",
+
+
+"use_price_filter": false,
+
+
+"title_tag_3": "Lọc giá",
+
+
+"1_price_to": "1000000",
+
+
+"2_price_from": "1000000",
+
+
+"2_price_to": "2000000",
+
+
+"3_price_from": "2000000",
+
+
+"3_price_to": "3000000",
+
+
+"4_price_from": "3000000",
+
+
+"4_price_to": "4000000",
+
+
+"5_price_from": "5000000",
+
+
+"btn_bg_addcart_shop": "#d29f13",
+
+
+"use_product_style": "style-03",
+
+
+"display_tab_product_1": true,
+
+
+"title_tab_product_1": "Mô tả chi tiết",
+
+
+"display_tab_product_2": false,
+
+
+"title_tab_product_2": "Chính sách đổi trả",
+
+
+"page_content_tab_2": "chinh-sach-doi-tra",
+
+
+"display_tab_product_3": true,
+
+
+"title_tab_product_3": "Chính sách bảo mật",
+
+
+"page_content_tab_3": "chinh-sach-bao-mat",
+
+
+"shares_facebook_social": true,
+
+
+"productspg_related_products": false,
+
+
+"productspg_related_title": "Có thể bạn quan tâm",
+
+
+"productspg_featured_quantity": "15",
+
+
+"productspg_review_products": true,
+
+
+"product_review_title": "Danh mục blog",
+
+
+"hotline_contact_product": "0934 033 988",
+
+
+"product_deliverly_show": false,
+
+
+"product_deliverly_1_show": false,
+
+
+"product_deliverly_1_ico": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+"product_deliverly_1_text": "Cam kết 100% chính hãng",
+
+
+"product_deliverly_2_show": false,
+
+
+"product_deliverly_2_ico": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+"product_deliverly_2_text": "Giao hàng dự kiến:\n<br>\n<strong>Thứ 6 - Thứ 4 từ 9h00 - 20h00</strong>",
+
+
+"product_deliverly_3_show": false,
+
+
+"product_deliverly_3_ico": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+"product_deliverly_3_text": "Sản phẩm không nhận đổi trả",
+
+
+"header_style_select": "header-2",
+
+
+"header_01_color_text": "#ffffff",
+
+
+"header_01_color_bkg": "#F4B0B0",
+
+
+"header_02_color_text": "#866d4b ",
+
+
+"header_02_color_hover_text": "#d29f13",
+
+
+"header_02_color_bkg": "#ffffff",
+
+
+"header_03_color_text": "#453536 ",
+
+
+"header_03_color_bkg": "#ffffff",
+
+
+"show_product_sharing": false,
+
+
+"product_deliverly_1_icon": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+"product_deliverly_2_icon": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+"product_deliverly_3_icon": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+"price_title": "Giá tiền",
+
+
+"top_bar_content": "Miễn phí free ship với đơn hàng trên 1.000.000 đ",
+
+
+"header_01_top_bar_text": "#000000",
+
+
+"header_01_top_bar_bg": "#ffffff",
+
+
+"header_02_top_bar_text": "#ffffff",
+
+
+"header_02_top_bar_bg": "#d29f13",
+
+
+"header_03_top_bar_text": "#ffffff",
+
+
+"header_03_top_bar_bg": "#d29f13",
+
+
+"banner_page_href": "/collections/all",
+
+
+"banner_image_page": "https://file.hstatic.net/1000088429/file/banner-img-page_8c6758378b3e438db137be4e08a0d7a9.jpg",
+
+
+"show_banner_image_page": true,
+
+
+"show_social_page_contact": false,
+
+
+"popup_contact_show": false,
+
+
+"popup_contact_select": "popupBanner",
+
+
+"popup_contact_time": "60",
+
+
+"popup_contact_banner": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+"popup_contact_alt": "Các ưu đãi của chúng tôi",
+
+
+"popup_contact_link": "/collections/all",
+
+
+"popup_contact_bkg": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+"popup_contact_title": "Hãy đến với chúng tôi",
+
+
+"popup_contact_content": "Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.",
+
+
+"popup_contact_description_1": "Giảm giá sản phẩm",
+
+
+"popup_contact_description_2": "Sản phẩm mới",
+
+
+"popup_contact_description_3": "Sản phẩm bán chạy",
+
+
+"use_collection_products_two": true,
+
+
+"heading_collection_home_two": "Sản phẩm khuyến mãi",
+
+
+"description_collection_home_two": "Cung cấp các sẩn phẩm khuyến mãi mới nhât",
+
+
+"collection_two": "onsale",
+
+
+"collection_home_two": "odessa-platinum-4875",
+
+
+"slideshow_1.jpg": "",
+
+
+"slideshow_1_mb.jpg": "",
+
+
+"slideshow_2.jpg": "",
+
+
+"slideshow_2_mb.jpg": "",
+
+
+"slideshow_3.jpg": "",
+
+
+"slideshow_3_mb.jpg": "",
+
+
+"slideshow_4.jpg": "",
+
+
+"slideshow_4_mb.jpg": "",
+
+
+"img_banner_center.jpg": "",
+
+
+"logo_bct.jpg": "",
+
+
+"banner_image_collection.jpg": "",
+
+
+"product_deliverly_1_icon.jpg": "",
+
+
+"product_deliverly_2_icon.jpg": "https://file.hstatic.net/1000088429/file/icon-shipped-devc_731f3c74261c40d6ac6c1af5c44e4c77.png",
+
+
+"product_deliverly_3_icon.jpg": "",
+
+
+"backgound_image_blog.jpg": "",
+
+
+"banner_image_page.jpg": "",
+
+
+"logo.png": "",
+
+
+"favicon.png": "",
+
+
+"share_fb_home.png": "",
+
+
+"popup_contact_banner.jpg": "",
+
+
+"popup_contact_bkg.jpg": "",
+
+
+"product_deliverly_1_ico.png": "",
+
+
+"product_deliverly_2_ico.png": "",
+
+
+"product_deliverly_3_ico.png": "",
+
+
+"product_deliverly_1_icons.png": "",
+
+
+"product_deliverly_2_icons.png": "",
+
+
+"product_deliverly_3_icons.png": "",
+
+
+"use_collection_one_products": true,
+
+
+"use_collection_two_products": false,
+
+
+"banner_blog_home_heading": "Tin tức",
+
+
+"banner_blog_home_description": "Cập nhập những tin tức mới nhất ",
+
+
+"banner_blog_home": "news",
+
+
+"banner_center_home_title": "Kem khoáng Deadsea",
+
+
+"banner_center_home_desc": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB.",
+
+
+"banner_center_home_button": "Xem ngay",
+
+
+"banner_center_home_button_link": "/collections/all",
+
+
+"banner_center_home_image.jpg": "",
+
+
+"show_banner_image_blog": true,
+
+
+"banner_image_blog.jpg": "",
+
+
+"banner_image_blog_alt": "Tin tức mới nhất",
+
+
+"page_contact_description": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+"page_contact_phone": "0934 033 988",
+
+
+"page_contact_address": "40 Đường B2, KĐT Sala - Đại Quang Minh, P. An Lợi Đông, Q.2, Tp. Hồ Chí Minh",
+
+
+"page_contact_email": "contact@noritake-vietnam.com",
+
+
+"page_contact_time": "Thứ 2 đến Thứ 7 từ 8h30 đến 19h; Chủ nhật từ 8h30 đến 17h00",
+
+
+"page_menu_title": "Danh mục trang",
+
+
+"about_style_selected": "about_style_3",
+
+
+"about02_banner_show": true,
+
+
+"about02_banner_bkg.jpg": "",
+
+
+"about02_banner_txtcolor": "#333333",
+
+
+"about02_infor_show": true,
+
+
+"about02_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+"about02_infor_desc": "Nature-cycle tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+"about02_infor_1_show": true,
+
+
+"about02_infor_1_ico.png": "",
+
+
+"about02_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+"about02_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+"about02_infor_2_show": true,
+
+
+"about02_infor_2_ico.png": "",
+
+
+"about02_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+"about02_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+"about02_infor_3_show": true,
+
+
+"about02_infor_3_ico.png": "",
+
+
+"about02_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+"about02_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+"about02_team_show": true,
+
+
+"about02_team_title": "Đội ngũ nhân viên",
+
+
+"about02_team_desc": "Chúng tôi tạo dựng môi trường làm việc thân thiện cho nhân viên, các cấp quản lý luôn lắng nghe, thấu hiểu, hỗ trợ cho nhân viên mình có thể phát huy mọi tiềm năng .",
+
+
+"about02_team_1_show": true,
+
+
+"about02_team_1_img.jpg": "",
+
+
+"about02_team_1_name": "Huỳnh Linh Đan",
+
+
+"about02_team_1_postion": "Nhân viên 1",
+
+
+"about02_team_2_show": true,
+
+
+"about02_team_2_img.jpg": "",
+
+
+"about02_team_2_name": "Nguyễn Văn A",
+
+
+"about02_team_2_postion": "Nhân viên 2",
+
+
+"about02_team_3_show": true,
+
+
+"about02_team_3_img.jpg": "",
+
+
+"about02_team_3_name": "Trần Văn C",
+
+
+"about02_team_3_postion": "Nhân viên 3",
+
+
+"about02_team_4_show": true,
+
+
+"about02_team_4_img.jpg": "",
+
+
+"about02_team_4_name": "Nguyễn Văn B",
+
+
+"about02_team_4_postion": "Nhân viên 4",
+
+
+"about02_services_show": true,
+
+
+"about02_services_title": "Tại sao chọn chúng tôi",
+
+
+"about02_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.",
+
+
+"about02_services_1_show": true,
+
+
+"about02_services_1_ico.png": "",
+
+
+"about02_services_1_text": "Giá trị cốt lõi",
+
+
+"about02_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+"about02_services_2_show": true,
+
+
+"about02_services_2_ico.png": "",
+
+
+"about02_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+"about02_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+"about02_services_3_show": true,
+
+
+"about02_services_3_ico.png": "",
+
+
+"about02_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+"about02_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+"about02_services_4_show": true,
+
+
+"about02_services_4_ico.png": "",
+
+
+"about02_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+"about02_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+"about02_services_5_show": true,
+
+
+"about02_services_5_ico.png": "",
+
+
+"about02_services_5_text": "Đổi trả, hoàn tiền",
+
+
+"about02_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+"about02_services_6_show": true,
+
+
+"about02_services_6_ico.png": "",
+
+
+"about02_services_6_text": "Chính sách bảo mật",
+
+
+"about02_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+"about03_banner_show": true,
+
+
+"about03_banner_bkg.jpg": "",
+
+
+"about03_banner_txtcolor": "#333333",
+
+
+"about03_infor_show": true,
+
+
+"about03_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+"about03_infor_desc": "Nature-cycle  tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+"about03_infor_1_show": true,
+
+
+"about03_infor_1_ico.png": "",
+
+
+"about03_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+"about03_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+"about03_infor_2_show": true,
+
+
+"about03_infor_2_ico.png": "",
+
+
+"about03_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+"about03_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+"about03_infor_3_show": true,
+
+
+"about03_infor_3_ico.png": "",
+
+
+"about03_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+"about03_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+"about03_team_show": true,
+
+
+"about03_team_1_show": true,
+
+
+"about03_team_1_img.jpg": "",
+
+
+"about03_team_1_name": "Mỹ phẩm chăm sóc da ",
+
+
+"about03_team_1_postion": "Có chiết xuất hoàn toàn từ thiên nhiên với nguyên liệu được tuyển chọn từ các vùng nguyên liệu của chúng tôi. Được trồng và chăm sóc theo đúng quy trình để đảm bảo nguồn nguyên liệu giữ được phẩm chất tốt nhất và dược tính cao nhất. Đảm bảo được chất lượng khi sản xuất là đồng nhất.",
+
+
+"about03_team_2_show": true,
+
+
+"about03_team_2_img.jpg": "",
+
+
+"about03_team_2_name": "Chỉ tiêu sản phẩm của chúng tôi",
+
+
+"about03_team_2_postion": "Bất cứ sản phẩm nào không đạt được tiêu chuẩn sẽ được loại bỏ khỏi dây chuyền và tiêu hủy lập tức. Với dây chuyền công nghệ hiện đại cùng hệ thông quản lý thông minh đem lại sản phẩm hoàn thiện đồng nhất đảm bảo chất lượng đưa tới tay người tiêu dùng.",
+
+
+"about03_team_3_show": true,
+
+
+"about03_team_3_img.jpg": "",
+
+
+"about03_team_3_name": "Sản phẩm được sản xuất 100% từ thiên nhiên",
+
+
+"about03_team_3_postion": "Tất cả sản phẩm của chúng tôi đều được đảm bảo thích ứng tốt với da người Việt Nam, không gây các tác dụng phụ hay ảnh hưởng đến sức khỏe khi sử dụng lâu dài. Mọi tác động đến sức khỏe có nguyên nhân từ sản phẩm của chúng tôi đều được công ty chịu hoàn toàn trách nhiệm.",
+
+
+"about03_team_4_show": true,
+
+
+"about03_team_4_img.jpg": "",
+
+
+"about03_team_4_name": "Đón hè như ý, chăm da hết ý",
+
+
+"about03_team_4_postion": "Mùa hè là thời điểm tạo điều kiện cho mụn sinh sôi nảy nở, đặc biệt là với những làn da dầu, nhiều mụn. Những tia nắng gay gắt có thể sẽ góp phần tàn phá làn da vốn đã bị tổn thương trước đó nếu bạn không biết cách chăm sóc da mặt đúng cách. Vì vậy việc chăm sóc da đúng cách vào mùa hè nắng nóng là cực kỳ quan trọng.",
+
+
+"about03_services_show": true,
+
+
+"about03_services_title": "Tại sao chọn chúng tôi",
+
+
+"about03_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.\n\n",
+
+
+"about03_services_1_show": true,
+
+
+"about03_services_1_ico.png": "",
+
+
+"about03_services_1_text": "Giá trị cốt lõi",
+
+
+"about03_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+"about03_services_2_show": true,
+
+
+"about03_services_2_ico.png": "",
+
+
+"about03_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+"about03_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+"about03_services_3_show": true,
+
+
+"about03_services_3_ico.png": "",
+
+
+"about03_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+"about03_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+"about03_services_4_show": true,
+
+
+"about03_services_4_ico.png": "",
+
+
+"about03_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+"about03_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+"about03_services_5_show": true,
+
+
+"about03_services_5_ico.png": "",
+
+
+"about03_services_5_text": "Đổi trả, hoàn tiền",
+
+
+"about03_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+"about03_services_6_show": true,
+
+
+"about03_services_6_ico.png": "",
+
+
+"about03_services_6_text": "Chính sách bảo mật",
+
+
+"about03_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+"about02_infor_1_icon.png": "",
+
+
+"about02_infor_2_icon.png": "",
+
+
+"about02_infor_3_icon.png": "",
+
+
+"about02_services_1_icon.png": "",
+
+
+"about02_services_2_icon.png": "",
+
+
+"about02_services_3_icon.png": "",
+
+
+"about02_services_4_icon.png": "",
+
+
+"about02_services_5_icon.png": "",
+
+
+"about02_services_6_icon.png": "",
+
+
+"about03_infor_1_icon.png": "",
+
+
+"about03_infor_2_icon.png": "",
+
+
+"about03_infor_3_icon.png": "",
+
+
+"about03_services_1_icon.png": "",
+
+
+"about03_services_2_icon.png": "",
+
+
+"about03_services_3_icon.png": "",
+
+
+"about03_services_4_icon.png": "",
+
+
+"about03_services_5_icon.png": "",
+
+
+"about03_services_6_icon.png": "",
+
+
+"about02_services_4_ico": "",
+
+
+"about02_services_5_ico": "",
+
+
+"about02_services_6_ico": "",
+
+
+"bg_banner_team_about": "#ffffff",
+
+
+"border_banner_team_about": "#f5f5f5",
+
+
+"bg_banner_services_about": "#ffffff",
+
+
+"border_banner_services_about": "#f5f5f5",
+
+
+"bg_banner_services_about_3": "#ffffff",
+
+
+"border_banner_services_about_3": "#f5f5f5",
+
+
+"product_viewed_show": false,
+
+
+"product_viewed_title": "Sản phẩm đã xem",
+
+
+"use_collection_style": "collection_style_02",
+
+
+"show_slider_home_banner": true,
+
+
+"footer_bg_color": "#ffffff",
+
+
+"footer_border_color": "#ffffff",
+
+
+"footer_title_color": "#453536",
+
+
+"footer_text_color": "#866d4b",
+
+
+"footer_bg_color_copyright": "#ffffff",
+
+
+"footer_text_color_copyright": "#866d4b",
+
+
+"slide_1_title_1": "",
+
+
+"slide_1_title_2": "",
+
+
+"slide_2_title_1": "",
+
+
+"slide_2_title_2": "",
+
+
+"slide_3_title_1": "",
+
+
+"slide_3_title_2": "",
+
+
+"slide_4_title_1": "",
+
+
+"slide_4_title_2": "",
+
+
+"show_header_top_bar": true,
+
+
+"top_bar_contact": "",
+
+
+"top_bar_hotline": "",
+
+
+"top_bar_intagram_follow": "/",
+
+
+"top_bar_facebook_follow": "/",
+
+
+"top_bar_contact_link": "",
+
+
+"display_banner_introproduct_1_home": false,
+
+
+"banner_introproduct_title_first_1": "<i>Noritake - The standard of perfection</i>",
+
+
+"banner_introproduct_title_second_1": "JAPAN SINCE 1904",
+
+
+"banner_introproduct_desc_1": "<span style=\"text-align: justify\">Được thành lập vào ngày 1 tháng 1 năm 1904 tại thành phố Nagoya, Nhật Bản - Noritake nổi tiếng là thương hiệu đồ sứ cao cấp với thiết kế sang trọng và chất lượng đỉnh cao.</span>",
+
+
+"alt_img_intro_product_1": "Sản phẩm mới",
+
+
+"banner_introproduct_btn_link_1": "/pages/lich-su-100-nam-hinh-thanh-va-phat-trien",
+
+
+"img_intro_product_1.jpg": "",
+
+
+"banner_introproduct_btn_1": "Tìm hiểu ngay",
+
+
+"img_intro_product_1.png": "",
+
+
+"display_banner_introproduct_2_home": false,
+
+
+"banner_introproduct_title_first_2": "Bộ sưu tập nổi bật",
+
+
+"banner_introproduct_title_second_2": "ISLAY / ISLAY PLATINUM",
+
+
+"banner_introproduct_desc_2": "Islay là hòn đảo nằm ở cực Nam của Scotland, nơi nổi tiếng với khung cảnh thanh bình tuyệt đẹp và rượu whisky mạch nha đượm mùi khói, thứ hương vị đã làm mê đắm hàng triệu người sành rượu trên thế giới.\n<br><br>\nĐược đặt tên theo hòn đảo xinh đẹp này, bộ sưu tập Islay là sự kết hợp mềm mại giữa sắc nâu của rượu whisky mạch nha và sắc vàng của loài hoa biểu trưng cho vùng biển đảo được thiên nhiên ưu ái.",
+
+
+"banner_introproduct_btn_2": "Xem ngay",
+
+
+"banner_introproduct_btn_link_2": "/collections/islay-4885",
+
+
+"img_intro_product_2.png": "",
+
+
+"alt_img_intro_product_2": "Sản phẩm nổi bật",
+
+
+"banner_introproduct_bg_2": "#d1e2e8",
+
+
+"heading_collection_home_frist": "",
+
+
+"heading_collection_home_second": "Set sản phẩm nổi bật",
+
+
+"display_banner_testimonials_home": true,
+
+
+"show_banner_testimonials_1": false,
+
+
+"testimonials_title_frist_1": "",
+
+
+"testimonials_title_second_1": "ODESSA PLATINUM",
+
+
+"testimonials_desc_1": "Được đặt tên theo thành phố cổ đại Odessor của Hy Lạp, bộ sưu tập Odessa Platinum kiến tạo một bàn tiệc với phong cách cổ điển, sang trọng đầy lịch lãm.\nTrên mỗi sản phẩm của Odessa Platinum là viền bạch kim bản rộng chạm khắc nổi, kết hợp hoa văn trắng uốn lượn, tôn nên vẻ đẹp tuyệt tác của sản phẩm sứ xương cao cấp.  ",
+
+
+"show_banner_testimonials_2": false,
+
+
+"testimonials_title_frist_2": "QUÀ TẶNG CÁ NHÂN",
+
+
+"testimonials_title_second_2": "Khách hàng rất thích",
+
+
+"testimonials_desc_2": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+"show_banner_testimonials_3": false,
+
+
+"testimonials_title_frist_3": "",
+
+
+"testimonials_title_second_3": "",
+
+
+"testimonials_desc_3": "",
+
+
+"banner_img_testimonials.jpg": "",
+
+
+"banner_alt_testimonials": "Chào mừng đến với nature cycle",
+
+
+"bg_banner_testimonials": "#e1e6e7",
+
+
+"footer_holder_contact": "",
+
+
+"footer_holder_contact_link": "",
+
+
+"footer_holder_hotline": "",
+
+
+"heading_collection_home_two_frist": "Các sản phẩm trong bộ sưu tập",
+
+
+"heading_collection_home_two_second": "",
+
+
+"display_banner_service_home": true,
+
+
+"bg_banner_service": "#e8e6dd",
+
+
+"service_image_1.jpg": "",
+
+
+"service_title_1": "THƯƠNG HIỆU SỐ 1 NHẬT BẢN",
+
+
+"service_content_1": "Japan since 1904",
+
+
+"service_image_2.jpg": "",
+
+
+"service_title_2": "Miễn phí vận chuyển",
+
+
+"service_content_2": "Nội thành Tp. Hồ Chí Minh",
+
+
+"service_image_3.jpg": "",
+
+
+"service_title_3": "HOTLINE ĐẶT HÀNG",
+
+
+"service_content_3": "0934 033 988",
+
+
+"service_image_4.jpg": "",
+
+
+"service_title_4": "Thanh toán bảo mật 100%",
+
+
+"service_content_4": "Uy tín - Chất lượng",
+
+
+"service_image_1.png": "",
+
+
+"service_image_2.png": "",
+
+
+"service_image_3.png": "",
+
+
+"service_image_4.png": "",
+
+
+"autoplay_slider_banner": true,
+
+
+"autoplayTimeout_slider_banner": "5",
+
+
+"footer_link2_menu": "left",
+
+
+"footer_border_color_copyright": "#eeeeee",
+
+
+"header_hotline_desk": "1900.636.099",
+
+
+"header_email_desk": "hi@haravan.com",
+
+
+"bg_breadcrumb.jpg": "",
+
+
+"bkg_breadcrumd.jpg": "",
+
+
+"top_bar_text_follow_1": "<b>Hotline: (+84) 934 033 988</b>",
+
+
+"top_bar_link_follow_1": "",
+
+
+"top_bar_text_follow_2": "",
+
+
+"top_bar_link_follow_2": "",
+
+
+"top_bar_text_follow_3": "",
+
+
+"top_bar_link_follow_3": "",
+
+
+"top_bar_text_follow_4": "",
+
+
+"top_bar_link_follow_4": "",
+
+
+"banner_introproduct_bg_1": "#ffffff",
+
+
+"collection_banner.jpg": "",
+
+
+"about01_banner_show": true,
+
+
+"about01_banner_bkg.jpg": "",
+
+
+"about01_banner_txtcolor": "#453536",
+
+
+"show_banner_contact": true,
+
+
+"banner_contact_bkg.jpg": "",
+
+
+"banner_contact_txtcolor": "#ffffff",
+
+
+"footer-wrap-item-check-1": true,
+
+
+"footer-wrap-item-title-1": "GIỚI THIỆU",
+
+
+"footer-wrap-item-form": true,
+
+
+"footer-wrap-item-social-check": true,
+
+
+"footer-wrap-item-social-icon-1": true,
+
+
+"footer-wrap-item-social-link-1": "https://facebook.com/noritakevietnam",
+
+
+"footer-wrap-item-social-image-1": "https://file.hstatic.net/200000296482/file/facebook_-_footer_006652d10e954e498071faa75c9bd259.png",
+
+
+"footer-wrap-item-social-icon-2": true,
+
+
+"footer-wrap-item-social-link-2": "https://instagram.com/noritakevietnam/",
+
+
+"footer-wrap-item-social-image-2": "https://file.hstatic.net/200000296482/file/instagram_-_footer_acffac4608e34a2d83af27875b0dc8e1.png",
+
+
+"footer-wrap-item-social-icon-3": true,
+
+
+"footer-wrap-item-social-link-3": "https://linkedin.com/company/noritake-vietnam",
+
+
+"footer-wrap-item-social-image-3": "https://file.hstatic.net/200000296482/file/linkedin_-_footer_2e080acd76ec46a39ca4a700f6ce1ef1.png",
+
+
+"footer-wrap-item-social-icon-4": true,
+
+
+"footer-wrap-item-social-link-4": "http://zalo.me/3535660045369223497",
+
+
+"footer-wrap-item-social-image-4": "https://file.hstatic.net/200000296482/file/zalo_-_footer_f9251f7094a842f399b6874eb1130b7e.png",
+
+
+"footer-wrap-item-payment-check": true,
+
+
+"footer-wrap-item-payment-icon-1": true,
+
+
+"footer-wrap-item-payment-link-1": "",
+
+
+"footer-wrap-item-payment-image-1": "https://file.hstatic.net/200000296482/file/visa_d39bd7ab9b0749ed8ac7d32b21a6d214.jpg",
+
+
+"footer-wrap-item-payment-icon-2": true,
+
+
+"footer-wrap-item-payment-link-2": "",
+
+
+"footer-wrap-item-payment-image-2": "https://file.hstatic.net/200000296482/file/master_f58b11e30e7f48b49cdfa659de02ccbd.jpg",
+
+
+"footer-wrap-item-payment-icon-3": true,
+
+
+"footer-wrap-item-payment-link-3": "",
+
+
+"footer-wrap-item-payment-image-3": "https://file.hstatic.net/200000296482/file/american_express_fb4191f6365b476e85eaf8beef90512a.jpg",
+
+
+"footer-wrap-item-payment-icon-4": true,
+
+
+"footer-wrap-item-payment-link-4": "",
+
+
+"footer-wrap-item-payment-image-4": "https://file.hstatic.net/200000296482/file/jcb_d4be9e8600b242db82b62748e9a65e21.jpg",
+
+
+"footer-wrap-item-check-2": true,
+
+
+"footer-wrap-item-title-2": "Liên kết",
+
+
+"footer-wrap-item-menu-1": "footer",
+
+
+"footer-wrap-item-menu-2": "footer",
+
+
+"footer-wrap-item-check-4": true,
+
+
+"footer-wrap-item-title-4": "Fanpage",
+
+
+"footer-wrap-item-fanpage-check": true,
+
+
+"footer-wrap-item-fanpage": "https://www.facebook.com/NoritakeVietnam/",
+
+
+"footer-wrap-item-map-check": true,
+
+
+"footer-wrap-item-map-iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4946138232335!2d106.72475181502118!3d10.773378462195385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175255cfaed7b6f%3A0xed24bb04136b5a20!2sNoritake!5e0!3m2!1sen!2s!4v1620308475631!5m2!1sen!2s\" width=\"100%\" height=\"100%\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>",
+
+
+"footer-wrap-item-check-3": true,
+
+
+"footer-wrap-item-title-3": "Địa chỉ showroom",
+
+
+"footer-wrap-item-payment-title": "Chấp nhận thanh toán",
+
+
+"footer-wrap-item-content-1": "Kể từ năm 1904, Noritake đã và đang mang lại vẻ đẹp hoàn mỹ cũng như chất lượng đỉnh cao cho các sản phẩm bộ trà/bàn ăn trên khắp thế giới.<br><br>Sự kết hợp giữa nghệ thuật và bàn tay khéo léo của nghệ nhân, cùng với đó là cam kết bền vững về chất lượng đã khiến Noritake trở thành thương hiệu số 1 tại Nhật Bản và hàng đầu trên thế giới trong suốt hơn 100 năm qua.\n<br>\n<br>\n<h4 class=\"footer-newletter\">ĐĂNG KÝ NHẬN KHUYẾN MẠI</h4>",
+
+
+"footer-wrap-item-info-1": true,
+
+
+"footer-wrap-item-info-content-1": "<b>TP. HỒ CHÍ MINH</b><br/>\nSố 40 Đường B2, Khu đô thị Sala - P. An Lợi Đông, Tp. Thủ Đức, Tp. Hồ Chí Minh.",
+
+
+"footer-wrap-item-info-2": true,
+
+
+"footer-wrap-item-info-content-2": "(+84) 934 033 988",
+
+
+"footer-wrap-item-info-3": false,
+
+
+"footer-wrap-item-info-content-3": "",
+
+
+"footer-wrap-item-info-4": true,
+
+
+"footer-wrap-item-info-content-4": "contact@noritake-vietnam.com",
+
+
+"footer-copyright-check": true,
+
+
+"footer-copyright": "© 2021 <a> Noritake - Thương hiệu sứ cao cấp số 1 Nhật Bản | <span class=\"line-mobile\"> Bản quyền thuộc về Công ty TNHH NRTK - GĐKKD số 0316678810 do SKH&ĐT Tp. Hồ Chí Minh cấp ngày 20/01/2021.<span></a>",
+
+
+"footer-bct-check": true,
+
+
+"footer-bct-link": "http://online.gov.vn/Home/WebDetails/80881",
+
+
+"footer-bct-image": "https://file.hstatic.net/200000296482/file/logo_bct-3_f48e8a0e40a144cfa9aea9b396b4e56a.png",
+
+
+"display_banner_introproduct_1_home_3": true,
+
+
+"banner_introproduct_bg_1_3": "#ad7070",
+
+
+"banner_introproduct_title_first_1_3": "<img src=\"https://theme.hstatic.net/200000296482/1000794328/14/logo.png?v=340\" style=\"width: 180px;\">",
+
+
+"banner_introproduct_title_second_1_3": "<strong>JAPAN SINCE 1904</strong>",
+
+
+"banner_introproduct_desc_1_3": "<span>Được thành lập vào ngày 4 tháng 1 năm 1904 tại thành phố Nagoya, Nhật Bản, Noritake nổi tiếng là thương hiệu đồ sứ cao cấp bậc nhất thế giới với thiết kế sang trọng và chất lượng tuyệt hảo.</span><br/>\n<span>Sản phẩm của Noritake hiện được phân phối tại trên 100 quốc gia, được sử dụng trong rất nhiều nhà hàng, hãng hàng không và khách sạn 5 sao trên toàn thế giới.</span>",
+
+
+"banner_introproduct_btn_1_3": "Lịch sử Noritake",
+
+
+"banner_introproduct_btn_link_1_3": "/pages/lich-su-100-nam-hinh-thanh-va-phat-trien",
+
+
+"img_intro_product_1_3.png": "",
+
+
+"img_intro_product_1_mobile_3.png": "",
+
+
+"alt_img_intro_product_1_3": "Noritake History",
+
+
+"display_banner_introproduct_2_home_4": false,
+
+
+"banner_introproduct_bg_2_4": "#ad7070",
+
+
+"banner_introproduct_title_first_2_4": "<span style=\"font-style:italic;color:#3f4927\">Nhiều kiểu họa tiết với đa dạng phong cách thiết kế</span> ",
+
+
+"banner_introproduct_title_second_2_4": "<span style=\"color:#3f4927\">Các bộ sưu tập</span>",
+
+
+"banner_introproduct_desc_2_4": "<span style=\"color:#3f4927\">Các bộ sưu tập của Noritake được thiết kế theo nhiều phong cách khác nhau từ cổ điển đến hiện đại, từ thanh lịch đến cá tính. Tất cả đều hoàn hảo trong từng đường nét hoa văn và với chất lượng men sứ tuyệt hảo.</span>",
+
+
+"banner_introproduct_btn_2_4": "Xem các bộ sưu tập",
+
+
+"banner_introproduct_btn_link_2_4": "/collections/tim-theo-bo-suu-tap-collections-search",
+
+
+"img_intro_product_2_4.png": "",
+
+
+"img_intro_product_2_mobile_4.png": "",
+
+
+"alt_img_intro_product_2_4": "Các bộ sưu tập",
+
+
+"display_banner_introproduct_1_home_5": false,
+
+
+"banner_introproduct_bg_1_5": "#ad7070",
+
+
+"banner_introproduct_title_first_1_5": "<span style=\"font-style:italic\">\"Anh đào nở rộ dưới ánh trăng\"</span> ",
+
+
+"banner_introproduct_title_second_1_5": "Moonlit blosooms",
+
+
+"banner_introproduct_desc_1_5": "Lấy cảm hứng từ Sumi Nagashi, một kỹ thuật vẽ tranh trên mặt nước truyền thống của Nhật Bản.",
+
+
+"banner_introproduct_btn_1_5": "Tìm hiểu thêm",
+
+
+"banner_introproduct_btn_link_1_5": "/collections/moonlit-blossoms-4969",
+
+
+"img_intro_product_1_5.png": "",
+
+
+"img_intro_product_1_mobile_5.png": "",
+
+
+"alt_img_intro_product_1_5": "Moonlit Blossoms",
+
+
+"banner_introproduct_bg_3": "#f5f5f5",
+
+
+"banner_introproduct_bg_4": "#e1e6ea",
+
+
+"banner_introproduct_bg_5": "#fdf1f3",
+
+
+"home-blog-check": false,
+
+
+"home-blog-title-first": "Các tin tức mới nhất",
+
+
+"home-blog-title": "Tin tức",
+
+
+"home-blog-handle": "news",
+
+
+"home-blog-limit": "10",
+
+
+"display_instagram": true,
+
+
+"instagram_title": "instagram: <span class=\"text-capitalize\">@NoritakeVietNam</span>",
+
+
+"instagram_title_link": "https://www.instagram.com/noritakevietnam",
+
+
+"instagram_title_desc": "",
+
+
+"instagram_image_1.jpg": "",
+
+
+"instagram_image_link_1": "https://www.instagram.com/p/CV5VYIbJhoY/",
+
+
+"instagram_image_2.jpg": "",
+
+
+"instagram_image_link_2": "https://www.instagram.com/p/CUsBmW7vOSe/",
+
+
+"instagram_image_3.jpg": "",
+
+
+"instagram_image_link_3": "https://www.instagram.com/p/CSRiUkRh0OJ/",
+
+
+"instagram_image_4.jpg": "",
+
+
+"instagram_image_link_4": "https://www.instagram.com/p/CSHPK4MBYKZ/",
+
+
+"instagram_image_5.jpg": "",
+
+
+"instagram_image_link_5": "",
+
+
+"instagram_image_6.jpg": "",
+
+
+"instagram_image_link_6": "",
+
+
+"instagram_image_7.jpg": "",
+
+
+"instagram_image_link_7": "",
+
+
+"instagram_image_8.jpg": "",
+
+
+"instagram_image_link_8": "",
+
+
+"instagram_image_9.jpg": "",
+
+
+"instagram_image_link_9": "",
+
+
+"instagram_image_10.jpg": "",
+
+
+"instagram_image_link_10": "",
+
+
+"use_collection_three_products": true,
+
+
+"heading_collection_home_three_frist": "",
+
+
+"heading_collection_home_three_second": "Sản phẩm lẻ nổi bật",
+
+
+"collection_home_three": "san-pham-le",
+
+
+"base_font": "Roboto",
+
+
+"on-mega-1": false,
+
+
+"on-mega-2": false,
+
+
+"on-mega-3": false,
+
+
+"on-mega-4": false,
+
+
+"on-mega-5": false,
+
+
+"on-mega-6": false,
+
+
+"on-mega-image-1.jpg": "",
+
+
+"on-mega-link-1": "",
+
+
+"on-mega-image-2.jpg": "",
+
+
+"on-mega-link-2": "",
+
+
+"on-mega-image-3.jpg": "",
+
+
+"on-mega-link-3": "#",
+
+
+"on-mega-image-4.jpg": "",
+
+
+"on-mega-link-4": "",
+
+
+"on-mega-image-5.jpg": "",
+
+
+"on-mega-link-5": "",
+
+
+"on-mega-image-6.jpg": "",
+
+
+"on-mega-link-6": "",
+
+
+"use_type_filter": true,
+
+
+"type_title": "Phong cách thiết kế",
+
+
+"type_limit": "30",
+
+
+"use_tag_custom_3": true,
+
+
+"tag_title_custom_3": "Sản phẩm lẻ/bộ",
+
+
+"enter_tag_3": "Sản phẩm lẻ, Sản phẩm theo bộ",
+
+
+"use_tag_custom_4": true,
+
+
+"tag_title_custom_4": "Mục đích sử dụng",
+
+
+"enter_tag_4": "Dùng trong bữa ăn châu Á, Dùng trong bữa ăn châu Âu, Dùng cho bàn trà/ coffee, Trang trí/Phòng khách",
+
+
+"use_tag_custom_0": true,
+
+
+"tag_title_custom_0": "Loại sản phẩm",
+
+
+"enter_tag_0": "Bình hoa, Bình trà/coffee, Tách trà/coffee và đĩa lót, Hũ đường/Hũ sữa, Cốc uống nước/coffee, Chén/Bát/Tô, Đĩa các loại, Thố đựng cơm/ canh/ salad, Lọ đựng tiêu/muối, Hũ đựng nước xốt, Dao/Muỗng/Nĩa",
+
+
+"limit_three_size": "50",
+
+
+"productspg_related_titlex": "Cùng bộ sưu tập",
+
+
+"productspg_featured_quantityx": "15",
+
+
+"productspg_related_productsx": true,
+
+
+"enter_tag_5": "",
+
+
+"news_recent_showx": false,
+
+
+"news_recent_titlex": "Bài viết mới nhất",
+
+
+"home-blog-handlex": "news",
+
+
+"bkh_bolo_1": "#d29f13",
+
+
+"color_text_button_1": "#ffffff",
+
+
+"color_1_button": "#d29f13",
+
+
+"hover_bkh_bolo_1": "#f5f5f5",
+
+
+"color_hover_text_button_1": "#000000",
+
+
+"color_hover_1_button": "#d29f13",
+
+
+"bkh_bolo_2": "#d29f13",
+
+
+"color_text_button_2": "#ffffff",
+
+
+"color_2_button": "#d29f13",
+
+
+"hover_bkh_bolo_2": "#ffffff",
+
+
+"color_hover_text_button_2": "#453536",
+
+
+"color_hover_2_button": "#d29f13",
+
+
+"bkh_bolo_3": "#fdf1f3",
+
+
+"color_text_button_3": "#453536",
+
+
+"color_3_button": "#453536",
+
+
+"hover_bkh_bolo_3": "#ffffff",
+
+
+"color_hover_text_button_3": "#d29f13",
+
+
+"color_hover_3_button": "#d29f13",
+
+
+"on-mega-image-2-1.jpg": "",
+
+
+"on-mega-image-2-2.jpg": "",
+
+
+"link_menu_2_1": "/pages/nghe-thuat-che-tac",
+
+
+"link_menu_2_1_alt": "Xem thêm: \"Nghệ thuật chế tác của Noritake\"",
+
+
+"link_menu_2_2": "/pages/lich-su-100-nam-hinh-thanh-va-phat-trien",
+
+
+"link_menu_2_2_alt": "Xem thêm: \"100 năm hình thành và phát triển\"",
+
+
+"link_menu_3_1": "https://noritake-vietnam.com/collections/aidan-gold-4941",
+
+
+"link_menu_3_1_alt": "Xem thêm: \"Aidan Gold\"",
+
+
+"bg_hangsapve": "#00c0f9",
+
+
+"bg_sapramat": "#1cc107"
+
+},
+
+"presets": {
+
+
+"Noritake V1": {
+
+
+
+"use_logo": true,
+
+
+
+"customer_layout": "theme",
+
+
+
+"logo": "https://file.hstatic.net/1000088429/file/logo_dfb01b70731f4332a05d2fe9c91a3833.png",
+
+
+
+"favicon": "https://file.hstatic.net/1000406611/file/favicon_696bb70236d241df9cf2e26c24aaed67.png",
+
+
+
+"shop_text_color": "#453536",
+
+
+
+"shop_title_color": "#453536",
+
+
+
+"btn_bg_shop": "#d29f13",
+
+
+
+"shop_text_hover_color": "#d29f13",
+
+
+
+"mainmenu_link": "main-menu",
+
+
+
+"share_fb_home": "https://file.hstatic.net/1000088429/file/share-fb-home_434f286540a24a1c9c7f4d4170a5b3f9.jpg",
+
+
+
+"slide_1": true,
+
+
+
+"slideshow_1": "https://file.hstatic.net/1000088429/file/home_slide_1_d0c4e0a9521b46d698d5747cf0b6b264.jpg",
+
+
+
+"slide_1_alt": "slide 1",
+
+
+
+"slide_1_title": "Khám phá ngay vẻ đẹp từ thiên nhiên",
+
+
+
+"slide_1_desc": "",
+
+
+
+"slide_1_button": "Tìm hiểu thêm",
+
+
+
+"slide_1_link": "/collections/all",
+
+
+
+"slide_2": true,
+
+
+
+"slideshow_2": "https://file.hstatic.net/1000088429/file/home_slide_2_744715ac3f51439ba436552c791acf4e.jpg",
+
+
+
+"slide_2_alt": "slide 2",
+
+
+
+"slide_2_title": "Sản phẩm làm đẹp",
+
+
+
+"slide_2_desc": "",
+
+
+
+"slide_2_button": "Xem ngay",
+
+
+
+"slide_2_link": "/collections/onsale",
+
+
+
+"slide_3": false,
+
+
+
+"slideshow_3": "https://file.hstatic.net/1000088429/file/home_slide_3_8fd76b1273524842a165f670c2fe8d86.jpg",
+
+
+
+"slide_3_alt": "slide 3",
+
+
+
+"slide_3_title": "Kem tự nhiên cho làn da mềm mại",
+
+
+
+"slide_3_desc": "",
+
+
+
+"slide_3_button": "Xem ngay",
+
+
+
+"slide_3_link": "/collections/all",
+
+
+
+"slide_4": false,
+
+
+
+"slideshow_4": "",
+
+
+
+"slide_4_alt": "",
+
+
+
+"slide_4_title": "",
+
+
+
+"slide_4_desc": "",
+
+
+
+"slide_4_button": "",
+
+
+
+"slide_4_link": "",
+
+
+
+"slideshow_1_mb": "https://file.hstatic.net/1000088429/file/home_slide_1_mobile_c78c25c8e1ad405da41a9ff254099e5b.jpg",
+
+
+
+"slideshow_2_mb": "https://file.hstatic.net/1000088429/file/home_slide_2_mobile_d3fa970b3a4641f5b59390a3b715d843.jpg",
+
+
+
+"slideshow_3_mb": "https://file.hstatic.net/1000088429/file/home_slide_3_mobile_395e2dabe12641a2a28bc2c5e40ca4ce.jpg",
+
+
+
+"slideshow_4_mb": "",
+
+
+
+"use_collection_products": true,
+
+
+
+"heading_collection_home": "Sản phẩm mới nhất",
+
+
+
+"description_collection_home": "Chào mừng đến với nature cycle",
+
+
+
+"collection_home": "hot-products",
+
+
+
+"limit_one_size": "10",
+
+
+
+"display_banner_center_home": false,
+
+
+
+"img_banner_center": "https://file.hstatic.net/1000088429/file/banner_home_79a55d5d9a2242ac8db2846fcd2f39b9.jpg",
+
+
+
+"title_banner_center": "Kem khoáng Deadsea",
+
+
+
+"desc_banner_center": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB. ",
+
+
+
+"button_banner_center": "Xem ngay",
+
+
+
+"link_bnt_banner_center": "/collections/all",
+
+
+
+"display_banner_blog_home": false,
+
+
+
+"heading_blog_home": "Tin tức",
+
+
+
+"description_blog_home": "Cập nhập những tin tức mới nhất ",
+
+
+
+"blog_home": "news",
+
+
+
+"show_footer1": true,
+
+
+
+"footer1_title": "Giới thiệu",
+
+
+
+"footer1_information": "Chào mừng bạn đến với Nature Cycle. Tại đây, bạn sẽ tìm thấy hoàn toàn mọi thứ bạn cần để thể hiện công việc kinh doanh theo định hướng chăm sóc sức khỏe, spa hoặc sắc đẹp của mình theo cách hiện đại.",
+
+
+
+"footer_link1_show": true,
+
+
+
+"footer_link1_title": "Liên kết",
+
+
+
+"footer_link1_menu": "footer",
+
+
+
+"show_footer2": true,
+
+
+
+"footer2_title": "Liên kết",
+
+
+
+"footer-address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer-tell": " 1900.636.099",
+
+
+
+"footer-fax": "1900.636.099",
+
+
+
+"footer-email": "hi@haravan.com",
+
+
+
+"show_footer3": true,
+
+
+
+"footer3_title": "Dịch vụ khách hàng",
+
+
+
+"fanpage_faceook": "https://www.facebook.com/haravan.official",
+
+
+
+"footer4_title": "Fanpage",
+
+
+
+"show_social_icon_footer": true,
+
+
+
+"link_social_facebook": "/",
+
+
+
+"link_social_youtube": "/",
+
+
+
+"link_social_pinterest": "/",
+
+
+
+"link_social_twitter": "/",
+
+
+
+"link_social_instagram": "/",
+
+
+
+"show_logo_bct": "1",
+
+
+
+"logo_bct": "https://file.hstatic.net/1000088429/file/logo-bct_38921d34df3e4a1687ad989a4a58a249.png",
+
+
+
+"link_logo_bct": "/",
+
+
+
+"title_help_menu_mb": "Hotline",
+
+
+
+"hotline_mb": "1900.636.099",
+
+
+
+"email_mb": "contact@noritake-vietnam.com",
+
+
+
+"pagination_blog_limit": "8",
+
+
+
+"news_recent_show": true,
+
+
+
+"news_recent_title": "Bài viết mới nhất",
+
+
+
+"show_blog_menu": true,
+
+
+
+"title_blog_menu": "Danh mục",
+
+
+
+"blog_menu": "main-menu",
+
+
+
+"show_footer4": "1",
+
+
+
+"show_blog_tags": true,
+
+
+
+"title_blog_tags": "Tags",
+
+
+
+"show_blog_follow": true,
+
+
+
+"title_blog_follow": "Mạng xã hội",
+
+
+
+"show_follow_facebook": "/",
+
+
+
+"show_follow_youtube": "/",
+
+
+
+"show_follow_pinterest": "/",
+
+
+
+"show_follow_twitter": "/",
+
+
+
+"show_follow_instagram": "/",
+
+
+
+"show_background_image_blog": true,
+
+
+
+"backgound_image_blog": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_blog": "Tin tức mới nhất",
+
+
+
+"show_page_menu": true,
+
+
+
+"title_page_menu": "Danh mục trang",
+
+
+
+"page_menu": "footer",
+
+
+
+"footer_phone": "1900.636.099",
+
+
+
+"footer_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer_email": "hi@haravan.com",
+
+
+
+"footer_time": "Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"show_social_icon_contact": false,
+
+
+
+"link_social_facebook_contact": "/",
+
+
+
+"link_social_youtube_contact": "",
+
+
+
+"link_social_pinterest_contact": "/",
+
+
+
+"link_social_twitter_contact": "/",
+
+
+
+"link_social_instagram_contact": "/",
+
+
+
+"show_google_maps": true,
+
+
+
+"google_maps_code": "<iframe  title=\"Google maps\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.615593436863!2d106.65415201477133!3d10.76408024232994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec7752c743%3A0xd832d71bd12b6a15!2zRmxlbWluZ3RvbiBUb3dlciwgMTgyIEzDqiDEkOG6oWkgSMOgbmgsIHBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1521530731757\" width=\"100%\" height=\"350\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+
+
+
+"description_page_contact": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"show_background_image_page_cart": "1",
+
+
+
+"backgound_image_page_cart": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_page_cart": "banner cart",
+
+
+
+"policy_cart_title": "Chính sách mua hàng",
+
+
+
+"policy_cart_1": "Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.",
+
+
+
+"policy_cart_2": "Sản phẩm còn đủ tem mác, chưa qua sử dụng",
+
+
+
+"policy_cart_3": "Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống",
+
+
+
+"policy_cart_4": "Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống",
+
+
+
+"show_collection_image": true,
+
+
+
+"banner_image_collection": "https://file.hstatic.net/1000088429/file/banner_collection_ea4d98f8263d45e8a65be10eb72c8e37.jpg",
+
+
+
+"pagination_limit": "30",
+
+
+
+"addthis_iconList_show": true,
+
+
+
+"addthis_icon1_show": true,
+
+
+
+"addthis_icon1_color1": "#d29f13",
+
+
+
+"addthis_icon1_color2": "#d29f13",
+
+
+
+"addthis_icon1_tootlip": "Hotline",
+
+
+
+"addthis_icon1_action": "1900636099",
+
+
+
+"addthis_icon2_show": true,
+
+
+
+"addthis_icon2_color1": "#d29f13",
+
+
+
+"addthis_icon2_color2": "#d29f13",
+
+
+
+"addthis_icon2_tootlip": "Chat với chúng tôi qua Zalo",
+
+
+
+"addthis_icon2_action": "//zalo.me/0901866099",
+
+
+
+"addthis_icon3_show": true,
+
+
+
+"addthis_icon3_color1": "#d29f13",
+
+
+
+"addthis_icon3_color2": "#d29f13",
+
+
+
+"addthis_icon3_tootlip": "Đăng kí thông tin và để lại lời nhắn",
+
+
+
+"addthis_icon3_title": "Để lại lời nhắn cho chúng tôi",
+
+
+
+"addthis_icon3_title2": "Đăng kí thông tin thành công",
+
+
+
+"addthis_icon3_content": "Cảm ơn bạn đã để lại thông tin <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất\t",
+
+
+
+"addthis_icon4_show": true,
+
+
+
+"addthis_icon4_color1": "#d29f13",
+
+
+
+"addthis_icon4_color2": "#d29f13",
+
+
+
+"addthis_icon4_tootlip": "Xem địa chỉ doanh nghiệp",
+
+
+
+"addthis_icon4_action": "/pages/lien-he",
+
+
+
+"use_chatbot": true,
+
+
+
+"code_messenger_mb": "108520260558644",
+
+
+
+"link_follow_facebook_blog": "/",
+
+
+
+"link_follow_youtube_blog": "/",
+
+
+
+"link_follow_pinterest_blog": "/",
+
+
+
+"link_follow_twitter_blog": "/",
+
+
+
+"link_follow_instagram_blog": "/",
+
+
+
+"collection_filter_show": true,
+
+
+
+"collection_filter_title": "Bộ lọc",
+
+
+
+"use_vendor_filter": true,
+
+
+
+"vendor_title": "Thương hiệu",
+
+
+
+"vendor_limit": "1",
+
+
+
+"use_color_filter": "1",
+
+
+
+"color_title": "Màu sắc",
+
+
+
+"use_color_filter_1": "1",
+
+
+
+"color_name_new_1": "Đỏ",
+
+
+
+"color_code_new_1": "#ff0000",
+
+
+
+"use_color_filter_2": "1",
+
+
+
+"color_name_new_2": "Vàng",
+
+
+
+"color_code_new_2": "#ffff05",
+
+
+
+"use_color_filter_3": "1",
+
+
+
+"color_name_new_3": "Cam",
+
+
+
+"color_code_new_3": "#f5b505",
+
+
+
+"use_color_filter_4": "1",
+
+
+
+"color_name_new_4": "Xanh dương",
+
+
+
+"color_code_new_4": "#5100ff",
+
+
+
+"use_color_filter_5": "1",
+
+
+
+"color_name_new_5": "Xanh lá",
+
+
+
+"color_code_new_5": "#3cfa08",
+
+
+
+"use_color_filter_6": true,
+
+
+
+"color_name_new_6": "Nâu",
+
+
+
+"color_code_new_6": "#753a3a",
+
+
+
+"use_color_filter_7": true,
+
+
+
+"color_name_new_7": "Xanh",
+
+
+
+"color_code_new_7": "#267a0b",
+
+
+
+"use_color_filter_8": false,
+
+
+
+"color_name_new_8": "Tím",
+
+
+
+"color_code_new_8": "#b5129a",
+
+
+
+"use_color_filter_9": "1",
+
+
+
+"color_name_new_9": "Hồng",
+
+
+
+"color_code_new_9": "#db999b",
+
+
+
+"use_color_filter_10": false,
+
+
+
+"color_name_new_10": "Đen",
+
+
+
+"color_code_new_10": "#000000",
+
+
+
+"use_color_filter_11": false,
+
+
+
+"color_name_new_11": "Đen",
+
+
+
+"color_code_new_11": "#000000",
+
+
+
+"use_color_filter_12": false,
+
+
+
+"color_name_new_12": "Đen",
+
+
+
+"color_code_new_12": "#000000",
+
+
+
+"use_color_filter_13": false,
+
+
+
+"color_name_new_13": "Đen",
+
+
+
+"color_code_new_13": "#000000",
+
+
+
+"use_color_filter_14": false,
+
+
+
+"color_name_new_14": "Đen",
+
+
+
+"color_code_new_14": "#000000",
+
+
+
+"use_color_filter_15": false,
+
+
+
+"color_name_new_15": "Đen",
+
+
+
+"color_code_new_15": "#000000",
+
+
+
+"use_color_filter_16": false,
+
+
+
+"color_name_new_16": "Nâu",
+
+
+
+"color_code_new_16": "#753a3a",
+
+
+
+"use_color_filter_17": false,
+
+
+
+"color_name_new_17": "Xám",
+
+
+
+"color_code_new_17": "#cccaca",
+
+
+
+"use_color_filter_18": false,
+
+
+
+"color_name_new_18": "Tím",
+
+
+
+"color_code_new_18": "#b5129a",
+
+
+
+"use_color_filter_19": false,
+
+
+
+"color_name_new_19": "Hồng",
+
+
+
+"color_code_new_19": "#db999b",
+
+
+
+"use_color_filter_20": false,
+
+
+
+"color_name_new_20": "Đen",
+
+
+
+"color_code_new_20": "#000000",
+
+
+
+"use_color_filter_21": false,
+
+
+
+"color_name_new_21": "Đỏ",
+
+
+
+"color_code_new_21": "#ff0000",
+
+
+
+"use_color_filter_22": false,
+
+
+
+"color_name_new_22": "Vàng",
+
+
+
+"color_code_new_22": "#ffff05",
+
+
+
+"use_color_filter_23": false,
+
+
+
+"color_name_new_23": "Cam",
+
+
+
+"color_code_new_23": "#f5b505",
+
+
+
+"use_color_filter_24": false,
+
+
+
+"color_name_new_24": "Xanh dương",
+
+
+
+"color_code_new_24": "#5100ff",
+
+
+
+"use_color_filter_25": false,
+
+
+
+"color_name_new_25": "Xanh lá",
+
+
+
+"color_code_new_25": "#3cfa08",
+
+
+
+"use_color_filter_26": false,
+
+
+
+"color_name_new_26": "Nâu",
+
+
+
+"color_code_new_26": "#753a3a",
+
+
+
+"use_color_filter_27": false,
+
+
+
+"color_name_new_27": "Xám",
+
+
+
+"color_code_new_27": "#cccaca",
+
+
+
+"use_color_filter_28": false,
+
+
+
+"color_name_new_28": "Tím",
+
+
+
+"color_code_new_28": "#b5129a",
+
+
+
+"use_color_filter_29": false,
+
+
+
+"color_name_new_29": "Hồng",
+
+
+
+"color_code_new_29": "#db999b",
+
+
+
+"use_color_filter_30": false,
+
+
+
+"color_name_new_30": "Đen",
+
+
+
+"color_code_new_30": "#000000",
+
+
+
+"use_tag_custom_2": true,
+
+
+
+"tag_title_custom_2": "Kích thước",
+
+
+
+"enter_tag_2": "30ml,40ml,50ml,60ml",
+
+
+
+"use_price_filter": "1",
+
+
+
+"title_tag_3": "Lọc giá",
+
+
+
+"1_price_to": "1000000",
+
+
+
+"2_price_from": "1000000",
+
+
+
+"2_price_to": "2000000",
+
+
+
+"3_price_from": "2000000",
+
+
+
+"3_price_to": "3000000",
+
+
+
+"4_price_from": "3000000",
+
+
+
+"4_price_to": "4000000",
+
+
+
+"5_price_from": "5000000",
+
+
+
+"btn_bg_addcart_shop": "#d29f13",
+
+
+
+"use_product_style": "style-03",
+
+
+
+"display_tab_product_1": true,
+
+
+
+"title_tab_product_1": "Mô tả",
+
+
+
+"display_tab_product_2": true,
+
+
+
+"title_tab_product_2": "Chính sách đổi trả",
+
+
+
+"page_content_tab_2": "chinh-sach-doi-tra",
+
+
+
+"display_tab_product_3": true,
+
+
+
+"title_tab_product_3": "Chính sách bảo mật",
+
+
+
+"page_content_tab_3": "chinh-sach-bao-mat",
+
+
+
+"shares_facebook_social": true,
+
+
+
+"productspg_related_products": true,
+
+
+
+"productspg_related_title": "Sản phẩm liên quan",
+
+
+
+"productspg_featured_quantity": "15",
+
+
+
+"productspg_review_products": true,
+
+
+
+"product_review_title": "Danh mục blog",
+
+
+
+"hotline_contact_product": "1900.636.099",
+
+
+
+"product_deliverly_show": true,
+
+
+
+"product_deliverly_1_show": true,
+
+
+
+"product_deliverly_1_ico": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_1_text": "Cam kết 100% chính hãng",
+
+
+
+"product_deliverly_2_show": true,
+
+
+
+"product_deliverly_2_ico": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_2_text": "Giao hàng dự kiến:\n<br>\n<strong>Thứ 6 - Thứ 4 từ 9h00 - 20h00</strong>",
+
+
+
+"product_deliverly_3_show": true,
+
+
+
+"product_deliverly_3_ico": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"product_deliverly_3_text": "Sản phẩm không nhận đổi trả",
+
+
+
+"header_style_select": "header-2",
+
+
+
+"header_01_color_text": "#ffffff",
+
+
+
+"header_01_color_bkg": "#F4B0B0",
+
+
+
+"header_02_color_text": "#866d4b ",
+
+
+
+"header_02_color_hover_text": "#d29f13",
+
+
+
+"header_02_color_bkg": "#ffffff",
+
+
+
+"header_03_color_text": "#ffffff",
+
+
+
+"header_03_color_bkg": "#F4B0B0",
+
+
+
+"show_product_sharing": true,
+
+
+
+"product_deliverly_1_icon": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_2_icon": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_3_icon": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"price_title": "Giá tiền",
+
+
+
+"top_bar_content": "Miễn phí free ship với đơn hàng trên 1.000.000 đ",
+
+
+
+"header_01_top_bar_text": "#000000",
+
+
+
+"header_01_top_bar_bg": "#ffffff",
+
+
+
+"header_02_top_bar_text": "#ffffff",
+
+
+
+"header_02_top_bar_bg": "#d29f13",
+
+
+
+"header_03_top_bar_text": "#000000",
+
+
+
+"header_03_top_bar_bg": "#ffffff",
+
+
+
+"banner_page_href": "/collections/all",
+
+
+
+"banner_image_page": "https://file.hstatic.net/1000088429/file/banner-img-page_8c6758378b3e438db137be4e08a0d7a9.jpg",
+
+
+
+"show_banner_image_page": true,
+
+
+
+"show_social_page_contact": true,
+
+
+
+"popup_contact_show": false,
+
+
+
+"popup_contact_select": "popupBanner",
+
+
+
+"popup_contact_time": "60",
+
+
+
+"popup_contact_banner": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_alt": "Các ưu đãi của chúng tôi",
+
+
+
+"popup_contact_link": "/collections/all",
+
+
+
+"popup_contact_bkg": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_title": "Hãy đến với chúng tôi",
+
+
+
+"popup_contact_content": "Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.",
+
+
+
+"popup_contact_description_1": "Giảm giá sản phẩm",
+
+
+
+"popup_contact_description_2": "Sản phẩm mới",
+
+
+
+"popup_contact_description_3": "Sản phẩm bán chạy",
+
+
+
+"use_collection_products_two": true,
+
+
+
+"heading_collection_home_two": "Sản phẩm khuyến mãi",
+
+
+
+"description_collection_home_two": "Cung cấp các sẩn phẩm khuyến mãi mới nhât",
+
+
+
+"collection_two": "onsale",
+
+
+
+"collection_home_two": "onsale",
+
+
+
+"slideshow_1.jpg": "",
+
+
+
+"slideshow_1_mb.jpg": "",
+
+
+
+"slideshow_2.jpg": "",
+
+
+
+"slideshow_2_mb.jpg": "",
+
+
+
+"slideshow_3.jpg": "",
+
+
+
+"slideshow_3_mb.jpg": "",
+
+
+
+"slideshow_4.jpg": "",
+
+
+
+"slideshow_4_mb.jpg": "",
+
+
+
+"img_banner_center.jpg": "",
+
+
+
+"logo_bct.jpg": "",
+
+
+
+"banner_image_collection.jpg": "",
+
+
+
+"product_deliverly_1_icon.jpg": "",
+
+
+
+"product_deliverly_2_icon.jpg": "https://file.hstatic.net/1000088429/file/icon-shipped-devc_731f3c74261c40d6ac6c1af5c44e4c77.png",
+
+
+
+"product_deliverly_3_icon.jpg": "",
+
+
+
+"backgound_image_blog.jpg": "",
+
+
+
+"banner_image_page.jpg": "",
+
+
+
+"logo.png": "",
+
+
+
+"favicon.png": "",
+
+
+
+"share_fb_home.png": "",
+
+
+
+"popup_contact_banner.jpg": "",
+
+
+
+"popup_contact_bkg.jpg": "",
+
+
+
+"product_deliverly_1_ico.png": "",
+
+
+
+"product_deliverly_2_ico.png": "",
+
+
+
+"product_deliverly_3_ico.png": "",
+
+
+
+"product_deliverly_1_icons.png": "",
+
+
+
+"product_deliverly_2_icons.png": "",
+
+
+
+"product_deliverly_3_icons.png": "",
+
+
+
+"use_collection_one_products": true,
+
+
+
+"use_collection_two_products": true,
+
+
+
+"banner_blog_home_heading": "Tin tức",
+
+
+
+"banner_blog_home_description": "Cập nhập những tin tức mới nhất ",
+
+
+
+"banner_blog_home": "news",
+
+
+
+"banner_center_home_title": "Kem khoáng Deadsea",
+
+
+
+"banner_center_home_desc": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB.",
+
+
+
+"banner_center_home_button": "Xem ngay",
+
+
+
+"banner_center_home_button_link": "/collections/all",
+
+
+
+"banner_center_home_image.jpg": "",
+
+
+
+"show_banner_image_blog": true,
+
+
+
+"banner_image_blog.jpg": "",
+
+
+
+"banner_image_blog_alt": "Tin tức mới nhất",
+
+
+
+"page_contact_description": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"page_contact_phone": "1900.636.099",
+
+
+
+"page_contact_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"page_contact_email": "hi@haravan.com",
+
+
+
+"page_contact_time": "Thứ 2 đến Thứ 6 từ 8h30 đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"page_menu_title": "Danh mục trang",
+
+
+
+"about_style_selected": "about_style_1",
+
+
+
+"about02_banner_show": true,
+
+
+
+"about02_banner_bkg.jpg": "",
+
+
+
+"about02_banner_txtcolor": "#333333",
+
+
+
+"about02_infor_show": true,
+
+
+
+"about02_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about02_infor_desc": "Nature-cycle tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about02_infor_1_show": true,
+
+
+
+"about02_infor_1_ico.png": "",
+
+
+
+"about02_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about02_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_infor_2_show": true,
+
+
+
+"about02_infor_2_ico.png": "",
+
+
+
+"about02_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about02_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about02_infor_3_show": true,
+
+
+
+"about02_infor_3_ico.png": "",
+
+
+
+"about02_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about02_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about02_team_show": true,
+
+
+
+"about02_team_title": "Đội ngũ nhân viên",
+
+
+
+"about02_team_desc": "Chúng tôi tạo dựng môi trường làm việc thân thiện cho nhân viên, các cấp quản lý luôn lắng nghe, thấu hiểu, hỗ trợ cho nhân viên mình có thể phát huy mọi tiềm năng .",
+
+
+
+"about02_team_1_show": true,
+
+
+
+"about02_team_1_img.jpg": "",
+
+
+
+"about02_team_1_name": "Huỳnh Linh Đan",
+
+
+
+"about02_team_1_postion": "Nhân viên 1",
+
+
+
+"about02_team_2_show": true,
+
+
+
+"about02_team_2_img.jpg": "",
+
+
+
+"about02_team_2_name": "Nguyễn Văn A",
+
+
+
+"about02_team_2_postion": "Nhân viên 2",
+
+
+
+"about02_team_3_show": true,
+
+
+
+"about02_team_3_img.jpg": "",
+
+
+
+"about02_team_3_name": "Trần Văn C",
+
+
+
+"about02_team_3_postion": "Nhân viên 3",
+
+
+
+"about02_team_4_show": true,
+
+
+
+"about02_team_4_img.jpg": "",
+
+
+
+"about02_team_4_name": "Nguyễn Văn B",
+
+
+
+"about02_team_4_postion": "Nhân viên 4",
+
+
+
+"about02_services_show": true,
+
+
+
+"about02_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about02_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.",
+
+
+
+"about02_services_1_show": true,
+
+
+
+"about02_services_1_ico.png": "",
+
+
+
+"about02_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about02_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about02_services_2_show": true,
+
+
+
+"about02_services_2_ico.png": "",
+
+
+
+"about02_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about02_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about02_services_3_show": true,
+
+
+
+"about02_services_3_ico.png": "",
+
+
+
+"about02_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about02_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_services_4_show": true,
+
+
+
+"about02_services_4_ico.png": "",
+
+
+
+"about02_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about02_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about02_services_5_show": true,
+
+
+
+"about02_services_5_ico.png": "",
+
+
+
+"about02_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about02_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about02_services_6_show": true,
+
+
+
+"about02_services_6_ico.png": "",
+
+
+
+"about02_services_6_text": "Chính sách bảo mật",
+
+
+
+"about02_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about03_banner_show": true,
+
+
+
+"about03_banner_bkg.jpg": "",
+
+
+
+"about03_banner_txtcolor": "#333333",
+
+
+
+"about03_infor_show": true,
+
+
+
+"about03_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about03_infor_desc": "Nature-cycle  tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about03_infor_1_show": true,
+
+
+
+"about03_infor_1_ico.png": "",
+
+
+
+"about03_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about03_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_infor_2_show": true,
+
+
+
+"about03_infor_2_ico.png": "",
+
+
+
+"about03_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about03_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about03_infor_3_show": true,
+
+
+
+"about03_infor_3_ico.png": "",
+
+
+
+"about03_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about03_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about03_team_show": true,
+
+
+
+"about03_team_1_show": true,
+
+
+
+"about03_team_1_img.jpg": "",
+
+
+
+"about03_team_1_name": "Mỹ phẩm chăm sóc da ",
+
+
+
+"about03_team_1_postion": "Có chiết xuất hoàn toàn từ thiên nhiên với nguyên liệu được tuyển chọn từ các vùng nguyên liệu của chúng tôi. Được trồng và chăm sóc theo đúng quy trình để đảm bảo nguồn nguyên liệu giữ được phẩm chất tốt nhất và dược tính cao nhất. Đảm bảo được chất lượng khi sản xuất là đồng nhất.",
+
+
+
+"about03_team_2_show": true,
+
+
+
+"about03_team_2_img.jpg": "",
+
+
+
+"about03_team_2_name": "Chỉ tiêu sản phẩm của chúng tôi",
+
+
+
+"about03_team_2_postion": "Bất cứ sản phẩm nào không đạt được tiêu chuẩn sẽ được loại bỏ khỏi dây chuyền và tiêu hủy lập tức. Với dây chuyền công nghệ hiện đại cùng hệ thông quản lý thông minh đem lại sản phẩm hoàn thiện đồng nhất đảm bảo chất lượng đưa tới tay người tiêu dùng.",
+
+
+
+"about03_team_3_show": true,
+
+
+
+"about03_team_3_img.jpg": "",
+
+
+
+"about03_team_3_name": "Sản phẩm được sản xuất 100% từ thiên nhiên",
+
+
+
+"about03_team_3_postion": "Tất cả sản phẩm của chúng tôi đều được đảm bảo thích ứng tốt với da người Việt Nam, không gây các tác dụng phụ hay ảnh hưởng đến sức khỏe khi sử dụng lâu dài. Mọi tác động đến sức khỏe có nguyên nhân từ sản phẩm của chúng tôi đều được công ty chịu hoàn toàn trách nhiệm.",
+
+
+
+"about03_team_4_show": true,
+
+
+
+"about03_team_4_img.jpg": "",
+
+
+
+"about03_team_4_name": "Đón hè như ý, chăm da hết ý",
+
+
+
+"about03_team_4_postion": "Mùa hè là thời điểm tạo điều kiện cho mụn sinh sôi nảy nở, đặc biệt là với những làn da dầu, nhiều mụn. Những tia nắng gay gắt có thể sẽ góp phần tàn phá làn da vốn đã bị tổn thương trước đó nếu bạn không biết cách chăm sóc da mặt đúng cách. Vì vậy việc chăm sóc da đúng cách vào mùa hè nắng nóng là cực kỳ quan trọng.",
+
+
+
+"about03_services_show": true,
+
+
+
+"about03_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about03_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.\n\n",
+
+
+
+"about03_services_1_show": true,
+
+
+
+"about03_services_1_ico.png": "",
+
+
+
+"about03_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about03_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about03_services_2_show": true,
+
+
+
+"about03_services_2_ico.png": "",
+
+
+
+"about03_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about03_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about03_services_3_show": true,
+
+
+
+"about03_services_3_ico.png": "",
+
+
+
+"about03_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about03_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_services_4_show": true,
+
+
+
+"about03_services_4_ico.png": "",
+
+
+
+"about03_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about03_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about03_services_5_show": true,
+
+
+
+"about03_services_5_ico.png": "",
+
+
+
+"about03_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about03_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about03_services_6_show": true,
+
+
+
+"about03_services_6_ico.png": "",
+
+
+
+"about03_services_6_text": "Chính sách bảo mật",
+
+
+
+"about03_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about02_infor_1_icon.png": "",
+
+
+
+"about02_infor_2_icon.png": "",
+
+
+
+"about02_infor_3_icon.png": "",
+
+
+
+"about02_services_1_icon.png": "",
+
+
+
+"about02_services_2_icon.png": "",
+
+
+
+"about02_services_3_icon.png": "",
+
+
+
+"about02_services_4_icon.png": "",
+
+
+
+"about02_services_5_icon.png": "",
+
+
+
+"about02_services_6_icon.png": "",
+
+
+
+"about03_infor_1_icon.png": "",
+
+
+
+"about03_infor_2_icon.png": "",
+
+
+
+"about03_infor_3_icon.png": "",
+
+
+
+"about03_services_1_icon.png": "",
+
+
+
+"about03_services_2_icon.png": "",
+
+
+
+"about03_services_3_icon.png": "",
+
+
+
+"about03_services_4_icon.png": "",
+
+
+
+"about03_services_5_icon.png": "",
+
+
+
+"about03_services_6_icon.png": "",
+
+
+
+"about02_services_4_ico": "",
+
+
+
+"about02_services_5_ico": "",
+
+
+
+"about02_services_6_ico": "",
+
+
+
+"bg_banner_team_about": "#ffffff",
+
+
+
+"border_banner_team_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about": "#ffffff",
+
+
+
+"border_banner_services_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about_3": "#ffffff",
+
+
+
+"border_banner_services_about_3": "#f5f5f5",
+
+
+
+"product_viewed_show": true,
+
+
+
+"product_viewed_title": "Sản phẩm đã xem",
+
+
+
+"use_collection_style": "collection_style_01",
+
+
+
+"show_slider_home_banner": true,
+
+
+
+"footer_bg_color": "#ffffff",
+
+
+
+"footer_border_color": "#ffffff",
+
+
+
+"footer_title_color": "#453536",
+
+
+
+"footer_text_color": "#866d4b",
+
+
+
+"footer_bg_color_copyright": "#ffffff",
+
+
+
+"footer_text_color_copyright": "#866d4b",
+
+
+
+"slide_1_title_1": "",
+
+
+
+"slide_1_title_2": "JAPAN SINCE 1904",
+
+
+
+"slide_2_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_2_title_2": "Món quà tuyệt vời nhất giành cho chính bạn",
+
+
+
+"slide_3_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_3_title_2": "Kem trắng da siêu cấp mới nhất",
+
+
+
+"slide_4_title_1": "",
+
+
+
+"slide_4_title_2": "",
+
+
+
+"show_header_top_bar": true,
+
+
+
+"top_bar_contact": "",
+
+
+
+"top_bar_hotline": "",
+
+
+
+"top_bar_intagram_follow": "/",
+
+
+
+"top_bar_facebook_follow": "/",
+
+
+
+"top_bar_contact_link": "",
+
+
+
+"display_banner_introproduct_1_home": true,
+
+
+
+"banner_introproduct_title_first_1": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_desc_1": "Hãy duy trì làn da khoẻ mạnh với sản phẩm mới nhất của chúng tôi, ở đây sản phẩm được sản xuất từ 100% thiên nhiên , không chất bảo quản, hoá chất, yên tâm mà sử dụng.",
+
+
+
+"alt_img_intro_product_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_btn_link_1": "/collections/all",
+
+
+
+"img_intro_product_1.jpg": "",
+
+
+
+"banner_introproduct_btn_1": "Xem ngay",
+
+
+
+"img_intro_product_1.png": "",
+
+
+
+"display_banner_introproduct_2_home": true,
+
+
+
+"banner_introproduct_title_first_2": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_desc_2": "Với các sản phẩm của chúng tôi, chúng tôi luôn uy tín đặc lên hàng đầu , bảo đảm sức khoẻ cho khách hàng yên tâm sử dụng",
+
+
+
+"banner_introproduct_btn_2": "Xem ngay",
+
+
+
+"banner_introproduct_btn_link_2": "/collections/all",
+
+
+
+"img_intro_product_2.png": "",
+
+
+
+"alt_img_intro_product_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_bg_2": "#d1e2e8",
+
+
+
+"heading_collection_home_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_second": "Sản phẩm mới",
+
+
+
+"display_banner_testimonials_home": true,
+
+
+
+"show_banner_testimonials_1": true,
+
+
+
+"testimonials_title_frist_1": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_1": "Sử dụng các thương hiệu mới nhất",
+
+
+
+"testimonials_desc_1": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_2": true,
+
+
+
+"testimonials_title_frist_2": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_2": "Khách hàng rất thích",
+
+
+
+"testimonials_desc_2": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_3": false,
+
+
+
+"testimonials_title_frist_3": "",
+
+
+
+"testimonials_title_second_3": "",
+
+
+
+"testimonials_desc_3": "",
+
+
+
+"banner_img_testimonials.jpg": "",
+
+
+
+"banner_alt_testimonials": "Chào mừng đến với nature cycle",
+
+
+
+"bg_banner_testimonials": "#d1e2e8",
+
+
+
+"footer_holder_contact": "",
+
+
+
+"footer_holder_contact_link": "",
+
+
+
+"footer_holder_hotline": "",
+
+
+
+"heading_collection_home_two_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_two_second": "",
+
+
+
+"display_banner_service_home": true,
+
+
+
+"bg_banner_service": "#d1e2e8",
+
+
+
+"service_image_1.jpg": "",
+
+
+
+"service_title_1": "500 Thương hiệu lớn",
+
+
+
+"service_content_1": "Chất lượng cao nhất",
+
+
+
+"service_image_2.jpg": "",
+
+
+
+"service_title_2": "Miễn phí vận chuyển",
+
+
+
+"service_content_2": "Giao hàng trong vòng 1 ngày",
+
+
+
+"service_image_3.jpg": "",
+
+
+
+"service_title_3": "Dịch vụ khách hàng",
+
+
+
+"service_content_3": "Liện hệ qua Email và số điện thoại",
+
+
+
+"service_image_4.jpg": "",
+
+
+
+"service_title_4": "Thanh toán bảo mật 100%",
+
+
+
+"service_content_4": "Chúng tôi đánh giá cao sự bảo mật của bạn",
+
+
+
+"service_image_1.png": "",
+
+
+
+"service_image_2.png": "",
+
+
+
+"service_image_3.png": "",
+
+
+
+"service_image_4.png": "",
+
+
+
+"autoplay_slider_banner": true,
+
+
+
+"autoplayTimeout_slider_banner": "5",
+
+
+
+"footer_link2_menu": "left",
+
+
+
+"footer_border_color_copyright": "#eeeeee",
+
+
+
+"header_hotline_desk": "1900.636.099",
+
+
+
+"header_email_desk": "hi@haravan.com",
+
+
+
+"bg_breadcrumb.jpg": "",
+
+
+
+"bkg_breadcrumd.jpg": "",
+
+
+
+"top_bar_text_follow_1": "INSTAGRAM",
+
+
+
+"top_bar_link_follow_1": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_2": "FACEBOOK",
+
+
+
+"top_bar_link_follow_2": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_3": "YOUTUBE",
+
+
+
+"top_bar_link_follow_3": "",
+
+
+
+"top_bar_text_follow_4": "ZALO",
+
+
+
+"top_bar_link_follow_4": "",
+
+
+
+"banner_introproduct_bg_1": "#ffffff",
+
+
+
+"collection_banner.jpg": "",
+
+
+
+"about01_banner_show": true,
+
+
+
+"about01_banner_bkg.jpg": "",
+
+
+
+"about01_banner_txtcolor": "#333333",
+
+
+
+"show_banner_contact": true,
+
+
+
+"banner_contact_bkg.jpg": "",
+
+
+
+"banner_contact_txtcolor": "#ffffff"
+
+
+},
+
+
+"Noritake V2": {
+
+
+
+"use_logo": true,
+
+
+
+"customer_layout": "theme",
+
+
+
+"logo": "https://file.hstatic.net/1000088429/file/logo_dfb01b70731f4332a05d2fe9c91a3833.png",
+
+
+
+"favicon": "https://file.hstatic.net/1000406611/file/favicon_696bb70236d241df9cf2e26c24aaed67.png",
+
+
+
+"shop_text_color": "#453536",
+
+
+
+"shop_title_color": "#453536",
+
+
+
+"btn_bg_shop": "#d29f13",
+
+
+
+"shop_text_hover_color": "#d29f13",
+
+
+
+"mainmenu_link": "main-menu",
+
+
+
+"share_fb_home": "https://file.hstatic.net/1000088429/file/share-fb-home_434f286540a24a1c9c7f4d4170a5b3f9.jpg",
+
+
+
+"slide_1": true,
+
+
+
+"slideshow_1": "https://file.hstatic.net/1000088429/file/home_slide_1_d0c4e0a9521b46d698d5747cf0b6b264.jpg",
+
+
+
+"slide_1_alt": "slide 1",
+
+
+
+"slide_1_title": "Khám phá ngay vẻ đẹp từ thiên nhiên",
+
+
+
+"slide_1_desc": "",
+
+
+
+"slide_1_button": "Tìm hiểu thêm",
+
+
+
+"slide_1_link": "/collections/all",
+
+
+
+"slide_2": true,
+
+
+
+"slideshow_2": "https://file.hstatic.net/1000088429/file/home_slide_2_744715ac3f51439ba436552c791acf4e.jpg",
+
+
+
+"slide_2_alt": "slide 2",
+
+
+
+"slide_2_title": "Sản phẩm làm đẹp",
+
+
+
+"slide_2_desc": "",
+
+
+
+"slide_2_button": "Xem ngay",
+
+
+
+"slide_2_link": "/collections/onsale",
+
+
+
+"slide_3": false,
+
+
+
+"slideshow_3": "https://file.hstatic.net/1000088429/file/home_slide_3_8fd76b1273524842a165f670c2fe8d86.jpg",
+
+
+
+"slide_3_alt": "slide 3",
+
+
+
+"slide_3_title": "Kem tự nhiên cho làn da mềm mại",
+
+
+
+"slide_3_desc": "",
+
+
+
+"slide_3_button": "Xem ngay",
+
+
+
+"slide_3_link": "/collections/all",
+
+
+
+"slide_4": false,
+
+
+
+"slideshow_4": "",
+
+
+
+"slide_4_alt": "",
+
+
+
+"slide_4_title": "",
+
+
+
+"slide_4_desc": "",
+
+
+
+"slide_4_button": "",
+
+
+
+"slide_4_link": "",
+
+
+
+"slideshow_1_mb": "https://file.hstatic.net/1000088429/file/home_slide_1_mobile_c78c25c8e1ad405da41a9ff254099e5b.jpg",
+
+
+
+"slideshow_2_mb": "https://file.hstatic.net/1000088429/file/home_slide_2_mobile_d3fa970b3a4641f5b59390a3b715d843.jpg",
+
+
+
+"slideshow_3_mb": "https://file.hstatic.net/1000088429/file/home_slide_3_mobile_395e2dabe12641a2a28bc2c5e40ca4ce.jpg",
+
+
+
+"slideshow_4_mb": "",
+
+
+
+"use_collection_products": true,
+
+
+
+"heading_collection_home": "Sản phẩm mới nhất",
+
+
+
+"description_collection_home": "Chào mừng đến với nature cycle",
+
+
+
+"collection_home": "hot-products",
+
+
+
+"limit_one_size": "10",
+
+
+
+"display_banner_center_home": false,
+
+
+
+"img_banner_center": "https://file.hstatic.net/1000088429/file/banner_home_79a55d5d9a2242ac8db2846fcd2f39b9.jpg",
+
+
+
+"title_banner_center": "Kem khoáng Deadsea",
+
+
+
+"desc_banner_center": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB. ",
+
+
+
+"button_banner_center": "Xem ngay",
+
+
+
+"link_bnt_banner_center": "/collections/all",
+
+
+
+"display_banner_blog_home": false,
+
+
+
+"heading_blog_home": "Tin tức",
+
+
+
+"description_blog_home": "Cập nhập những tin tức mới nhất ",
+
+
+
+"blog_home": "news",
+
+
+
+"show_footer1": true,
+
+
+
+"footer1_title": "Giới thiệu",
+
+
+
+"footer1_information": "Chào mừng bạn đến với Nature Cycle. Tại đây, bạn sẽ tìm thấy hoàn toàn mọi thứ bạn cần để thể hiện công việc kinh doanh theo định hướng chăm sóc sức khỏe, spa hoặc sắc đẹp của mình theo cách hiện đại.",
+
+
+
+"footer_link1_show": true,
+
+
+
+"footer_link1_title": "Liên kết",
+
+
+
+"footer_link1_menu": "footer",
+
+
+
+"show_footer2": true,
+
+
+
+"footer2_title": "Liên kết",
+
+
+
+"footer-address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer-tell": " 1900.636.099",
+
+
+
+"footer-fax": "1900.636.099",
+
+
+
+"footer-email": "hi@haravan.com",
+
+
+
+"show_footer3": true,
+
+
+
+"footer3_title": "Dịch vụ khách hàng",
+
+
+
+"fanpage_faceook": "https://www.facebook.com/NoritakeVietnam",
+
+
+
+"footer4_title": "Fanpage",
+
+
+
+"show_social_icon_footer": true,
+
+
+
+"link_social_facebook": "/",
+
+
+
+"link_social_youtube": "/",
+
+
+
+"link_social_pinterest": "/",
+
+
+
+"link_social_twitter": "/",
+
+
+
+"link_social_instagram": "/",
+
+
+
+"show_logo_bct": "1",
+
+
+
+"logo_bct": "https://file.hstatic.net/1000088429/file/logo-bct_38921d34df3e4a1687ad989a4a58a249.png",
+
+
+
+"link_logo_bct": "/",
+
+
+
+"title_help_menu_mb": "Hotline",
+
+
+
+"hotline_mb": "1900.636.099",
+
+
+
+"email_mb": "contact@noritake-vietnam.com",
+
+
+
+"pagination_blog_limit": "14",
+
+
+
+"news_recent_show": true,
+
+
+
+"news_recent_title": "Bài viết mới nhất",
+
+
+
+"show_blog_menu": true,
+
+
+
+"title_blog_menu": "Danh mục",
+
+
+
+"blog_menu": "main-menu",
+
+
+
+"show_footer4": "1",
+
+
+
+"show_blog_tags": true,
+
+
+
+"title_blog_tags": "Tags",
+
+
+
+"show_blog_follow": true,
+
+
+
+"title_blog_follow": "Mạng xã hội",
+
+
+
+"show_follow_facebook": "/",
+
+
+
+"show_follow_youtube": "/",
+
+
+
+"show_follow_pinterest": "/",
+
+
+
+"show_follow_twitter": "/",
+
+
+
+"show_follow_instagram": "/",
+
+
+
+"show_background_image_blog": true,
+
+
+
+"backgound_image_blog": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_blog": "Tin tức mới nhất",
+
+
+
+"show_page_menu": true,
+
+
+
+"title_page_menu": "Danh mục trang",
+
+
+
+"page_menu": "footer",
+
+
+
+"footer_phone": "1900.636.099",
+
+
+
+"footer_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer_email": "hi@haravan.com",
+
+
+
+"footer_time": "Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"show_social_icon_contact": false,
+
+
+
+"link_social_facebook_contact": "/",
+
+
+
+"link_social_youtube_contact": "",
+
+
+
+"link_social_pinterest_contact": "/",
+
+
+
+"link_social_twitter_contact": "/",
+
+
+
+"link_social_instagram_contact": "/",
+
+
+
+"show_google_maps": true,
+
+
+
+"google_maps_code": "<iframe  title=\"Google maps\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.615593436863!2d106.65415201477133!3d10.76408024232994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec7752c743%3A0xd832d71bd12b6a15!2zRmxlbWluZ3RvbiBUb3dlciwgMTgyIEzDqiDEkOG6oWkgSMOgbmgsIHBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1521530731757\" width=\"100%\" height=\"350\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+
+
+
+"description_page_contact": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"show_background_image_page_cart": "1",
+
+
+
+"backgound_image_page_cart": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_page_cart": "banner cart",
+
+
+
+"policy_cart_title": "Chính sách mua hàng",
+
+
+
+"policy_cart_1": "Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.",
+
+
+
+"policy_cart_2": "Sản phẩm còn đủ tem mác, chưa qua sử dụng",
+
+
+
+"policy_cart_3": "Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống",
+
+
+
+"policy_cart_4": "Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống",
+
+
+
+"show_collection_image": true,
+
+
+
+"banner_image_collection": "https://file.hstatic.net/1000088429/file/banner_collection_ea4d98f8263d45e8a65be10eb72c8e37.jpg",
+
+
+
+"pagination_limit": "20",
+
+
+
+"addthis_iconList_show": true,
+
+
+
+"addthis_icon1_show": true,
+
+
+
+"addthis_icon1_color1": "#d29f13",
+
+
+
+"addthis_icon1_color2": "#d29f13",
+
+
+
+"addthis_icon1_tootlip": "Hotline",
+
+
+
+"addthis_icon1_action": "1900636099",
+
+
+
+"addthis_icon2_show": true,
+
+
+
+"addthis_icon2_color1": "#d29f13",
+
+
+
+"addthis_icon2_color2": "#d29f13",
+
+
+
+"addthis_icon2_tootlip": "Chat với chúng tôi qua Zalo",
+
+
+
+"addthis_icon2_action": "//zalo.me/0901866099",
+
+
+
+"addthis_icon3_show": true,
+
+
+
+"addthis_icon3_color1": "#d29f13",
+
+
+
+"addthis_icon3_color2": "#d29f13",
+
+
+
+"addthis_icon3_tootlip": "Đăng kí thông tin và để lại lời nhắn",
+
+
+
+"addthis_icon3_title": "Để lại lời nhắn cho chúng tôi",
+
+
+
+"addthis_icon3_title2": "Đăng kí thông tin thành công",
+
+
+
+"addthis_icon3_content": "Cảm ơn bạn đã để lại thông tin <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất\t",
+
+
+
+"addthis_icon4_show": true,
+
+
+
+"addthis_icon4_color1": "#d29f13",
+
+
+
+"addthis_icon4_color2": "#d29f13",
+
+
+
+"addthis_icon4_tootlip": "Xem địa chỉ doanh nghiệp",
+
+
+
+"addthis_icon4_action": "/pages/lien-he",
+
+
+
+"use_chatbot": true,
+
+
+
+"code_messenger_mb": "108520260558644",
+
+
+
+"link_follow_facebook_blog": "/",
+
+
+
+"link_follow_youtube_blog": "/",
+
+
+
+"link_follow_pinterest_blog": "/",
+
+
+
+"link_follow_twitter_blog": "/",
+
+
+
+"link_follow_instagram_blog": "/",
+
+
+
+"collection_filter_show": true,
+
+
+
+"collection_filter_title": "Bộ lọc",
+
+
+
+"use_vendor_filter": true,
+
+
+
+"vendor_title": "Thương hiệu",
+
+
+
+"vendor_limit": "1",
+
+
+
+"use_color_filter": "1",
+
+
+
+"color_title": "Màu sắc",
+
+
+
+"use_color_filter_1": "1",
+
+
+
+"color_name_new_1": "Đỏ",
+
+
+
+"color_code_new_1": "#ff0000",
+
+
+
+"use_color_filter_2": "1",
+
+
+
+"color_name_new_2": "Vàng",
+
+
+
+"color_code_new_2": "#ffff05",
+
+
+
+"use_color_filter_3": "1",
+
+
+
+"color_name_new_3": "Cam",
+
+
+
+"color_code_new_3": "#f5b505",
+
+
+
+"use_color_filter_4": "1",
+
+
+
+"color_name_new_4": "Xanh dương",
+
+
+
+"color_code_new_4": "#5100ff",
+
+
+
+"use_color_filter_5": "1",
+
+
+
+"color_name_new_5": "Xanh lá",
+
+
+
+"color_code_new_5": "#3cfa08",
+
+
+
+"use_color_filter_6": true,
+
+
+
+"color_name_new_6": "Nâu",
+
+
+
+"color_code_new_6": "#753a3a",
+
+
+
+"use_color_filter_7": true,
+
+
+
+"color_name_new_7": "Xanh",
+
+
+
+"color_code_new_7": "#267a0b",
+
+
+
+"use_color_filter_8": false,
+
+
+
+"color_name_new_8": "Tím",
+
+
+
+"color_code_new_8": "#b5129a",
+
+
+
+"use_color_filter_9": "1",
+
+
+
+"color_name_new_9": "Hồng",
+
+
+
+"color_code_new_9": "#db999b",
+
+
+
+"use_color_filter_10": false,
+
+
+
+"color_name_new_10": "Đen",
+
+
+
+"color_code_new_10": "#000000",
+
+
+
+"use_color_filter_11": false,
+
+
+
+"color_name_new_11": "Đen",
+
+
+
+"color_code_new_11": "#000000",
+
+
+
+"use_color_filter_12": false,
+
+
+
+"color_name_new_12": "Đen",
+
+
+
+"color_code_new_12": "#000000",
+
+
+
+"use_color_filter_13": false,
+
+
+
+"color_name_new_13": "Đen",
+
+
+
+"color_code_new_13": "#000000",
+
+
+
+"use_color_filter_14": false,
+
+
+
+"color_name_new_14": "Đen",
+
+
+
+"color_code_new_14": "#000000",
+
+
+
+"use_color_filter_15": false,
+
+
+
+"color_name_new_15": "Đen",
+
+
+
+"color_code_new_15": "#000000",
+
+
+
+"use_color_filter_16": false,
+
+
+
+"color_name_new_16": "Nâu",
+
+
+
+"color_code_new_16": "#753a3a",
+
+
+
+"use_color_filter_17": false,
+
+
+
+"color_name_new_17": "Xám",
+
+
+
+"color_code_new_17": "#cccaca",
+
+
+
+"use_color_filter_18": false,
+
+
+
+"color_name_new_18": "Tím",
+
+
+
+"color_code_new_18": "#b5129a",
+
+
+
+"use_color_filter_19": false,
+
+
+
+"color_name_new_19": "Hồng",
+
+
+
+"color_code_new_19": "#db999b",
+
+
+
+"use_color_filter_20": false,
+
+
+
+"color_name_new_20": "Đen",
+
+
+
+"color_code_new_20": "#000000",
+
+
+
+"use_color_filter_21": false,
+
+
+
+"color_name_new_21": "Đỏ",
+
+
+
+"color_code_new_21": "#ff0000",
+
+
+
+"use_color_filter_22": false,
+
+
+
+"color_name_new_22": "Vàng",
+
+
+
+"color_code_new_22": "#ffff05",
+
+
+
+"use_color_filter_23": false,
+
+
+
+"color_name_new_23": "Cam",
+
+
+
+"color_code_new_23": "#f5b505",
+
+
+
+"use_color_filter_24": false,
+
+
+
+"color_name_new_24": "Xanh dương",
+
+
+
+"color_code_new_24": "#5100ff",
+
+
+
+"use_color_filter_25": false,
+
+
+
+"color_name_new_25": "Xanh lá",
+
+
+
+"color_code_new_25": "#3cfa08",
+
+
+
+"use_color_filter_26": false,
+
+
+
+"color_name_new_26": "Nâu",
+
+
+
+"color_code_new_26": "#753a3a",
+
+
+
+"use_color_filter_27": false,
+
+
+
+"color_name_new_27": "Xám",
+
+
+
+"color_code_new_27": "#cccaca",
+
+
+
+"use_color_filter_28": false,
+
+
+
+"color_name_new_28": "Tím",
+
+
+
+"color_code_new_28": "#b5129a",
+
+
+
+"use_color_filter_29": false,
+
+
+
+"color_name_new_29": "Hồng",
+
+
+
+"color_code_new_29": "#db999b",
+
+
+
+"use_color_filter_30": false,
+
+
+
+"color_name_new_30": "Đen",
+
+
+
+"color_code_new_30": "#000000",
+
+
+
+"use_tag_custom_2": true,
+
+
+
+"tag_title_custom_2": "Kích thước",
+
+
+
+"enter_tag_2": "30ml,40ml,50ml,60ml",
+
+
+
+"use_price_filter": "1",
+
+
+
+"title_tag_3": "Lọc giá",
+
+
+
+"1_price_to": "1000000",
+
+
+
+"2_price_from": "1000000",
+
+
+
+"2_price_to": "2000000",
+
+
+
+"3_price_from": "2000000",
+
+
+
+"3_price_to": "3000000",
+
+
+
+"4_price_from": "3000000",
+
+
+
+"4_price_to": "4000000",
+
+
+
+"5_price_from": "5000000",
+
+
+
+"btn_bg_addcart_shop": "#d29f13",
+
+
+
+"use_product_style": "style-03",
+
+
+
+"display_tab_product_1": true,
+
+
+
+"title_tab_product_1": "Mô tả",
+
+
+
+"display_tab_product_2": true,
+
+
+
+"title_tab_product_2": "Chính sách đổi trả",
+
+
+
+"page_content_tab_2": "chinh-sach-doi-tra",
+
+
+
+"display_tab_product_3": true,
+
+
+
+"title_tab_product_3": "Chính sách bảo mật",
+
+
+
+"page_content_tab_3": "chinh-sach-bao-mat",
+
+
+
+"shares_facebook_social": true,
+
+
+
+"productspg_related_products": true,
+
+
+
+"productspg_related_title": "Sản phẩm liên quan",
+
+
+
+"productspg_featured_quantity": "15",
+
+
+
+"productspg_review_products": true,
+
+
+
+"product_review_title": "Danh mục blog",
+
+
+
+"hotline_contact_product": "1900.636.099",
+
+
+
+"product_deliverly_show": true,
+
+
+
+"product_deliverly_1_show": true,
+
+
+
+"product_deliverly_1_ico": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_1_text": "Cam kết 100% chính hãng",
+
+
+
+"product_deliverly_2_show": true,
+
+
+
+"product_deliverly_2_ico": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_2_text": "Giao hàng dự kiến:\n<br>\n<strong>Thứ 6 - Thứ 4 từ 9h00 - 20h00</strong>",
+
+
+
+"product_deliverly_3_show": true,
+
+
+
+"product_deliverly_3_ico": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"product_deliverly_3_text": "Sản phẩm không nhận đổi trả",
+
+
+
+"header_style_select": "header-2",
+
+
+
+"header_01_color_text": "#ffffff",
+
+
+
+"header_01_color_bkg": "#F4B0B0",
+
+
+
+"header_02_color_text": "#866d4b ",
+
+
+
+"header_02_color_hover_text": "#d29f13",
+
+
+
+"header_02_color_bkg": "#ffffff",
+
+
+
+"header_03_color_text": "#453536 ",
+
+
+
+"header_03_color_bkg": "#ffffff",
+
+
+
+"show_product_sharing": true,
+
+
+
+"product_deliverly_1_icon": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_2_icon": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_3_icon": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"price_title": "Giá tiền",
+
+
+
+"top_bar_content": "Miễn phí free ship với đơn hàng trên 1.000.000 đ",
+
+
+
+"header_01_top_bar_text": "#000000",
+
+
+
+"header_01_top_bar_bg": "#ffffff",
+
+
+
+"header_02_top_bar_text": "#ffffff",
+
+
+
+"header_02_top_bar_bg": "#d29f13",
+
+
+
+"header_03_top_bar_text": "#ffffff",
+
+
+
+"header_03_top_bar_bg": "#d29f13",
+
+
+
+"banner_page_href": "/collections/all",
+
+
+
+"banner_image_page": "https://file.hstatic.net/1000088429/file/banner-img-page_8c6758378b3e438db137be4e08a0d7a9.jpg",
+
+
+
+"show_banner_image_page": true,
+
+
+
+"show_social_page_contact": true,
+
+
+
+"popup_contact_show": false,
+
+
+
+"popup_contact_select": "popupBanner",
+
+
+
+"popup_contact_time": "60",
+
+
+
+"popup_contact_banner": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_alt": "Các ưu đãi của chúng tôi",
+
+
+
+"popup_contact_link": "/collections/all",
+
+
+
+"popup_contact_bkg": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_title": "Hãy đến với chúng tôi",
+
+
+
+"popup_contact_content": "Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.",
+
+
+
+"popup_contact_description_1": "Giảm giá sản phẩm",
+
+
+
+"popup_contact_description_2": "Sản phẩm mới",
+
+
+
+"popup_contact_description_3": "Sản phẩm bán chạy",
+
+
+
+"use_collection_products_two": true,
+
+
+
+"heading_collection_home_two": "Sản phẩm khuyến mãi",
+
+
+
+"description_collection_home_two": "Cung cấp các sẩn phẩm khuyến mãi mới nhât",
+
+
+
+"collection_two": "onsale",
+
+
+
+"collection_home_two": "onsale",
+
+
+
+"slideshow_1.jpg": "",
+
+
+
+"slideshow_1_mb.jpg": "",
+
+
+
+"slideshow_2.jpg": "",
+
+
+
+"slideshow_2_mb.jpg": "",
+
+
+
+"slideshow_3.jpg": "",
+
+
+
+"slideshow_3_mb.jpg": "",
+
+
+
+"slideshow_4.jpg": "",
+
+
+
+"slideshow_4_mb.jpg": "",
+
+
+
+"img_banner_center.jpg": "",
+
+
+
+"logo_bct.jpg": "",
+
+
+
+"banner_image_collection.jpg": "",
+
+
+
+"product_deliverly_1_icon.jpg": "",
+
+
+
+"product_deliverly_2_icon.jpg": "https://file.hstatic.net/1000088429/file/icon-shipped-devc_731f3c74261c40d6ac6c1af5c44e4c77.png",
+
+
+
+"product_deliverly_3_icon.jpg": "",
+
+
+
+"backgound_image_blog.jpg": "",
+
+
+
+"banner_image_page.jpg": "",
+
+
+
+"logo.png": "",
+
+
+
+"favicon.png": "",
+
+
+
+"share_fb_home.png": "",
+
+
+
+"popup_contact_banner.jpg": "",
+
+
+
+"popup_contact_bkg.jpg": "",
+
+
+
+"product_deliverly_1_ico.png": "",
+
+
+
+"product_deliverly_2_ico.png": "",
+
+
+
+"product_deliverly_3_ico.png": "",
+
+
+
+"product_deliverly_1_icons.png": "",
+
+
+
+"product_deliverly_2_icons.png": "",
+
+
+
+"product_deliverly_3_icons.png": "",
+
+
+
+"use_collection_one_products": true,
+
+
+
+"use_collection_two_products": true,
+
+
+
+"banner_blog_home_heading": "Tin tức",
+
+
+
+"banner_blog_home_description": "Cập nhập những tin tức mới nhất ",
+
+
+
+"banner_blog_home": "news",
+
+
+
+"banner_center_home_title": "Kem khoáng Deadsea",
+
+
+
+"banner_center_home_desc": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB.",
+
+
+
+"banner_center_home_button": "Xem ngay",
+
+
+
+"banner_center_home_button_link": "/collections/all",
+
+
+
+"banner_center_home_image.jpg": "",
+
+
+
+"show_banner_image_blog": true,
+
+
+
+"banner_image_blog.jpg": "",
+
+
+
+"banner_image_blog_alt": "Tin tức mới nhất",
+
+
+
+"page_contact_description": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"page_contact_phone": "1900.636.099",
+
+
+
+"page_contact_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"page_contact_email": "hi@haravan.com",
+
+
+
+"page_contact_time": "Thứ 2 đến Thứ 6 từ 8h30 đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"page_menu_title": "Danh mục trang",
+
+
+
+"about_style_selected": "about_style_3",
+
+
+
+"about02_banner_show": true,
+
+
+
+"about02_banner_bkg.jpg": "",
+
+
+
+"about02_banner_txtcolor": "#333333",
+
+
+
+"about02_infor_show": true,
+
+
+
+"about02_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about02_infor_desc": "Nature-cycle tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about02_infor_1_show": true,
+
+
+
+"about02_infor_1_ico.png": "",
+
+
+
+"about02_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about02_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_infor_2_show": true,
+
+
+
+"about02_infor_2_ico.png": "",
+
+
+
+"about02_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about02_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about02_infor_3_show": true,
+
+
+
+"about02_infor_3_ico.png": "",
+
+
+
+"about02_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about02_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about02_team_show": true,
+
+
+
+"about02_team_title": "Đội ngũ nhân viên",
+
+
+
+"about02_team_desc": "Chúng tôi tạo dựng môi trường làm việc thân thiện cho nhân viên, các cấp quản lý luôn lắng nghe, thấu hiểu, hỗ trợ cho nhân viên mình có thể phát huy mọi tiềm năng .",
+
+
+
+"about02_team_1_show": true,
+
+
+
+"about02_team_1_img.jpg": "",
+
+
+
+"about02_team_1_name": "Huỳnh Linh Đan",
+
+
+
+"about02_team_1_postion": "Nhân viên 1",
+
+
+
+"about02_team_2_show": true,
+
+
+
+"about02_team_2_img.jpg": "",
+
+
+
+"about02_team_2_name": "Nguyễn Văn A",
+
+
+
+"about02_team_2_postion": "Nhân viên 2",
+
+
+
+"about02_team_3_show": true,
+
+
+
+"about02_team_3_img.jpg": "",
+
+
+
+"about02_team_3_name": "Trần Văn C",
+
+
+
+"about02_team_3_postion": "Nhân viên 3",
+
+
+
+"about02_team_4_show": true,
+
+
+
+"about02_team_4_img.jpg": "",
+
+
+
+"about02_team_4_name": "Nguyễn Văn B",
+
+
+
+"about02_team_4_postion": "Nhân viên 4",
+
+
+
+"about02_services_show": true,
+
+
+
+"about02_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about02_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.",
+
+
+
+"about02_services_1_show": true,
+
+
+
+"about02_services_1_ico.png": "",
+
+
+
+"about02_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about02_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about02_services_2_show": true,
+
+
+
+"about02_services_2_ico.png": "",
+
+
+
+"about02_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about02_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about02_services_3_show": true,
+
+
+
+"about02_services_3_ico.png": "",
+
+
+
+"about02_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about02_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_services_4_show": true,
+
+
+
+"about02_services_4_ico.png": "",
+
+
+
+"about02_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about02_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about02_services_5_show": true,
+
+
+
+"about02_services_5_ico.png": "",
+
+
+
+"about02_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about02_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about02_services_6_show": true,
+
+
+
+"about02_services_6_ico.png": "",
+
+
+
+"about02_services_6_text": "Chính sách bảo mật",
+
+
+
+"about02_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about03_banner_show": true,
+
+
+
+"about03_banner_bkg.jpg": "",
+
+
+
+"about03_banner_txtcolor": "#333333",
+
+
+
+"about03_infor_show": true,
+
+
+
+"about03_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about03_infor_desc": "Nature-cycle  tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about03_infor_1_show": true,
+
+
+
+"about03_infor_1_ico.png": "",
+
+
+
+"about03_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about03_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_infor_2_show": true,
+
+
+
+"about03_infor_2_ico.png": "",
+
+
+
+"about03_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about03_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about03_infor_3_show": true,
+
+
+
+"about03_infor_3_ico.png": "",
+
+
+
+"about03_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about03_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about03_team_show": true,
+
+
+
+"about03_team_1_show": true,
+
+
+
+"about03_team_1_img.jpg": "",
+
+
+
+"about03_team_1_name": "Mỹ phẩm chăm sóc da ",
+
+
+
+"about03_team_1_postion": "Có chiết xuất hoàn toàn từ thiên nhiên với nguyên liệu được tuyển chọn từ các vùng nguyên liệu của chúng tôi. Được trồng và chăm sóc theo đúng quy trình để đảm bảo nguồn nguyên liệu giữ được phẩm chất tốt nhất và dược tính cao nhất. Đảm bảo được chất lượng khi sản xuất là đồng nhất.",
+
+
+
+"about03_team_2_show": true,
+
+
+
+"about03_team_2_img.jpg": "",
+
+
+
+"about03_team_2_name": "Chỉ tiêu sản phẩm của chúng tôi",
+
+
+
+"about03_team_2_postion": "Bất cứ sản phẩm nào không đạt được tiêu chuẩn sẽ được loại bỏ khỏi dây chuyền và tiêu hủy lập tức. Với dây chuyền công nghệ hiện đại cùng hệ thông quản lý thông minh đem lại sản phẩm hoàn thiện đồng nhất đảm bảo chất lượng đưa tới tay người tiêu dùng.",
+
+
+
+"about03_team_3_show": true,
+
+
+
+"about03_team_3_img.jpg": "",
+
+
+
+"about03_team_3_name": "Sản phẩm được sản xuất 100% từ thiên nhiên",
+
+
+
+"about03_team_3_postion": "Tất cả sản phẩm của chúng tôi đều được đảm bảo thích ứng tốt với da người Việt Nam, không gây các tác dụng phụ hay ảnh hưởng đến sức khỏe khi sử dụng lâu dài. Mọi tác động đến sức khỏe có nguyên nhân từ sản phẩm của chúng tôi đều được công ty chịu hoàn toàn trách nhiệm.",
+
+
+
+"about03_team_4_show": true,
+
+
+
+"about03_team_4_img.jpg": "",
+
+
+
+"about03_team_4_name": "Đón hè như ý, chăm da hết ý",
+
+
+
+"about03_team_4_postion": "Mùa hè là thời điểm tạo điều kiện cho mụn sinh sôi nảy nở, đặc biệt là với những làn da dầu, nhiều mụn. Những tia nắng gay gắt có thể sẽ góp phần tàn phá làn da vốn đã bị tổn thương trước đó nếu bạn không biết cách chăm sóc da mặt đúng cách. Vì vậy việc chăm sóc da đúng cách vào mùa hè nắng nóng là cực kỳ quan trọng.",
+
+
+
+"about03_services_show": true,
+
+
+
+"about03_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about03_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.\n\n",
+
+
+
+"about03_services_1_show": true,
+
+
+
+"about03_services_1_ico.png": "",
+
+
+
+"about03_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about03_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about03_services_2_show": true,
+
+
+
+"about03_services_2_ico.png": "",
+
+
+
+"about03_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about03_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about03_services_3_show": true,
+
+
+
+"about03_services_3_ico.png": "",
+
+
+
+"about03_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about03_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_services_4_show": true,
+
+
+
+"about03_services_4_ico.png": "",
+
+
+
+"about03_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about03_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about03_services_5_show": true,
+
+
+
+"about03_services_5_ico.png": "",
+
+
+
+"about03_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about03_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about03_services_6_show": true,
+
+
+
+"about03_services_6_ico.png": "",
+
+
+
+"about03_services_6_text": "Chính sách bảo mật",
+
+
+
+"about03_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about02_infor_1_icon.png": "",
+
+
+
+"about02_infor_2_icon.png": "",
+
+
+
+"about02_infor_3_icon.png": "",
+
+
+
+"about02_services_1_icon.png": "",
+
+
+
+"about02_services_2_icon.png": "",
+
+
+
+"about02_services_3_icon.png": "",
+
+
+
+"about02_services_4_icon.png": "",
+
+
+
+"about02_services_5_icon.png": "",
+
+
+
+"about02_services_6_icon.png": "",
+
+
+
+"about03_infor_1_icon.png": "",
+
+
+
+"about03_infor_2_icon.png": "",
+
+
+
+"about03_infor_3_icon.png": "",
+
+
+
+"about03_services_1_icon.png": "",
+
+
+
+"about03_services_2_icon.png": "",
+
+
+
+"about03_services_3_icon.png": "",
+
+
+
+"about03_services_4_icon.png": "",
+
+
+
+"about03_services_5_icon.png": "",
+
+
+
+"about03_services_6_icon.png": "",
+
+
+
+"about02_services_4_ico": "",
+
+
+
+"about02_services_5_ico": "",
+
+
+
+"about02_services_6_ico": "",
+
+
+
+"bg_banner_team_about": "#ffffff",
+
+
+
+"border_banner_team_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about": "#ffffff",
+
+
+
+"border_banner_services_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about_3": "#ffffff",
+
+
+
+"border_banner_services_about_3": "#f5f5f5",
+
+
+
+"product_viewed_show": true,
+
+
+
+"product_viewed_title": "Sản phẩm đã xem",
+
+
+
+"use_collection_style": "collection_style_01",
+
+
+
+"show_slider_home_banner": true,
+
+
+
+"footer_bg_color": "#ffffff",
+
+
+
+"footer_border_color": "#ffffff",
+
+
+
+"footer_title_color": "#453536",
+
+
+
+"footer_text_color": "#866d4b",
+
+
+
+"footer_bg_color_copyright": "#ffffff",
+
+
+
+"footer_text_color_copyright": "#866d4b",
+
+
+
+"slide_1_title_1": "",
+
+
+
+"slide_1_title_2": "JAPAN SINCE 1904",
+
+
+
+"slide_2_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_2_title_2": "Món quà tuyệt vời nhất giành cho chính bạn",
+
+
+
+"slide_3_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_3_title_2": "Kem trắng da siêu cấp mới nhất",
+
+
+
+"slide_4_title_1": "",
+
+
+
+"slide_4_title_2": "",
+
+
+
+"show_header_top_bar": true,
+
+
+
+"top_bar_contact": "",
+
+
+
+"top_bar_hotline": "",
+
+
+
+"top_bar_intagram_follow": "/",
+
+
+
+"top_bar_facebook_follow": "/",
+
+
+
+"top_bar_contact_link": "",
+
+
+
+"display_banner_introproduct_1_home": true,
+
+
+
+"banner_introproduct_title_first_1": "Phong cách châu Âu, chất lượng Nhật Bản",
+
+
+
+"banner_introproduct_title_second_1": "JAPAN SINCE 1904",
+
+
+
+"banner_introproduct_desc_1": "<span style=\"text-align: justify\">Được thành lập vào ngày 4 tháng 1 năm 1904 với trụ sở chính tại Nagoya, Nhật Bản - Noritake nổi tiếng là thương hiệu đồ sứ với thiết kế sang trọng, cao cấp và chất lượng sản phẩm tuyệt hảo.</span>\n<br>\n<br>\n<span style=\"text-align: justify\">Sản phẩm của Noritake hiện được phân phối tại trên 100 quốc gia và được sử dụng trong rất nhiều khách sạn 5 sao, nhà hàng và các hãng hàng không trên toàn thế giới...</span>",
+
+
+
+"alt_img_intro_product_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_btn_link_1": "/collections/all",
+
+
+
+"img_intro_product_1.jpg": "",
+
+
+
+"banner_introproduct_btn_1": "Tìm hiểu ngay",
+
+
+
+"img_intro_product_1.png": "",
+
+
+
+"display_banner_introproduct_2_home": true,
+
+
+
+"banner_introproduct_title_first_2": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_desc_2": "Với các sản phẩm của chúng tôi, chúng tôi luôn uy tín đặc lên hàng đầu , bảo đảm sức khoẻ cho khách hàng yên tâm sử dụng",
+
+
+
+"banner_introproduct_btn_2": "Xem ngay",
+
+
+
+"banner_introproduct_btn_link_2": "/collections/all",
+
+
+
+"img_intro_product_2.png": "",
+
+
+
+"alt_img_intro_product_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_bg_2": "#d1e2e8",
+
+
+
+"heading_collection_home_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_second": "Sản phẩm mới",
+
+
+
+"display_banner_testimonials_home": true,
+
+
+
+"show_banner_testimonials_1": true,
+
+
+
+"testimonials_title_frist_1": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_1": "Sử dụng các thương hiệu mới nhất",
+
+
+
+"testimonials_desc_1": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_2": true,
+
+
+
+"testimonials_title_frist_2": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_2": "Khách hàng rất thích",
+
+
+
+"testimonials_desc_2": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_3": false,
+
+
+
+"testimonials_title_frist_3": "",
+
+
+
+"testimonials_title_second_3": "",
+
+
+
+"testimonials_desc_3": "",
+
+
+
+"banner_img_testimonials.jpg": "",
+
+
+
+"banner_alt_testimonials": "Chào mừng đến với nature cycle",
+
+
+
+"bg_banner_testimonials": "#d1e2e8",
+
+
+
+"footer_holder_contact": "",
+
+
+
+"footer_holder_contact_link": "",
+
+
+
+"footer_holder_hotline": "",
+
+
+
+"heading_collection_home_two_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_two_second": "",
+
+
+
+"display_banner_service_home": true,
+
+
+
+"bg_banner_service": "#e8e6dd",
+
+
+
+"service_image_1.jpg": "",
+
+
+
+"service_title_1": "500 Thương hiệu lớn",
+
+
+
+"service_content_1": "Chất lượng cao nhất",
+
+
+
+"service_image_2.jpg": "",
+
+
+
+"service_title_2": "Miễn phí vận chuyển",
+
+
+
+"service_content_2": "Giao hàng trong vòng 1 ngày",
+
+
+
+"service_image_3.jpg": "",
+
+
+
+"service_title_3": "Dịch vụ khách hàng",
+
+
+
+"service_content_3": "Liện hệ qua Email và số điện thoại",
+
+
+
+"service_image_4.jpg": "",
+
+
+
+"service_title_4": "Thanh toán bảo mật 100%",
+
+
+
+"service_content_4": "Chúng tôi đánh giá cao sự bảo mật của bạn",
+
+
+
+"service_image_1.png": "",
+
+
+
+"service_image_2.png": "",
+
+
+
+"service_image_3.png": "",
+
+
+
+"service_image_4.png": "",
+
+
+
+"autoplay_slider_banner": true,
+
+
+
+"autoplayTimeout_slider_banner": "5",
+
+
+
+"footer_link2_menu": "left",
+
+
+
+"footer_border_color_copyright": "#eeeeee",
+
+
+
+"header_hotline_desk": "1900.636.099",
+
+
+
+"header_email_desk": "hi@haravan.com",
+
+
+
+"bg_breadcrumb.jpg": "",
+
+
+
+"bkg_breadcrumd.jpg": "",
+
+
+
+"top_bar_text_follow_1": "<b>FACEBOOK</b>",
+
+
+
+"top_bar_link_follow_1": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_2": "<b>INSTAGRAM</b>",
+
+
+
+"top_bar_link_follow_2": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_3": "<b>YOUTUBE</b>",
+
+
+
+"top_bar_link_follow_3": "",
+
+
+
+"top_bar_text_follow_4": "<b>ZALO</b>",
+
+
+
+"top_bar_link_follow_4": "",
+
+
+
+"banner_introproduct_bg_1": "#ffffff",
+
+
+
+"collection_banner.jpg": "",
+
+
+
+"about01_banner_show": true,
+
+
+
+"about01_banner_bkg.jpg": "",
+
+
+
+"about01_banner_txtcolor": "#333333",
+
+
+
+"show_banner_contact": true,
+
+
+
+"banner_contact_bkg.jpg": "",
+
+
+
+"banner_contact_txtcolor": "#ffffff"
+
+
+},
+
+
+"Noritake V1.2": {
+
+
+
+"use_logo": true,
+
+
+
+"customer_layout": "theme",
+
+
+
+"logo": "https://file.hstatic.net/1000088429/file/logo_dfb01b70731f4332a05d2fe9c91a3833.png",
+
+
+
+"favicon": "https://file.hstatic.net/1000406611/file/favicon_696bb70236d241df9cf2e26c24aaed67.png",
+
+
+
+"shop_text_color": "#453536",
+
+
+
+"shop_title_color": "#453536",
+
+
+
+"btn_bg_shop": "#d29f13",
+
+
+
+"shop_text_hover_color": "#d29f13",
+
+
+
+"mainmenu_link": "main-menu",
+
+
+
+"share_fb_home": "https://file.hstatic.net/1000088429/file/share-fb-home_434f286540a24a1c9c7f4d4170a5b3f9.jpg",
+
+
+
+"slide_1": true,
+
+
+
+"slideshow_1": "https://file.hstatic.net/1000088429/file/home_slide_1_d0c4e0a9521b46d698d5747cf0b6b264.jpg",
+
+
+
+"slide_1_alt": "slide 1",
+
+
+
+"slide_1_title": "Khám phá ngay vẻ đẹp từ thiên nhiên",
+
+
+
+"slide_1_desc": "",
+
+
+
+"slide_1_button": "Tìm hiểu thêm",
+
+
+
+"slide_1_link": "/collections/all",
+
+
+
+"slide_2": true,
+
+
+
+"slideshow_2": "https://file.hstatic.net/1000088429/file/home_slide_2_744715ac3f51439ba436552c791acf4e.jpg",
+
+
+
+"slide_2_alt": "slide 2",
+
+
+
+"slide_2_title": "Sản phẩm làm đẹp",
+
+
+
+"slide_2_desc": "",
+
+
+
+"slide_2_button": "Xem ngay",
+
+
+
+"slide_2_link": "/collections/onsale",
+
+
+
+"slide_3": false,
+
+
+
+"slideshow_3": "https://file.hstatic.net/1000088429/file/home_slide_3_8fd76b1273524842a165f670c2fe8d86.jpg",
+
+
+
+"slide_3_alt": "slide 3",
+
+
+
+"slide_3_title": "Kem tự nhiên cho làn da mềm mại",
+
+
+
+"slide_3_desc": "",
+
+
+
+"slide_3_button": "Xem ngay",
+
+
+
+"slide_3_link": "/collections/all",
+
+
+
+"slide_4": false,
+
+
+
+"slideshow_4": "",
+
+
+
+"slide_4_alt": "",
+
+
+
+"slide_4_title": "",
+
+
+
+"slide_4_desc": "",
+
+
+
+"slide_4_button": "",
+
+
+
+"slide_4_link": "",
+
+
+
+"slideshow_1_mb": "https://file.hstatic.net/1000088429/file/home_slide_1_mobile_c78c25c8e1ad405da41a9ff254099e5b.jpg",
+
+
+
+"slideshow_2_mb": "https://file.hstatic.net/1000088429/file/home_slide_2_mobile_d3fa970b3a4641f5b59390a3b715d843.jpg",
+
+
+
+"slideshow_3_mb": "https://file.hstatic.net/1000088429/file/home_slide_3_mobile_395e2dabe12641a2a28bc2c5e40ca4ce.jpg",
+
+
+
+"slideshow_4_mb": "",
+
+
+
+"use_collection_products": true,
+
+
+
+"heading_collection_home": "Sản phẩm mới nhất",
+
+
+
+"description_collection_home": "Chào mừng đến với nature cycle",
+
+
+
+"collection_home": "hot-products",
+
+
+
+"limit_one_size": "10",
+
+
+
+"display_banner_center_home": false,
+
+
+
+"img_banner_center": "https://file.hstatic.net/1000088429/file/banner_home_79a55d5d9a2242ac8db2846fcd2f39b9.jpg",
+
+
+
+"title_banner_center": "Kem khoáng Deadsea",
+
+
+
+"desc_banner_center": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB. ",
+
+
+
+"button_banner_center": "Xem ngay",
+
+
+
+"link_bnt_banner_center": "/collections/all",
+
+
+
+"display_banner_blog_home": false,
+
+
+
+"heading_blog_home": "Tin tức",
+
+
+
+"description_blog_home": "Cập nhập những tin tức mới nhất ",
+
+
+
+"blog_home": "news",
+
+
+
+"show_footer1": true,
+
+
+
+"footer1_title": "Giới thiệu",
+
+
+
+"footer1_information": "Chào mừng bạn đến với Nature Cycle. Tại đây, bạn sẽ tìm thấy hoàn toàn mọi thứ bạn cần để thể hiện công việc kinh doanh theo định hướng chăm sóc sức khỏe, spa hoặc sắc đẹp của mình theo cách hiện đại.",
+
+
+
+"footer_link1_show": true,
+
+
+
+"footer_link1_title": "Liên kết",
+
+
+
+"footer_link1_menu": "footer",
+
+
+
+"show_footer2": true,
+
+
+
+"footer2_title": "Liên kết",
+
+
+
+"footer-address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer-tell": " 1900.636.099",
+
+
+
+"footer-fax": "1900.636.099",
+
+
+
+"footer-email": "hi@haravan.com",
+
+
+
+"show_footer3": true,
+
+
+
+"footer3_title": "Dịch vụ khách hàng",
+
+
+
+"fanpage_faceook": "https://www.facebook.com/haravan.official",
+
+
+
+"footer4_title": "Fanpage",
+
+
+
+"show_social_icon_footer": true,
+
+
+
+"link_social_facebook": "/",
+
+
+
+"link_social_youtube": "/",
+
+
+
+"link_social_pinterest": "/",
+
+
+
+"link_social_twitter": "/",
+
+
+
+"link_social_instagram": "/",
+
+
+
+"show_logo_bct": "1",
+
+
+
+"logo_bct": "https://file.hstatic.net/1000088429/file/logo-bct_38921d34df3e4a1687ad989a4a58a249.png",
+
+
+
+"link_logo_bct": "/",
+
+
+
+"title_help_menu_mb": "Hotline",
+
+
+
+"hotline_mb": "1900.636.099",
+
+
+
+"email_mb": "contact@noritake-vietnam.com",
+
+
+
+"pagination_blog_limit": "14",
+
+
+
+"news_recent_show": true,
+
+
+
+"news_recent_title": "Bài viết mới nhất",
+
+
+
+"show_blog_menu": true,
+
+
+
+"title_blog_menu": "Danh mục",
+
+
+
+"blog_menu": "main-menu",
+
+
+
+"show_footer4": "1",
+
+
+
+"show_blog_tags": true,
+
+
+
+"title_blog_tags": "Tags",
+
+
+
+"show_blog_follow": true,
+
+
+
+"title_blog_follow": "Mạng xã hội",
+
+
+
+"show_follow_facebook": "/",
+
+
+
+"show_follow_youtube": "/",
+
+
+
+"show_follow_pinterest": "/",
+
+
+
+"show_follow_twitter": "/",
+
+
+
+"show_follow_instagram": "/",
+
+
+
+"show_background_image_blog": true,
+
+
+
+"backgound_image_blog": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_blog": "Tin tức mới nhất",
+
+
+
+"show_page_menu": true,
+
+
+
+"title_page_menu": "Danh mục trang",
+
+
+
+"page_menu": "footer",
+
+
+
+"footer_phone": "1900.636.099",
+
+
+
+"footer_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer_email": "hi@haravan.com",
+
+
+
+"footer_time": "Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"show_social_icon_contact": false,
+
+
+
+"link_social_facebook_contact": "/",
+
+
+
+"link_social_youtube_contact": "",
+
+
+
+"link_social_pinterest_contact": "/",
+
+
+
+"link_social_twitter_contact": "/",
+
+
+
+"link_social_instagram_contact": "/",
+
+
+
+"show_google_maps": true,
+
+
+
+"google_maps_code": "<iframe  title=\"Google maps\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.615593436863!2d106.65415201477133!3d10.76408024232994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec7752c743%3A0xd832d71bd12b6a15!2zRmxlbWluZ3RvbiBUb3dlciwgMTgyIEzDqiDEkOG6oWkgSMOgbmgsIHBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1521530731757\" width=\"100%\" height=\"350\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+
+
+
+"description_page_contact": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"show_background_image_page_cart": "1",
+
+
+
+"backgound_image_page_cart": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_page_cart": "banner cart",
+
+
+
+"policy_cart_title": "Chính sách mua hàng",
+
+
+
+"policy_cart_1": "Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.",
+
+
+
+"policy_cart_2": "Sản phẩm còn đủ tem mác, chưa qua sử dụng",
+
+
+
+"policy_cart_3": "Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống",
+
+
+
+"policy_cart_4": "Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống",
+
+
+
+"show_collection_image": true,
+
+
+
+"banner_image_collection": "https://file.hstatic.net/1000088429/file/banner_collection_ea4d98f8263d45e8a65be10eb72c8e37.jpg",
+
+
+
+"pagination_limit": "20",
+
+
+
+"addthis_iconList_show": true,
+
+
+
+"addthis_icon1_show": true,
+
+
+
+"addthis_icon1_color1": "#d29f13",
+
+
+
+"addthis_icon1_color2": "#d29f13",
+
+
+
+"addthis_icon1_tootlip": "Hotline",
+
+
+
+"addthis_icon1_action": "1900636099",
+
+
+
+"addthis_icon2_show": true,
+
+
+
+"addthis_icon2_color1": "#d29f13",
+
+
+
+"addthis_icon2_color2": "#d29f13",
+
+
+
+"addthis_icon2_tootlip": "Chat với chúng tôi qua Zalo",
+
+
+
+"addthis_icon2_action": "//zalo.me/0901866099",
+
+
+
+"addthis_icon3_show": true,
+
+
+
+"addthis_icon3_color1": "#d29f13",
+
+
+
+"addthis_icon3_color2": "#d29f13",
+
+
+
+"addthis_icon3_tootlip": "Đăng kí thông tin và để lại lời nhắn",
+
+
+
+"addthis_icon3_title": "Để lại lời nhắn cho chúng tôi",
+
+
+
+"addthis_icon3_title2": "Đăng kí thông tin thành công",
+
+
+
+"addthis_icon3_content": "Cảm ơn bạn đã để lại thông tin <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất\t",
+
+
+
+"addthis_icon4_show": true,
+
+
+
+"addthis_icon4_color1": "#d29f13",
+
+
+
+"addthis_icon4_color2": "#d29f13",
+
+
+
+"addthis_icon4_tootlip": "Xem địa chỉ doanh nghiệp",
+
+
+
+"addthis_icon4_action": "/pages/lien-he",
+
+
+
+"use_chatbot": true,
+
+
+
+"code_messenger_mb": "108520260558644",
+
+
+
+"link_follow_facebook_blog": "/",
+
+
+
+"link_follow_youtube_blog": "/",
+
+
+
+"link_follow_pinterest_blog": "/",
+
+
+
+"link_follow_twitter_blog": "/",
+
+
+
+"link_follow_instagram_blog": "/",
+
+
+
+"collection_filter_show": true,
+
+
+
+"collection_filter_title": "Bộ lọc",
+
+
+
+"use_vendor_filter": true,
+
+
+
+"vendor_title": "Thương hiệu",
+
+
+
+"vendor_limit": "1",
+
+
+
+"use_color_filter": "1",
+
+
+
+"color_title": "Màu sắc",
+
+
+
+"use_color_filter_1": "1",
+
+
+
+"color_name_new_1": "Đỏ",
+
+
+
+"color_code_new_1": "#ff0000",
+
+
+
+"use_color_filter_2": "1",
+
+
+
+"color_name_new_2": "Vàng",
+
+
+
+"color_code_new_2": "#ffff05",
+
+
+
+"use_color_filter_3": "1",
+
+
+
+"color_name_new_3": "Cam",
+
+
+
+"color_code_new_3": "#f5b505",
+
+
+
+"use_color_filter_4": "1",
+
+
+
+"color_name_new_4": "Xanh dương",
+
+
+
+"color_code_new_4": "#5100ff",
+
+
+
+"use_color_filter_5": "1",
+
+
+
+"color_name_new_5": "Xanh lá",
+
+
+
+"color_code_new_5": "#3cfa08",
+
+
+
+"use_color_filter_6": true,
+
+
+
+"color_name_new_6": "Nâu",
+
+
+
+"color_code_new_6": "#753a3a",
+
+
+
+"use_color_filter_7": true,
+
+
+
+"color_name_new_7": "Xanh",
+
+
+
+"color_code_new_7": "#267a0b",
+
+
+
+"use_color_filter_8": false,
+
+
+
+"color_name_new_8": "Tím",
+
+
+
+"color_code_new_8": "#b5129a",
+
+
+
+"use_color_filter_9": "1",
+
+
+
+"color_name_new_9": "Hồng",
+
+
+
+"color_code_new_9": "#db999b",
+
+
+
+"use_color_filter_10": false,
+
+
+
+"color_name_new_10": "Đen",
+
+
+
+"color_code_new_10": "#000000",
+
+
+
+"use_color_filter_11": false,
+
+
+
+"color_name_new_11": "Đen",
+
+
+
+"color_code_new_11": "#000000",
+
+
+
+"use_color_filter_12": false,
+
+
+
+"color_name_new_12": "Đen",
+
+
+
+"color_code_new_12": "#000000",
+
+
+
+"use_color_filter_13": false,
+
+
+
+"color_name_new_13": "Đen",
+
+
+
+"color_code_new_13": "#000000",
+
+
+
+"use_color_filter_14": false,
+
+
+
+"color_name_new_14": "Đen",
+
+
+
+"color_code_new_14": "#000000",
+
+
+
+"use_color_filter_15": false,
+
+
+
+"color_name_new_15": "Đen",
+
+
+
+"color_code_new_15": "#000000",
+
+
+
+"use_color_filter_16": false,
+
+
+
+"color_name_new_16": "Nâu",
+
+
+
+"color_code_new_16": "#753a3a",
+
+
+
+"use_color_filter_17": false,
+
+
+
+"color_name_new_17": "Xám",
+
+
+
+"color_code_new_17": "#cccaca",
+
+
+
+"use_color_filter_18": false,
+
+
+
+"color_name_new_18": "Tím",
+
+
+
+"color_code_new_18": "#b5129a",
+
+
+
+"use_color_filter_19": false,
+
+
+
+"color_name_new_19": "Hồng",
+
+
+
+"color_code_new_19": "#db999b",
+
+
+
+"use_color_filter_20": false,
+
+
+
+"color_name_new_20": "Đen",
+
+
+
+"color_code_new_20": "#000000",
+
+
+
+"use_color_filter_21": false,
+
+
+
+"color_name_new_21": "Đỏ",
+
+
+
+"color_code_new_21": "#ff0000",
+
+
+
+"use_color_filter_22": false,
+
+
+
+"color_name_new_22": "Vàng",
+
+
+
+"color_code_new_22": "#ffff05",
+
+
+
+"use_color_filter_23": false,
+
+
+
+"color_name_new_23": "Cam",
+
+
+
+"color_code_new_23": "#f5b505",
+
+
+
+"use_color_filter_24": false,
+
+
+
+"color_name_new_24": "Xanh dương",
+
+
+
+"color_code_new_24": "#5100ff",
+
+
+
+"use_color_filter_25": false,
+
+
+
+"color_name_new_25": "Xanh lá",
+
+
+
+"color_code_new_25": "#3cfa08",
+
+
+
+"use_color_filter_26": false,
+
+
+
+"color_name_new_26": "Nâu",
+
+
+
+"color_code_new_26": "#753a3a",
+
+
+
+"use_color_filter_27": false,
+
+
+
+"color_name_new_27": "Xám",
+
+
+
+"color_code_new_27": "#cccaca",
+
+
+
+"use_color_filter_28": false,
+
+
+
+"color_name_new_28": "Tím",
+
+
+
+"color_code_new_28": "#b5129a",
+
+
+
+"use_color_filter_29": false,
+
+
+
+"color_name_new_29": "Hồng",
+
+
+
+"color_code_new_29": "#db999b",
+
+
+
+"use_color_filter_30": false,
+
+
+
+"color_name_new_30": "Đen",
+
+
+
+"color_code_new_30": "#000000",
+
+
+
+"use_tag_custom_2": true,
+
+
+
+"tag_title_custom_2": "Kích thước",
+
+
+
+"enter_tag_2": "30ml,40ml,50ml,60ml",
+
+
+
+"use_price_filter": "1",
+
+
+
+"title_tag_3": "Lọc giá",
+
+
+
+"1_price_to": "1000000",
+
+
+
+"2_price_from": "1000000",
+
+
+
+"2_price_to": "2000000",
+
+
+
+"3_price_from": "2000000",
+
+
+
+"3_price_to": "3000000",
+
+
+
+"4_price_from": "3000000",
+
+
+
+"4_price_to": "4000000",
+
+
+
+"5_price_from": "5000000",
+
+
+
+"btn_bg_addcart_shop": "#d29f13",
+
+
+
+"use_product_style": "style-03",
+
+
+
+"display_tab_product_1": true,
+
+
+
+"title_tab_product_1": "Mô tả",
+
+
+
+"display_tab_product_2": true,
+
+
+
+"title_tab_product_2": "Chính sách đổi trả",
+
+
+
+"page_content_tab_2": "chinh-sach-doi-tra",
+
+
+
+"display_tab_product_3": true,
+
+
+
+"title_tab_product_3": "Chính sách bảo mật",
+
+
+
+"page_content_tab_3": "chinh-sach-bao-mat",
+
+
+
+"shares_facebook_social": true,
+
+
+
+"productspg_related_products": true,
+
+
+
+"productspg_related_title": "Sản phẩm liên quan",
+
+
+
+"productspg_featured_quantity": "15",
+
+
+
+"productspg_review_products": true,
+
+
+
+"product_review_title": "Danh mục blog",
+
+
+
+"hotline_contact_product": "1900.636.099",
+
+
+
+"product_deliverly_show": true,
+
+
+
+"product_deliverly_1_show": true,
+
+
+
+"product_deliverly_1_ico": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_1_text": "Cam kết 100% chính hãng",
+
+
+
+"product_deliverly_2_show": true,
+
+
+
+"product_deliverly_2_ico": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_2_text": "Giao hàng dự kiến:\n<br>\n<strong>Thứ 6 - Thứ 4 từ 9h00 - 20h00</strong>",
+
+
+
+"product_deliverly_3_show": true,
+
+
+
+"product_deliverly_3_ico": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"product_deliverly_3_text": "Sản phẩm không nhận đổi trả",
+
+
+
+"header_style_select": "header-3",
+
+
+
+"header_01_color_text": "#ffffff",
+
+
+
+"header_01_color_bkg": "#F4B0B0",
+
+
+
+"header_02_color_text": "#866d4b ",
+
+
+
+"header_02_color_hover_text": "#d29f13",
+
+
+
+"header_02_color_bkg": "#ffffff",
+
+
+
+"header_03_color_text": "#453536 ",
+
+
+
+"header_03_color_bkg": "#ffffff",
+
+
+
+"show_product_sharing": true,
+
+
+
+"product_deliverly_1_icon": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_2_icon": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_3_icon": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"price_title": "Giá tiền",
+
+
+
+"top_bar_content": "Miễn phí free ship với đơn hàng trên 1.000.000 đ",
+
+
+
+"header_01_top_bar_text": "#000000",
+
+
+
+"header_01_top_bar_bg": "#ffffff",
+
+
+
+"header_02_top_bar_text": "#ffffff",
+
+
+
+"header_02_top_bar_bg": "#d29f13",
+
+
+
+"header_03_top_bar_text": "#ffffff",
+
+
+
+"header_03_top_bar_bg": "#d29f13",
+
+
+
+"banner_page_href": "/collections/all",
+
+
+
+"banner_image_page": "https://file.hstatic.net/1000088429/file/banner-img-page_8c6758378b3e438db137be4e08a0d7a9.jpg",
+
+
+
+"show_banner_image_page": true,
+
+
+
+"show_social_page_contact": true,
+
+
+
+"popup_contact_show": false,
+
+
+
+"popup_contact_select": "popupBanner",
+
+
+
+"popup_contact_time": "60",
+
+
+
+"popup_contact_banner": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_alt": "Các ưu đãi của chúng tôi",
+
+
+
+"popup_contact_link": "/collections/all",
+
+
+
+"popup_contact_bkg": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_title": "Hãy đến với chúng tôi",
+
+
+
+"popup_contact_content": "Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.",
+
+
+
+"popup_contact_description_1": "Giảm giá sản phẩm",
+
+
+
+"popup_contact_description_2": "Sản phẩm mới",
+
+
+
+"popup_contact_description_3": "Sản phẩm bán chạy",
+
+
+
+"use_collection_products_two": true,
+
+
+
+"heading_collection_home_two": "Sản phẩm khuyến mãi",
+
+
+
+"description_collection_home_two": "Cung cấp các sẩn phẩm khuyến mãi mới nhât",
+
+
+
+"collection_two": "onsale",
+
+
+
+"collection_home_two": "onsale",
+
+
+
+"slideshow_1.jpg": "",
+
+
+
+"slideshow_1_mb.jpg": "",
+
+
+
+"slideshow_2.jpg": "",
+
+
+
+"slideshow_2_mb.jpg": "",
+
+
+
+"slideshow_3.jpg": "",
+
+
+
+"slideshow_3_mb.jpg": "",
+
+
+
+"slideshow_4.jpg": "",
+
+
+
+"slideshow_4_mb.jpg": "",
+
+
+
+"img_banner_center.jpg": "",
+
+
+
+"logo_bct.jpg": "",
+
+
+
+"banner_image_collection.jpg": "",
+
+
+
+"product_deliverly_1_icon.jpg": "",
+
+
+
+"product_deliverly_2_icon.jpg": "https://file.hstatic.net/1000088429/file/icon-shipped-devc_731f3c74261c40d6ac6c1af5c44e4c77.png",
+
+
+
+"product_deliverly_3_icon.jpg": "",
+
+
+
+"backgound_image_blog.jpg": "",
+
+
+
+"banner_image_page.jpg": "",
+
+
+
+"logo.png": "",
+
+
+
+"favicon.png": "",
+
+
+
+"share_fb_home.png": "",
+
+
+
+"popup_contact_banner.jpg": "",
+
+
+
+"popup_contact_bkg.jpg": "",
+
+
+
+"product_deliverly_1_ico.png": "",
+
+
+
+"product_deliverly_2_ico.png": "",
+
+
+
+"product_deliverly_3_ico.png": "",
+
+
+
+"product_deliverly_1_icons.png": "",
+
+
+
+"product_deliverly_2_icons.png": "",
+
+
+
+"product_deliverly_3_icons.png": "",
+
+
+
+"use_collection_one_products": true,
+
+
+
+"use_collection_two_products": true,
+
+
+
+"banner_blog_home_heading": "Tin tức",
+
+
+
+"banner_blog_home_description": "Cập nhập những tin tức mới nhất ",
+
+
+
+"banner_blog_home": "news",
+
+
+
+"banner_center_home_title": "Kem khoáng Deadsea",
+
+
+
+"banner_center_home_desc": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB.",
+
+
+
+"banner_center_home_button": "Xem ngay",
+
+
+
+"banner_center_home_button_link": "/collections/all",
+
+
+
+"banner_center_home_image.jpg": "",
+
+
+
+"show_banner_image_blog": true,
+
+
+
+"banner_image_blog.jpg": "",
+
+
+
+"banner_image_blog_alt": "Tin tức mới nhất",
+
+
+
+"page_contact_description": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"page_contact_phone": "1900.636.099",
+
+
+
+"page_contact_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"page_contact_email": "hi@haravan.com",
+
+
+
+"page_contact_time": "Thứ 2 đến Thứ 6 từ 8h30 đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"page_menu_title": "Danh mục trang",
+
+
+
+"about_style_selected": "about_style_3",
+
+
+
+"about02_banner_show": true,
+
+
+
+"about02_banner_bkg.jpg": "",
+
+
+
+"about02_banner_txtcolor": "#333333",
+
+
+
+"about02_infor_show": true,
+
+
+
+"about02_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about02_infor_desc": "Nature-cycle tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about02_infor_1_show": true,
+
+
+
+"about02_infor_1_ico.png": "",
+
+
+
+"about02_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about02_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_infor_2_show": true,
+
+
+
+"about02_infor_2_ico.png": "",
+
+
+
+"about02_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about02_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about02_infor_3_show": true,
+
+
+
+"about02_infor_3_ico.png": "",
+
+
+
+"about02_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about02_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about02_team_show": true,
+
+
+
+"about02_team_title": "Đội ngũ nhân viên",
+
+
+
+"about02_team_desc": "Chúng tôi tạo dựng môi trường làm việc thân thiện cho nhân viên, các cấp quản lý luôn lắng nghe, thấu hiểu, hỗ trợ cho nhân viên mình có thể phát huy mọi tiềm năng .",
+
+
+
+"about02_team_1_show": true,
+
+
+
+"about02_team_1_img.jpg": "",
+
+
+
+"about02_team_1_name": "Huỳnh Linh Đan",
+
+
+
+"about02_team_1_postion": "Nhân viên 1",
+
+
+
+"about02_team_2_show": true,
+
+
+
+"about02_team_2_img.jpg": "",
+
+
+
+"about02_team_2_name": "Nguyễn Văn A",
+
+
+
+"about02_team_2_postion": "Nhân viên 2",
+
+
+
+"about02_team_3_show": true,
+
+
+
+"about02_team_3_img.jpg": "",
+
+
+
+"about02_team_3_name": "Trần Văn C",
+
+
+
+"about02_team_3_postion": "Nhân viên 3",
+
+
+
+"about02_team_4_show": true,
+
+
+
+"about02_team_4_img.jpg": "",
+
+
+
+"about02_team_4_name": "Nguyễn Văn B",
+
+
+
+"about02_team_4_postion": "Nhân viên 4",
+
+
+
+"about02_services_show": true,
+
+
+
+"about02_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about02_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.",
+
+
+
+"about02_services_1_show": true,
+
+
+
+"about02_services_1_ico.png": "",
+
+
+
+"about02_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about02_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about02_services_2_show": true,
+
+
+
+"about02_services_2_ico.png": "",
+
+
+
+"about02_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about02_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about02_services_3_show": true,
+
+
+
+"about02_services_3_ico.png": "",
+
+
+
+"about02_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about02_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_services_4_show": true,
+
+
+
+"about02_services_4_ico.png": "",
+
+
+
+"about02_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about02_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about02_services_5_show": true,
+
+
+
+"about02_services_5_ico.png": "",
+
+
+
+"about02_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about02_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about02_services_6_show": true,
+
+
+
+"about02_services_6_ico.png": "",
+
+
+
+"about02_services_6_text": "Chính sách bảo mật",
+
+
+
+"about02_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about03_banner_show": true,
+
+
+
+"about03_banner_bkg.jpg": "",
+
+
+
+"about03_banner_txtcolor": "#333333",
+
+
+
+"about03_infor_show": true,
+
+
+
+"about03_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about03_infor_desc": "Nature-cycle  tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about03_infor_1_show": true,
+
+
+
+"about03_infor_1_ico.png": "",
+
+
+
+"about03_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about03_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_infor_2_show": true,
+
+
+
+"about03_infor_2_ico.png": "",
+
+
+
+"about03_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about03_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about03_infor_3_show": true,
+
+
+
+"about03_infor_3_ico.png": "",
+
+
+
+"about03_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about03_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about03_team_show": true,
+
+
+
+"about03_team_1_show": true,
+
+
+
+"about03_team_1_img.jpg": "",
+
+
+
+"about03_team_1_name": "Mỹ phẩm chăm sóc da ",
+
+
+
+"about03_team_1_postion": "Có chiết xuất hoàn toàn từ thiên nhiên với nguyên liệu được tuyển chọn từ các vùng nguyên liệu của chúng tôi. Được trồng và chăm sóc theo đúng quy trình để đảm bảo nguồn nguyên liệu giữ được phẩm chất tốt nhất và dược tính cao nhất. Đảm bảo được chất lượng khi sản xuất là đồng nhất.",
+
+
+
+"about03_team_2_show": true,
+
+
+
+"about03_team_2_img.jpg": "",
+
+
+
+"about03_team_2_name": "Chỉ tiêu sản phẩm của chúng tôi",
+
+
+
+"about03_team_2_postion": "Bất cứ sản phẩm nào không đạt được tiêu chuẩn sẽ được loại bỏ khỏi dây chuyền và tiêu hủy lập tức. Với dây chuyền công nghệ hiện đại cùng hệ thông quản lý thông minh đem lại sản phẩm hoàn thiện đồng nhất đảm bảo chất lượng đưa tới tay người tiêu dùng.",
+
+
+
+"about03_team_3_show": true,
+
+
+
+"about03_team_3_img.jpg": "",
+
+
+
+"about03_team_3_name": "Sản phẩm được sản xuất 100% từ thiên nhiên",
+
+
+
+"about03_team_3_postion": "Tất cả sản phẩm của chúng tôi đều được đảm bảo thích ứng tốt với da người Việt Nam, không gây các tác dụng phụ hay ảnh hưởng đến sức khỏe khi sử dụng lâu dài. Mọi tác động đến sức khỏe có nguyên nhân từ sản phẩm của chúng tôi đều được công ty chịu hoàn toàn trách nhiệm.",
+
+
+
+"about03_team_4_show": true,
+
+
+
+"about03_team_4_img.jpg": "",
+
+
+
+"about03_team_4_name": "Đón hè như ý, chăm da hết ý",
+
+
+
+"about03_team_4_postion": "Mùa hè là thời điểm tạo điều kiện cho mụn sinh sôi nảy nở, đặc biệt là với những làn da dầu, nhiều mụn. Những tia nắng gay gắt có thể sẽ góp phần tàn phá làn da vốn đã bị tổn thương trước đó nếu bạn không biết cách chăm sóc da mặt đúng cách. Vì vậy việc chăm sóc da đúng cách vào mùa hè nắng nóng là cực kỳ quan trọng.",
+
+
+
+"about03_services_show": true,
+
+
+
+"about03_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about03_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.\n\n",
+
+
+
+"about03_services_1_show": true,
+
+
+
+"about03_services_1_ico.png": "",
+
+
+
+"about03_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about03_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about03_services_2_show": true,
+
+
+
+"about03_services_2_ico.png": "",
+
+
+
+"about03_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about03_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about03_services_3_show": true,
+
+
+
+"about03_services_3_ico.png": "",
+
+
+
+"about03_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about03_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_services_4_show": true,
+
+
+
+"about03_services_4_ico.png": "",
+
+
+
+"about03_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about03_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about03_services_5_show": true,
+
+
+
+"about03_services_5_ico.png": "",
+
+
+
+"about03_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about03_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about03_services_6_show": true,
+
+
+
+"about03_services_6_ico.png": "",
+
+
+
+"about03_services_6_text": "Chính sách bảo mật",
+
+
+
+"about03_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about02_infor_1_icon.png": "",
+
+
+
+"about02_infor_2_icon.png": "",
+
+
+
+"about02_infor_3_icon.png": "",
+
+
+
+"about02_services_1_icon.png": "",
+
+
+
+"about02_services_2_icon.png": "",
+
+
+
+"about02_services_3_icon.png": "",
+
+
+
+"about02_services_4_icon.png": "",
+
+
+
+"about02_services_5_icon.png": "",
+
+
+
+"about02_services_6_icon.png": "",
+
+
+
+"about03_infor_1_icon.png": "",
+
+
+
+"about03_infor_2_icon.png": "",
+
+
+
+"about03_infor_3_icon.png": "",
+
+
+
+"about03_services_1_icon.png": "",
+
+
+
+"about03_services_2_icon.png": "",
+
+
+
+"about03_services_3_icon.png": "",
+
+
+
+"about03_services_4_icon.png": "",
+
+
+
+"about03_services_5_icon.png": "",
+
+
+
+"about03_services_6_icon.png": "",
+
+
+
+"about02_services_4_ico": "",
+
+
+
+"about02_services_5_ico": "",
+
+
+
+"about02_services_6_ico": "",
+
+
+
+"bg_banner_team_about": "#ffffff",
+
+
+
+"border_banner_team_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about": "#ffffff",
+
+
+
+"border_banner_services_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about_3": "#ffffff",
+
+
+
+"border_banner_services_about_3": "#f5f5f5",
+
+
+
+"product_viewed_show": true,
+
+
+
+"product_viewed_title": "Sản phẩm đã xem",
+
+
+
+"use_collection_style": "collection_style_01",
+
+
+
+"show_slider_home_banner": true,
+
+
+
+"footer_bg_color": "#ffffff",
+
+
+
+"footer_border_color": "#ffffff",
+
+
+
+"footer_title_color": "#453536",
+
+
+
+"footer_text_color": "#866d4b",
+
+
+
+"footer_bg_color_copyright": "#ffffff",
+
+
+
+"footer_text_color_copyright": "#866d4b",
+
+
+
+"slide_1_title_1": "",
+
+
+
+"slide_1_title_2": "JAPAN SINCE 1904",
+
+
+
+"slide_2_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_2_title_2": "Món quà tuyệt vời nhất giành cho chính bạn",
+
+
+
+"slide_3_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_3_title_2": "Kem trắng da siêu cấp mới nhất",
+
+
+
+"slide_4_title_1": "",
+
+
+
+"slide_4_title_2": "",
+
+
+
+"show_header_top_bar": true,
+
+
+
+"top_bar_contact": "",
+
+
+
+"top_bar_hotline": "",
+
+
+
+"top_bar_intagram_follow": "/",
+
+
+
+"top_bar_facebook_follow": "/",
+
+
+
+"top_bar_contact_link": "",
+
+
+
+"display_banner_introproduct_1_home": true,
+
+
+
+"banner_introproduct_title_first_1": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_desc_1": "Hãy duy trì làn da khoẻ mạnh với sản phẩm mới nhất của chúng tôi, ở đây sản phẩm được sản xuất từ 100% thiên nhiên , không chất bảo quản, hoá chất, yên tâm mà sử dụng.",
+
+
+
+"alt_img_intro_product_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_btn_link_1": "/collections/all",
+
+
+
+"img_intro_product_1.jpg": "",
+
+
+
+"banner_introproduct_btn_1": "Xem ngay",
+
+
+
+"img_intro_product_1.png": "",
+
+
+
+"display_banner_introproduct_2_home": true,
+
+
+
+"banner_introproduct_title_first_2": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_desc_2": "Với các sản phẩm của chúng tôi, chúng tôi luôn uy tín đặc lên hàng đầu , bảo đảm sức khoẻ cho khách hàng yên tâm sử dụng",
+
+
+
+"banner_introproduct_btn_2": "Xem ngay",
+
+
+
+"banner_introproduct_btn_link_2": "/collections/all",
+
+
+
+"img_intro_product_2.png": "",
+
+
+
+"alt_img_intro_product_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_bg_2": "#d1e2e8",
+
+
+
+"heading_collection_home_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_second": "Sản phẩm mới",
+
+
+
+"display_banner_testimonials_home": true,
+
+
+
+"show_banner_testimonials_1": true,
+
+
+
+"testimonials_title_frist_1": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_1": "Sử dụng các thương hiệu mới nhất",
+
+
+
+"testimonials_desc_1": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_2": true,
+
+
+
+"testimonials_title_frist_2": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_2": "Khách hàng rất thích",
+
+
+
+"testimonials_desc_2": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_3": false,
+
+
+
+"testimonials_title_frist_3": "",
+
+
+
+"testimonials_title_second_3": "",
+
+
+
+"testimonials_desc_3": "",
+
+
+
+"banner_img_testimonials.jpg": "",
+
+
+
+"banner_alt_testimonials": "Chào mừng đến với nature cycle",
+
+
+
+"bg_banner_testimonials": "#d1e2e8",
+
+
+
+"footer_holder_contact": "",
+
+
+
+"footer_holder_contact_link": "",
+
+
+
+"footer_holder_hotline": "",
+
+
+
+"heading_collection_home_two_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_two_second": "",
+
+
+
+"display_banner_service_home": true,
+
+
+
+"bg_banner_service": "#e8e6dd",
+
+
+
+"service_image_1.jpg": "",
+
+
+
+"service_title_1": "500 Thương hiệu lớn",
+
+
+
+"service_content_1": "Chất lượng cao nhất",
+
+
+
+"service_image_2.jpg": "",
+
+
+
+"service_title_2": "Miễn phí vận chuyển",
+
+
+
+"service_content_2": "Giao hàng trong vòng 1 ngày",
+
+
+
+"service_image_3.jpg": "",
+
+
+
+"service_title_3": "Dịch vụ khách hàng",
+
+
+
+"service_content_3": "Liện hệ qua Email và số điện thoại",
+
+
+
+"service_image_4.jpg": "",
+
+
+
+"service_title_4": "Thanh toán bảo mật 100%",
+
+
+
+"service_content_4": "Chúng tôi đánh giá cao sự bảo mật của bạn",
+
+
+
+"service_image_1.png": "",
+
+
+
+"service_image_2.png": "",
+
+
+
+"service_image_3.png": "",
+
+
+
+"service_image_4.png": "",
+
+
+
+"autoplay_slider_banner": true,
+
+
+
+"autoplayTimeout_slider_banner": "5",
+
+
+
+"footer_link2_menu": "left",
+
+
+
+"footer_border_color_copyright": "#eeeeee",
+
+
+
+"header_hotline_desk": "1900.636.099",
+
+
+
+"header_email_desk": "hi@haravan.com",
+
+
+
+"bg_breadcrumb.jpg": "",
+
+
+
+"bkg_breadcrumd.jpg": "",
+
+
+
+"top_bar_text_follow_1": "INSTAGRAM",
+
+
+
+"top_bar_link_follow_1": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_2": "FACEBOOK",
+
+
+
+"top_bar_link_follow_2": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_3": "YOUTUBE",
+
+
+
+"top_bar_link_follow_3": "",
+
+
+
+"top_bar_text_follow_4": "ZALO",
+
+
+
+"top_bar_link_follow_4": "",
+
+
+
+"banner_introproduct_bg_1": "#ffffff",
+
+
+
+"collection_banner.jpg": "",
+
+
+
+"about01_banner_show": true,
+
+
+
+"about01_banner_bkg.jpg": "",
+
+
+
+"about01_banner_txtcolor": "#333333",
+
+
+
+"show_banner_contact": true,
+
+
+
+"banner_contact_bkg.jpg": "",
+
+
+
+"banner_contact_txtcolor": "#ffffff"
+
+
+},
+
+
+"210301 Noritake V3": {
+
+
+
+"use_logo": true,
+
+
+
+"customer_layout": "theme",
+
+
+
+"logo": "https://file.hstatic.net/1000088429/file/logo_dfb01b70731f4332a05d2fe9c91a3833.png",
+
+
+
+"favicon": "https://file.hstatic.net/1000406611/file/favicon_696bb70236d241df9cf2e26c24aaed67.png",
+
+
+
+"shop_text_color": "#453536",
+
+
+
+"shop_title_color": "#453536",
+
+
+
+"btn_bg_shop": "#d29f13",
+
+
+
+"shop_text_hover_color": "#d29f13",
+
+
+
+"mainmenu_link": "main-menu",
+
+
+
+"share_fb_home": "https://file.hstatic.net/1000088429/file/share-fb-home_434f286540a24a1c9c7f4d4170a5b3f9.jpg",
+
+
+
+"slide_1": true,
+
+
+
+"slideshow_1": "https://file.hstatic.net/1000088429/file/home_slide_1_d0c4e0a9521b46d698d5747cf0b6b264.jpg",
+
+
+
+"slide_1_alt": "slide 1",
+
+
+
+"slide_1_title": "Khám phá ngay vẻ đẹp từ thiên nhiên",
+
+
+
+"slide_1_desc": "",
+
+
+
+"slide_1_button": "",
+
+
+
+"slide_1_link": "/collections/all",
+
+
+
+"slide_2": true,
+
+
+
+"slideshow_2": "https://file.hstatic.net/1000088429/file/home_slide_2_744715ac3f51439ba436552c791acf4e.jpg",
+
+
+
+"slide_2_alt": "slide 2",
+
+
+
+"slide_2_title": "Sản phẩm làm đẹp",
+
+
+
+"slide_2_desc": "",
+
+
+
+"slide_2_button": "",
+
+
+
+"slide_2_link": "/collections/onsale",
+
+
+
+"slide_3": false,
+
+
+
+"slideshow_3": "https://file.hstatic.net/1000088429/file/home_slide_3_8fd76b1273524842a165f670c2fe8d86.jpg",
+
+
+
+"slide_3_alt": "slide 3",
+
+
+
+"slide_3_title": "Kem tự nhiên cho làn da mềm mại",
+
+
+
+"slide_3_desc": "",
+
+
+
+"slide_3_button": "Xem ngay",
+
+
+
+"slide_3_link": "/collections/all",
+
+
+
+"slide_4": false,
+
+
+
+"slideshow_4": "",
+
+
+
+"slide_4_alt": "",
+
+
+
+"slide_4_title": "",
+
+
+
+"slide_4_desc": "",
+
+
+
+"slide_4_button": "",
+
+
+
+"slide_4_link": "",
+
+
+
+"slideshow_1_mb": "https://file.hstatic.net/1000088429/file/home_slide_1_mobile_c78c25c8e1ad405da41a9ff254099e5b.jpg",
+
+
+
+"slideshow_2_mb": "https://file.hstatic.net/1000088429/file/home_slide_2_mobile_d3fa970b3a4641f5b59390a3b715d843.jpg",
+
+
+
+"slideshow_3_mb": "https://file.hstatic.net/1000088429/file/home_slide_3_mobile_395e2dabe12641a2a28bc2c5e40ca4ce.jpg",
+
+
+
+"slideshow_4_mb": "",
+
+
+
+"use_collection_products": true,
+
+
+
+"heading_collection_home": "Sản phẩm mới nhất",
+
+
+
+"description_collection_home": "Chào mừng đến với nature cycle",
+
+
+
+"collection_home": "hang-moi-ve",
+
+
+
+"limit_one_size": "10",
+
+
+
+"display_banner_center_home": false,
+
+
+
+"img_banner_center": "https://file.hstatic.net/1000088429/file/banner_home_79a55d5d9a2242ac8db2846fcd2f39b9.jpg",
+
+
+
+"title_banner_center": "Kem khoáng Deadsea",
+
+
+
+"desc_banner_center": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB. ",
+
+
+
+"button_banner_center": "Xem ngay",
+
+
+
+"link_bnt_banner_center": "/collections/all",
+
+
+
+"display_banner_blog_home": false,
+
+
+
+"heading_blog_home": "Tin tức",
+
+
+
+"description_blog_home": "Cập nhập những tin tức mới nhất ",
+
+
+
+"blog_home": "news",
+
+
+
+"show_footer1": true,
+
+
+
+"footer1_title": "Giới thiệu",
+
+
+
+"footer1_information": "Chào mừng bạn đến với Nature Cycle. Tại đây, bạn sẽ tìm thấy hoàn toàn mọi thứ bạn cần để thể hiện công việc kinh doanh theo định hướng chăm sóc sức khỏe, spa hoặc sắc đẹp của mình theo cách hiện đại.",
+
+
+
+"footer_link1_show": true,
+
+
+
+"footer_link1_title": "Liên kết",
+
+
+
+"footer_link1_menu": "footer",
+
+
+
+"show_footer2": true,
+
+
+
+"footer2_title": "Liên kết",
+
+
+
+"footer-address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer-tell": " 1900.636.099",
+
+
+
+"footer-fax": "1900.636.099",
+
+
+
+"footer-email": "hi@haravan.com",
+
+
+
+"show_footer3": true,
+
+
+
+"footer3_title": "Dịch vụ khách hàng",
+
+
+
+"fanpage_faceook": "https://www.facebook.com/NoritakeVietnam",
+
+
+
+"footer4_title": "Fanpage",
+
+
+
+"show_social_icon_footer": true,
+
+
+
+"link_social_facebook": "/",
+
+
+
+"link_social_youtube": "/",
+
+
+
+"link_social_pinterest": "/",
+
+
+
+"link_social_twitter": "/",
+
+
+
+"link_social_instagram": "/",
+
+
+
+"show_logo_bct": "1",
+
+
+
+"logo_bct": "https://file.hstatic.net/1000088429/file/logo-bct_38921d34df3e4a1687ad989a4a58a249.png",
+
+
+
+"link_logo_bct": "/",
+
+
+
+"title_help_menu_mb": "Hotline",
+
+
+
+"hotline_mb": "1900.636.099",
+
+
+
+"email_mb": "contact@noritake-vietnam.com",
+
+
+
+"pagination_blog_limit": "14",
+
+
+
+"news_recent_show": true,
+
+
+
+"news_recent_title": "Bài viết mới nhất",
+
+
+
+"show_blog_menu": true,
+
+
+
+"title_blog_menu": "Danh mục",
+
+
+
+"blog_menu": "main-menu",
+
+
+
+"show_footer4": "1",
+
+
+
+"show_blog_tags": true,
+
+
+
+"title_blog_tags": "Tags",
+
+
+
+"show_blog_follow": true,
+
+
+
+"title_blog_follow": "Mạng xã hội",
+
+
+
+"show_follow_facebook": "/",
+
+
+
+"show_follow_youtube": "/",
+
+
+
+"show_follow_pinterest": "/",
+
+
+
+"show_follow_twitter": "/",
+
+
+
+"show_follow_instagram": "/",
+
+
+
+"show_background_image_blog": true,
+
+
+
+"backgound_image_blog": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_blog": "Tin tức mới nhất",
+
+
+
+"show_page_menu": true,
+
+
+
+"title_page_menu": "Danh mục trang",
+
+
+
+"page_menu": "footer",
+
+
+
+"footer_phone": "1900.636.099",
+
+
+
+"footer_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"footer_email": "hi@haravan.com",
+
+
+
+"footer_time": "Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"show_social_icon_contact": false,
+
+
+
+"link_social_facebook_contact": "/",
+
+
+
+"link_social_youtube_contact": "",
+
+
+
+"link_social_pinterest_contact": "/",
+
+
+
+"link_social_twitter_contact": "/",
+
+
+
+"link_social_instagram_contact": "/",
+
+
+
+"show_google_maps": true,
+
+
+
+"google_maps_code": "<iframe  title=\"Google maps\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.615593436863!2d106.65415201477133!3d10.76408024232994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eec7752c743%3A0xd832d71bd12b6a15!2zRmxlbWluZ3RvbiBUb3dlciwgMTgyIEzDqiDEkOG6oWkgSMOgbmgsIHBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1521530731757\" width=\"100%\" height=\"350\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+
+
+
+"description_page_contact": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"show_background_image_page_cart": "1",
+
+
+
+"backgound_image_page_cart": "https://file.hstatic.net/1000088429/file/blog-image-background_878118910a264ed7a58939d5bc3be54d.jpg",
+
+
+
+"alt_backgound_image_page_cart": "banner cart",
+
+
+
+"policy_cart_title": "Chính sách mua hàng",
+
+
+
+"policy_cart_1": "Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.",
+
+
+
+"policy_cart_2": "Sản phẩm còn đủ tem mác, chưa qua sử dụng",
+
+
+
+"policy_cart_3": "Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống",
+
+
+
+"policy_cart_4": "Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống",
+
+
+
+"show_collection_image": true,
+
+
+
+"banner_image_collection": "https://file.hstatic.net/1000088429/file/banner_collection_ea4d98f8263d45e8a65be10eb72c8e37.jpg",
+
+
+
+"pagination_limit": "40",
+
+
+
+"addthis_iconList_show": true,
+
+
+
+"addthis_icon1_show": true,
+
+
+
+"addthis_icon1_color1": "#d29f13",
+
+
+
+"addthis_icon1_color2": "#d29f13",
+
+
+
+"addthis_icon1_tootlip": "Hotline",
+
+
+
+"addthis_icon1_action": "1900636099",
+
+
+
+"addthis_icon2_show": true,
+
+
+
+"addthis_icon2_color1": "#d29f13",
+
+
+
+"addthis_icon2_color2": "#d29f13",
+
+
+
+"addthis_icon2_tootlip": "Chat với chúng tôi qua Zalo",
+
+
+
+"addthis_icon2_action": "//zalo.me/0901866099",
+
+
+
+"addthis_icon3_show": true,
+
+
+
+"addthis_icon3_color1": "#d29f13",
+
+
+
+"addthis_icon3_color2": "#d29f13",
+
+
+
+"addthis_icon3_tootlip": "Đăng kí thông tin và để lại lời nhắn",
+
+
+
+"addthis_icon3_title": "Để lại lời nhắn cho chúng tôi",
+
+
+
+"addthis_icon3_title2": "Đăng kí thông tin thành công",
+
+
+
+"addthis_icon3_content": "Cảm ơn bạn đã để lại thông tin <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất\t",
+
+
+
+"addthis_icon4_show": true,
+
+
+
+"addthis_icon4_color1": "#d29f13",
+
+
+
+"addthis_icon4_color2": "#d29f13",
+
+
+
+"addthis_icon4_tootlip": "Xem địa chỉ doanh nghiệp",
+
+
+
+"addthis_icon4_action": "/pages/lien-he",
+
+
+
+"use_chatbot": true,
+
+
+
+"code_messenger_mb": "108520260558644",
+
+
+
+"link_follow_facebook_blog": "/",
+
+
+
+"link_follow_youtube_blog": "/",
+
+
+
+"link_follow_pinterest_blog": "/",
+
+
+
+"link_follow_twitter_blog": "/",
+
+
+
+"link_follow_instagram_blog": "/",
+
+
+
+"collection_filter_show": true,
+
+
+
+"collection_filter_title": "Bộ lọc",
+
+
+
+"use_vendor_filter": true,
+
+
+
+"vendor_title": "Thương hiệu",
+
+
+
+"vendor_limit": "1",
+
+
+
+"use_color_filter": "1",
+
+
+
+"color_title": "Màu sắc",
+
+
+
+"use_color_filter_1": "1",
+
+
+
+"color_name_new_1": "Đỏ",
+
+
+
+"color_code_new_1": "#ff0000",
+
+
+
+"use_color_filter_2": "1",
+
+
+
+"color_name_new_2": "Vàng",
+
+
+
+"color_code_new_2": "#ffff05",
+
+
+
+"use_color_filter_3": "1",
+
+
+
+"color_name_new_3": "Cam",
+
+
+
+"color_code_new_3": "#f5b505",
+
+
+
+"use_color_filter_4": "1",
+
+
+
+"color_name_new_4": "Xanh dương",
+
+
+
+"color_code_new_4": "#5100ff",
+
+
+
+"use_color_filter_5": "1",
+
+
+
+"color_name_new_5": "Xanh lá",
+
+
+
+"color_code_new_5": "#3cfa08",
+
+
+
+"use_color_filter_6": true,
+
+
+
+"color_name_new_6": "Nâu",
+
+
+
+"color_code_new_6": "#753a3a",
+
+
+
+"use_color_filter_7": true,
+
+
+
+"color_name_new_7": "Xanh",
+
+
+
+"color_code_new_7": "#267a0b",
+
+
+
+"use_color_filter_8": false,
+
+
+
+"color_name_new_8": "Tím",
+
+
+
+"color_code_new_8": "#b5129a",
+
+
+
+"use_color_filter_9": "1",
+
+
+
+"color_name_new_9": "Hồng",
+
+
+
+"color_code_new_9": "#db999b",
+
+
+
+"use_color_filter_10": false,
+
+
+
+"color_name_new_10": "Đen",
+
+
+
+"color_code_new_10": "#000000",
+
+
+
+"use_color_filter_11": false,
+
+
+
+"color_name_new_11": "Đen",
+
+
+
+"color_code_new_11": "#000000",
+
+
+
+"use_color_filter_12": false,
+
+
+
+"color_name_new_12": "Đen",
+
+
+
+"color_code_new_12": "#000000",
+
+
+
+"use_color_filter_13": false,
+
+
+
+"color_name_new_13": "Đen",
+
+
+
+"color_code_new_13": "#000000",
+
+
+
+"use_color_filter_14": false,
+
+
+
+"color_name_new_14": "Đen",
+
+
+
+"color_code_new_14": "#000000",
+
+
+
+"use_color_filter_15": false,
+
+
+
+"color_name_new_15": "Đen",
+
+
+
+"color_code_new_15": "#000000",
+
+
+
+"use_color_filter_16": false,
+
+
+
+"color_name_new_16": "Nâu",
+
+
+
+"color_code_new_16": "#753a3a",
+
+
+
+"use_color_filter_17": false,
+
+
+
+"color_name_new_17": "Xám",
+
+
+
+"color_code_new_17": "#cccaca",
+
+
+
+"use_color_filter_18": false,
+
+
+
+"color_name_new_18": "Tím",
+
+
+
+"color_code_new_18": "#b5129a",
+
+
+
+"use_color_filter_19": false,
+
+
+
+"color_name_new_19": "Hồng",
+
+
+
+"color_code_new_19": "#db999b",
+
+
+
+"use_color_filter_20": false,
+
+
+
+"color_name_new_20": "Đen",
+
+
+
+"color_code_new_20": "#000000",
+
+
+
+"use_color_filter_21": false,
+
+
+
+"color_name_new_21": "Đỏ",
+
+
+
+"color_code_new_21": "#ff0000",
+
+
+
+"use_color_filter_22": false,
+
+
+
+"color_name_new_22": "Vàng",
+
+
+
+"color_code_new_22": "#ffff05",
+
+
+
+"use_color_filter_23": false,
+
+
+
+"color_name_new_23": "Cam",
+
+
+
+"color_code_new_23": "#f5b505",
+
+
+
+"use_color_filter_24": false,
+
+
+
+"color_name_new_24": "Xanh dương",
+
+
+
+"color_code_new_24": "#5100ff",
+
+
+
+"use_color_filter_25": false,
+
+
+
+"color_name_new_25": "Xanh lá",
+
+
+
+"color_code_new_25": "#3cfa08",
+
+
+
+"use_color_filter_26": false,
+
+
+
+"color_name_new_26": "Nâu",
+
+
+
+"color_code_new_26": "#753a3a",
+
+
+
+"use_color_filter_27": false,
+
+
+
+"color_name_new_27": "Xám",
+
+
+
+"color_code_new_27": "#cccaca",
+
+
+
+"use_color_filter_28": false,
+
+
+
+"color_name_new_28": "Tím",
+
+
+
+"color_code_new_28": "#b5129a",
+
+
+
+"use_color_filter_29": false,
+
+
+
+"color_name_new_29": "Hồng",
+
+
+
+"color_code_new_29": "#db999b",
+
+
+
+"use_color_filter_30": false,
+
+
+
+"color_name_new_30": "Đen",
+
+
+
+"color_code_new_30": "#000000",
+
+
+
+"use_tag_custom_2": true,
+
+
+
+"tag_title_custom_2": "Kích thước",
+
+
+
+"enter_tag_2": "30ml,40ml,50ml,60ml",
+
+
+
+"use_price_filter": "1",
+
+
+
+"title_tag_3": "Lọc giá",
+
+
+
+"1_price_to": "1000000",
+
+
+
+"2_price_from": "1000000",
+
+
+
+"2_price_to": "2000000",
+
+
+
+"3_price_from": "2000000",
+
+
+
+"3_price_to": "3000000",
+
+
+
+"4_price_from": "3000000",
+
+
+
+"4_price_to": "4000000",
+
+
+
+"5_price_from": "5000000",
+
+
+
+"btn_bg_addcart_shop": "#d29f13",
+
+
+
+"use_product_style": "style-03",
+
+
+
+"display_tab_product_1": true,
+
+
+
+"title_tab_product_1": "Mô tả",
+
+
+
+"display_tab_product_2": true,
+
+
+
+"title_tab_product_2": "Chính sách đổi trả",
+
+
+
+"page_content_tab_2": "chinh-sach-doi-tra",
+
+
+
+"display_tab_product_3": true,
+
+
+
+"title_tab_product_3": "Chính sách bảo mật",
+
+
+
+"page_content_tab_3": "chinh-sach-bao-mat",
+
+
+
+"shares_facebook_social": true,
+
+
+
+"productspg_related_products": true,
+
+
+
+"productspg_related_title": "Sản phẩm liên quan",
+
+
+
+"productspg_featured_quantity": "15",
+
+
+
+"productspg_review_products": true,
+
+
+
+"product_review_title": "Danh mục blog",
+
+
+
+"hotline_contact_product": "1900.636.099",
+
+
+
+"product_deliverly_show": true,
+
+
+
+"product_deliverly_1_show": true,
+
+
+
+"product_deliverly_1_ico": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_1_text": "Cam kết 100% chính hãng",
+
+
+
+"product_deliverly_2_show": true,
+
+
+
+"product_deliverly_2_ico": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_2_text": "Giao hàng dự kiến:\n<br>\n<strong>Thứ 6 - Thứ 4 từ 9h00 - 20h00</strong>",
+
+
+
+"product_deliverly_3_show": true,
+
+
+
+"product_deliverly_3_ico": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"product_deliverly_3_text": "Sản phẩm không nhận đổi trả",
+
+
+
+"header_style_select": "header-2",
+
+
+
+"header_01_color_text": "#ffffff",
+
+
+
+"header_01_color_bkg": "#F4B0B0",
+
+
+
+"header_02_color_text": "#866d4b ",
+
+
+
+"header_02_color_hover_text": "#d29f13",
+
+
+
+"header_02_color_bkg": "#ffffff",
+
+
+
+"header_03_color_text": "#453536 ",
+
+
+
+"header_03_color_bkg": "#ffffff",
+
+
+
+"show_product_sharing": true,
+
+
+
+"product_deliverly_1_icon": "https://file.hstatic.net/1000397797/file/delivery-ico1_f26631929e1b41dab022d9960006297c.svg",
+
+
+
+"product_deliverly_2_icon": "https://file.hstatic.net/1000397797/file/delivery-ico2_5ea2de2f279b4dbfa10fcb9b9c448b4d.svg",
+
+
+
+"product_deliverly_3_icon": "https://file.hstatic.net/1000397797/file/delivery-ico3_dd589d9c49584441a9ef0c2f9300649f.svg",
+
+
+
+"price_title": "Giá tiền",
+
+
+
+"top_bar_content": "Miễn phí free ship với đơn hàng trên 1.000.000 đ",
+
+
+
+"header_01_top_bar_text": "#000000",
+
+
+
+"header_01_top_bar_bg": "#ffffff",
+
+
+
+"header_02_top_bar_text": "#ffffff",
+
+
+
+"header_02_top_bar_bg": "#d29f13",
+
+
+
+"header_03_top_bar_text": "#ffffff",
+
+
+
+"header_03_top_bar_bg": "#d29f13",
+
+
+
+"banner_page_href": "/collections/all",
+
+
+
+"banner_image_page": "https://file.hstatic.net/1000088429/file/banner-img-page_8c6758378b3e438db137be4e08a0d7a9.jpg",
+
+
+
+"show_banner_image_page": true,
+
+
+
+"show_social_page_contact": true,
+
+
+
+"popup_contact_show": false,
+
+
+
+"popup_contact_select": "popupBanner",
+
+
+
+"popup_contact_time": "60",
+
+
+
+"popup_contact_banner": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_alt": "Các ưu đãi của chúng tôi",
+
+
+
+"popup_contact_link": "/collections/all",
+
+
+
+"popup_contact_bkg": "https://file.hstatic.net/1000088429/file/popup-banner-img_694e227666ff46a6a922dc6dfcb4e967.jpg",
+
+
+
+"popup_contact_title": "Hãy đến với chúng tôi",
+
+
+
+"popup_contact_content": "Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.",
+
+
+
+"popup_contact_description_1": "Giảm giá sản phẩm",
+
+
+
+"popup_contact_description_2": "Sản phẩm mới",
+
+
+
+"popup_contact_description_3": "Sản phẩm bán chạy",
+
+
+
+"use_collection_products_two": true,
+
+
+
+"heading_collection_home_two": "Sản phẩm khuyến mãi",
+
+
+
+"description_collection_home_two": "Cung cấp các sẩn phẩm khuyến mãi mới nhât",
+
+
+
+"collection_two": "onsale",
+
+
+
+"collection_home_two": "hang-moi-ve",
+
+
+
+"slideshow_1.jpg": "",
+
+
+
+"slideshow_1_mb.jpg": "",
+
+
+
+"slideshow_2.jpg": "",
+
+
+
+"slideshow_2_mb.jpg": "",
+
+
+
+"slideshow_3.jpg": "",
+
+
+
+"slideshow_3_mb.jpg": "",
+
+
+
+"slideshow_4.jpg": "",
+
+
+
+"slideshow_4_mb.jpg": "",
+
+
+
+"img_banner_center.jpg": "",
+
+
+
+"logo_bct.jpg": "",
+
+
+
+"banner_image_collection.jpg": "",
+
+
+
+"product_deliverly_1_icon.jpg": "",
+
+
+
+"product_deliverly_2_icon.jpg": "https://file.hstatic.net/1000088429/file/icon-shipped-devc_731f3c74261c40d6ac6c1af5c44e4c77.png",
+
+
+
+"product_deliverly_3_icon.jpg": "",
+
+
+
+"backgound_image_blog.jpg": "",
+
+
+
+"banner_image_page.jpg": "",
+
+
+
+"logo.png": "",
+
+
+
+"favicon.png": "",
+
+
+
+"share_fb_home.png": "",
+
+
+
+"popup_contact_banner.jpg": "",
+
+
+
+"popup_contact_bkg.jpg": "",
+
+
+
+"product_deliverly_1_ico.png": "",
+
+
+
+"product_deliverly_2_ico.png": "",
+
+
+
+"product_deliverly_3_ico.png": "",
+
+
+
+"product_deliverly_1_icons.png": "",
+
+
+
+"product_deliverly_2_icons.png": "",
+
+
+
+"product_deliverly_3_icons.png": "",
+
+
+
+"use_collection_one_products": true,
+
+
+
+"use_collection_two_products": true,
+
+
+
+"banner_blog_home_heading": "Tin tức",
+
+
+
+"banner_blog_home_description": "Cập nhập những tin tức mới nhất ",
+
+
+
+"banner_blog_home": "news",
+
+
+
+"banner_center_home_title": "Kem khoáng Deadsea",
+
+
+
+"banner_center_home_desc": "Kem khoáng Deadsea Multi-Vitamin kem SPF-20 khoáng chất (Sức khỏe & Làm đẹp) bao gồm một phức hợp các vitamin C và  kết hợp với dầu hoa anh thảo, cây hắc mai biển, trà xanh, lô hội, cũng như các bộ lọc tia UVA và UVB.",
+
+
+
+"banner_center_home_button": "Xem ngay",
+
+
+
+"banner_center_home_button_link": "/collections/all",
+
+
+
+"banner_center_home_image.jpg": "",
+
+
+
+"show_banner_image_blog": true,
+
+
+
+"banner_image_blog.jpg": "",
+
+
+
+"banner_image_blog_alt": "Tin tức mới nhất",
+
+
+
+"page_contact_description": "Nếu bạn có gì thắc mắc hãy liên hệ với chúng tôi qua địa chỉ",
+
+
+
+"page_contact_phone": "1900.636.099",
+
+
+
+"page_contact_address": "Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.",
+
+
+
+"page_contact_email": "hi@haravan.com",
+
+
+
+"page_contact_time": "Thứ 2 đến Thứ 6 từ 8h30 đến 18h; Thứ 7 và Chủ nhật từ 8h00 đến 17h00",
+
+
+
+"page_menu_title": "Danh mục trang",
+
+
+
+"about_style_selected": "about_style_3",
+
+
+
+"about02_banner_show": true,
+
+
+
+"about02_banner_bkg.jpg": "",
+
+
+
+"about02_banner_txtcolor": "#333333",
+
+
+
+"about02_infor_show": true,
+
+
+
+"about02_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about02_infor_desc": "Nature-cycle tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about02_infor_1_show": true,
+
+
+
+"about02_infor_1_ico.png": "",
+
+
+
+"about02_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about02_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_infor_2_show": true,
+
+
+
+"about02_infor_2_ico.png": "",
+
+
+
+"about02_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about02_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about02_infor_3_show": true,
+
+
+
+"about02_infor_3_ico.png": "",
+
+
+
+"about02_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about02_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about02_team_show": true,
+
+
+
+"about02_team_title": "Đội ngũ nhân viên",
+
+
+
+"about02_team_desc": "Chúng tôi tạo dựng môi trường làm việc thân thiện cho nhân viên, các cấp quản lý luôn lắng nghe, thấu hiểu, hỗ trợ cho nhân viên mình có thể phát huy mọi tiềm năng .",
+
+
+
+"about02_team_1_show": true,
+
+
+
+"about02_team_1_img.jpg": "",
+
+
+
+"about02_team_1_name": "Huỳnh Linh Đan",
+
+
+
+"about02_team_1_postion": "Nhân viên 1",
+
+
+
+"about02_team_2_show": true,
+
+
+
+"about02_team_2_img.jpg": "",
+
+
+
+"about02_team_2_name": "Nguyễn Văn A",
+
+
+
+"about02_team_2_postion": "Nhân viên 2",
+
+
+
+"about02_team_3_show": true,
+
+
+
+"about02_team_3_img.jpg": "",
+
+
+
+"about02_team_3_name": "Trần Văn C",
+
+
+
+"about02_team_3_postion": "Nhân viên 3",
+
+
+
+"about02_team_4_show": true,
+
+
+
+"about02_team_4_img.jpg": "",
+
+
+
+"about02_team_4_name": "Nguyễn Văn B",
+
+
+
+"about02_team_4_postion": "Nhân viên 4",
+
+
+
+"about02_services_show": true,
+
+
+
+"about02_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about02_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.",
+
+
+
+"about02_services_1_show": true,
+
+
+
+"about02_services_1_ico.png": "",
+
+
+
+"about02_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about02_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about02_services_2_show": true,
+
+
+
+"about02_services_2_ico.png": "",
+
+
+
+"about02_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about02_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about02_services_3_show": true,
+
+
+
+"about02_services_3_ico.png": "",
+
+
+
+"about02_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about02_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about02_services_4_show": true,
+
+
+
+"about02_services_4_ico.png": "",
+
+
+
+"about02_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about02_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about02_services_5_show": true,
+
+
+
+"about02_services_5_ico.png": "",
+
+
+
+"about02_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about02_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about02_services_6_show": true,
+
+
+
+"about02_services_6_ico.png": "",
+
+
+
+"about02_services_6_text": "Chính sách bảo mật",
+
+
+
+"about02_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about03_banner_show": true,
+
+
+
+"about03_banner_bkg.jpg": "",
+
+
+
+"about03_banner_txtcolor": "#333333",
+
+
+
+"about03_infor_show": true,
+
+
+
+"about03_infor_title": "Nature-cycle - Cửa hàng online",
+
+
+
+"about03_infor_desc": "Nature-cycle  tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn, nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.",
+
+
+
+"about03_infor_1_show": true,
+
+
+
+"about03_infor_1_ico.png": "",
+
+
+
+"about03_infor_1_text": "Chất lượng thật - Giá trị thật",
+
+
+
+"about03_infor_1_desc": "Số lượng sản phẩm và dịch vụ tốt nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_infor_2_show": true,
+
+
+
+"about03_infor_2_ico.png": "",
+
+
+
+"about03_infor_2_text": "Tích điểm đếm 10% hóa đơn",
+
+
+
+"about03_infor_2_desc": "Tất cả các khách hàng đã mua sắm tại Eva Cosmetic có tổng hóa đơn mua sắm tích lũy từ 1000 điểm sẽ được một phần quà giá trị tương đương.",
+
+
+
+"about03_infor_3_show": true,
+
+
+
+"about03_infor_3_ico.png": "",
+
+
+
+"about03_infor_3_text": "Hỗ trợ giao hàng toàn quốc",
+
+
+
+"about03_infor_3_desc": "Miễn phí vận chuyển nội thành thành phố Hồ Chí Minh cho các đơn hàng từ 90.000đ trở lên. Các đơn hàng dưới 90.000đ bạn chỉ mất 10.000đ phí vận chuyển.",
+
+
+
+"about03_team_show": true,
+
+
+
+"about03_team_1_show": true,
+
+
+
+"about03_team_1_img.jpg": "",
+
+
+
+"about03_team_1_name": "Mỹ phẩm chăm sóc da ",
+
+
+
+"about03_team_1_postion": "Có chiết xuất hoàn toàn từ thiên nhiên với nguyên liệu được tuyển chọn từ các vùng nguyên liệu của chúng tôi. Được trồng và chăm sóc theo đúng quy trình để đảm bảo nguồn nguyên liệu giữ được phẩm chất tốt nhất và dược tính cao nhất. Đảm bảo được chất lượng khi sản xuất là đồng nhất.",
+
+
+
+"about03_team_2_show": true,
+
+
+
+"about03_team_2_img.jpg": "",
+
+
+
+"about03_team_2_name": "Chỉ tiêu sản phẩm của chúng tôi",
+
+
+
+"about03_team_2_postion": "Bất cứ sản phẩm nào không đạt được tiêu chuẩn sẽ được loại bỏ khỏi dây chuyền và tiêu hủy lập tức. Với dây chuyền công nghệ hiện đại cùng hệ thông quản lý thông minh đem lại sản phẩm hoàn thiện đồng nhất đảm bảo chất lượng đưa tới tay người tiêu dùng.",
+
+
+
+"about03_team_3_show": true,
+
+
+
+"about03_team_3_img.jpg": "",
+
+
+
+"about03_team_3_name": "Sản phẩm được sản xuất 100% từ thiên nhiên",
+
+
+
+"about03_team_3_postion": "Tất cả sản phẩm của chúng tôi đều được đảm bảo thích ứng tốt với da người Việt Nam, không gây các tác dụng phụ hay ảnh hưởng đến sức khỏe khi sử dụng lâu dài. Mọi tác động đến sức khỏe có nguyên nhân từ sản phẩm của chúng tôi đều được công ty chịu hoàn toàn trách nhiệm.",
+
+
+
+"about03_team_4_show": true,
+
+
+
+"about03_team_4_img.jpg": "",
+
+
+
+"about03_team_4_name": "Đón hè như ý, chăm da hết ý",
+
+
+
+"about03_team_4_postion": "Mùa hè là thời điểm tạo điều kiện cho mụn sinh sôi nảy nở, đặc biệt là với những làn da dầu, nhiều mụn. Những tia nắng gay gắt có thể sẽ góp phần tàn phá làn da vốn đã bị tổn thương trước đó nếu bạn không biết cách chăm sóc da mặt đúng cách. Vì vậy việc chăm sóc da đúng cách vào mùa hè nắng nóng là cực kỳ quan trọng.",
+
+
+
+"about03_services_show": true,
+
+
+
+"about03_services_title": "Tại sao chọn chúng tôi",
+
+
+
+"about03_services_desc": "Vì sứ mệnh tạo nên những giá trị thương hiệu, chúng tôi đã, đang và sẽ luôn nỗ lực hết mình vì sự phát triển – khẳng định thương hiệu Việt, mang lại những giá trị lâu dài cho doanh nghiệp.\n\n",
+
+
+
+"about03_services_1_show": true,
+
+
+
+"about03_services_1_ico.png": "",
+
+
+
+"about03_services_1_text": "Giá trị cốt lõi",
+
+
+
+"about03_services_1_desc": "Với cốt lõi luôn xem khách hàng là bạn hàng. Chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội.",
+
+
+
+"about03_services_2_show": true,
+
+
+
+"about03_services_2_ico.png": "",
+
+
+
+"about03_services_2_text": "Tầm nhìn và Sứ mệnh",
+
+
+
+"about03_services_2_desc": "Với phương châm “Chất lượng thật - Giá trị thật”, chúng tôi luôn nỗ lực không ngừng nhằm nâng cao chất lượng dịch vụ để khách hàng được hưởng các dịch vụ tốt nhất",
+
+
+
+"about03_services_3_show": true,
+
+
+
+"about03_services_3_ico.png": "",
+
+
+
+"about03_services_3_text": "Thế mạnh của chúng tôi?",
+
+
+
+"about03_services_3_desc": "Cam kết cung cấp các sản phẩm chính hãng và nhập khẩu 100% từ Mỹ, Pháp… Số lượng sản phẩm và dịch vụ lớn nhất với chủng loại đa dạng, phong phú sẽ đáp ứng tất cả nhu cầu mua sắm của bạn.",
+
+
+
+"about03_services_4_show": true,
+
+
+
+"about03_services_4_ico.png": "",
+
+
+
+"about03_services_4_text": "Hỗ trợ khách hàng 24/7",
+
+
+
+"about03_services_4_desc": "Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của chúng tôi.",
+
+
+
+"about03_services_5_show": true,
+
+
+
+"about03_services_5_ico.png": "",
+
+
+
+"about03_services_5_text": "Đổi trả, hoàn tiền",
+
+
+
+"about03_services_5_desc": "Nếu nhận được sản phẩm bị lỗi ngoại quan (có dấu hiệu bị trầy xước, hư hỏng bên ngoài, bể vỡ ) , quý khách vui lòng liên hệ trong vòng 48h kể từ khi nhận hàng thành công.",
+
+
+
+"about03_services_6_show": true,
+
+
+
+"about03_services_6_ico.png": "",
+
+
+
+"about03_services_6_text": "Chính sách bảo mật",
+
+
+
+"about03_services_6_desc": "Chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.",
+
+
+
+"about02_infor_1_icon.png": "",
+
+
+
+"about02_infor_2_icon.png": "",
+
+
+
+"about02_infor_3_icon.png": "",
+
+
+
+"about02_services_1_icon.png": "",
+
+
+
+"about02_services_2_icon.png": "",
+
+
+
+"about02_services_3_icon.png": "",
+
+
+
+"about02_services_4_icon.png": "",
+
+
+
+"about02_services_5_icon.png": "",
+
+
+
+"about02_services_6_icon.png": "",
+
+
+
+"about03_infor_1_icon.png": "",
+
+
+
+"about03_infor_2_icon.png": "",
+
+
+
+"about03_infor_3_icon.png": "",
+
+
+
+"about03_services_1_icon.png": "",
+
+
+
+"about03_services_2_icon.png": "",
+
+
+
+"about03_services_3_icon.png": "",
+
+
+
+"about03_services_4_icon.png": "",
+
+
+
+"about03_services_5_icon.png": "",
+
+
+
+"about03_services_6_icon.png": "",
+
+
+
+"about02_services_4_ico": "",
+
+
+
+"about02_services_5_ico": "",
+
+
+
+"about02_services_6_ico": "",
+
+
+
+"bg_banner_team_about": "#ffffff",
+
+
+
+"border_banner_team_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about": "#ffffff",
+
+
+
+"border_banner_services_about": "#f5f5f5",
+
+
+
+"bg_banner_services_about_3": "#ffffff",
+
+
+
+"border_banner_services_about_3": "#f5f5f5",
+
+
+
+"product_viewed_show": true,
+
+
+
+"product_viewed_title": "Sản phẩm đã xem",
+
+
+
+"use_collection_style": "collection_style_02",
+
+
+
+"show_slider_home_banner": true,
+
+
+
+"footer_bg_color": "#ffffff",
+
+
+
+"footer_border_color": "#ffffff",
+
+
+
+"footer_title_color": "#453536",
+
+
+
+"footer_text_color": "#866d4b",
+
+
+
+"footer_bg_color_copyright": "#ffffff",
+
+
+
+"footer_text_color_copyright": "#866d4b",
+
+
+
+"slide_1_title_1": "",
+
+
+
+"slide_1_title_2": "",
+
+
+
+"slide_2_title_1": "",
+
+
+
+"slide_2_title_2": "",
+
+
+
+"slide_3_title_1": "Một chút gì đó để tâm hồn thoải mái",
+
+
+
+"slide_3_title_2": "Kem trắng da siêu cấp mới nhất",
+
+
+
+"slide_4_title_1": "",
+
+
+
+"slide_4_title_2": "",
+
+
+
+"show_header_top_bar": true,
+
+
+
+"top_bar_contact": "",
+
+
+
+"top_bar_hotline": "",
+
+
+
+"top_bar_intagram_follow": "/",
+
+
+
+"top_bar_facebook_follow": "/",
+
+
+
+"top_bar_contact_link": "",
+
+
+
+"display_banner_introproduct_1_home": true,
+
+
+
+"banner_introproduct_title_first_1": "<i>\"Phong cách châu Âu, chất lượng Nhật Bản\"</i>",
+
+
+
+"banner_introproduct_title_second_1": "JAPAN SINCE 1904",
+
+
+
+"banner_introproduct_desc_1": "<span style=\"text-align: justify\">Được thành lập vào ngày 4 tháng 1 năm 1904 với trụ sở chính tại Nagoya, Nhật Bản - Noritake nổi tiếng là thương hiệu đồ sứ với thiết kế sang trọng, cao cấp và chất lượng sản phẩm tuyệt hảo.</span>\n<br>\n<br>\n<span style=\"text-align: justify\">Sản phẩm của Noritake hiện được phân phối tại trên 100 quốc gia và được sử dụng trong rất nhiều khách sạn 5 sao, nhà hàng và các hãng hàng không trên toàn thế giới...</span>",
+
+
+
+"alt_img_intro_product_1": "Sản phẩm mới",
+
+
+
+"banner_introproduct_btn_link_1": "/collections/all",
+
+
+
+"img_intro_product_1.jpg": "",
+
+
+
+"banner_introproduct_btn_1": "Tìm hiểu ngay",
+
+
+
+"img_intro_product_1.png": "",
+
+
+
+"display_banner_introproduct_2_home": true,
+
+
+
+"banner_introproduct_title_first_2": "Chào mừng đến với nature cycle",
+
+
+
+"banner_introproduct_title_second_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_desc_2": "Với các sản phẩm của chúng tôi, chúng tôi luôn uy tín đặc lên hàng đầu , bảo đảm sức khoẻ cho khách hàng yên tâm sử dụng",
+
+
+
+"banner_introproduct_btn_2": "Xem ngay",
+
+
+
+"banner_introproduct_btn_link_2": "/collections/all",
+
+
+
+"img_intro_product_2.png": "",
+
+
+
+"alt_img_intro_product_2": "Sản phẩm nổi bật",
+
+
+
+"banner_introproduct_bg_2": "#d1e2e8",
+
+
+
+"heading_collection_home_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_second": "Sản phẩm mới",
+
+
+
+"display_banner_testimonials_home": true,
+
+
+
+"show_banner_testimonials_1": true,
+
+
+
+"testimonials_title_frist_1": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_1": "Sử dụng các thương hiệu mới nhất",
+
+
+
+"testimonials_desc_1": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_2": true,
+
+
+
+"testimonials_title_frist_2": "Chào mừng đến với nature cycle",
+
+
+
+"testimonials_title_second_2": "Khách hàng rất thích",
+
+
+
+"testimonials_desc_2": "Với nature cycle, chúng tôi chuyên cung cấp các thương hiệu nổi bật nhất thế giới",
+
+
+
+"show_banner_testimonials_3": false,
+
+
+
+"testimonials_title_frist_3": "",
+
+
+
+"testimonials_title_second_3": "",
+
+
+
+"testimonials_desc_3": "",
+
+
+
+"banner_img_testimonials.jpg": "",
+
+
+
+"banner_alt_testimonials": "Chào mừng đến với nature cycle",
+
+
+
+"bg_banner_testimonials": "#d1e2e8",
+
+
+
+"footer_holder_contact": "",
+
+
+
+"footer_holder_contact_link": "",
+
+
+
+"footer_holder_hotline": "",
+
+
+
+"heading_collection_home_two_frist": "Chào mừng đến với nature cycle",
+
+
+
+"heading_collection_home_two_second": "",
+
+
+
+"display_banner_service_home": true,
+
+
+
+"bg_banner_service": "#e8e6dd",
+
+
+
+"service_image_1.jpg": "",
+
+
+
+"service_title_1": "500 Thương hiệu lớn",
+
+
+
+"service_content_1": "Chất lượng cao nhất",
+
+
+
+"service_image_2.jpg": "",
+
+
+
+"service_title_2": "Miễn phí vận chuyển",
+
+
+
+"service_content_2": "Giao hàng trong vòng 1 ngày",
+
+
+
+"service_image_3.jpg": "",
+
+
+
+"service_title_3": "Dịch vụ khách hàng",
+
+
+
+"service_content_3": "Liện hệ qua Email và số điện thoại",
+
+
+
+"service_image_4.jpg": "",
+
+
+
+"service_title_4": "Thanh toán bảo mật 100%",
+
+
+
+"service_content_4": "Chúng tôi đánh giá cao sự bảo mật của bạn",
+
+
+
+"service_image_1.png": "",
+
+
+
+"service_image_2.png": "",
+
+
+
+"service_image_3.png": "",
+
+
+
+"service_image_4.png": "",
+
+
+
+"autoplay_slider_banner": true,
+
+
+
+"autoplayTimeout_slider_banner": "5",
+
+
+
+"footer_link2_menu": "left",
+
+
+
+"footer_border_color_copyright": "#eeeeee",
+
+
+
+"header_hotline_desk": "1900.636.099",
+
+
+
+"header_email_desk": "hi@haravan.com",
+
+
+
+"bg_breadcrumb.jpg": "",
+
+
+
+"bkg_breadcrumd.jpg": "",
+
+
+
+"top_bar_text_follow_1": "<b>FACEBOOK</b>",
+
+
+
+"top_bar_link_follow_1": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_2": "<b>INSTAGRAM</b>",
+
+
+
+"top_bar_link_follow_2": "/noritakevietnam",
+
+
+
+"top_bar_text_follow_3": "<b>YOUTUBE</b>",
+
+
+
+"top_bar_link_follow_3": "",
+
+
+
+"top_bar_text_follow_4": "<b>ZALO</b>",
+
+
+
+"top_bar_link_follow_4": "",
+
+
+
+"banner_introproduct_bg_1": "#ffffff",
+
+
+
+"collection_banner.jpg": "",
+
+
+
+"about01_banner_show": true,
+
+
+
+"about01_banner_bkg.jpg": "",
+
+
+
+"about01_banner_txtcolor": "#333333",
+
+
+
+"show_banner_contact": true,
+
+
+
+"banner_contact_bkg.jpg": "",
+
+
+
+"banner_contact_txtcolor": "#ffffff"
+
+
+}
+
+}
+}

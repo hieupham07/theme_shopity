@@ -1,0 +1,193 @@
+<div class="modal fade hidden-xs" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="p-title   modal-title " id="">Tên sản phẩm</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><a aria-hidden="true"></a></button>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<form method="post" action="/cart/add">
+							<div class="col-lg-5 col-md-6">
+								<div class="image-zoom row">
+									<img class="p-product-image-feature" src="">
+									<div id="p-sliderproduct" class="flexslider">
+										<ul class="slides"></ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6 pull-right">
+								<div class="form-input">
+									<div class="product-price">
+										<span class="p-price "></span>
+										<del></del>
+									</div>
+								</div>
+								<div class="p-option-wrapper">
+									<select name="id" class="" id="p-select"></select>
+								</div>
+								<div class="form-input {% unless settings.use_check_quantity %}hidden{% endunless%}">
+									<label>Số lượng</label>
+									<input name="quantity" type="number" min="1" value="1" />
+								</div>
+
+								<div class="form-input" style="width: 100%">
+									<button type="submit" class="btn-detail  btn-color-add btn-min-width btn-mgt btn-addcart">Thêm vào giỏ</button>
+									<button disabled class="btn-detail addtocart btn-color-add btn-min-width btn-mgt btn-soldout">Hết hàng</button>
+									<div class="qv-readmore">
+										<span> hoặc </span><a class="read-more p-url" href="" role="button">Xem chi tiết</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6 pull-right">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script>
+var callBack = function (variant, selector) {
+	if (variant) {
+		modal = $('#quick-view-modal');
+		$('.p-price').html(Haravan.formatMoney(variant.price, "{{ shop.money_format }}"));
+		if (variant.compare_at_price > 0)
+			modal.find('del').html(Haravan.formatMoney(variant.compare_at_price, "{{ shop.money_format }}"));
+		else
+			modal.find('del').html('');
+		if (variant.available) {
+			modal.find('.btn-addcart').css('display', 'block');
+			modal.find('.btn-soldout').css('display', 'none');
+		}
+		else {
+			modal.find('.btn-addcart').css('display', 'none');
+			modal.find('.btn-soldout').css('display', 'block');
+		}
+	}
+	else {
+		modal.find('.btn-addcart').css('display', 'none');
+		modal.find('.btn-soldout').css('display', 'block');
+	}
+}
+var p_select_data = $('.p-option-wrapper').html();
+var p_zoom = $('.image-zoom').html();
+var quickViewProduct = function (purl) {
+
+	if ($(window).width() < 680) { window.location = purl; return false; }
+	modal = $('#quick-view-modal'); modal.modal('show');
+	$.ajax({
+		url: purl + '.js',
+		async: false,
+		success: function (product) {
+			$.each(product.options, function (i, v) {
+				product.options[i] = v.name;
+			})
+			modal.find('.p-title').html(product.title);
+			modal.find('.p-option-wrapper').html(p_select_data);
+			$('.image-zoom').html(p_zoom);
+			modal.find('.p-url').attr('href', product.url);
+
+			$.each(product.variants, function (i, v) {
+				modal.find('select#p-select').append("<option value='" + v.id + "'>" + v.title + ' - ' + v.price + "</option>");
+			})
+			if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1)
+				$('.p-option-wrapper').hide();
+			else
+				$('.p-option-wrapper').show();
+			if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1) {
+				callBack(product.variants[0], null);
+			}
+			else {
+				new Haravan.OptionSelectors("p-select", { product: product, onVariantSelected: callBack });
+				if (product.options.length == 1 && product.options[0].indexOf('Tiêu đề')==-1)
+					modal.find('.selector-wrapper:eq(0)').prepend('<label>' + product.options[0] + '</label>');
+				$('.p-option-wrapper select:not(#p-select)').each(function () {
+					$(this).wrap('<span class="custom-dropdown custom-dropdown--white"></span>');
+					$(this).addClass("custom-dropdown__select custom-dropdown__select--white");
+				});
+				callBack(product.variants[0], null);
+			}
+			if (product.images.length == 0) {
+				modal.find('.p-product-image-feature').attr('src', '//hstatic.net/0/0/global/noDefaultImage6_large.gif');
+			}
+			else {
+				/*
+				$('#p-sliderproduct').remove();
+				 $('.image-zoom').append("<div id='p-sliderproduct' class='flexslider'>");
+				 $('#p-sliderproduct').append("<ul class='slides'>");
+
+				 $.each(product.images, function (i, v) {
+					 elem = $('<li class="product-thumb">').append('<a href="#" data-image="" data-zoom-image=""><img /></a>');
+					 elem.find('a').attr('data-image', Haravan.resizeImage(v, 'medium'));
+					 elem.find('a').attr('data-zoom-image', v);
+					 elem.find('img').attr('data-image', Haravan.resizeImage(v, 'medium'));
+					 elem.find('img').attr('data-zoom-image',v);
+					 elem.find('img').attr('src', Haravan.resizeImage(v, 'small'));
+					 modal.find('.slides').append(elem);
+				 });
+
+				 modal.find('.p-product-image-feature').attr('src', product.featured_image);
+				 $(".modal-footer .btn-readmore").attr('href', purl);
+				 var iflag = 0;
+				 $('#p-sliderproduct img').load(function () {
+					 iflag++;
+					 if (iflag == $('#p-sliderproduct img').length) {
+						 $('#p-sliderproduct img').imagesLoaded( function() {
+							 $('#p-sliderproduct').flexslider({
+								 animation: "slide",
+								 controlNav: false,
+								 animationLoop: false,
+								 slideshow: false,
+								 itemWidth: 90
+							 });
+						 });
+					 }
+				 });
+				 */
+				$('#p-sliderproduct').remove();
+				$('.image-zoom').append("<div id='p-sliderproduct'>");
+				$('#p-sliderproduct').append("<ul class='owl-carousel'>");
+				$.each(product.images, function (i, v) {
+					elem = $('<li class="item">').append('<a href="#" data-image="" data-zoom-image=""><img /></a>');
+					elem.find('a').attr('data-image', Haravan.resizeImage(v, 'medium'));
+					elem.find('a').attr('data-zoom-image', v);
+					elem.find('img').attr('data-image', Haravan.resizeImage(v, 'medium'));
+					elem.find('img').attr('data-zoom-image',v);
+					elem.find('img').attr('src', Haravan.resizeImage(v, 'small'));
+					modal.find('.owl-carousel').append(elem);
+				});
+				var owl = $('.owl-carousel');
+				owl.owlCarousel({
+					items:3,
+					navigation : true,
+					navigationText :['owl-prev', 'owl-next']
+				});
+				$('#p-sliderproduct .owl-carousel .owl-item').first().children('.item').addClass('active');
+				modal.find('.p-product-image-feature').attr('src', product.featured_image);
+				$(".modal-footer .btn-readmore").attr('href', purl);
+			}
+
+		}
+	});
+
+	//$('.modal-backdrop').css('opacity', '0');
+	return false;
+}
+$('#quick-view-modal').on('click', '.item img', function (event) {
+	event.preventDefault();
+	modal = $('#quick-view-modal');
+	modal.find('.p-product-image-feature').attr('src', $(this).attr('data-zoom-image'));
+	modal.find('.item').removeClass('active');
+	$(this).parents('li').addClass('active');
+	return false;
+});
+
+$(document).on("click",".mask img", function(event){
+	event.preventDefault();
+	quickViewProduct($(this).attr('data-handle'));
+});
+
+</script>

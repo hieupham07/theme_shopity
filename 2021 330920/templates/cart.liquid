@@ -1,0 +1,314 @@
+{%include 'breadcrumb'%}
+<div class="layoutPage-cart mt-4 pb-5">
+	<div class="container-fluid">
+		<div class="wrapper-cart-layout">
+			<div class="heading-page-cart text-center pt-3 pb-4">
+				<h1 class="m-0">Giỏ hàng của bạn</h1>	
+			</div>
+			<div class="wrapbox-content-cart">
+				<div class="cart-container-inner">
+					<div class="row">
+						<div class="col-12 col-md-8">
+							{%- if cart.item_count == 0-%}
+							<div class="expanded-message text-center text-md-left">
+								Giỏ hàng của bạn đang trống 
+							</div>
+							{%- else -%}
+							<form action="/cart" method="post" id="cartformpage">
+								<div class="reponsive-table-cart">
+									<div class="title-count-cart mb-2">
+										Bạn đang có <span>{{ cart.item_count }} sản phẩm</span> trong giỏ hàng
+									</div>
+									<div class="table-cart">
+										<div class="list-item-cart">
+											{%- for item in cart.items -%}
+											<div class="line-item-container" data-variant-id="{{ item.id }}">
+												<div class="line-item media">
+													<div class="line-item-image_wrapper mr-3">
+														<a href="{{ item.url }}" aria-label="{{ item.title }}" class="d-block">
+															<img src="{% if item.image > 0 %} {% if item.variant.image == empty %} {{ item.image | product_img_url : 'compact'}} {% else%} {{ item.variant.image | product_img_url : 'compact'}}{% endif %}{% else %}{{'no_image.jpg' | asset_url}}{% endif %}" 
+																	 alt="{{ item.title }}" />
+														</a>
+													</div>
+													<div class="line-item-product_body media-body">
+														<div class="line-item_title mb-1 pr-4">
+															<a href="{{ item.url }}" class="d-inline-block">
+																<h3 class="mb-0">{{ item.product.title }}</h3>
+															</a>
+														</div>
+														<div class="line-item_vairant mb-2">
+															{%- if item.product.variants.size > 1 -%}
+															<p class="line-item_vairant-title m-0">{{ item.variant.title }}</p>
+															{%- endif -%}
+														</div>
+														<div class="line-item_price mb-2">
+															<span class="price"><strong>{{item.price | money }}</strong></span>
+															{%- if item.product.compare_at_price > item.price -%}
+															<del>({{ item.variant.compare_at_price | money }})</del>
+															{%- endif -%}
+														</div>
+														<div class="line-item_quantity product-quantity qty-click d-inline-block">
+															<button type="button" class="qtyminus qty-btn border float-left">-</button>
+															<input type="text" size="4" name="updates[]" min="1" id="updates_{{ item.id }}" data-price="{{ item.price}}" value="{{ item.quantity }}"  class="item-quantity float-left text-center border border-right-0 border-left-0" />
+															<button type="button" class="qtyplus qty-btn border float-left">+</button>
+														</div>
+														<div class="line-item_price-total float-md-right mt-2 mt-md-0">
+															<p class="m-0">
+																<span class="text font-weight-normal">Thành tiền:</span>
+																<span class="line-item-total font-weight-bold">{{ item.line_price | money }}</span>
+															</p>
+														</div>
+														<a class="line-item_remove-item-cart" href="/cart/change?line={{ forloop.index }}&quantity=0" title="Xóa sản phẩm này" aria-label="Xóa sản phẩm này">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											{%- endfor -%}
+										</div>
+									</div>
+								</div>
+								<div class="reponsive-cart-noted mt-4">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<div class="checkout-note clearfix">
+												<label for="note" class="note-label d-block">Ghi chú đơn hàng</label>
+												<textarea id="note" class="form-control" name="note" rows="6" >{{ cart.note }}</textarea>
+											</div>
+											<div class="check_out_btn d-none">
+												<a class="button dark link-continue d-none" href="/collections/all" title="Tiếp tục mua hàng"><i class="fa fa-reply"></i>Tiếp tục mua hàng</a>
+												<button type="submit" id="update-cart" class="btn-update button dark d-none" name="update" value="" >Cập nhật</button>
+												<button type="submit" id="checkout" class="btn-checkout button dark d-none" name="checkout" value="" >Thanh toán</button>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6 d-none d-md-block">
+											<div class="policy_return mt-3 mt-lg-0">
+												<h3 class="mb-2">{{ settings.policy_cart_title}}</h3>
+												<ul class="list-group">
+													{%- if settings.policy_cart_1 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_1}}</li>{%- endif -%}
+													{%- if settings.policy_cart_2 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_2}}</li>{%- endif -%}
+													{%- if settings.policy_cart_3 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_3}}</li>{%- endif -%}
+													{%- if settings.policy_cart_4 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_4}}</li>{%- endif -%}
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+							{%- endif -%}
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="wrap-order-summary sticky-cart-order mt-4 mt-md-0">
+								<div class="order-cart-block p-3 border">
+									<h2 class="order-title mb-3">Thông tin đơn hàng</h2>
+									<div class="order-total mb-2 font-weight-bold">
+										<p class="d-flex justify-content-between align-items-center m-0 py-3 border-bottom border-top">
+											Tổng tiền:<span>{{ cart.total_price | money }}</span>
+										</p>
+									</div>
+									<div class="order-short-description">
+										<p class="mb-2">Bạn có thể nhập mã giảm giá ở trang thanh toán</p>
+									</div>
+									<div class="order-action-checkout">
+										<a href="#" class="checkout-btn d-block text-center text-white text-uppercase link" name="checkout">Thanh toán</a>
+									</div>
+									<a class="countine_order_cart d-block text-center mt-2 link" href="/collections/all" title="Tiếp tục mua hàng"><i class="fa fa-reply mr-2"></i>Tiếp tục mua hàng</a>
+								</div>
+							</div>
+							<div class="wrap-policy-cart d-block d-md-none">
+								<div class="policy_return mt-3 mt-lg-0">
+									<h3 class="mb-2">{{ settings.policy_cart_title}}</h3>
+									<ul class="list-group">
+										{%- if settings.policy_cart_1 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_1}}</li>{%- endif -%}
+										{%- if settings.policy_cart_2 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_2}}</li>{%- endif -%}
+										{%- if settings.policy_cart_3 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_3}}</li>{%- endif -%}
+										{%- if settings.policy_cart_4 != '' -%}<li class="d-block pl-3">{{ settings.policy_cart_4}}</li>{%- endif -%}
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+function log(args) {
+	var str = "";
+	for (var i = 0; i < arguments.length; i++) {
+		if (typeof arguments[i] === "object") {
+			str += JSON.stringify(arguments[i]);
+		} else {
+			str += arguments[i];
+		}
+	}
+	return str;
+}
+function addCommas(str) {
+	var parts = (str + "").split("."),
+			main = parts[0],
+			len = main.length,
+			output = "",
+			i = len - 1;
+
+	while(i >= 0) {
+		output = main.charAt(i) + output;
+		if ((len - i) % 3 === 0 && i > 0) {
+			output = "," + output;
+		}
+		--i;
+	}
+	// put decimal part back
+	if (parts.length > 1) {
+		output += "," + parts[1];
+	}
+	return output;
+}
+;(function ( $, window, document, undefined ) {
+	var pluginName = 'hrvAJAXCart',
+			defaults = {
+				propertyName: "value"
+			};
+	function Plugin( element, options ) {
+		this.element = element;
+		this.options = $.extend( {}, defaults, options );
+		this._defaults = defaults;
+		this._name = 'hrvAJAXCart';
+		this.init();
+	}
+	Plugin.prototype = {
+		init: function() {
+			var item = this.options.item,
+					item_total = this.options.item_total,
+					item_qty = this.options.item_qty,
+					subtotal = $(this.options.subtotal);
+
+			// Change line item quantity
+			$(item_qty).change(function() {
+				var qty = $(this).val(),
+						this_item = $(this).closest(item),
+						variant_id = this_item.data('variant-id'),
+						this_item_total = this_item.find(item_total);
+				$.ajax({
+					type: 'POST',
+					url: '/cart/change.js',
+					dataType: 'json',
+					data: {
+						quantity: qty,
+						id: variant_id
+					},
+					success: function(cart) {
+						if ( qty == 0 ) {
+							this_item.remove();
+						} else {
+							$.each(cart.items,function(index,row) {
+								var price = parseFloat(row.line_price / 100).toFixed(2);
+								var currency = Number(price.replace(/[^0-9\.-]+/g,""));
+								if ( variant_id == row.variant_id ) this_item_total.html( log(addCommas(currency)) + ' đ' );
+							});
+						}
+						var sub_price = parseFloat(cart.total_price / 100).toFixed(2);
+						sub_price = Number(sub_price.replace(/[^0-9\.-]+/g,""));
+						subtotal.html( log(addCommas(sub_price)) + ' đ' );
+					},
+					error: function(response) {
+						alert(response);
+					}
+				});
+			});
+
+			// Remove line item
+			$(this.options.item_remove).click(function(e) {
+				e.preventDefault();
+				$(this).closest(item).find(item_qty).val(0);
+				$(this).closest(item).find(item_qty).trigger('change');
+			});
+		}
+	};
+	$.fn.hrvAJAXCart = function ( options ) {
+		return this.each(function () {
+			if (!$.data(this, "plugin_" + pluginName)) {
+				$.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+			}
+		});
+	};
+})( jQuery, window, document );
+	$(document).ready(function(){
+		var href = window.location.href;
+		if (href.indexOf("?add=") != -1){
+			var splitHref = href.split("?add=")[1];
+			var variantId = parseInt($.trim(splitHref.split("&ref=")[0]));  
+			$.ajax({          
+				url: "/cart/" + variantId + ":1",
+				success: function(data){
+					var x = false;
+					if(data.items.length > 0){
+						data.items.map(function(v,i){
+							if(v.variant_id == variantId){
+								x = true;
+							}
+						});            
+					}    
+					if(!x){
+						alert('Sản phẩm bạn vừa mua đã hết hàng');
+					}
+					window.location = '/cart';
+				},
+				error: function(XMLHttpRequest, textStatus) {
+					Haravan.onError(XMLHttpRequest, textStatus);
+				}
+			});
+		}
+	});
+</script>
+<script>
+$(document).ready(function(){
+	$('.checkout-btn').click(function(e){
+		e.preventDefault();
+		$('button[name="checkout"]').trigger('click');
+	})
+});
+$('.qty-click .qtyplus').on('click',function(e){
+	e.preventDefault();
+	var input = $(this).parent('.product-quantity').find('input');
+	var currentVal = parseInt(input.val());
+	if (!isNaN(currentVal)) {
+		input.val(currentVal + 1);
+	} else {
+		input.val(1);
+	}
+	Update_price_change();
+});
+$(".qty-click .qtyminus").on('click',function(e) {
+	e.preventDefault();
+	var input = $(this).parent('.product-quantity').find('input');
+	var currentVal = parseInt(input.val());
+	if (!isNaN(currentVal) && currentVal > 1) {
+		input.val(currentVal - 1);
+	} else {
+		input.val(1);
+	}
+	Update_price_change();
+});
+function Update_price_change(){
+	var params = {
+		type: 'POST',
+		url: '/cart/update.js',
+		data: $('#cartformpage').serialize(),
+		async: false,
+		dataType: 'json',
+		success: function(data) { 
+			$.each(data.items,function(i,v){
+				$('.table-cart .line-item:eq('+i+') .line-item-total').html(Haravan.formatMoney(v.line_price, "{{ shop.money_format }}"));
+			});
+			$('.wrap-order-summary .order-total span').html(Haravan.formatMoney(data.total_price, "{{ shop.money_format }}"));
+			$('.title-count-cart').html('Bạn đang có' + ' <span class="font-weight-bold">' + data.item_count + ' sản phẩm </span>' + 'trong giỏ hàng');
+		},
+		error: function(XMLHttpRequest, textStatus) {
+			Haravan.onError(XMLHttpRequest, textStatus);
+		}
+	};
+	jQuery.ajax(params);
+}
+</script>

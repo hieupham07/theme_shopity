@@ -1,0 +1,33 @@
+{% assign tabs = product.metafields.hrvptabs.tabs %} 
+<div class="product-tabs mt-4 mt-md-5 pb-4">
+	<div class="container-fluid">
+		<div class="product-description">
+			<a class="show-tab-dropdown show-tab-dropdown_mobile" href="javascript:void(0)"></a>
+			<ul class="nav nav-tabs tab-alignment justify-content-center" id="productTab" role="tablist">
+				{%- if settings.display_tab_product_1-%}
+				<li class="nav-item tab-item">
+					<a class="nav-link tab-title active" id="product-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">{{settings.title_tab_product_1}}</a>
+				</li>
+				{%- endif -%}
+			</ul>
+			<div class="tab-content" id="productTabContent">
+				{%- if settings.display_tab_product_1-%}
+				<div class="tab-pane tab-content-item fade show active" id="tab-1" role="tabpanel" aria-labelledby="product-description-1">
+					<div class="panel-toggle-wrap">
+						<div class="content-outer">
+							{%- assign checkDescript = product.description | strip_html -%}
+							{%- if checkDescript.size != nil -%}
+							{{ product.description | split: '#####' | first }}
+							{%- else -%}
+							<p>Chưa có mô tả cho sản phẩm này</p>
+							{%- endif -%}
+						</div>
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+
+

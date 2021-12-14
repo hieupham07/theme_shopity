@@ -1,0 +1,168 @@
+<div class="wrapper-layered-filter col-md-10 desktop-filter">
+	<div class="layered-filter-container">
+		<div class="layered-filter-group">
+			<!-- ./filter brand -->
+			{%- if settings.use_vendor_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.vendor_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-brand" class="filter-group-content filter-brand">
+						<ul class="checkbox-list">
+							{%- assign vendors = collection.all_vendors | sort -%}
+							{%- for vendor in vendors -%}	
+							<li>
+								<input type="checkbox" id="data-brand-p{{forloop.index}}" value="{{vendor}}" name="brand-filter" data-vendor="(vendor:product={{vendor}})"/>
+								<label for="data-brand-p{{forloop.index}}">{{vendor}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+			<!-- ./filter type -->
+			{%- if settings.use_type_filter -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.type_title}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size5" class="filter-group-content filter-size5">
+						{%- assign tags = settings.enter_tag_5 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- assign types = collection.all_types | sort -%}
+							{%- for type in types -%}	
+							<li>
+								<input type="checkbox" id="data-size5-p{{forloop.index}}" value="{{type}}" name="size5-filter" data-size5="(product_type:product={{type}})"/>
+								<label for="data-size5-p{{forloop.index}}">{{type}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}
+	
+			<!-- ./filter color -->
+		
+			<!-- ./filter chất liệu -->
+			{%- if settings.use_tag_custom_2 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_2}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size1" class="filter-group-content filter-size1">
+						{%- assign tags = settings.enter_tag_2 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size1-p{{forloop.index}}" value="{{tag}}" name="size1-filter" data-size1="(tag:product={{tag}})"/>
+								<label for="data-size1-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_0 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_0}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size2" class="filter-group-content filter-size2">
+						{%- assign tags = settings.enter_tag_0 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size2-p{{forloop.index}}" value="{{tag}}" name="size2-filter" data-size2="(tag:product={{tag}})"/>
+								<label for="data-size2-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_3 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_3}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size3" class="filter-group-content filter-size3">
+						{%- assign tags = settings.enter_tag_3 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size3-p{{forloop.index}}" value="{{tag}}" name="size3-filter" data-size3="(tag:product={{tag}})"/>
+								<label for="data-size3-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+			{%- if settings.use_tag_custom_4 -%}
+			<div class="filter-group">
+				<div class="filter-group-block">
+					<div class="filter-group-subtitle">
+						<span>{{settings.tag_title_custom_4}}</span>
+						<span class="icon-control"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+					</div>
+					<div id="filter-size4" class="filter-group-content filter-size4">
+						{%- assign tags = settings.enter_tag_4 | split:"," -%}
+						<ul class="checkbox-list">
+							{%- for tag in tags -%}
+							<li>
+								<input type="checkbox" id="data-size4-p{{forloop.index}}" value="{{tag}}" name="size4-filter" data-size4="(tag:product={{tag}})"/>
+								<label for="data-size4-p{{forloop.index}}">{{tag}}</label>   
+							</li>
+							{%- endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{%- endif -%}	
+		</div>
+	</div>
+</div>
+
+{%- if collection.products_count > 0 -%}
+<div class="collection-options-sortby d-none d-xl-block col-md-2 collection-sortby collection-sortby-option">
+	<div class="collection-sortby-title js-sortby-title d-flex">
+		<span class="title-sortx">Sắp xếp: </span>
+		<span class="title-sort"></span>
+		<span class="sort-by-icon">
+			<svg class="icon-sort-by" aria-labelledby="sort-by-dropdown">
+				<path d="M22.4960571,11.5078274 C22.7675921,11.7793624 22.7675921,12.2196077 22.4960571,12.4911427 L15.4914,19.4961248 C15.219865,19.7676598 14.7796197,19.7676598 14.5080847,19.4961248 L7.50335959,12.4913996 C7.23182458,12.2198646 7.23182458,11.7796194 7.50335959,11.5080844 C7.77489459,11.2365494 8.21513981,11.2365494 8.48667481,11.5080844 L14.9995799,18.0209894 L21.5127419,11.5078274 C21.7842769,11.2362924 22.2245221,11.2362924 22.4960571,11.5078274 Z"></path>
+			</svg>
+		</span>
+	</div>
+	<div class="collection-sortby-custom collection-sortby-custom_option">
+		<ul class="custom-select-menu sort-by">
+			{%- unless collection.handle == 'all' -%}									
+			<li><span data-value="manual">Nổi bật</span></li>
+			{%- endunless -%}
+			<li><span data-value="price-ascending" data-filter="&amp;sortby=(price:product=asc)">Giá: Tăng dần</span></li>
+			<li><span data-value="price-descending" data-filter="&amp;sortby=(price:product=desc)">Giá: Giảm dần</span></li>
+			<li><span data-value="title-ascending" data-filter="&amp;sortby=(title:product=asc)">Tên: A-Z</span></li>
+			<li><span data-value="title-descending" data-filter="&amp;sortby=(price:product=desc)">Tên: Z-A</span></li>
+			<li><span data-value="created-ascending" data-filter="&amp;sortby=(updated_at:product=desc)">Cũ nhất</span></li>
+			<li><span data-value="created-descending" data-filter="&amp;sortby=(updated_at:product=asc)">Mới nhất</span></li>
+			<li><span data-value="best-selling" data-filter="&amp;sortby=(sold_quantity:product=desc)">Bán chạy nhất</span></li>
+			<li><span data-value="quantity-descending">Tồn kho: Giảm dần</span></li>
+		</ul>
+	</div>
+</div>
+{%- endif-%}

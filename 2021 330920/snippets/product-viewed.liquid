@@ -1,0 +1,103 @@
+<div class="productDetail-recently-viewed clearfix pt-5">
+	<div class="container-fluid">
+		<div class="productViewed-title text-center">
+			{%- if settings.product_viewed_title == '' -%}
+			<h2>Sản phẩm đã xem</h2>
+			{%- else-%}
+			<h2>{{settings.product_viewed_title}}</h2>
+			{%- endif-%}	
+		</div>
+		<div class="productViewed-content">
+			<div class="productViewed-content_list content-product-list owl-carousel" id="listViewed"></div>
+		</div>
+	</div>
+</div>
+<script>
+	var day = new Date();//ngay`
+	var seconds = day.getTime();//miliseconds
+	var last_date_review = localStorage.getItem('product_review_day');
+	if( last_date_review > seconds ){
+		localStorage.setItem('product_review_day' , seconds + (30 * 86400000));//30 ngay`
+		localStorage.removeItem('product_review');
+	}
+	var product_handle = '{{ product.handle}}';
+	var last_product_review = localStorage.getItem('product_review');
+	var last_product_review_new = "";
+	if(last_product_review == null){
+		last_product_review_new = product_handle;
+	}
+	else{
+		var list_array = last_product_review.split('##');
+		if(!list_array.includes(product_handle)){
+			last_product_review_new = product_handle + '##' + last_product_review;
+		}
+		else{
+			last_product_review_new = list_array.join('##');
+		}
+	}
+	var last_product_review_array = last_product_review_new.split('##');
+	var handle_error;
+	Haravan.getProduct = function(handle, index) {
+		handle_error = handle;
+		$.ajax({
+			async: false,
+			url:'/products/' + handle + '?view=viewed',
+			success: function(product){
+				$('#listViewed').append(product);
+			},
+			error: function (request, error) {
+				//console.log(handle_error);
+				last_product_review_array[index] = "";
+			}
+		})
+	};
+	var limitpro = last_product_review_array.length;
+	if(last_product_review_array.length > 8) limitpro = 8;
+	for (i = 0; i < limitpro; i++){
+		var handle_pro = last_product_review_array[i]; 
+		if(handle_pro != undefined && handle_pro != 'undefined' && handle_pro != '' ){
+			Haravan.getProduct(handle_pro,i); 
+		}
+	}	
+	var filtered = last_product_review_array.filter(function(el){
+		return el != '';
+	});
+	localStorage.setItem('product_review',filtered.join('##'));
+	document.addEventListener('DOMContentLoaded', function() {
+			if($("#listViewed").length > 0){
+				$('#listViewed').owlCarousel({
+					items:5,
+					nav: true,
+					dots: false,
+					pagination: false,
+					slideSpeed : 1000,
+					smartSpeed:1000,
+					addClassActive: true,
+					scrollPerPage: false,
+					touchDrag: true,
+					autoplay: false,
+					loop: false,
+					responsive:{
+						0:{
+							items:2,
+							margin: 3,
+							stagePadding: 20
+						},
+						768:{
+							items:4,
+							margin: 3
+						},
+						992:{
+							items:5,
+							margin: 20
+						},
+						1200:{
+							items:5,
+							margin: 20
+						}
+					}
+				});	
+			}
+	});
+</script>
+

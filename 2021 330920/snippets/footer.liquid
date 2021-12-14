@@ -1,0 +1,188 @@
+{%- if settings.display_banner_service_home-%}
+<section id="section-service-home" class="section section-service">
+	<div class="wrapper-service-home">
+		<div class="container-fluid">
+			<div class="row">
+				{%- for i in (1..4) -%}
+				{%- capture service_title -%}service_title_{{i}}{%- endcapture -%}
+				{%- capture service_content -%}service_content_{{i}}{%- endcapture -%}
+				{%- capture service_image -%}service_image_{{i}}.png{%- endcapture -%}
+				<div class="col-12 col-md-6 col-lg-6 col-xl-3 item">
+					<div class="item-icon">
+						<div class="item-icon-img aspect-ratio">
+							<img class="lazyload" data-src="{{ service_image | asset_url}}" 
+									 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+									 alt="{{settings[service_title]}}">
+						</div>
+					</div>
+					<div class="item-wrapper">
+						<div class="item-wrapper-title">
+							<h2>{{settings[service_title]}}</h2>
+						</div>
+						<div class="item-wrapper-content">
+							<p>{{settings[service_content]}}</p>
+						</div>
+					</div>
+				</div>
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+</section>
+{%- endif -%}
+<script>
+	$(document).ready(function(){
+		$('form.contact-form').submit(function(e){
+			e.preventDefault();
+			var self = $(this);
+			$.ajax({
+				type: 'POST',
+				url:'/account/contact',
+				dataType:'json',
+				data:self.serialize(),
+			})
+			swal("Cảm ơn bạn đã đăng ký nhận tin!").then(function(value){
+				window.location.reload();
+			});
+		});
+	})
+</script>
+<footer id="footer">
+	<div class="container-fluid">
+		<div class="footer-wrap">
+			{% if settings.footer-wrap-item-check-1 %}
+			<div class="footer-wrap-item">
+				{% if settings.footer-wrap-item-title-1 %}<h4>{{ settings.footer-wrap-item-title-1 }}</h4>{% endif %}
+				{% if settings.footer-wrap-item-content-1 %}<p class="footer-p-content">{{ settings.footer-wrap-item-content-1 }}</p>{% endif %}
+				{% if settings.footer-wrap-item-form %}
+				{% form 'customer' %}
+				<input type="hidden" name="contact[tags]" value="Khách hàng đăng ký nhận tin">
+				<input type="hidden" name="contact[first_name]" value="Người đăng ký">
+				<input type="hidden" name="contact[last_name]" value="">
+				<input type="email" placeholder="Nhập email của bạn" name="contact[email]">                
+				<button type="submit">Đăng ký</button>
+				{% endform %}
+				{% endif %}
+				{% if settings.footer-wrap-item-social-check %}
+				<ul class="footer-wrap-item-social">
+					<li><a href="{{ settings.footer-wrap-item-social-link-1 }}" target="_blank"><img src="{{ settings.footer-wrap-item-social-image-1 }}" alt="footer-social-1"></a></li>
+					<li><a href="{{ settings.footer-wrap-item-social-link-2 }}" target="_blank"><img src="{{ settings.footer-wrap-item-social-image-2 }}" alt="footer-social-3"></a></li>
+					<li><a href="{{ settings.footer-wrap-item-social-link-3 }}" target="_blank"><img src="{{ settings.footer-wrap-item-social-image-3 }}" alt="footer-social-3"></a></li>
+					<li><a href="{{ settings.footer-wrap-item-social-link-4 }}" target="_blank"><img src="{{ settings.footer-wrap-item-social-image-4 }}" alt="footer-social-4"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCjP5BI9Z4-AsIrkSDjdub0w" target="_blank"><img src="https://theme.hstatic.net/200000296482/1000727098/14/icon-youtube.png?v=973" alt="Youtube"></a></li>
+				</ul>
+				{% endif %}
+			</div>
+			{% endif %}
+			{% if settings.footer-wrap-item-check-2 %}
+			<div class="footer-wrap-item">
+				{% if settings.footer-wrap-item-title-2 %}<h4>{{ settings.footer-wrap-item-title-2 }}</h4>{% endif %}
+				<ul>
+					{% for link in linklists[settings.footer-wrap-item-menu-1]links %}
+					<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			{% if settings.footer-wrap-item-check-3 %}
+			<div class="footer-wrap-item">
+				{% if settings.footer-wrap-item-title-3 %}<h4>{{ settings.footer-wrap-item-title-3 }}</h4>{% endif %}
+				<ul class="footer-wrap-item-info-list noClass">
+					{% if settings.footer-wrap-item-info-1 %}
+					<li><i class="fa fa-map-marker"></i><p>{{ settings.footer-wrap-item-info-content-1 }}</p></li>
+					{% endif %}
+					{% if settings.footer-wrap-item-info-2 %}
+					<li><i class="fa fa-phone"></i><p>{{ settings.footer-wrap-item-info-content-2 }}</p></li>
+					{% endif %}
+					{% if settings.footer-wrap-item-info-3 %}
+					<li><i class="fa fa-fax"></i><p>{{ settings.footer-wrap-item-info-content-3 }}</p></li>
+					{% endif %}
+					{% if settings.footer-wrap-item-info-4 %}
+					<li><i class="fa fa-envelope"></i><p>{{ settings.footer-wrap-item-info-content-4 }}</p></li>
+					{% endif %}
+				</ul>
+				{% if settings.footer-wrap-item-payment-check %}
+				<div class="footer-wrap-item-payment">
+					{% if settings.footer-wrap-item-payment-title %}<h4>{{ settings.footer-wrap-item-payment-title }}</h4>{% endif %}
+					<ul class="footer-wrap-item-payment-list">
+						{% if settings.footer-wrap-item-payment-icon-1 %}
+						<li><a href="{{ settings.footer-wrap-item-payment-link-1 }}"><img src="{{ settings.footer-wrap-item-payment-image-1 }}" alt="footer-payment-1"></a></li>
+						{% endif %}
+						{% if settings.footer-wrap-item-payment-icon-2 %}
+						<li><a href="{{ settings.footer-wrap-item-payment-link-2 }}"><img src="{{ settings.footer-wrap-item-payment-image-2 }}" alt="footer-payment-3"></a></li>
+						{% endif %}
+						{% if settings.footer-wrap-item-payment-icon-3 %}
+						<li><a href="{{ settings.footer-wrap-item-payment-link-3 }}"><img src="{{ settings.footer-wrap-item-payment-image-3 }}" alt="footer-payment-3"></a></li>
+						{% endif %}
+						{% if settings.footer-wrap-item-payment-icon-4 %}
+						<li><a href="{{ settings.footer-wrap-item-payment-link-4 }}"><img src="{{ settings.footer-wrap-item-payment-image-4 }}" alt="footer-payment-4"></a></li>
+						{% endif %}
+					</ul>
+				</div>
+				{% endif %}
+			</div>
+			{% endif %}
+			{% if settings.footer-wrap-item-check-4 %}
+			<div class="footer-wrap-item">
+				{% if settings.footer-wrap-item-title-4 %}<h4>{{ settings.footer-wrap-item-title-4 }}</h4>{% endif %}
+				{% if settings.footer-wrap-item-fanpage-check %}
+				<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=942168415955372&autoLogAppEvents=1" nonce="xbIxChu4"></script>
+				<div class="footer-wrap-item-fanpage d-none d-md-block">
+					<div class="fb-page" data-hide-cta="true" data-href="{{ settings.footer-wrap-item-fanpage }}" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="{{ settings.footer-wrap-item-fanpage }}" class="fb-xfbml-parse-ignore"><a href="{{ settings.footer-wrap-item-fanpage }}">{{ shop.name}}</a></blockquote></div>
+				</div>
+				<div class="footer-wrap-item-fanpage d-block d-md-none">
+					<div class="fb-page" data-hide-cta="true" data-href="{{ settings.footer-wrap-item-fanpage }}" data-tabs="" data-width="384" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="{{ settings.footer-wrap-item-fanpage }}" class="fb-xfbml-parse-ignore"><a href="{{ settings.footer-wrap-item-fanpage }}">{{ shop.name}}</a></blockquote></div>
+				</div>
+				{% endif %}
+				{% if settings.footer-wrap-item-map-check %}
+				<div class="footer-wrap-item-map">
+					{{ settings.footer-wrap-item-map-iframe }}
+				</div>
+				{% endif %}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+	{% if settings.footer-copyright-check %}
+	<div class="footer-copyright">
+		<div class="container-fluid">
+			<p>{{settings.footer-copyright}}</p>
+			{%- if settings.footer-bct-check -%}
+			<a href="{{ settings.footer-bct-link }}" target="_blank">
+				<img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+						 data-src="{{ settings.footer-bct-image }}" alt="Bộ Công Thương">
+			</a>
+			{%- endif -%}
+		</div>
+	</div>
+	{% endif %}
+	<div class="{% if template contains 'product' %}btn-floating {% endif%}" id="btn-back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+	<script>
+		$(document).ready(function() {
+			let mybutton = document.getElementById("btn-back-to-top");
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction();
+			};
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 20 ||
+					document.documentElement.scrollTop > 20
+				) {
+					mybutton.style.display = "flex";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+			// When the user clicks on the button, scroll to the top of the document
+			mybutton.addEventListener("click", backToTop);
+			function backToTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		});
+	</script>
+</footer>

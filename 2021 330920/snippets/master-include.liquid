@@ -1,0 +1,20 @@
+<!--+++++++++++++++++++++++++  CSS ++++++++++++++++++++++++-->
+{% include 'plugins-css' %}
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+{{ 'style-themes.scss.css' | asset_url | stylesheet_tag }}
+{%- if template contains 'customers' -%}
+{{ 'style-customer.scss.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+{%- if template contains 'page.about' -%}
+{{'styles-about.scss.css' | asset_url | stylesheet_tag }}
+
+{% endif %}
+<!--+++++++++++++++++++++++++  JS ++++++++++++++++++++++++-->
+{%- include 'plugins-script-head'-%}
+<script>
+	var formatMoney = '{{ shop.money_format }}';
+	var template = "{{template | strip_html | escape }}";
+</script>
+
+

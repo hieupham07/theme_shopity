@@ -1,0 +1,84 @@
+<div class="header_dropdown_content site_cart">
+	<span class="box-triangle">
+		<svg class="icon--nav-triangle" viewBox="0 0 20 9">
+			<path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+		</svg>
+	</span>
+	<div class="site-nav-container">
+		<div class="mini-cart_alert-wrapper">
+			<p class="title-box">Giỏ hàng</p>
+		</div>
+		<div id="clone-item-cart" class="clone-tiem-cart">
+			<div class="mini-cart_line-item list-item d-none">
+				<div class="mini-cart_image-wrapper img">
+					<a href=""><img src="" alt="" /></a>
+				</div>
+				<div class="mini-cart_item-wrapper item">
+					<a href="" class="mini-cart_product-title link pro-title-view" title=""></a>
+					<span class="mini-cart_product-variant variant"></span>
+					<span class="mini-cart_product-quantity pro-quantity-view"></span>
+					<span class="mini-cart_product-price pro-price-view"></span>
+					<span class="mini-cart_product-remove-item remove_link remove-cart"></span>				
+				</div>
+			</div>
+		</div>
+		<div class="mini-cart_inner">
+			<div class="mini-cart_content">
+				<div class="mini-cart_scroll">
+					<div class="mini-cart_line-item-list" id="cart-view">
+						{%- if cart.item_count > 0 -%}
+						{%- for item in cart.items -%}
+						<div class="mini-cart_line-item">
+							<div class="mini-cart_image-wrapper">
+								<a href="{{ item.product.url }}" aria-label="{{ item.title }}" class="d-block">
+									<img src="{% if item.variant.image == empty %} {{ item | img_url: 'small' }} {% else%} {{ item.variant.image | product_img_url : 'small'}}  {% endif %}" alt="{{ item.title }}" />
+								</a>
+							</div>
+							<div class="mini-cart_item-wrapper">
+								<a href="{{ item.product.url }}" class="mini-cart_product-title link" title="{{ item.title }}">{{ item.title }}</a>
+								<span class="mini-cart_product-variant">
+									{% unless item.variant.title contains 'Default Title' %}
+									{{ item.variant.title }}
+									{% endunless %}
+								</span>
+								<span class="mini-cart_product-quantity">{{ item.quantity }}</span>
+								<span class="mini-cart_product-price">{{ item.price | money }}</span>
+								<span class="mini-cart_product-remove-item">
+									<a href='javascript:void(0);' onclick='deleteCart({{forloop.index}})' aria-label="Xóa sản phẩm này" class="d-block"><i class='fa fa-times'></i></a>
+								</span>				
+							</div>
+						</div>
+						{%- endfor -%}
+						{%- else -%}
+						<div class="mini-cart_empty-state">
+							<svg width="65" height="65" viewBox="0 0 81 70">
+								<g transform="translate(0 2)" stroke-width="4" stroke="#333333" fill="none" fill-rule="evenodd">
+									<circle stroke-linecap="square" cx="34" cy="60" r="6"></circle>
+									<circle stroke-linecap="square" cx="67" cy="60" r="6"></circle>
+									<path d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547"></path>
+								</g>
+							</svg>
+							<p class="m-0">Hiện chưa có sản phẩm</p>
+						</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mini-cart_total-recap">
+			<div class="mini-cart_price-total-line d-flex justify-content-between align-items-center">
+				<span>TỔNG TIỀN:</span>
+				<span id="total-view-cart">{{cart.total_price | money}}</span>
+			</div>
+			<div class="mini-cart_button-container d-flex ">
+				<a href="/cart" class="link-to-cart btn-box dark">Xem giỏ hàng</a>
+				<a href="/checkout" class="link-to-checkout btn-box btnred">Thanh toán</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+

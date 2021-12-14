@@ -1,0 +1,30 @@
+<div class="clearfix">
+	{% if paginate.pages > 1 %}
+	{% assign link_url = '' %}
+	{% if template == 'collection' %}
+	{% assign link_url = collection.url %}
+	{% endif %}
+	{% if template == 'search' %}
+	{% assign link_url = search.url %}
+	{% endif %}
+	{% if template =='blog' %}
+	{% assign link_url = blog.url %}
+	{% endif %}
+
+	{% if paginate.previous %}
+	<a class="prev fa fa-angle-left" href="{{ paginate.previous.url }}"></a>
+	{% endif %}
+
+	{% for part in paginate.parts %}
+	{% if part.is_link %}
+	<a class="page-node" href="{{ part.url }}">{{ part.title }}</a>
+	{% else%}
+	<a class="page-node {% if part.title == paginate.current_page %}current{% endif %}">{{ part.title }}</a>
+	{% endif %}
+	{% endfor %}
+	
+	{% if paginate.next %}
+	<a class="next fa fa-angle-right" href="{{ paginate.next.url }}"></a>
+	{% endif %}
+	{% endif %}
+</div>
